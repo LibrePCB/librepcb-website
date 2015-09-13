@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+{{ partial "top-block.html" . }}
+
+{{ range $index, $element := .Data.Pages.ByWeight }}
+{{ if eq .Section "post" }}
+  <div id="main">
+    {{ if modBool $index 2 }}<div id="intro" class="counterpoint">{{ else }}<div id="intro" class="point">{{ end }}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            {{ range $icon := .Params.icons }}
+                <i class="lead-icon icon-{{ $icon }}"></i>
+            {{ end }}
+            <h2>{{ .Title }}</h2>
+            <p class="lead">
+                {{ .Content }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+{{ end }}
+
+{{ partial "footer.html" . }}

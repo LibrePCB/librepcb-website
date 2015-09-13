@@ -1,0 +1,7 @@
+baseurl = "http://librepcb.org"
+languageCode = "en-us"
+title = "LibrePCB"
+[params]
+  topBlockTitle = "LibrePCB"
+  topBlockDescription = ""
+  mainIcon = "img/logo.png"
