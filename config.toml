@@ -4,4 +4,4 @@ title = "LibrePCB"
 [params]
   topBlockTitle = "LibrePCB"
   topBlockDescription = ""
-  mainIcon = "img/logo.png"
+  mainIcon = "img/librepcb.png"
