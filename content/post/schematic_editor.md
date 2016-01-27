@@ -4,4 +4,4 @@ title: Schematic Editor
 weight: 3
 ---
 
-![Schematic Editor](/img/schematiceditor_preview.png)
+[![Schematic Editor](/img/schematiceditor_preview.png)](/img/schematiceditor.png)

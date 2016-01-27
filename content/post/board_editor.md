@@ -4,4 +4,4 @@ title: Board Editor
 weight: 4
 ---
 
-![Control Panel](/img/boardeditor_preview.png)
+[![Control Panel](/img/boardeditor_preview.png)](/img/boardeditor.png)

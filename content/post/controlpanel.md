@@ -4,4 +4,4 @@ title: Control Panel
 weight: 2
 ---
 
-![Control Panel](/img/controlpanel_preview.png)
+[![Control Panel](/img/controlpanel_preview.png)](/img/controlpanel.png)
