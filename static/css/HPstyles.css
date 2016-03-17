@@ -278,6 +278,20 @@ footer a:hover {
     background: aliceblue;
 }
 
+.btn-donate {
+    color:black;
+    background-color: orange;
+    border-color: black;
+}
+
+.btn-donate:hover,
+.btn-donate:focus,
+.btn-donate:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
 .owl-carousel blockquote {
     border-left: 0px;
 }
