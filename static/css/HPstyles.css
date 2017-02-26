@@ -23,11 +23,11 @@ body {
     text-align: center;
 }
 
-img[src*='#right'] {  
+img[src*='#right'] {
     float: right;
 }
 
-img[src*='#left'] {  
+img[src*='#left'] {
     float: left;
 }
 
@@ -288,6 +288,20 @@ footer a:hover {
 .btn-donate:focus,
 .btn-donate:active {
     color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
+.btn-patreon {
+    color: white;
+    background-color: #e6461a;
+    border-color: black;
+}
+
+.btn-patreon:hover,
+.btn-patreon:focus,
+.btn-patreon:active {
+    color: #e6461a;
     background-color: aliceblue;
     border-color: black;
 }
