@@ -1,1 +1,11 @@
+# Directories
 themes
+
+# Others
+.DS_Store
+Thumbs.db
+*~
+*.autosave
+
+# Vim
+*.swp
