@@ -1,0 +1,23 @@
+language: go
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+install:
+  - go get github.com/kardianos/govendor
+  - govendor get github.com/spf13/hugo
+
+script:
+  - hugo
+  - echo "librepcb.org" > public/CNAME # required for GitHub Pages
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  target_branch: master
+  on:
+    branch: source
+
