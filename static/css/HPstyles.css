@@ -283,6 +283,34 @@ footer a:hover {
 
 /* Bootstrap Addons */
 
+.btn-home {
+    color:black;
+    background-color: rgb(41, 214, 130);
+    border-color: black;
+}
+
+.btn-home:hover,
+.btn-home:focus,
+.btn-home:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
+.btn-blog {
+    color:white;
+    background-color: rgb(120, 120, 250);
+    border-color: black;
+}
+
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
 .btn-dark {
     color:white;
     background-color: rgba(30,30,30, 0.8);
