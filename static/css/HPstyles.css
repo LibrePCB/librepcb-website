@@ -74,6 +74,29 @@ img[src*='#left'] {
     margin: 1em 0 1em;
 }
 
+.blogHeader {
+    display: table;
+    height: 30%;
+    width: 100%;
+    min-height: 30%;
+    position: relative;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 99999;
+    background-color: black;
+}
+
+.blogHeader .blogTitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 8.0em;
+  font-weight: bold;
+  color: rgb(255, 252, 244);
+  line-height: 1.0;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 1024px)

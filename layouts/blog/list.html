@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+{{ partial "blog-top-block.html" . }}
+
+{{ range $index, $element := where .Data.Pages.ByDate.Reverse "Section" "blog" }}
+    <div id="main">
+    {{ if modBool $index 2 }}<div id="intro" class="counterpoint">{{ else }}<div id="intro" class="point">{{ end }}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ if eq $index 0 }}
+              <p class="lead">
+                {{ .Content }}
+              </p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ partial "footer.html" . }}
