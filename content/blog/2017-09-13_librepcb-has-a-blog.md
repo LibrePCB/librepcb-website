@@ -1,6 +1,7 @@
 ---
 date: 2017-09-13
 title: LibrePCB has a blog! :-)
+author: U. Bruhin
 ---
 
 **Here it is: The long awaited blog of LibrePCB!**
