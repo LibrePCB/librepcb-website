@@ -9,6 +9,7 @@
             <h2>{{ .Title }}</h2>
             <p class="lead">
               {{ .Content }}
+              <br><i>{{ dateFormat "2006-01-02" .Date.Local }}</i>
             </p>
           </div>
         </div>
