@@ -15,3 +15,5 @@ under heavy development to bring out first stable releases as soon as possible.
 - Very powerful library design with some innovative concepts
 - Human-readable file formats
 - Open Source (GNU GPLv3)
+
+### Interested? [Try it out!](https://docs.librepcb.org/getting_started/)

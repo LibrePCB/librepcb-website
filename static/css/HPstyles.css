@@ -311,6 +311,19 @@ footer a:hover {
     border-color: black;
 }
 
+.btn-docs {
+    color:black;
+    background-color: yellow;
+    border-color: black;
+}
+.btn-docs:hover,
+.btn-docs:focus,
+.btn-docs:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
 .btn-dark {
     color:white;
     background-color: rgba(30,30,30, 0.8);
