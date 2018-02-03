@@ -40,6 +40,13 @@ img[src*='#left'] {
   font-weight: bold;
   color: rgb(255, 252, 244);
   line-height: 1.0;
+  margin-top: 0.1em;
+}
+
+@media all and (max-width: 800px) {
+    .header .topBlockTitle {
+        font-size: 18vw;
+    }
 }
 
 .header .topBlockDescription {
