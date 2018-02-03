@@ -3,6 +3,6 @@ languageCode = "en-us"
 title = "LibrePCB"
 [params]
   topBlockTitle = "LibrePCB"
-  topBlockDescription = ""
+  topBlockDescription = "A new, powerful and intuitive EDA tool for everyone."
   mainIcon = "img/librepcb.png"
   blogTitle = "LibrePCB Blog"

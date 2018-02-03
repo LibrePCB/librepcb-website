@@ -56,6 +56,12 @@ img[src*='#left'] {
   line-height: 1.5;
 }
 
+@media all and (max-width: 450px) {
+    .header .topBlockDescription {
+        display: none;
+    }
+}
+
 .header {
     display: table;
     height: 60%;
