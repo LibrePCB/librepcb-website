@@ -65,8 +65,9 @@ img[src*='#left'] {
 }
 
 .logo {
-    max-width: 25em;
-    width: 100%;
+    min-width: 150px;
+    max-width: 250px;
+    width: 25vw;
     padding: 1em;
 }
 
