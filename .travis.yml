@@ -1,15 +1,16 @@
 language: go
+env: HUGO_VERSION=0.39
 notifications:
   email:
     on_success: change
     on_failure: change
 
 install:
-  - go get github.com/kardianos/govendor
-  - govendor get github.com/spf13/hugo
+  - wget -O "./hugo.tar.gz" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
+  - tar -xvzf ./hugo.tar.gz
 
 script:
-  - hugo
+  - ./hugo
   - echo "librepcb.org" > public/CNAME # required for GitHub Pages
 
 deploy:
