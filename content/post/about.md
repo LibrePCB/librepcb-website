@@ -16,4 +16,4 @@ under heavy development to bring out first stable releases as soon as possible.
 - Human-readable file formats
 - Open Source (GNU GPLv3)
 
-### Interested? [Try it out!](https://docs.librepcb.org/getting_started/)
+### Interested? [Try it out!](https://docs.librepcb.org/#gettingstarted)
