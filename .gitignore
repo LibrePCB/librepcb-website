@@ -2,6 +2,9 @@
 themes
 public
 
+# Hugo binary
+/hugo
+
 # Others
 .DS_Store
 Thumbs.db
