@@ -329,6 +329,20 @@ footer a:hover {
     border-color: black;
 }
 
+.btn-download {
+    color:black;
+    background-color: rgb(41, 214, 255);
+    border-color: black;
+}
+
+.btn-download:hover,
+.btn-download:focus,
+.btn-download:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
 .btn-docs {
     color:black;
     background-color: yellow;
