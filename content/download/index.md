@@ -10,29 +10,29 @@ for installation and usage instructions.
 
 # <i class="icon-windows8"></i> Windows
 
-### <i class="icon-install"></i> [Download LibrePCB Installer for Windows](https://download.librepcb.org/releases/0.1.0-rc1/librepcb-installer-0.1.0-rc1-windows-x86.exe)
+### <i class="icon-install"></i> [Download LibrePCB Installer for Windows](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-installer-{{< latest_version >}}-windows-x86.exe)
 
-Alternative: [Portable ZIP](https://download.librepcb.org/releases/0.1.0-rc1/librepcb-0.1.0-rc1-windows-x86.zip) (extract & run)
+Alternative: [Portable ZIP](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-windows-x86.zip) (extract & run)
 
 
 # <i class="icon-tux"></i> Linux
 
-### <i class="icon-install"></i> [Download LibrePCB Installer for Linux](https://download.librepcb.org/releases/0.1.0-rc1/librepcb-installer-0.1.0-rc1-linux-x86_64.run)
+### <i class="icon-install"></i> [Download LibrePCB Installer for Linux](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-installer-{{< latest_version >}}-linux-x86_64.run)
 
-Alternative: [AppImage](https://download.librepcb.org/releases/0.1.0-rc1/librepcb-0.1.0-rc1-linux-x86_64.AppImage) (set executable flag & run)
+Alternative: [AppImage](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.AppImage) (set executable flag & run)
 
 
 # <i class="icon-apple"></i> MacOS
 
-### <i class="icon-install"></i> [Download LibrePCB Installer for MacOS](https://download.librepcb.org/releases/0.1.0-rc1/librepcb-installer-0.1.0-rc1-mac-x86_64.dmg)
+### <i class="icon-install"></i> [Download LibrePCB Installer for MacOS](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-installer-{{< latest_version >}}-mac-x86_64.dmg)
 
-Alternative: [App Bundle](https://download.librepcb.org/releases/0.1.0-rc1/librepcb-0.1.0-rc1-mac-x86_64.dmg)
+Alternative: [App Bundle](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-mac-x86_64.dmg)
 
 
 # <i class="icon-code"></i> Source
 
 Alternatively you could build LibrePCB from
-[sources](https://download.librepcb.org/releases/0.1.0-rc1/librepcb-0.1.0-rc1-source.zip).
+[sources](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-source.zip).
 The Git repository is hosted [at GitHub](https://github.com/LibrePCB/LibrePCB).
 
 See [README.md](https://github.com/LibrePCB/LibrePCB/blob/master/README.md)
