@@ -4,8 +4,7 @@ title: What is LibrePCB?
 weight: 1
 ---
 
-LibrePCB is a free EDA software to develop printed circuit boards. It's currently
-under heavy development to bring out first stable releases as soon as possible.
+LibrePCB is a free EDA software to develop printed circuit boards.
 
 ### Key Features:
 
