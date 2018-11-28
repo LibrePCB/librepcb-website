@@ -19,7 +19,12 @@ Alternative: [Portable ZIP](https://download.librepcb.org/releases/{{< latest_ve
 
 ### <i class="icon-install"></i> [Download LibrePCB Installer for Linux](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-installer-{{< latest_version >}}-linux-x86_64.run)
 
-Alternative: [AppImage](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.AppImage) (set executable flag & run)
+Alternatives for various distributions: [Flatpak](https://flathub.org/apps/details/org.librepcb.LibrePCB) or
+[AppImage](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.AppImage)
+(set executable flag & run)
+
+Arch Linux: [librepcb](https://aur.archlinux.org/packages/librepcb/) (builds from source)
+or [librepcb-appimage](https://aur.archlinux.org/packages/librepcb-appimage/) (downloads binary)
 
 
 # <i class="icon-apple"></i> MacOS
