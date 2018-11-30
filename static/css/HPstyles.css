@@ -388,6 +388,20 @@ footer a:hover {
     border-color: black;
 }
 
+.btn-compare {
+    color: black;
+    background-color: orange;
+    border-color: black;
+}
+
+.btn-compare:hover,
+.btn-compare:focus,
+.btn-compare:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
 .owl-carousel blockquote {
     border-left: 0px;
 }
