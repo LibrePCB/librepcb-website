@@ -18,7 +18,7 @@ for details.
 
 ### LibrePCB vs. Eagle
 
-- LibrePCB is free of charge - without limitations, even for commercial usage
+- LibrePCB is free of charge – without limitations, even for commercial usage
 - LibrePCB has an integrated library manager, thus it's much easier to install
   and update libraries
 - LibrePCB library and project files are better suited for version control
@@ -31,17 +31,17 @@ for details.
 
 **Library management with LibrePCB is much easier:**
 
-- Easy-to-use library manager to install and update libraries - no
+- Easy-to-use library manager to install and update libraries – no
   knowledge about Git and GitHub needed
 - LibrePCB does not bundle (possibly outdated or low-quality) libraries together
-  with the application - you have the full control over what libraries are used
-- Only one library file format for all kinds of library elements - a library can
+  with the application – you have the full control over what libraries are used
+- Only one library file format for all kinds of library elements – a library can
   contain symbols, footprints, components and in future also 3D models
-- No broken references - you can rename symbols, footprints, pins, pads etc.
+- No broken references – you can rename symbols, footprints, pins, pads etc.
   without breaking other elements
-- LibrePCB organizes parts by hierarchical categories, thus it's easier and more intuitive to
-  find the part you're looking for
-- No broken projects caused by updated or removed libraries - LibrePCB projects
+- LibrePCB organizes parts by hierarchical categories, thus it's easier and more
+  intuitive to find the part you're looking for
+- No broken projects caused by updated or removed libraries – LibrePCB projects
   are self-contained and completely independent of system libraries
 
 **Version control of LibrePCB files is more fun:**
@@ -49,15 +49,16 @@ for details.
 - All files of LibrePCB projects and libraries are highly optimized for
   version control systems
 - User-related settings are strictly separated from project-related settings so
-  you don't commit annoying, useless changes (like your zoom level or canvas position)
-- LibrePCB files have a canonical file format - if you save a project without making relevant
-  changes, no files are modified at all
+  you don't commit annoying, useless changes (like your zoom level or canvas
+  position)
+- LibrePCB has a canonical file format – if you save a project without making
+  relevant changes, no files are modified at all
 
 **Netlist synchronization is easier with LibrePCB:**
 
-- Schematics and board work on the same netlist, so they are always in sync - no
+- Schematics and board work on the same netlist, so they are always in sync – no
   manual forward/backward annotation is needed
-- You never have to worry about the pinout of components - LibrePCB stores all
+- You never have to worry about the pinout of components – LibrePCB stores all
   connections between symbol pins and footprint pads in the library
 
 **BUT:**
