@@ -39,18 +39,18 @@ for details.
   contain symbols, footprints, components and in future also 3D models
 - No broken references - you can rename symbols, footprints, pins, pads etc.
   without breaking other elements
-- LibrePCB organizes parts by category, thus it's easier and more intuitive to
+- LibrePCB organizes parts by hierarchical categories, thus it's easier and more intuitive to
   find the part you're looking for
 - No broken projects caused by updated or removed libraries - LibrePCB projects
   are self-contained and completely independent of system libraries
 
-**Version control of LibrePCB files makes more fun:**
+**Version control of LibrePCB files is more fun:**
 
-- All files of LibrePCB projects and libraries are highly optimized for usage of
+- All files of LibrePCB projects and libraries are highly optimized for
   version control systems
 - User-related settings are strictly separated from project-related settings so
-  you don't commit annoying, useless changes
-- LibrePCB files are canonical - if you save a project without making relevant
+  you don't commit annoying, useless changes (like your zoom level or canvas position)
+- LibrePCB files have a canonical file format - if you save a project without making relevant
   changes, no files are modified at all
 
 **Netlist synchronization is easier with LibrePCB:**
@@ -69,4 +69,4 @@ features needed to design complex PCBs.
 
 So, if you are looking for an intuitive EDA tool to quickly design a simple PCB,
 you should give LibrePCB a try. But if you want to design complex PCBs, LibrePCB
-is probably not the tool you are looking for.
+is probably not (yet) the tool you are looking for.
