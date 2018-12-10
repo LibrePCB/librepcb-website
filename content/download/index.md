@@ -26,6 +26,11 @@ Alternatives for various distributions: [Flatpak](https://flathub.org/apps/detai
 Arch Linux: [librepcb](https://aur.archlinux.org/packages/librepcb/) (builds from source)
 or [librepcb-appimage](https://aur.archlinux.org/packages/librepcb-appimage/) (downloads binary)
 
+OpenPandora: [librepcb](https://repo.openpandora.org/?page=detail&app=librepcb)
+from OpenPandora Repository
+
+NixOS: [librepcb](https://nixos.org/nixos/packages.html#librepcb) package
+
 
 # <i class="icon-apple"></i> MacOS
 
