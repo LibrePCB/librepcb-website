@@ -356,6 +356,19 @@ footer a:hover {
     border-color: black;
 }
 
+.btn-discuss {
+    color:black;
+    background-color: orchid;
+    border-color: black;
+}
+.btn-discuss:hover,
+.btn-discuss:focus,
+.btn-discuss:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
 .btn-dark {
     color:white;
     background-color: rgba(30,30,30, 0.8);
