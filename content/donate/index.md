@@ -11,6 +11,16 @@ LibrePCB with a donation. The more donations are made, the more time we can put
 into the development of new features to make LibrePCB even more powerful.
 
 
+### Ordering PCBs at AISLER
+
+You want to order a PCB designed with LibrePCB? In that case you can support
+LibrePCB by ordering your PCBs at [AISLER](https://aisler.net/partners/librepcb)!
+No separate payment for the donation is needed – just create a ZIP of your whole
+LibrePCB project directory, upload it to
+[aisler.net](https://aisler.net/partners/librepcb) and order PCBs as usual.
+AISLER will then automatically make a donation to LibrePCB.
+
+
 ### Patreon
 
 [Patreon](https://www.patreon.com/librepcb) is a platform to make recurring
