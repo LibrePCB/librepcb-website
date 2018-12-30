@@ -1,6 +1,8 @@
 # Directories
 themes
 public
+.idea/
+.vscode/
 
 # Hugo binary
 /hugo
