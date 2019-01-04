@@ -1,0 +1,12 @@
+(librepcb_device 2b482546-923f-4bc7-a7e6-65852d47aa64
+ (name "WIREPAD_SMD5-2,5")
+ (description "<b>Wire PAD</b> connect wire on PCB\n\nThis element was automatically imported from Eagle\nFilepath: wirepad.lbr\nName: WIREPAD\nNOTE: Remove this text after manual rework!")
+ (keywords "")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2015-12-20T22:11:03Z)
+ (deprecated false)
+ (component 197dacc7-3785-4054-a538-ced0d6271faa)
+ (package bf77778d-eee6-4b56-ad82-d24f9c668a63)
+ (pad 56588e0b-e32c-4508-82a0-27c3f1429d33 (signal ad6ae81a-7914-49b7-a87b-a0e8574b7398))
+)

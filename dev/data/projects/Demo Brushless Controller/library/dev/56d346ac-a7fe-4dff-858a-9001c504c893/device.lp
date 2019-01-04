@@ -1,0 +1,13 @@
+(librepcb_device 56d346ac-a7fe-4dff-858a-9001c504c893
+ (name "L-EU_L2012C")
+ (description "<B>INDUCTOR</B>, European symbol\n\nThis element was automatically imported from Eagle\nFilepath: rcl.lbr\nName: L-EU\nNOTE: Remove this text after manual rework!")
+ (keywords "")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2015-12-20T22:11:02Z)
+ (deprecated false)
+ (component 506bd124-6062-400e-9078-b38bd7e1aaee)
+ (package 0c1c693e-fd9c-40f8-a815-c73d5dd9245d)
+ (pad 3946d6b7-ff01-40f6-a497-3287e947b0c7 (signal 777f11cd-9d4e-4b2b-aafa-7e7a836ff56e))
+ (pad 58b3ba80-5703-49da-9581-e944f18da0bc (signal 5b36d330-6f19-4391-8f95-1c2f6a658286))
+)
