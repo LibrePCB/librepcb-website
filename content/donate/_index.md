@@ -21,6 +21,14 @@ LibrePCB project directory, upload it to
 AISLER will then automatically make a donation to LibrePCB.
 
 
+### Merchandise Shop
+
+Maybe you would like to have a LibrePCB T-Shirt, Hoodie or Mug? Then you should
+take a look at our [merchandise shop](https://shop.spreadshirt.com/librepcb/)!
+LibrePCB receives a commission on every order in this shop, so you can support
+LibrePCB by purchasing cool products.
+
+
 ### Patreon
 
 [Patreon](https://www.patreon.com/librepcb) is a platform to make recurring
