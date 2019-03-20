@@ -369,6 +369,19 @@ footer a:hover {
     border-color: black;
 }
 
+.btn-merchandise {
+    color:black;
+    background-color: darkseagreen;
+    border-color: black;
+}
+.btn-merchandise:hover,
+.btn-merchandise:focus,
+.btn-merchandise:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
 .btn-dark {
     color:white;
     background-color: rgba(30,30,30, 0.8);
