@@ -1,7 +1,9 @@
 ---
-title: Thank you!
-type: donate
+title: Support LibrePCB
+type: page
 ---
+
+## Thank you!
 
 <i class="icon-heart" style="font-size:500%"></i>
 

@@ -1,7 +1,9 @@
 ---
-title: Donate to LibrePCB
-type: donate
+title: Support LibrePCB
+type: page
 ---
+
+## Donate to LibrePCB
 
 LibrePCB is an open source project – it's made by the community, for the
 community. This means that everyone can use LibrePCB without paying for it.

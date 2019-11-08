@@ -1,7 +1,9 @@
 ---
-title: Discuss
-type: discuss
+title: Discuss LibrePCB
+type: page
 ---
+
+## Discussion Platforms
 
 ### Forum
 

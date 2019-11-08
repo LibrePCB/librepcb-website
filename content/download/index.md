@@ -1,7 +1,9 @@
 ---
-title: LibrePCB Downloads
-type: download
+title: Get LibrePCB
+type: page
 ---
+
+## LibrePCB Downloads
 
 Here you can download official LibrePCB releases.
 

@@ -1,12 +1,13 @@
+{{/* This is a hack to support subpages! Template is identical to single.html */}}
+
 {{ partial "header.html" . }}
-{{ partial "donate-top-block.html" . }}
+{{ partial "page-top-block.html" . }}
 
 <div id="main">
     <div id="intro" class="counterpoint">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center">
-            <h2>{{ .Title }}</h2>
             <p class="lead">
               {{ .Content }}
             </p>

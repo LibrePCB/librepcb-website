@@ -1,7 +1,9 @@
 ---
-title: Comparison with other EDA tools
-type: compare
+title: Compare LibrePCB
+type: page
 ---
+
+## Comparison with other EDA tools
 
 Of course people compare LibrePCB to other EDA tools, especially Eagle and
 KiCad. To help you deciding which EDA tool is best for your needs, here a short
