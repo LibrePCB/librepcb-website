@@ -31,6 +31,8 @@ from OpenPandora Repository
 
 NixOS: [librepcb](https://nixos.org/nixos/packages.html#librepcb) package
 
+FreeBSD: [librepcb](https://www.freshports.org/cad/librepcb/) port
+
 
 # <i class="icon-apple"></i> MacOS
 
