@@ -23,8 +23,7 @@ for details.
   and update libraries
 - LibrePCB library and project files are better suited for version control
 - The schematic- and board editors of Eagle are currently more powerful
-  (LibrePCB does not yet support hierarchical sheets, DRC, BOM export, 3D view
-  and more)
+  (LibrePCB does not yet support hierarchical sheets, 3D view and more)
 
 
 ### LibrePCB vs. KiCad
