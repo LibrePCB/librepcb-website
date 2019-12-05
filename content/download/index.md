@@ -22,17 +22,20 @@ Alternative: [Portable ZIP](https://download.librepcb.org/releases/{{< latest_ve
 Alternatives for various distributions: [Flatpak](https://flathub.org/apps/details/org.librepcb.LibrePCB),
 [AppImage](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.AppImage)
 (set executable flag & run) or
-[archive](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.tar.gz)
+[binary archive](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.tar.gz).
 
-Arch Linux: [librepcb](https://aur.archlinux.org/packages/librepcb/) (builds from source)
+**Arch Linux:** [librepcb](https://aur.archlinux.org/packages/librepcb/) (builds from source)
 or [librepcb-appimage](https://aur.archlinux.org/packages/librepcb-appimage/) (downloads binary)
 
-OpenPandora: [librepcb](https://repo.openpandora.org/?page=detail&app=librepcb)
+**OpenPandora:** [librepcb](https://repo.openpandora.org/?page=detail&app=librepcb)
 from OpenPandora Repository
 
-NixOS: [librepcb](https://nixos.org/nixos/packages.html#librepcb) package
+**NixOS:** [librepcb](https://nixos.org/nixos/packages.html#librepcb) package
 
-FreeBSD: [librepcb](https://www.freshports.org/cad/librepcb/) port
+
+# <img src="/img/bsd.svg" width="36" height="36"> BSD
+
+**FreeBSD:** [librepcb](https://www.freshports.org/cad/librepcb/) port
 
 
 # <i class="icon-apple"></i> MacOS
