@@ -48,6 +48,16 @@ directly.
 [![Donate with PayPal](/img/donate_paypal_button.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8DQ5P4TS992Q4&source=url)
 
 
+### GitHub Sponsors
+
+If you have a [GitHub](https://github.com) account, you can
+[become a sponsor](https://github.com/sponsors/ubruhin) of the founder and
+main developer of LibrePCB. See [GitHub Sponsors](https://github.com/sponsors)
+for more information.
+
+[![Become a Sponsor!](/img/become_a_sponsor_button.png)](https://github.com/sponsors/ubruhin)
+
+
 ### Bitcoin
 
 We also accept Bitcoins at following address:
