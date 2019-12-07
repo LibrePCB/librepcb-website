@@ -14,9 +14,10 @@ into the development of new features to make LibrePCB even more powerful.
 ### Ordering PCBs at AISLER
 
 You want to order a PCB designed with LibrePCB? In that case you can support
-LibrePCB by ordering your PCBs at [AISLER](https://aisler.net/partners/librepcb)!
-No separate payment for the donation is needed – just create a ZIP of your whole
-LibrePCB project directory, upload it to
+LibrePCB by ordering your PCBs at
+[AISLER](https://aisler.net/partners/librepcb)! No separate payment for the
+donation is needed – just export your LibrePCB project to a `*.lppz` file (in
+the "File" menu of the schematic- or board editor), upload it to
 [aisler.net](https://aisler.net/partners/librepcb) and order PCBs as usual.
 AISLER will then automatically make a donation to LibrePCB.
 
