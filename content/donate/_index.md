@@ -14,19 +14,12 @@ into the development of new features to make LibrePCB even more powerful.
 ### Ordering PCBs at AISLER
 
 You want to order a PCB designed with LibrePCB? In that case you can support
-LibrePCB by ordering your PCBs at [AISLER](https://aisler.net/partners/librepcb)!
-No separate payment for the donation is needed – just create a ZIP of your whole
-LibrePCB project directory, upload it to
+LibrePCB by ordering your PCBs at
+[AISLER](https://aisler.net/partners/librepcb)! No separate payment for the
+donation is needed – just export your LibrePCB project to a `*.lppz` file (in
+the "File" menu of the schematic- or board editor), upload it to
 [aisler.net](https://aisler.net/partners/librepcb) and order PCBs as usual.
 AISLER will then automatically make a donation to LibrePCB.
-
-
-### Merchandise Shop
-
-Maybe you would like to have a LibrePCB T-Shirt, Hoodie or Mug? Then you should
-take a look at our [merchandise shop](https://shop.spreadshirt.com/librepcb/)!
-LibrePCB receives a commission on every order in this shop, so you can support
-LibrePCB by purchasing cool products.
 
 
 ### Patreon
@@ -45,6 +38,16 @@ As an alternative to Patreon, you can also
 directly.
 
 [![Donate with PayPal](/img/donate_paypal_button.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8DQ5P4TS992Q4&source=url)
+
+
+### GitHub Sponsors
+
+If you have a [GitHub](https://github.com) account, you can
+[become a sponsor](https://github.com/sponsors/ubruhin) of the founder and
+main developer of LibrePCB. See [GitHub Sponsors](https://github.com/sponsors)
+for more information.
+
+[![Become a Sponsor!](/img/become_a_sponsor_button.png)](https://github.com/sponsors/ubruhin)
 
 
 ### Bitcoin
