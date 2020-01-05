@@ -6,7 +6,7 @@
     {{ if modBool $index 2 }}<div id="intro" class="counterpoint">{{ else }}<div id="intro" class="point">{{ end }}
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
+          <div class="col-md-8 col-md-offset-2">
             {{ range $icon := .Params.icons }}
                 <i class="lead-icon icon-{{ $icon }}"></i>
             {{ end }}
