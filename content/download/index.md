@@ -19,7 +19,9 @@ Alternative: [Portable ZIP](https://download.librepcb.org/releases/{{< latest_ve
 
 ### <i class="icon-install"></i> [Download LibrePCB Installer for Linux](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-installer-{{< latest_version >}}-linux-x86_64.run)
 
-Alternatives for various distributions: [Flatpak](https://flathub.org/apps/details/org.librepcb.LibrePCB),
+Alternatives for various distributions:
+[Snap](https://snapcraft.io/librepcb),
+[Flatpak](https://flathub.org/apps/details/org.librepcb.LibrePCB),
 [AppImage](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.AppImage)
 (set executable flag & run) or
 [binary archive](https://download.librepcb.org/releases/{{< latest_version >}}/librepcb-{{< latest_version >}}-linux-x86_64.tar.gz).
