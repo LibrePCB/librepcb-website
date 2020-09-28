@@ -15,4 +15,4 @@ announcements of upcoming events, release notes, development progress or
 technical explanations.
 
 If you have any input regarding this blog or our website in general, please open
-an issue on the [GitHub repository](https://github.com/LibrePCB/LibrePCB.github.io).
+an issue on the [GitHub repository](https://github.com/LibrePCB/librepcb-website).

@@ -1,6 +1,6 @@
-# LibrePCB.github.io
+# LibrePCB Website
 
-Official Website of LibrePCB
+This repository contains the official website of LibrePCB: https://librepcb.org
 
 ## Development
 
@@ -15,4 +15,3 @@ There are two branches in this repository:
 1. Checkout the `source` branch
 2. Modify the content
 3. Run `hugo server` to review the generated website in your browser
-
