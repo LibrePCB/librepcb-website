@@ -1,0 +1,22 @@
+name: CI
+on: [push, pull_request]
+env:
+  HUGO_VERSION: 0.88.1
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Hugo
+        run: |
+          wget -O "./hugo.tar.gz" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
+          tar -xvzf ./hugo.tar.gz
+      - name: Build
+        run: ./hugo
+      - name: Upload Artifacts
+        run: ./ci/upload_artifacts.sh
+        env:
+          UPLOAD_URL: ${{ secrets.UPLOAD_URL }}
+          UPLOAD_USER: ${{ secrets.UPLOAD_USER }}
+          UPLOAD_PASS: ${{ secrets.UPLOAD_PASS }}
+          UPLOAD_SIGN_KEY: ${{ secrets.UPLOAD_SIGN_KEY }}

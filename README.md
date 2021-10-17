@@ -1,17 +1,24 @@
 # LibrePCB Website
 
-This repository contains the official website of LibrePCB: https://librepcb.org
+This repository contains the sources official website of LibrePCB.
+
+Hosted pages:
+
+- HTML output of `master`: https://librepcb.org/
+- HTML output of other branches: https://librepcb.org/_branches/
 
 ## Development
 
-The website is made with [Hugo](https://gohugo.io/).
+The website is made with [Hugo](https://gohugo.io/). It does not need to be
+installed, you can just download it as a portable binary. For instructions,
+refer to their [documentation](https://gohugo.io/getting-started/installing/).
 
-There are two branches in this repository:
-- `source`: The source (content) to build the website with hugo
-- `master`: The generated static HTML website (automatically updated by Travis-CI)
+Note that it's highly recommended to install the same version as used on our
+CI (defined in [`.github/workflows/main.yml`](.github/workflows/main.yml)).
 
-### Steps to build the website locally
+To build and review the website locally, just run the following command in
+the root directory of this repository:
 
-1. Checkout the `source` branch
-2. Modify the content
-3. Run `hugo server` to review the generated website in your browser
+```
+hugo server
+```
