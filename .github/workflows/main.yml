@@ -1,7 +1,7 @@
 name: CI
 on: [push, pull_request]
 env:
-  HUGO_VERSION: 0.69.2
+  HUGO_VERSION: 0.88.1
 jobs:
   build:
     runs-on: ubuntu-20.04
