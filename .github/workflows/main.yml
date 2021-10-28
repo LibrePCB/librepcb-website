@@ -12,7 +12,7 @@ jobs:
           wget -O "./hugo.tar.gz" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
           tar -xvzf ./hugo.tar.gz
       - name: Build
-        run: ./hugo
+        run: ./hugo --buildFuture
       - name: Upload Artifacts
         run: ./ci/upload_artifacts.sh
         env:
