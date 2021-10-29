@@ -8,6 +8,7 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center">
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p><i>{{ .Date.Local | time.Format ":date_long" }}</i></p>
             {{ if lt $index 5 }}
               <p class="lead">
                 {{ .Content }}

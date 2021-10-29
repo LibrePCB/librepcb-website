@@ -7,9 +7,9 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center">
             <h2>{{ .Title }}</h2>
+            <p><i>{{ .Date.Local | time.Format ":date_long" }}</i></p>
             <p class="lead">
               {{ .Content }}
-              <br><i>{{ dateFormat "2006-01-02" .Date.Local }}</i>
             </p>
           </div>
         </div>
