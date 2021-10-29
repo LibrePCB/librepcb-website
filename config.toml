@@ -1,4 +1,7 @@
-baseurl = "http://librepcb.org"
+# We need all URLs to be relative to make sure the previews hosted at
+# https://librepcb.org/_branches/ are working properly.
+relativeURLs = true
+
 languageCode = "en-us"
 title = "LibrePCB"
 [params]
