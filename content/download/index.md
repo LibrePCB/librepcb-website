@@ -8,16 +8,16 @@ Here you can download official LibrePCB releases.
 Please read the [Getting Started Guide](https://docs.librepcb.org/#gettingstarted-installation)
 for installation and usage instructions.
 
-# <i class="icon-windows8"></i> Windows
+# {{< icon "icon-windows8" >}} Windows
 
-### <i class="icon-install"></i> [Download LibrePCB Installer for Windows](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-installer-{{< param latestVersion >}}-windows-x86.exe)
+### {{< icon "icon-install" >}} [Download LibrePCB Installer for Windows](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-installer-{{< param latestVersion >}}-windows-x86.exe)
 
 Alternative: [Portable ZIP](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-{{< param latestVersion >}}-windows-x86.zip) (extract & run)
 
 
-# <i class="icon-tux"></i> Linux
+# {{< icon "icon-tux" >}} Linux
 
-### <i class="icon-install"></i> [Download LibrePCB Installer for Linux](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-installer-{{< param latestVersion >}}-linux-x86_64.run)
+### {{< icon "icon-install" >}} [Download LibrePCB Installer for Linux](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-installer-{{< param latestVersion >}}-linux-x86_64.run)
 
 Alternatives for various distributions:
 [Snap](https://snapcraft.io/librepcb),
@@ -35,19 +35,19 @@ from OpenPandora Repository
 **NixOS:** [librepcb](https://nixos.org/nixos/packages.html#librepcb) package
 
 
-# <img src="/img/bsd.svg" width="36" height="36"> BSD
+# {{< img src="/img/bsd.svg" width="36" height="36" >}} BSD
 
 **FreeBSD:** [librepcb](https://www.freshports.org/cad/librepcb/) port
 
 
-# <i class="icon-apple"></i> MacOS
+# {{< icon "icon-apple" >}} MacOS
 
-### <i class="icon-install"></i> [Download LibrePCB Installer for MacOS](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-installer-{{< param latestVersion >}}-mac-x86_64.dmg)
+### {{< icon "icon-install" >}} [Download LibrePCB Installer for MacOS](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-installer-{{< param latestVersion >}}-mac-x86_64.dmg)
 
 Alternative: [App Bundle](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-{{< param latestVersion >}}-mac-x86_64.dmg)
 
 
-# <i class="icon-code"></i> Source
+# {{< icon "icon-code" >}} Source
 
 Alternatively you could build LibrePCB from
 [sources](https://download.librepcb.org/releases/{{< param latestVersion >}}/librepcb-{{< param latestVersion >}}-source.zip).
