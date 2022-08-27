@@ -11,15 +11,16 @@ LibrePCB with a donation. The more donations are made, the more time we can put
 into the development of new features to make LibrePCB even more powerful.
 
 
-### Ordering PCBs at AISLER
+### Ordering PCBs
 
 You want to order a PCB designed with LibrePCB? In that case you can support
-LibrePCB by ordering your PCBs at
-[AISLER](https://aisler.net/partners/librepcb)! No separate payment for the
-donation is needed – just export your LibrePCB project to a `*.lppz` file (in
-the "File" menu of the schematic- or board editor), upload it to
-[aisler.net](https://aisler.net/partners/librepcb) and order PCBs as usual.
-AISLER will then automatically make a donation to LibrePCB.
+LibrePCB by simply ordering your PCBs using our
+[LibrePCB Fab](https://fab.librepcb.org) service which is directly integrated
+into LibrePCB. Just
+[click on the *Order PCB* toolbutton](https://docs.librepcb.org/#gettingstarted-order-fab) to get started. After the order is placed, our
+partner [AISLER](https://aisler.net/partners/librepcb)
+will automatically make a donation to LibrePCB -- without any cost for you!
+{{< icon "icon-rocket" >}}
 
 
 ### Patreon
