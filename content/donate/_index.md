@@ -18,9 +18,9 @@ LibrePCB by simply ordering your PCBs using our
 [LibrePCB Fab](https://fab.librepcb.org) service which is directly integrated
 into LibrePCB. Just
 [click on the *Order PCB* toolbutton](https://docs.librepcb.org/#gettingstarted-order-fab) to get started. After the order is placed, our
-partner [AISLER](https://aisler.net/partners/librepcb)
-will automatically make a donation to LibrePCB -- without any cost for you!
-{{< icon "icon-rocket" >}}
+partner [AISLER](https://aisler.net/partners/librepcb) or
+[PCBWay](https://www.pcbway.com) will automatically make a donation to
+LibrePCB -- without any cost for you! {{< icon "icon-rocket" >}}
 
 
 ### Patreon
