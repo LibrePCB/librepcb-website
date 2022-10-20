@@ -17,7 +17,7 @@ and projects more efficient. For example the schematic- and board editors now
 allow searching for symbols resp. devices
 ([#671](https://github.com/LibrePCB/LibrePCB/pull/671)):
 
-[![Search Symbol](/img/schematic_editor_search.gif)](/img/schematic_editor_search.gif)
+{{< imglink "Search Symbol" "schematic_editor_search.gif" >}}
 
 Furthermore, all input fields for length values (line width, drill diameter,
 coordinate etc.) are now displayed in the unit configured in the workspace
@@ -26,7 +26,7 @@ each input field can even be changed individually and gets saved and restored
 automatically. And you can now enter mathematical expressions and optionally
 append a unit (e.g. "mm") which will then be evaluated:
 
-[![Search Symbol](/img/length_input_unit.gif)](/img/length_input_unit.gif)
+{{< imglink "Search Symbol" "length_input_unit.gif" >}}
 
 #### Pick&Place and SVG Export
 
@@ -34,7 +34,7 @@ This release adds a pick&place CSV file export
 ([#639](https://github.com/LibrePCB/LibrePCB/pull/639)) so LibrePCB is now
 also suitable to design PCBs which will be assembled by pick&place machines:
 
-[![Pick&Place Export](/img/pickplace_export_dialog.png)](/img/pickplace_export_dialog.png)
+{{< imglink "Pick&Place Export" "pickplace_export_dialog.png" >}}
 
 In addition, an SVG export has been implemented for both, schematics and
 boards ([#656](https://github.com/LibrePCB/LibrePCB/pull/656)). This allows to

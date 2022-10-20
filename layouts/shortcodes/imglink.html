@@ -1,0 +1,18 @@
+{{ $img := $.Page.Resources.GetMatch (.Get 1) }}
+
+{{ $link := $img.RelPermalink }}
+{{ if .Get 2 }}
+{{ $file := $.Page.Resources.GetMatch (.Get 2) }}
+{{ if $file }}
+{{ $link = $file.RelPermalink }}
+{{ else }}
+{{ $link = .Get 2 }}
+{{ end }}
+{{ end }}
+
+<p>
+  <a href="{{ $link | safeHTMLAttr }}">
+    <img src="{{ $img.RelPermalink | safeHTMLAttr }}"
+         alt="{{ .Get 0 | safeHTMLAttr }}" />
+  </a>
+</p>

@@ -21,7 +21,7 @@ To remove this hurdle, we integrated a new service, called
 editors. It allows to order PCBs in a very simple, fast way -- without
 worrying about Gerber or Excellon files at all!
 
-[![Order PCB](/img/board_editor_order_pcb.gif)](/img/board_editor_order_pcb.gif)
+{{< imglink "Order PCB" "board_editor_order_pcb.gif" >}}
 
 Although this service is intended mainly for beginners, it is actually even
 useful for experienced users since it saves quite some time when ordering PCBs,
@@ -42,7 +42,7 @@ the board outlines.
 For example, creating an Arduino Shield is now much easier once you got its
 outline as a DXF:
 
-[![DXF Import](/img/board_editor_dxf_import.gif)](/img/board_editor_dxf_import.gif)
+{{< imglink "DXF Import" "board_editor_dxf_import.gif" >}}
 
 &nbsp;
 

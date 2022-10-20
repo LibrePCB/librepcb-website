@@ -41,13 +41,13 @@ To avoid completely reinventing the wheel, we decided to use the
 it's really well suited for the use case of an EDA tool.
 
 S-Expressions are *very* simple to understand, but still powerful enough for
-LibrePCB. And the syntax is not verbose, but still expressive. 
+LibrePCB. And the syntax is not verbose, but still expressive.
 
 With a custom S-Expressions generator, we are now able to control every little
 bit of the format of our generated files. Here you can see the difference
 between the old XML file format and the new S-Expressions file format:
 
-[![XML vs. S-Expressions](/img/xml_vs_s_expressions.png)](/img/xml_vs_s_expressions.png)
+{{< imglink "XML vs. S-Expressions" "xml_vs_s_expressions.png" >}}
 
 *Note: Even if the S-Expressions file has 6 lines more than the XML file, it's
 ~16% smaller in size!*

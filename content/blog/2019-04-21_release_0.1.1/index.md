@@ -30,7 +30,7 @@ before they are used in any schematic or board. And even better, for many of the
 warnings, the library editor provides the corresponding fix with just one click!
 Let's see how it works:
 
-[![Library Element Checks](/img/library_editor_rulecheck.gif)](/img/library_editor_rulecheck.gif)<br/><br/>
+{{< imglink "Library Element Checks" "library_editor_rulecheck.gif" >}}<br/><br/>
 
 #### More Powerful Symbol Variants ([#430](https://github.com/LibrePCB/LibrePCB/pull/430))
 
@@ -51,7 +51,7 @@ settings, which will make the "Add Component" dialog pre-select the symbol
 variant which matches your preferred norm automatically! If you like to use
 American symbols, just add the norm "IEEE 315" to your project settings:
 
-[![Project Settings Dialog](/img/project_settings_dialog_norm.png)](/img/project_settings_dialog_norm.png)<br/><br/>
+{{< imglink "Project Settings Dialog" "project_settings_dialog_norm.png" >}}<br/><br/>
 
 #### Transactional File System ([#422](https://github.com/LibrePCB/LibrePCB/pull/422))
 

@@ -24,7 +24,7 @@ LibrePCB now provides a feature-rich ruler in all editors to measure angles and
 distances in both metric and imperial units. Thanks to automatic snapping, it's
 also possible to measure drill diameters, pad sizes, restrings etc. precisely:
 
-[![Measure Tool](/img/board_editor_measure_tool.gif)](/img/board_editor_measure_tool.gif)
+{{< imglink "Measure Tool" "board_editor_measure_tool.gif" >}}
 
 For details, check out the
 [corresponding pull request](https://github.com/LibrePCB/LibrePCB/pull/995).
@@ -50,7 +50,7 @@ feature-rich export dialog. The main improvements are:
 - Support copying images to clipboard instead of writing to file
 - Responsive live preview & non-blocking export operation
 
-[![PDF Export Dialog](/img/board_editor_pdf_export.gif)](/img/board_editor_pdf_export.gif)
+{{< imglink "PDF Export Dialog" "board_editor_pdf_export.gif" >}}
 
 For the complete feature list including several screenshots, check out the
 [corresponding pull request](https://github.com/LibrePCB/LibrePCB/pull/947).
@@ -65,7 +65,7 @@ personal libraries again. But if you used EAGLE, we have good news! It's now
 possible to import whole EAGLE libraries (`*.lbr` with XML format of EAGLE 6
 or later) very easily:
 
-[![EAGLE Import Wizard](/img/eagle_library_import.gif)](/img/eagle_library_import.gif)
+{{< imglink "EAGLE Import Wizard" "eagle_library_import.gif" >}}
 
 The import has been tested with several libraries of various EAGLE versions,
 but we can't guarantee that it's working properly with any `*.lbr` file.
@@ -87,7 +87,7 @@ keyboard shortcuts added, they are now fully configurable in the workspace
 settings and to always have a quick reference available, LibrePCB is now
 able to generate a nice shortcut reference PDF on the fly:
 
-[![Shurtcuts Reference](/img/keyboard_shortcuts_reference.png)](/img/keyboard_shortcuts_reference.pdf)
+{{< imglink "Shurtcuts Reference" "keyboard_shortcuts_reference.png" "keyboard_shortcuts_reference.pdf" >}}
 
 &nbsp;
 
@@ -102,7 +102,7 @@ example the part numbers (MPN). The nice thing about this format is that
 it is machine-readable, but can also be opened in a standard Gerber viewer
 to see a human-readable assembly plan:
 
-[![Gerber X3](/img/gerber_x3_viewer.png)](/img/gerber_x3_viewer.png)
+{{< imglink "Gerber X3" "gerber_x3_viewer.png" >}}
 
 Some assembly houses already support this format, so it might be good to know
 that LibrePCB is now able to generate such files. Unfortunately we don't have a

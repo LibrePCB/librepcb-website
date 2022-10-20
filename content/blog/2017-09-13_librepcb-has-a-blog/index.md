@@ -6,11 +6,11 @@ author: U. Bruhin
 
 **Here it is: The long awaited blog of LibrePCB!**
 
-![Hello Blog!](/img/hello_blog.png)
+{{< img alt="Hello Blog!" src="hello_blog.png" >}}
 
 It's still very basic, but this will be improved some time ;)
 
-From now on, we will use this blog to provide various information, e.g. 
+From now on, we will use this blog to provide various information, e.g.
 announcements of upcoming events, release notes, development progress or
 technical explanations.
 

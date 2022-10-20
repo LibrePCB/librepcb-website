@@ -9,7 +9,7 @@ is a great event for developers and users interested in free software. It is
 hosted at the ULB Solbosch Campus in Brussels, Belgium. This year it takes
 place on **February 3 / 4**.
 
-[![FOSDEM](/img/fosdem_2018_banner.png)](https://fosdem.org/)
+{{< imglink "FOSDEM" "fosdem_2018_banner.png" "https://fosdem.org/" >}}
 
 There are many different tracks available, but for us the most interesting one
 is the [**CAD and Open Hardware devroom**](https://fosdem.org/2018/schedule/track/cad_and_open_hardware/).

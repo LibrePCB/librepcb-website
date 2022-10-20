@@ -8,7 +8,7 @@ You like LibrePCB and need some new clothes or a coffee mug? Then you might be
 interested in the [merchandise shop](https://shop.spreadshirt.com/librepcb/)
 which got online today!
 
-[![Merchandise Shop](/img/merchandise_shop.png)](/img/merchandise_shop.png)
+{{< imglink "Merchandise Shop" "merchandise_shop.png" >}}
 
 ### The Initial Idea
 

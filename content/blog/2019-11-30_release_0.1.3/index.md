@@ -17,7 +17,7 @@ mistakes like missing connections, too small clearances (or shorts), or too
 thin copper elements. A new dock widget shows the reported messages and
 clicking on a message displays the issue in the board view.
 
-[![DRC](/img/board_editor_drc.gif)](/img/board_editor_drc.gif)<br/>
+{{< imglink "DRC" "board_editor_drc.gif" >}}<br/>
 
 Please note that the new design rule options are not yet saved to files, so
 you have to re-enter them after opening the project the next time. This will
@@ -29,14 +29,14 @@ Now it's also possible to export the bill of materials (BOM) of a LibrePCB
 project to a CSV file. In addition to some predefined columns, you can add
 arbitrary component attributes as additional columns to the CSV:
 
-[![DRC](/img/bom_export_dialog.png)](/img/bom_export_dialog.png)
+{{< imglink "DRC" "bom_export_dialog.png" >}}
 
 #### Print Boards ([#567](https://github.com/LibrePCB/LibrePCB/pull/567))
 
 Boards can now be printed and exported to PDF, with respecting the currently
 visible layers. This allows for example to create assembly plans like this:
 
-[![DRC](/img/board_editor_assembly_plan.png)](/img/board_editor_assembly_plan.png)
+{{< imglink "DRC" "board_editor_assembly_plan.png" >}}
 
 
 ### Changelog

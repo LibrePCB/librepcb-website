@@ -9,7 +9,7 @@ It's two years ago since I gave the
 talk at FOSDEM 18. This was a milestone in the history of LibrePCB since it was
 the first time LibrePCB was actively presented to a large audience.
 
-[![FOSDEM](/img/fosdem_2020_banner.png)](https://fosdem.org/2020/)
+{{< imglink "FOSDEM" "fosdem_2020_banner.png" "https://fosdem.org/2020/" >}}
 
 Since that talk, there was a huge progress regarding LibrePCB. Therefore I
 decided to submit a

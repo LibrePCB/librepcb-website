@@ -1,11 +1,11 @@
-# Directories
-themes
-public
+# IDEs
 .idea/
 .vscode/
 
-# Hugo binary
+# Hugo
+/public/
 /hugo
+*.lock
 
 # Others
 .DS_Store

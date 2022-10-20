@@ -24,7 +24,7 @@ The first part of the partnership is the integration into our PCB ordering
 service [LibrePCB Fab](https://fab.librepcb.org). From now on, users can
 choose between PCBWay and our existing partner [AISLER](https://aisler.net):
 
-[![LibrePCB Fab Workflow](/img/fab_pcbway.gif)](/img/fab_pcbway.gif)
+{{< imglink "LibrePCB Fab Workflow" "fab_pcbway.gif" >}}
 
 This makes LibrePCB Fab a complete solution for all needs -- AISLER is the
 perfect choice for less experienced users (thanks to the simple, guided order

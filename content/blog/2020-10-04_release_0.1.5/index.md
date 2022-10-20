@@ -35,7 +35,7 @@ to draw traces and place vias have been heavily improved, for example:
 - Trace and via properties can be changed with keyboard shortcuts while drawing
   a trace
 
-[![Draw Trace](/img/board_editor_draw_trace.gif)](/img/board_editor_draw_trace.gif)
+{{< imglink "Draw Trace" "board_editor_draw_trace.gif" >}}
 
 Another inconvenience was that the outline of planes and polygons could only
 be modified by specifying the exact vertex coordinates. Now this is much easier
