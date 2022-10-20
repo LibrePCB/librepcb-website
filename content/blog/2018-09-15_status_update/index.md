@@ -22,7 +22,7 @@ unresolved for more than three years (it was our 6th issue!), we decided to
 start a [design contest at 99designs](http://99d.me/c/iab2) to get a new logo.
 And here's the winning design:
 
-![New Logo](/img/new_logo.png)
+{{< img alt="New Logo" src="new_logo.png" >}}
 
 Sure, it's quite similar to the old logo, just nicer ;-) Probably that's because
 I already liked the old logo, and maybe also a little bit because it was (too)

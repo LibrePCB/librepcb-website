@@ -10,7 +10,7 @@ layers) which of course are then exported into the generated Gerber files. The
 new font file format [FontoBene](https://github.com/fontobene/fontobene/) was
 developed especially for LibrePCB.
 
-[![Board Texts](/img/board_texts.png)](/img/board_texts.png)
+{{< imglink "Board Texts" "board_texts.png" >}}
 
 ### Why a stroke font instead of OTF/TTF?
 
@@ -29,7 +29,7 @@ OTF/TTF. Since you can set the stroke width to a value greater than or equal to
 the minimum silkscreen line width specified by your PCB manufacturer, you can be
 sure that the text items are printed properly and thus are perfect readable.
 
-[![Text Properties](/img/board_editor_text_properties.png)](/img/board_editor_text_properties.png)
+{{< imglink "Text Properties" "board_editor_text_properties.png" >}}
 
 ### Introducing FontoBene
 
@@ -47,7 +47,7 @@ for a new stroke font file format, called [FontoBene](https://github.com/fontobe
 Because the project is completely independent from any software project (even
 from LibrePCB), our hope is that it will also be used by other projects some time.
 
-![FontoBene](/img/fontobene.png)
+{{< img alt="FontoBene" src="fontobene.png" >}}
 
 Currently LibrePCB uses the [NewStroke](https://vovanium.ru/sledy/newstroke/en)
 font which we [converted to FontoBene](https://github.com/fontobene/fontobene-fonts/pull/4),

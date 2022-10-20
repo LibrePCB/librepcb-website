@@ -10,7 +10,7 @@ and the
 [status update talk at FOSDEM 20](https://fosdem.org/2020/schedule/event/librepcb/),
 I'm happy to give one more update about the current project status at FOSDEM 22!
 
-[![FOSDEM](/img/fosdem_2022_banner.png)](https://fosdem.org/2022/)
+{{< imglink "FOSDEM" "fosdem_2022_banner.png" "https://fosdem.org/2022/" >}}
 
 The status update talk will take place on **Saturday, February 5, at 12:00
 CET**. Due to obvious reasons, it's an online event this year. After the talk

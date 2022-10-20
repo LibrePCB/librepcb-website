@@ -9,7 +9,7 @@ We are very happy to announce that
 so you can upload and review LibrePCB projects directly on their website and
 order PCBs and stencils just with a few clicks! :-)
 
-[![LibrePCB Project at AISLER](/img/aisler_demo_brushless_controller.png)](/img/aisler_demo_brushless_controller.png)
+{{< imglink "LibrePCB Project at AISLER" "aisler_demo_brushless_controller.png" >}}
 
 ### Why AISLER?
 
@@ -39,7 +39,7 @@ that CLI to automatically generate Gerber files of an uploaded LibrePCB project.
 These Gerber files are then used to create the preview of the PCB, and to
 manufacture it in their fab.
 
-![Analyzing LibrePCB Project](/img/aisler_analyzing_librepcb_project.png)
+{{< img alt="Analyzing LibrePCB Project" src="aisler_analyzing_librepcb_project.png" >}}
 
 In order to adjust the fabrication output settings (e.g. filenames) according
 their needs, they patch the board file `boards/<BOARDNAME>/board.lp` with their
