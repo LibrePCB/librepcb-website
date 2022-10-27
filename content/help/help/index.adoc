@@ -1,0 +1,41 @@
+---
+title: "Get Help"
+icon: "fa-solid fa-circle-question"
+weight: 10
+url: /help
+aliases: /discuss
+---
+
+== icon:message[] Forum
+
+The best way for getting help or discussing improvement ideas is our
+https://librepcb.discourse.group/[discussion forum]. Sign up and join the
+conversation!
+
+== icon:bug[] Issue Tracker
+
+To report issues or for concrete feature requests,
+https://github.com/LibrePCB/LibrePCB/issues[open an issue] in our issue
+tracker. If you don't have a GitHub account, feel free to post your message
+in the https://librepcb.discourse.group/[discussion forum] instead.
+
+== icon:comments[] Chat
+
+We also have a development channel on IRC and a group on Telegram. The two
+chats are bridged, so you can join any one of them to see all conversations.
+
+* https://web.libera.chat?channels=#librepcb[#librepcb on Libera.Chat]
+* https://telegram.me/LibrePCB_dev[LibrePCB_dev on Telegram]
+
+Note that this chat is mainly for discussing the development of LibrePCB. To
+get help, the https://librepcb.discourse.group/[forum] is preferred.
+
+== icon:money-bill[] Paid Support
+
+If you're interested in paid support or feature development service, please
+link:{{< relref "about/contact/index.adoc" >}}[contact us].
+
+
+== icon:envelope[] Contact
+
+See link:{{< relref "about/contact/index.adoc" >}}[contact section].

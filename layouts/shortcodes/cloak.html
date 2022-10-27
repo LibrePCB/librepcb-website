@@ -1,0 +1,3 @@
+{{- $text := .Get 0 -}}
+<span class="cloaked-text" data-text="{{ range $index := seq (sub (len $text) 1) 0}}{{ substr $text $index 1}}{{ end }}"></span>
+{{- "" -}}

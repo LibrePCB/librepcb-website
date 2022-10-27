@@ -1,0 +1,11 @@
+---
+title: "Contact"
+icon: "fa-solid fa-envelope"
+weight: 40
+url: /contact
+---
+
+For a direct conversation with the project lead, write to
+{{< cloakemail "support@librepcb.org" >}} -- but please don't ask for
+free support. For free support options, check out the
+link:{{< relref "help/help/index.adoc" >}}[help section].

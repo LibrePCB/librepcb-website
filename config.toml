@@ -1,4 +1,5 @@
 title = "LibrePCB"
+baseURL = "https://librepcb.org/"
 languageCode = "en-us"
 
 # We need all URLs to be relative to make sure the previews hosted at
@@ -16,10 +17,31 @@ section = ['HTML']
 taxonomy = ['HTML']
 term = ['HTML']
 
+# Get asciidoctor working.
+[security.exec]
+allow = ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^asciidoctor$"]
+osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|RUBYLIB)$']
+
+# Configure asciidoctor.
+[markup.asciidocExt]
+failureLevel = "warn"
+verbose = true
+
+[markup.asciidocExt.attributes]
+icons = "font"
+source-highlighter = "pygments"
+pygments-style = "monokai"
+docinfo = "shared"
+sectanchors = true
+toc = true
+
+# Configure YouTube shortcode.
+[privacy.youtube]
+privacyEnhanced = true
+
 # Custom parameters.
 [params]
-  topBlockTitle = "LibrePCB"
-  topBlockDescription = "A new, powerful and intuitive EDA tool for everyone."
-  mainIcon = "img/librepcb.png"
-  blogTitle = "LibrePCB Blog"
+  titleSuffix = " | LibrePCB"
+  siteDescription = "A free, easy-to-use, multiplatform EDA software to draw schematics and design PCBs"
   latestVersion = "0.1.7"
+  numberOfTranslations = "16"

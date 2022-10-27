@@ -28,8 +28,6 @@ useful for experienced users since it saves quite some time when ordering PCBs,
 at least if you don't need the higher flexibility of the traditional
 Gerber/Excellon export.
 
-&nbsp;
-
 #### DXF Import ([#917](https://github.com/LibrePCB/LibrePCB/pull/917))
 
 This release finally adds an import for DXF files, the industry standard for
@@ -43,8 +41,6 @@ For example, creating an Arduino Shield is now much easier once you got its
 outline as a DXF:
 
 {{< imglink "DXF Import" "board_editor_dxf_import.gif" >}}
-
-&nbsp;
 
 #### Migration to CMake ([#798](https://github.com/LibrePCB/LibrePCB/pull/798))
 

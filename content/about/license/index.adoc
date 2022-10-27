@@ -1,0 +1,34 @@
+---
+title: "License"
+icon: "fa-solid fa-rectangle-list"
+weight: 30
+url: /license
+---
+
+== icon:laptop[] Application
+
+The LibrePCB application can freely be used for any purpose, even for
+commercial projects. But especially for commercial projects, please consider
+supporting the development with a
+link:{{< relref "donate/index.adoc" >}}[donation] or
+link:{{< relref "sponsors/index.adoc" >}}[sponsorship].
+
+Note that there is no free support available. For paid support,
+link:{{< relref "about/contact/index.adoc" >}}[contact us].
+
+== icon:code[] Source Code
+
+The source code of LibrePCB is published under the
+https://www.gnu.org/licenses/gpl-3.0.en.html[GNU General Public License GPLv3] license.
+For license terms, check out
+https://github.com/LibrePCB/LibrePCB/blob/master/LICENSE.txt[`LICENSE.txt`]
+within the source code repository.
+
+== icon:book[] Libraries
+
+All our official libraries are published under the
+https://creativecommons.org/choose/zero/[Creative Commons CC0-1.0] license.
+This means you can use, modify and redistribute these libraries as you
+like, even for commercial projects. For license terms, check out
+https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/blob/master/LICENSE.txt[`LICENSE.txt`]
+within each library.

@@ -1,0 +1,6 @@
+{{- $address := .Get "address" | default (.Get 0) -}}
+{{- $parts := split $address "@" -}}
+{{- $user := (index $parts 0) -}}
+{{- $domain := (index $parts 1) | default "" -}}
+<span class="cloaked-mail" data-user="{{ range $index := seq (sub (len $user) 1) 0}}{{ substr $user $index 1}}{{ end }}"{{ with $domain }} data-domain="{{ range $index := seq (sub (len $domain) 1) 0}}{{ substr $domain $index 1}}{{ end }}"{{ end }}></span>
+{{- "" -}}

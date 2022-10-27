@@ -1,0 +1,50 @@
+---
+title: "Sponsors"
+icon: "fa-solid fa-hand-holding-heart"
+weight: 70
+---
+
+Maintaining LibrePCB wouldn't be possible without sponsorings.
+Many thanks to our sponsors for supporting the LibrePCB project:
+
+:img-width: 300
+[cols="^.^,.^",options="autowidth"]
+|===
+| image:/img/sponsor-aisler.png[width={img-width},link="https://aisler.net"]
+| https://aisler.net[AISLER] is a PCB manufacturing service from the
+  Netherlands which makes PCB ordering easier than ever before. They operate
+  our fabrication service and contribute financially.
+
+| image:/img/sponsor-pcbway.png[width={img-width},link="https://www.pcbway.com"]
+| https://www.pcbway.com[PCBWay] is a large, worldwide well-known PCB
+  manufacturing company from China, providing advanced PCB technologies.
+  They operate our fabrication service and contribute financially.
+
+| image:/img/sponsor-cloudscale.png[width={img-width},link="https://cloudscale.ch"]
+| https://cloudscale.ch[cloudscale.ch] is a highly flexible, easy-to-use
+  cloud server provider from Switzerland. They sponsor the virtual servers
+  to run all LibrePCB web services.
+
+| image:/img/transifex.png[width={img-width},link="https://www.transifex.com/librepcb/"]
+| https://www.transifex.com/librepcb/[Transifex] sponsors the translation
+  service thanks to their
+  https://help.transifex.com/en/articles/6236788-open-source-projects[open-source program].
+
+| image:/img/patreon.png[width={img-width},link="https://www.patreon.com/librepcb"]
+| Individual patrons on https://www.patreon.com/librepcb[Patreon]
+  contribute financially.
+
+| image:/img/github.png[width={img-width},link="https://github.com/sponsors/ubruhin"]
+| Individual sponsors on https://github.com/sponsors/ubruhin[GitHub Sponsors]
+  contribute financially.
+
+| icon:users[2x]
+| And many more commercial or individual sponsors contribute financially
+  through PayPal or other ways!
+|===
+
+== icon:hand-point-right[] Your Sponsorship
+
+Are you interested in a sponsorship? Check out our
+link:{{< relref "donate/index.adoc" >}}[donation options] and
+link:{{< relref "about/contact/index.adoc" >}}[contact us].
