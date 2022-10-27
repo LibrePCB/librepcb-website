@@ -4,8 +4,8 @@ import sys
 from PIL import Image, ImageDraw
 
 
-BAR_HEIGHT = 2
-BAR_COLOR = (255, 0, 0)
+BAR_HEIGHT = 1
+BAR_COLOR = (50, 50, 50)
 FADE_LENGTH = 0.05
 
 
@@ -33,8 +33,12 @@ if __name__ == '__main__':
         draw = ImageDraw.Draw(bar)
         for x in range(0, im.size[0]):
             fade_pos = (x - bar_length - (fade_length / 2)) / fade_length
+            alpha = max(0, min(255, int(255 * (1 - fade_pos))))
+            alpha = (alpha // 10) * 10  # Reduce number of colors ;-)
+            if alpha >= 250:
+                alpha = 255
             color = list(BAR_COLOR)
-            color.append(max(0, min(255, int(255 * (1 - fade_pos)))))
+            color.append(alpha)
             draw.line([(x, im.size[1] - BAR_HEIGHT), (x, im.size[1])],
                       tuple(color), 1, 'curve')
 
