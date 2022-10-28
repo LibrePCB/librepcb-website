@@ -1,0 +1,52 @@
+---
+title: "A Tool For Everyone"
+icon: "fa-solid fa-rocket"
+weight: 10
+aliases: /features  # Features landing page
+---
+
+There are many EDA tools out there, but most of the tools are only available
+for a very limited target audience -- e.g. due to high costs, restrictive
+license terms, or because they simply don't run on your computer.
+
+We think good EDA tools should be available for everyone. That's why
+*LibrePCB is open-source, comes with no costs, no restrictions, no limitations
+and is available for many different platforms and languages*.
+
+== icon:laptop[] Multi-Platform
+
+LibrePCB runs on virtually any operating system:
+*Windows, macOS, Linux, UNIX, BSD, Solaris, ...*
+
+And even on different CPU architectures:
+*Intel/AMD x86, ARM, Apple M1, ...*
+
+[NOTE]
+====
+We can provide official binaries only for the most common platforms. For
+other platforms, LibrePCB is available either from a corresponding package
+management system or needs to be compiled from sources.
+====
+
+== icon:globe[] Multilingual
+
+To make LibrePCB more useful for people around the world, it is available in
+https://www.transifex.com/librepcb/librepcb-application/languages/[{{< param "numberOfTranslations" >}} different languages].
+
+[NOTE]
+====
+The completeness of the translations differ between the languages.
+See link:{{< relref "contribute/index.adoc" >}}[here] how you can help
+improving the translations.
+====
+
+== icon:users[] From Beginners to Experts
+
+Getting started with professional EDA tools is usually very hard -- you need
+to invest a lot of time until you are able to work efficiently with it. On
+the other hand, EDA tools for beginners are easy to learn, but very limited
+in functionality.
+
+LibrePCB tries to close the gap between these two worlds -- basic tasks are
+very simple and intuitive, while still having more advanced features available.
+So you can get productive very quickly without later ending up in limitations.

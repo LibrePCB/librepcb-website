@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}{{ .Param "titleSuffix" }}</title>
+    <meta name=description content="{{ .Param "siteDescription" | safeHTMLAttr }}">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://librepcb.org/img/open-graph-banner.jpg" />
+    <meta name="twitter:title" content="LibrePCB" />
+    <meta name="twitter:description" content="{{ .Param "siteDescription" | safeHTMLAttr }}" />
+    <meta property="twitter:domain" content="librepcb.org">
+    <meta property="og:title" content="LibrePCB" />
+    <meta property="og:description" content="{{ .Param "siteDescription" | safeHTMLAttr }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://librepcb.org/" />
+    <meta property="og:image" content="https://librepcb.org/img/open-graph-banner.jpg" />
+    <meta itemprop="name" content="LibrePCB">
+    <meta itemprop="description" content="{{ .Param "siteDescription" | safeHTMLAttr }}">
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "LibrePCB",
+          "url": "https://librepcb.org",
+          "sameAs": [
+            "https://twitter.com/librepcb",
+            "https://github.com/LibrePCB",
+            "https://www.patreon.com/librepcb"
+          ]
+        }
+      ]
+    </script>
+    <link href="{{ (resources.Get "bootstrap/bootstrap.css" | minify).RelPermalink }}"
+          rel="stylesheet">
+    <link href="{{ (resources.Get "fontawesome/fontawesome.css" | minify).RelPermalink }}"
+          rel="stylesheet">
+    <link href="{{ (resources.Get "fontawesome/brands.css" | minify).RelPermalink }}"
+          rel="stylesheet">
+    <link href="{{ (resources.Get "fontawesome/solid.css" | minify).RelPermalink }}"
+          rel="stylesheet">
+    <link href="{{ (resources.Get "style.css" | minify).RelPermalink }}"
+          rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script defer src="{{ (resources.Get "bootstrap/bootstrap.bundle.js" | minify).RelPermalink }}"></script>
+    <script defer src="{{ (resources.Get "scripts.js" | minify).RelPermalink }}"></script>
+    {{ block "head" . }}{{ end }}
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark{{ if eq $.RelPermalink "/" }} navbar-home{{ end }}"
+           aria-label="Navigation bar">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1" href="/">
+            <img src="/img/librepcb-monochrome.svg" alt=""
+                 width="30" height="30"/>
+          </a>
+          <a class="navbar-brand" href="/">LibrePCB</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbar-content"
+                  aria-controls="navbar-content" aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+{{ range .Site.Home.Pages }}
+              <li class="nav-item">
+                <a class="nav-link{{if or (eq $ .) (.IsAncestor $)}} active{{end}}"
+{{ if .RelPermalink }}
+                   href="{{ .RelPermalink }}">
+{{ else }}
+                   href="{{ (index .Pages 0).RelPermalink }}">
+{{ end }}
+                  {{ .LinkTitle }}
+                </a>
+{{ if (and .Pages (not (.Param "noNav"))) }}
+                <ul class="dropdown-menu dropdown-menu-dark">
+{{ range .Pages }}
+                  <li>
+                    <a class="dropdown-item{{ if eq . $ }} active{{ end}}"
+                       href="{{ .RelPermalink }}">
+                      {{ .LinkTitle }}
+                    </a>
+                  </li>
+{{ end }}
+                </ul>
+{{ end }}
+              </li>
+{{ end }}
+            </ul>
+            <ul class="navbar-nav mb-2 mb-md-0">
+              <li class="nav-item text-nowrap">
+                <a href="https://fab.librepcb.org" title="LibrePCB Fab"
+                   class="nav-link">
+                  <i class="fa-solid fa-industry fa-xl d-lg-none me-1"></i>
+                  <span class="d-lg-none">LibrePCB</span> Fab
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-flex py-1">
+                <div class="vr h-100 mx-2 text-white"></div>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/LibrePCB/LibrePCB" title="GitHub"
+                   class="nav-link icon icon-github">
+                  <i class="fa-brands fa-github fa-xl"></i>
+                  <span class="d-lg-none ms-1">GitHub</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.patreon.com/librepcb" title="Patreon"
+                   class="nav-link icon icon-patreon">
+                  <i class="fa-brands fa-patreon fa-xl"></i>
+                  <span class="d-lg-none ms-1">Patreon</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/librepcb" title="Twitter"
+                    class="nav-link icon icon-twitter">
+                  <i class="fa-brands fa-twitter fa-xl"></i>
+                  <span class="d-lg-none ms-1">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+{{ block "body" . }}
+    <div class="body-container bg-white">
+{{ if not (.Param "noDonateBanner") }}
+      <div class="alert alert-warning d-flex flex-wrap flex-sm-nowrap p-2 m-0 justify-content-center align-items-center shadow-sm">
+        <div class="donate-banner me-auto pe-sm-2">
+          The lead developer of LibrePCB
+          (<a href="https://github.com/ubruhin" title="GitHub Account"
+              class="position-relative" style="z-index: 10;">@ubruhin</a>)
+          started to work full-time on LibrePCB, spending a lot of his
+          savings. Please support him with a donation to fund the
+          long-term development. Thanks!
+        </div>
+        <div class="text-nowrap mt-2 mt-sm-0 {{ if eq .RelPermalink "/donate/" }} d-none d-md-block{{ end }}">
+          <a class="btn btn-danger btn-sm stretched-link{{ if eq .RelPermalink "/donate/" }} invisible{{ end }}"
+             href="{{ relref . "donate/index.adoc" }}" role="button">
+            <i class="fa-solid fa-heart"></i>
+            Donate
+          </a>
+        </div>
+      </div>
+{{ end }}
+      <div class="container-fluid mb-3">
+        <div class="row">
+          <div class="nav-container col-12 col-md-4 col-lg-3">
+{{ block "nav" . }}
+{{ if (and .Parent (or .Parent.Parent (eq .Kind "section")) (not (.Param "noNav"))) }}
+            <nav class="list-group mt-3">
+{{ range .FirstSection.Pages }}
+              <a class="list-group-item list-group-item-action list-group-item-light text-decoration-none{{ if eq . $ }} active{{ end}}"
+                 href="{{ .RelPermalink }}">
+                {{ .LinkTitle }}
+              </a>
+{{ end }}
+            </nav>
+{{ end }}
+{{ end }}
+          </div>
+          <main class="col-12 col-md-8 col-lg-9 mt-3">
+            <article class="main-container container mx-0 px-4">
+{{ block "main" . }}
+              <h1 class="mb-3">
+                {{ if .Param "icon" }}<i class="{{ .Param "icon" }}"></i>{{ end }}
+                {{ .Title }}
+              </h1>
+              <hr/>
+{{ if .Param "showToc" }}
+              <div id="toc">
+                {{ .TableOfContents }}
+              </div>
+              <hr/>
+{{ end }}
+              <div id="content">
+                {{ .Content }}
+              </div>
+{{ end }}
+            </article>
+          </main>
+        </div>
+      </div>
+    </div>
+{{ end }}
+
+    <footer class="container-fluid p-3 d-flex align-items-center justify-content-center bg-light">
+      <div class="mx-3 text-muted">
+        <i class="fa-brands fa-creative-commons fa-2x my-1"></i>
+        <i class="fa-brands fa-creative-commons-by fa-2x my-1"></i>
+      </div>
+      <div class="text-center fst-italic small">
+        Unless otherwise stated, text and images on this site are licensed
+        under the
+        <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</a>
+        or later.
+        <br>
+        This does not include any source code, libraries, documentation,
+        and third party tools or products mentioned on this site.
+      </div>
+    </footer>
+  </body>
+</html>

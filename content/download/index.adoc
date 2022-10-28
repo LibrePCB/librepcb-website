@@ -1,0 +1,190 @@
+---
+title: "Download"
+type: download
+icon: "fa-solid fa-download"
+weight: 60
+---
+
+:version: {{< param latestVersion >}}
+:releases-url: https://download.librepcb.org/releases/
+:base-url: {releases-url}{version}
+:windows-installer-url: {base-url}/librepcb-installer-{version}-windows-x86.exe
+:windows-zip-url: {base-url}/librepcb-{version}-windows-x86.zip
+:linux-installer-url: {base-url}/librepcb-installer-{version}-linux-x86_64.run
+:linux-appimage-url: {base-url}/librepcb-{version}-linux-x86_64.AppImage
+:linux-archive-url: {base-url}/librepcb-{version}-linux-x86_64.tar.gz
+:mac-installer-url: {base-url}/librepcb-installer-{version}-mac-x86_64.dmg
+:mac-bundle-url: {base-url}/librepcb-{version}-mac-x86_64.dmg
+:source-url: {base-url}/librepcb-{version}-source.zip
+
+[subs="attributes"]
+++++
+<p class="text-muted">Latest stable version: {version}</p>
+++++
+
+[TIP]
+====
+For help & more information, check out the
+https://librepcb.org/docs/installation/[*installation instructions*].
+====
+
+[.download-section.windows]
+== {{< icon "fa-brands fa-windows" >}} Windows
+
+_Requirements: Windows 7 or later._
+
+[subs="attributes"]
+++++
+<div class="d-flex flex-column flex-lg-row my-3">
+  <a class="btn btn-primary btn-download windows download-link me-2" role="button"
+     href="{windows-installer-url}" >
+    <i class="fa-solid fa-download"></i>
+    Download Installer for Windows
+  </a>
+  <span class="align-self-center">
+    <span class="d-none d-md-inline-block">Alternative:</span>
+    <a href="{windows-zip-url}" class="download-link">Portable ZIP</a>
+  </span>
+</div>
+++++
+
+[.download-section.macos]
+== {{< icon "fa-brands fa-apple" >}} MacOS
+
+_Requirements: MacOS 11 Big Sur or later (64-bit)._
+
+[subs="attributes"]
+++++
+<div class="d-flex flex-column flex-lg-row my-3">
+  <a class="btn btn-primary btn-download macos download-link me-2" role="button"
+     href="{mac-bundle-url}">
+    <i class="fa-solid fa-download"></i>
+    Download Bundle for MacOS
+  </a>
+  <span class="align-self-center">
+    <span class="d-none d-md-inline-block">Alternative:</span>
+    <a href="{mac-installer-url}" class="download-link">Installer</a>
+  </span>
+</div>
+++++
+
+[.download-section.linux]
+== {{< icon "fa-brands fa-linux" >}} Linux
+
+[NOTE]
+====
+LibrePCB is contained in several app stores / software centers, just search
+for "LibrePCB" to find and install it. If it doesn't exist, use one of the
+installation options below.
+====
+
+[subs="attributes"]
+++++
+<div class="d-flex flex-column flex-lg-row my-3">
+  <a class="btn btn-primary btn-download linux download-link me-2" role="button"
+     href="{linux-installer-url}">
+    <i class="fa-solid fa-download"></i>
+    Download Installer for Linux
+  </a>
+  <span class="align-self-center">
+    <span class="d-none d-md-inline-block">Portable alternatives:</span>
+    <a href="{linux-appimage-url}" class="download-link">AppImage</a>
+    | <a href="{linux-archive-url}" class="download-link">Archive</a>
+  </span>
+</div>
+++++
+
+_Important:
+https://librepcb.org/docs/installation/linux/[Set the executable flag]
+before starting the installer or AppImage!_
+
+App Stores::
+  Install the
+  https://snapcraft.io/librepcb[Snap Package from Snapcraft] or the
+  https://flathub.org/apps/details/org.librepcb.LibrePCB[Flatpak from Flathub].
+
+Arch Linux::
+  Install https://aur.archlinux.org/packages/librepcb/[librepcb]
+  (builds from source)
+  or https://aur.archlinux.org/packages/librepcb-appimage/[librepcb-appimage] (downloads binary) from the AUR.
+
+NixOS::
+  Install the
+  https://search.nixos.org/packages?from=0&size=50&sort=relevance&type=packages&query=librepcb[librepcb]
+  package.
+
+OpenPandora::
+  Install https://repo.openpandora.org/?page=detail&app=librepcb[librepcb]
+  from the OpenPandora Repository.
+
+[.download-section.bsd]
+== {{< icon "fa-brands fa-freebsd" >}} BSD
+
+FreeBSD::
+  Install the https://www.freshports.org/cad/librepcb/[librepcb] port.
+
+== {{< icon "fa-solid fa-code" >}} Source
+
+[subs="attributes"]
+++++
+<div class="d-flex flex-column flex-lg-row my-3">
+  <a class="btn btn-secondary me-2" role="button" href="{source-url}" >
+    <i class="fa-solid fa-download"></i>
+    Download Source
+  </a>
+  <span class="align-self-center">
+    <a href="https://github.com/LibrePCB/LibrePCB"><i class="fa-brands fa-github"></i> Repository</a>
+    | <a href="https://librepcb.org/docs/installation/build-from-sources/">Instructions</a>
+    | <a href="{{< relref "about/license/index.adoc" >}}">License</a>
+  </span>
+</div>
+++++
+
+== {{< icon "fa-solid fa-timeline" >}} Older Releases
+
+All current and previous releases are available at {releases-url}.
+
+// Modal dialog after download.
+++++
+<div class="modal fade" id="download-dialog" tabindex="-1"
+     aria-labelledby="download-dialog-label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="download-dialog-label">
+          Thank you for choosing LibrePCB!
+          <i class="fa-solid fa-rocket"></i>
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The download has started. Check out the
+          <a href="https://librepcb.org/docs/installation/" class="fw-bold">installation instructions</a>
+          for further information.
+        </p>
+        <div class="alert alert-info">
+          <b>Please consider making a donation</b> to support the
+          development of LibrePCB. This will help us a lot to make
+          LibrePCB even better. Thanks!
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-danger" role="button"
+           href="{{< relref "donate/index.adoc" >}}">
+          <i class="fa-solid fa-heart"></i>
+          Donate
+        </a>
+        <a class="btn btn-warning" role="button"
+           href="{{< relref "docs/index.md" >}}">
+          <i class="fa-solid fa-book"></i>
+          Documentation
+        </a>
+        <button type="button" class="btn btn-secondary"
+                data-bs-dismiss="modal">Not now</button>
+      </div>
+    </div>
+  </div>
+</div>
+++++

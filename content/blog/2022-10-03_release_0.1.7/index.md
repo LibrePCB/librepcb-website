@@ -31,8 +31,6 @@ For details, check out the
 Tip: Once you measured a distance, just press `Ctrl+C` to copy the
 measured distance into the clipboard for pasting it e.g. in a calculator.
 
-&nbsp;
-
 #### Powerful Print/PDF/Image Export ([#947](https://github.com/LibrePCB/LibrePCB/pull/947))
 
 There was already a PDF and SVG export for schematics and boards available --
@@ -55,8 +53,6 @@ feature-rich export dialog. The main improvements are:
 For the complete feature list including several screenshots, check out the
 [corresponding pull request](https://github.com/LibrePCB/LibrePCB/pull/947).
 
-&nbsp;
-
 #### EAGLE Library Import ([#936](https://github.com/LibrePCB/LibrePCB/pull/936))
 
 We all know that libraries are one of the reasons why we don't like switching
@@ -73,8 +69,6 @@ Please don't hesitate to
 [open an issue](https://github.com/LibrePCB/LibrePCB/issues/new/choose) if
 you experience an incompatibility.
 
-&nbsp;
-
 #### Improved, Configurable Keyboard Shortcuts ([#986](https://github.com/LibrePCB/LibrePCB/pull/986), [#987](https://github.com/LibrePCB/LibrePCB/pull/987), [#988](https://github.com/LibrePCB/LibrePCB/pull/988))
 
 Keyboard shortcuts were another weak point of LibrePCB which I have been asked
@@ -88,8 +82,6 @@ settings and to always have a quick reference available, LibrePCB is now
 able to generate a nice shortcut reference PDF on the fly:
 
 {{< imglink "Shurtcuts Reference" "keyboard_shortcuts_reference.png" "keyboard_shortcuts_reference.pdf" >}}
-
-&nbsp;
 
 #### Gerber X3 Pick&Place Export ([#1004](https://github.com/LibrePCB/LibrePCB/pull/1004))
 

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1 class="mb-3">
+  <i class="fa-solid fa-triangle-exclamation"></i>
+  Whoops, that page doesn&rsquo;t exist!
+</h1>
+<hr/>
+<div id="content">
+  If you think there should be a page on this URL, please
+  <a href="https://github.com/LibrePCB/librepcb-website/issues/new">open an issue</a>
+  or
+  <a href="{{ relref . "help/help/index.adoc" }}">contact us</a>.
+  Thanks!
+</div>
+{{ end }}

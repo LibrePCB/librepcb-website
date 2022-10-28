@@ -1,0 +1,4 @@
+{{- $user := .Get 0 -}}
+{{- $domain := .Get 1 -}}
+<span class="cloaked-mail" data-user="{{ range $index := seq (sub (len $user) 1) 0}}{{ substr $user $index 1}}{{ end }}"{{ with $domain }} data-domain="{{ range $index := seq (sub (len $domain) 1) 0}}{{ substr $domain $index 1}}{{ end }}"{{ end }}></span>
+{{- "" -}}

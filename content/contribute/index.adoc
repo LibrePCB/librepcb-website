@@ -1,0 +1,98 @@
+---
+title: "Contribute"
+icon: "fa-solid fa-users"
+weight: 90
+---
+
+LibrePCB is a community project and relies on contributions. See below for
+a list of ways to contribute. If you have any questions or need help, please
+don't hesitate to link:{{< relref "help/help/index.adoc" >}}[contact us].
+
+== icon:globe[] Translations
+
+An easy but still very valuable way to contribute is to help translating
+LibrePCB from English into other languages. Just join
+https://www.transifex.com/librepcb/librepcb-application/[our project on Transifex]
+and start translating fully autonomous. Your translations will then
+automatically be part of the next LibrePCB release.
+
+== icon:book[] Documentation
+
+Writing good documentation takes a lot of time. Therefore any support is
+very helpful. For writing documentation, you need basic skills with Git,
+GitHub and AsciiDoc (no worries -- everybody can learn these things). To
+edit the documentation, open pull requests on the
+https://github.com/LibrePCB/librepcb-doc[librepcb-doc] repository.
+For instructions, see
+https://github.com/LibrePCB/librepcb-doc/blob/master/CONTRIBUTING.md[`CONTRIBUTING.md`].
+
+== icon:message[] Feedback
+
+Your point of view as a LibrePCB user is very valuable for the developers.
+Did you find a bug? Is something unclear with the user interface or the
+documentation? Do you have an improvement idea? Either
+https://github.com/LibrePCB/LibrePCB/issues[open an issue] or
+https://librepcb.discourse.group/[start a discussion thread] to let us know!
+
+== icon:share-nodes[] Share
+
+Just spread the word about LibrePCB!
+
+* Put the _Made with LibrePCB_ logo on your PCB (available in the base library).
+* Order your PCBs with
+  link:{{< relref "features/fabrication-service/index.adoc" >}}[LibrePCB Fab]
+  to let manufacturers see our growing community.
+* Publish your projects online and mention LibrePCB (forums, social
+  networks, ...).
+* Recommend LibrePCB to your collegues & friends.
+
+== icon:money-bill[] Financially
+
+A financial contribution is a very simple yet effective way to support LibrePCB
+since it allows the developers to spend more time on it. Please see
+link:{{< relref "donate/index.adoc" >}}[here] for donation options.
+
+== icon:database[] Libraries
+
+Generally, adding parts to our official libraries would be a perfect
+way to contribute as well. But we belive it's very important to keep
+the quality, consistency and correctness of the libraries as high as
+possible. Therefore we want to apply strict guidelines and perform
+serious reviews.
+
+[IMPORTANT]
+====
+Unfortunately at this time we don't have enough resources to write detailed
+guidelines and to perform serious reviews (it's [.underline]#very# time
+consuming). Therefore it's difficult to contribute this way. Feel free to
+open pull requests https://github.com/LibrePCB-Libraries/[on our libraries]
+anyway, but please don't be afraid if it takes a long time to get any feedback.
+
+We are very sorry for this issue any try to find a solution which allows to
+ensure high-quality libraries while accepting contributions with low effort
+and low frustration.
+====
+
+== icon:code[] Code
+
+Contributing rather small fixes to our code base is possible as well, check out
+https://github.com/LibrePCB/LibrePCB/blob/master/CONTRIBUTING.md[`CONTRIBUTING.md`]
+in the repository for details.
+
+However, for any larger change please first talk to the lead developer.
+Working on such a large code base is difficult since many different aspects
+need to be considered (consistent UI concepts, translations, performance,
+memory management, undo stack, ...). The changes also need to follow the
+general strategy of the project. So please don't waste your time with
+implementing a feature which might never be merged -- ask the lead
+developer first about his opinion and recommendations.
+
+[TIP]
+====
+Please consider making a
+link:{{< relref "donate/index.adoc" >}}[financial contribution] instead.
+In our experience this is much more effective since it allows a few
+developers to work a long time (and thus more efficiently) on the project
+rather than many developers working a short time on it (which is very
+inefficient).
+====
