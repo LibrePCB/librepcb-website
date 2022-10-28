@@ -1,0 +1,58 @@
+---
+title: "Roadmap"
+icon: "fa-solid fa-timeline"
+weight: 20
+url: /roadmap
+---
+
+The time we can put into the LibrePCB development heavily varies on how
+much free time we have, since the income of LibrePCB is not sufficient
+for hiring a full-time developer. Therefore we can't commit for a
+concrete roadmap.
+
+== icon:list-check[] Milestones
+
+However, we do track issues we want to resolve in the next release with
+https://github.com/LibrePCB/LibrePCB/milestones[GitHub Milestones].
+But note that many new issues will be added while already working on
+a milestone, so the milestone issues are just an incomplete snapshot.
+
+== icon:arrows-spin[] Release Cycle
+
+A new release will be published when it's ready. But generally we try to
+release a new version twice, or at least once, a year.
+
+== icon:signs-post[] Long-Term Goals
+
+Of course we want to make LibrePCB a feature-rich EDA tool for long-term.
+This includes for example (in arbitrary order):
+
+* Hierarchical sheets
+* Schematic buses
+* Push&shove router
+* Length-matched traces
+* Advanced PCB features (e.g. blind/buried vias, arbitrary pad shapes, ...)
+* 3D board viewer
+* SPICE simulation
+* ...and many more!
+
+In addition, we have some innovative ideas we don't want to disclose yet ;-)
+
+[TIP]
+====
+Help us to speed up the development of these features with a
+link:{{< relref "donate/index.adoc" >}}[donation]!
+====
+
+== icon:ban[] Non-Goals
+
+There is not an explicit _feature_ we don't like to implement. But generally
+*we focus on stability, reliability, good concepts and a sane file format
+rather than on a huge amount of features*. So instead of implementing many
+cool but half-done & buggy features we prefer to implement only a few but
+carefully designed, reliable features.
+
+In addition, any new feature must comply with our belief of providing an
+application which works on virtually any platform. Therefore we don't
+implement features which rely on bleeding-edge technology not available
+on some computers one might want to run LibrePCB.

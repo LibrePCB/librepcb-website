@@ -1,0 +1,651 @@
+/* Top navigation bar */
+
+.navbar {
+    min-height: 3.5rem;
+}
+
+.navbar-home {
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.1) !important;
+}
+
+.navbar-home .nav-link {
+    color: rgb(223, 223, 223);
+}
+
+.navbar-home .nav-link:hover {
+    color: var(--bs-white);
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item:hover .dropdown-menu {
+        /* On breakpoint "lg", use hover menus */
+        display: block;
+    }
+}
+
+.navbar .dropdown-item.active {
+    color: #000000 !important;
+    background-color: #29d682 !important;
+    border-color: #29d682 !important;
+}
+
+.navbar .dropdown-item:active {
+    color: var(--bs-dropdown-link-hover-color) !important;
+    background-color: var(--bs-dropdown-link-hover-bg) !important;
+    border-color: var(--bs-dropdown-border-color) !important;
+}
+
+.navbar .icon:hover {
+    color: var(--bs-white);
+}
+
+.navbar .icon-github {
+    color: rgb(223, 223, 223);
+}
+
+.navbar .icon-patreon {
+    color: rgb(255, 66, 77);
+}
+
+.navbar .icon-twitter {
+    color: rgb(29, 155, 240);
+}
+
+/* Side navigation */
+
+.nav-container .list-group-item.list-group-item-action.active {
+    color: #000000;
+    background-color: #29d682;
+    border-color: #29d682;
+}
+
+@media (min-width: 768px) {
+    .nav-container nav {
+        /* On breakpoint "md", nav is at left and therefore should be sticky */
+        position: sticky;
+        top: 4.5rem;
+    }
+}
+
+/* Body content */
+
+.body-container {
+    min-height: calc(100vh - 3.5rem);
+}
+
+.body-container a {
+    text-decoration: none;
+}
+
+.body-container a:hover {
+    text-decoration: underline;
+}
+
+.body-container a[role=button]:hover {
+    text-decoration: none;
+}
+
+.body-container img,
+.body-container video {
+    max-width: 100%;
+}
+
+.main-container {
+    max-width: 850px;
+}
+
+.donate-banner {
+    font-size: 0.95em;
+}
+
+/* Intro (home page) */
+
+.intro {
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 99999;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.intro-header {
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .intro-header {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro-header {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-header {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro-header {
+        font-size: 0.35rem;
+    }
+}
+
+.intro-logo {
+    width: auto;
+    height: 13em;
+    object-fit: contain;
+}
+
+.intro-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 10em;
+    font-weight: bold;
+    color: rgb(255, 252, 244);
+    line-height: 1.0;
+}
+
+.intro-subtitle {
+    font-family: 'Arial', sans-serif;
+    font-size: 3.1em;
+    color: rgb(255, 252, 244);
+}
+
+.intro-description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.0em;
+    color: rgb(255, 252, 244);
+    background-color: rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+    .intro-description {
+        font-size: 1.2em;
+    }
+}
+
+.intro-features {
+    padding: 30px 0 30px 0;
+    background-color: rgb(255, 252, 244);
+}
+
+@media (min-width: 576px) {
+    .intro-features .row {
+        min-height: 130px;
+    }
+}
+
+.intro-feature-description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+div.intro-screenshot {
+    padding: 20px 0 20px 0;
+    background: rgb(41, 214, 130);
+    color: #ffffff;
+}
+
+div.intro-screenshot-odd {
+    background: rgb(88, 88, 88);
+}
+
+.intro-sponsors {
+    padding: 20px 0 40px 0;
+    background: rgb(88, 88, 88);
+    color: #ffffff;
+}
+
+.intro-screenshot h1,
+.intro-sponsors h1 {
+    font-size: 32pt;
+    line-height: 1.7;
+}
+
+img.intro-screenshot {
+    /* Enough radius to remove the background from screenshot edges */
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+    /* Enough radius to remove the background from screenshot edges */
+    border: 1px solid #a0a0a0;
+}
+
+/* AsciiDoc */
+
+.body-container .underline {
+    text-decoration: underline;
+}
+
+.body-container .rounded img {
+    border-radius: var(--bs-border-radius-lg) !important;
+}
+
+.body-container .right {
+    float: right;
+}
+
+.body-container .left {
+    float: left;
+}
+
+.body-container .float-gap.right {
+    margin: 0 1rem 1rem 0;
+}
+
+.body-container .float-gap.left {
+    margin: 0 0 1rem 1rem;
+}
+
+.body-container .paragraph,
+.body-container .dlist,
+.body-container .hdlist,
+.body-container .olist,
+.body-container .ulist,
+.body-container .exampleblock,
+.body-container .imageblock,
+.body-container .listingblock,
+.body-container .literalblock,
+.body-container .sidebarblock,
+.body-container .verseblock,
+.body-container .videoblock,
+.body-container .quoteblock,
+.body-container .partintro,
+.body-container details,
+.body-container hr {
+    margin-bottom: 1rem;
+}
+
+.body-container .dlist .dlist,
+.body-container .dlist .olist,
+.body-container .dlist .ulist,
+.body-container .olist .dlist,
+.body-container .olist .olist,
+.body-container .olist .ulist,
+.body-container .ulist .dlist,
+.body-container .ulist .olist,
+.body-container .ulist .ulist {
+    margin-top: 0;
+}
+
+.body-container .olist li+li,
+.body-container .ulist li+li {
+    margin-top: 0;
+}
+
+.body-container .ulist .listingblock,
+.body-container .olist .listingblock,
+.body-container .admonitionblock .listingblock {
+    padding: 0;
+}
+
+.body-container .dlist p,
+.body-container .olist p,
+.body-container .ulist p,
+.body-container table p {
+    margin: 0;
+}
+
+.body-container .dlist dt {
+    font-style: italic;
+}
+
+.body-container .dlist dd {
+    margin: 0 0 0.25rem 1.5rem;
+}
+
+.body-container .dlist dd:last-of-type {
+    margin-bottom: 0;
+}
+
+.body-container td.hdlist1,
+.body-container td.hdlist2 {
+    padding: 0.5rem 0 0;
+    vertical-align: top;
+}
+
+.body-container tr:first-child>.hdlist1,
+.body-container tr:first-child>.hdlist2 {
+    padding-top: 0;
+}
+
+.body-container td.hdlist1 {
+    font-weight: var(--body-font-weight-bold);
+    padding-right: 0.25rem;
+}
+
+.body-container td.hdlist2 {
+    padding-left: 0.25rem;
+}
+
+.body-container table.tableblock {
+    font-size: calc(15 / var(--rem-base) * 1rem);
+    margin: 1.5rem 0 0;
+}
+
+.body-container table.tableblock+* {
+    margin-top: 1.5rem;
+}
+
+.body-container p.tableblock+p.tableblock {
+    margin-top: 0.5rem;
+}
+
+.body-container td.tableblock>.content> :first-child {
+    margin-top: 0;
+}
+
+.body-container table.tableblock th,
+.body-container table.tableblock td {
+    padding: 0.5rem;
+}
+
+.body-container table.tableblock,
+.body-container table.tableblock>*>tr>* {
+    border: 0 solid var(--table-border-color);
+}
+
+.body-container table.grid-all>*>tr>* {
+    border-width: 1px;
+}
+
+.body-container table.grid-cols>*>tr>* {
+    border-width: 0 1px;
+}
+
+.body-container table.grid-rows>*>tr>* {
+    border-width: 1px 0;
+}
+
+.body-container table.grid-all>thead th,
+.body-container table.grid-rows>thead th {
+    border-bottom-width: 2.5px;
+}
+
+.body-container table.frame-all {
+    border-width: 1px;
+}
+
+.body-container table.frame-ends {
+    border-width: 1px 0;
+}
+
+.body-container table.frame-sides {
+    border-width: 0 1px;
+}
+
+.body-container table.frame-none>colgroup+*> :first-child>*,
+.body-container table.frame-sides>colgroup+*> :first-child>* {
+    border-top-width: 0;
+}
+
+/* NOTE let the grid win in case of frame-none */
+.body-container table.frame-sides> :last-child> :last-child>* {
+    border-bottom-width: 0;
+}
+
+.body-container table.frame-none>*>tr> :first-child,
+.body-container table.frame-ends>*>tr> :first-child {
+    border-left-width: 0;
+}
+
+.body-container table.frame-none>*>tr> :last-child,
+.body-container table.frame-ends>*>tr> :last-child {
+    border-right-width: 0;
+}
+
+.body-container table.stripes-all>tbody>tr,
+.body-container table.stripes-odd>tbody>tr:nth-of-type(odd),
+.body-container table.stripes-even>tbody>tr:nth-of-type(even),
+.body-container table.stripes-hover>tbody>tr:hover {
+    background: var(--table-stripe-background);
+}
+
+.body-container table.tableblock>tfoot {
+    background: var(--table-footer-background);
+}
+
+.body-container .halign-left {
+    text-align: left;
+}
+
+.body-container .halign-right {
+    text-align: right;
+}
+
+.body-container .halign-center {
+    text-align: center;
+}
+
+.body-container .valign-top {
+    vertical-align: top;
+}
+
+.body-container .valign-bottom {
+    vertical-align: bottom;
+}
+
+.body-container .valign-middle {
+    vertical-align: middle;
+}
+
+.admonitionblock {
+    position: relative;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+}
+
+.admonitionblock>table {
+    border-collapse: separate;
+    border: 0;
+    background: none;
+    width: 100%;
+}
+
+.admonitionblock>table td.icon {
+    text-align: center;
+    width: auto;
+}
+
+.admonitionblock>table td.icon img {
+    max-width: none;
+}
+
+.admonitionblock>table td.content {
+    padding-left: 1rem;
+    word-wrap: anywhere;
+}
+
+.admonitionblock>table td.content> :last-child {
+    margin-bottom: 0;
+}
+
+.admonitionblock>table td.content> :last-child> :last-child {
+    margin-bottom: 0;
+}
+
+.admonitionblock.note {
+    color: #4e545e;
+    background: #e7e7e9;
+    border-color: #bcbebf;
+}
+
+.admonitionblock.tip {
+    color: #055160;
+    background: #cff4fc;
+    border-color: #b6effb;
+}
+
+.admonitionblock.warning {
+    color: #664d03;
+    background: #fff3cd;
+    border-color: #ffecb5;
+}
+
+.admonitionblock.caution {
+    color: #842029;
+    background: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.admonitionblock.important {
+    color: #842029;
+    background: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.admonitionblock td.icon [class^="fa icon-"] {
+    font-size: 2em;
+    cursor: default;
+}
+
+.admonitionblock td.icon .icon-note::before {
+    content: "\f05a";
+}
+
+.admonitionblock td.icon .icon-tip::before {
+    content: "\f0eb";
+}
+
+.admonitionblock td.icon .icon-warning::before {
+    content: "\f071";
+}
+
+.admonitionblock td.icon .icon-caution::before {
+    content: "\f06d";
+}
+
+.admonitionblock td.icon .icon-important::before {
+    content: "\f06a";
+}
+
+.body-container .imageblock.rounded-window img,
+.body-container .videoblock.rounded-window video {
+    /* Enough radius to remove the background from screenshot edges */
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+.body-container .imageblock.window-border img,
+.body-container .videoblock.window-border video {
+    /* Enough radius to remove the background from screenshot edges */
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.body-container .imageblock,
+.body-container .videoblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-container .imageblock.text-left,
+.body-container .videoblock.text-left {
+    align-items: flex-start;
+}
+
+.body-container .imageblock.text-right,
+.body-container .videoblock.text-right {
+    align-items: flex-end;
+}
+
+.body-container .imageblock img,
+.body-container .imageblock object,
+.body-container .imageblock svg,
+.body-container .image>img,
+.body-container .image>object,
+.body-container .image>svg {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.body-container .image:not(.left):not(.right)>img {
+    margin-top: -0.2em;
+}
+
+.body-container .videoblock iframe {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* Open Collective logo from https://css.gg/open-collective (license: MIT) */
+
+.gg-open-collective,
+.gg-open-collective::before {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 22px;
+}
+
+.gg-open-collective {
+    position: relative;
+    transform: scale(1.7);
+    width: 18px;
+    height: 18px;
+    border: 3px solid;
+    border-right-color: transparent;
+    margin-right: 0.5rem;
+    margin-left: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+
+.gg-open-collective::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 3px solid transparent;
+    border-right: 3px solid;
+    top: -1px;
+    right: -3px;
+    opacity: .5;
+}
+
+/* Fix offset of anchors due to top navbar */
+
+.anchor::before {
+    content: '';
+    display: block;
+    height: 4.5rem;
+    margin-top: -4.5rem;
+    visibility: hidden;
+}
+
+.hidden-anchor:target {
+    display: block;
+    position: relative;
+    top: -4.5rem;
+    visibility: hidden;
+}
+
+/* Cloaked spans */
+span.cloaked-text:before {
+    content: attr(data-text);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+span.cloaked-mail:before {
+    content: attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}

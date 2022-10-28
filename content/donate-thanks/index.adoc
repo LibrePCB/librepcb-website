@@ -1,0 +1,12 @@
+---
+title: "Thank you!"
+icon: "fa-solid fa-heart"
+url: /donate/thanks
+noDonateBanner: true
+_build:
+  list: never
+---
+
+Thank you very much for supporting us to create better PCB design software for
+everyone! Your donation helps to keep the development ongoing, making LibrePCB
+more and more powerful icon:rocket[]

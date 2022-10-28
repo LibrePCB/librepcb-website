@@ -1,0 +1,72 @@
+---
+title: "Donate"
+icon: "fa-solid fa-heart"
+weight: 80
+---
+
+If you like LibrePCB, please consider supporting the ongoing development
+with a donation. Our goal is to transform LibrePCB from a hobby project into a
+professional full-time job to heavily boost the development speed. With your
+help, LibrePCB can become much more powerful. *Thank you very much!*
+
+.icon:industry[] *LibrePCB Fab*
+[TIP]
+====
+If you need to order a PCB designed with LibrePCB, you can support the project
+by simply using
+link:{{< relref "features/fabrication-service/index.adoc" >}}[the integrated fabrication service].
+Just click on the
+https://librepcb.org/docs/quickstart/create-project/order/#librepcb-fab[*_Order PCB_*]
+toolbutton to get started. After the order is placed, our fabrication
+service partner will automatically make a small donation to
+LibrePCB!{nbsp}icon:rocket[]
+
+_However, since this is only a small donation, we'd still be very happy about
+a dedicated donation{nbsp};-)_
+====
+
+== {{< icon "fa-brands fa-patreon" >}} Patreon
+
+https://www.patreon.com/librepcb[Patreon] is a platform to make recurring
+donations to your favorite projects. It supports credit/debit cards and PayPal
+for paying.
+
+image::patreon.png[Become a Patron,link="https://www.patreon.com/bePatron?u=5128815"]
+
+== {{< icon "fa-brands fa-paypal" >}} PayPal
+
+As an alternative to Patreon, you can also
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8DQ5P4TS992Q4&source=url[donate with PayPal]
+directly.
+
+image::paypal.gif[Donate with PayPal,link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8DQ5P4TS992Q4&source=url"]
+
+== {{< icon "fa-brands fa-github" >}} GitHub Sponsors
+
+If you have a https://github.com[GitHub] account, you can
+https://github.com/sponsors/ubruhin[become a sponsor] of the founder and
+lead developer of LibrePCB. See https://github.com/sponsors[GitHub Sponsors]
+for more information.
+
+image::github.png[Become a Sponsor,link="https://github.com/sponsors/ubruhin"]
+
+== {{< icon "gg-open-collective" >}} Open Collective
+
+https://opencollective.com/librepcb[Open Collective] is a great way to
+donate -- not only for individuals, but also for corporates. Since it acts
+as a corporate payment receiver, it allows to donate even if payments to
+individuals are not possible for legal reasons.
+
+image::open-collective.png[Donate with Open Collective,link="https://opencollective.com/librepcb"]
+
+== {{< icon "fa-brands fa-bitcoin" >}} Bitcoin
+
+We also accept Bitcoins at the address
+link:bitcoin:1FiXZxoXe3px1nNuNygRb1NwcYr6U8AvG8[1FiXZxoXe3px1nNuNygRb1NwcYr6U8AvG8]:
+
+image::bitcoin-qrcode.png[QR Code, link=bitcoin:1FiXZxoXe3px1nNuNygRb1NwcYr6U8AvG8]
+
+== {{< icon "fa-solid fa-angle-right" >}} Other Options
+
+For other donation options, please
+link:{{< relref "about/contact/index.adoc" >}}[contact us].
