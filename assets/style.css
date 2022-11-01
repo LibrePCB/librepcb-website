@@ -1,7 +1,13 @@
+/* Variables */
+
+:root {
+    --min-header-height: 3.8rem;
+}
+
 /* Top navigation bar */
 
 .navbar {
-    min-height: 3.5rem;
+    min-height: var(--min-header-height);
 }
 
 .navbar-home {
@@ -63,14 +69,14 @@
     .nav-container nav {
         /* On breakpoint "md", nav is at left and therefore should be sticky */
         position: sticky;
-        top: 4.5rem;
+        top: calc(0.8rem + var(--min-header-height));
     }
 }
 
 /* Body content */
 
 .body-container {
-    min-height: calc(100vh - 3.5rem);
+    min-height: calc(100vh - var(--min-header-height));
 }
 
 .body-container a {
@@ -625,15 +631,15 @@ img.intro-screenshot {
 .anchor::before {
     content: '';
     display: block;
-    height: 4.5rem;
-    margin-top: -4.5rem;
+    height: calc(1rem + var(--min-header-height));
+    margin-top: calc(-1rem - var(--min-header-height));
     visibility: hidden;
 }
 
 .hidden-anchor:target {
     display: block;
     position: relative;
-    top: -4.5rem;
+    top: calc(-1rem - var(--min-header-height));
     visibility: hidden;
 }
 
