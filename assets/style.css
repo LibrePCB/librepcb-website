@@ -4,6 +4,48 @@
     --min-header-height: 3.6rem;
 }
 
+/* Scrollbar (for consistency with /docs/) */
+
+@media (pointer:fine) {
+    @supports (scrollbar-width:thin) {
+        html {
+            scrollbar-color: #c1c1c1 #fafafa
+        }
+
+        body * {
+            scrollbar-width: thin;
+            scrollbar-color: #c1c1c1 transparent
+        }
+    }
+
+    html::-webkit-scrollbar {
+        background-color: #fafafa;
+        height: 12px;
+        width: 12px
+    }
+
+    body ::-webkit-scrollbar {
+        height: 6px;
+        width: 6px
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-clip: padding-box;
+        background-color: #c1c1c1;
+        border: 3px solid transparent;
+        border-radius: 12px
+    }
+
+    body ::-webkit-scrollbar-thumb {
+        border-width: 1.75px;
+        border-radius: 6px
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #9c9c9c
+    }
+}
+
 /* Top navigation bar */
 
 .navbar {
