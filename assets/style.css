@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-    --min-header-height: 3.8rem;
+    --min-header-height: 3.6rem;
 }
 
 /* Top navigation bar */
@@ -69,7 +69,7 @@
     .nav-container nav {
         /* On breakpoint "md", nav is at left and therefore should be sticky */
         position: sticky;
-        top: calc(0.8rem + var(--min-header-height));
+        top: calc(0.9rem + var(--min-header-height));
     }
 }
 
