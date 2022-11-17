@@ -20,6 +20,11 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   manufacturing company from China which provides advanced PCB technologies.
   They operate our fabrication service and contribute financially.
 
+| image:/img/sponsor-hdrain.png[width={img-width},link="https://www.hd-rain.com/"]
+| https://www.hd-rain.com/[HD Rain] from France develops satellite
+  based meteorological sensors to provide high-accuracy real-time weather
+  data and forecasts. They sponsor the LibrePCB project financially.
+
 | image:/img/sponsor-cloudscale.png[width={img-width},link="https://cloudscale.ch"]
 | https://cloudscale.ch[cloudscale.ch] is a highly flexible, easy-to-use
   cloud server provider from Switzerland. They sponsor the virtual servers
