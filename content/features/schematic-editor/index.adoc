@@ -16,7 +16,7 @@ The schematic editor provides the following features:
 
 == icon:search[] Fast, Global Part Search
 
-The part search function let's you find parts in all installed libraries very
+The part search function lets you find parts in all installed libraries very
 quickly:
 
 [.rounded-window.window-border]
