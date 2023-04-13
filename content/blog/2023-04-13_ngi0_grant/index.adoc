@@ -1,0 +1,21 @@
+---
+date: 2023-04-13
+title: LibrePCB Receives NGI0 Grant
+author: U. Bruhin
+---
+
+I am very happy to announce that the LibrePCB project receives support
+from the https://nlnet.nl/entrust/[NGI0 Entrust] Fund, a fund established
+by https://nlnet.nl[NLnet] with financial support from the European
+Commission's https://ngi.eu[Next Generation Internet] programme.
+
+[.text-center]
+{{< imglink "NGI0 Entrust" "ngi0-entrust.png" "https://nlnet.nl/project/LibrePCB/" >}}
+
+This helps us to ensure the development of important features planned for the
+upcoming releases. Especially the next major release will extend LibrePCB with
+many new capabilities. Some of them have already been implemented, but there
+is still a lot of work to be done. I'll write a blog post about the status
+and goals of the next release soon.
+
+Stay tuned!
