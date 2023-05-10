@@ -1,0 +1,113 @@
+---
+date: 2023-05-15
+title: LibrePCB 1.0 Roadmap
+author: U. Bruhin
+---
+
+As mentioned in the
+link:{{< relref "blog/2023-04-13_ngi0_grant/index.adoc" >}}[previous blog post],
+I'll give you a short update about the status of the upcoming release which
+is currently in development.
+
+Time for 1.0!
+-------------
+
+Actually the plan was that the next release after LibrePCB 0.1.7 will have
+the version number 0.2. But thanks to the
+link:{{< relref "blog/2023-04-13_ngi0_grant/index.adoc" >}}[NGI0 grant] I'm
+now able to spend much more time for LibrePCB, allowing to include more
+features in the next release than initially planned.
+
+While the current lack of important features like slotted pads still represent
+a show-stopper for LibrePCB in various projects, I'm convinced that the
+features now planned for the next release will make LibrePCB usable for
+much more PCB projects out there. I think this big step should be
+represented by the version number so it will be bumped to 1.0.
+
+File Format
+-----------
+
+As the major version bump indicates, the next release introduces a new file
+format revision for libraries and projects since various extensions are
+needed for the new features. But no worries, the libraries and projects
+created with LibrePCB 0.1.x will automatically and smoothly be upgraded to
+the new file format. More information on this topic will be provided in the
+release notes.
+
+Implemented Features
+--------------------
+
+Beside
+https://github.com/LibrePCB/LibrePCB/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.0.0[many small improvements],
+the following major features have been implemented within the last few months
+and will be contained in the next release for sure:
+
+- Thermal relief pads in planes
+  (https://github.com/LibrePCB/LibrePCB/pull/1160[#1160])
+- Plated and non-plated slots
+  (https://github.com/LibrePCB/LibrePCB/pull/1071[#1071],
+  https://github.com/LibrePCB/LibrePCB/pull/1076[#1076])
+- Rounded and custom footprint pad shapes
+  (https://github.com/LibrePCB/LibrePCB/pull/1102[#1102],
+  https://github.com/LibrePCB/LibrePCB/pull/1103[#1103])
+- Configurable automatic stop mask and solder paste on pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1137[#1137])
+- Fiducials and other pad types
+  (https://github.com/LibrePCB/LibrePCB/pull/1142[#1142],
+  https://github.com/LibrePCB/LibrePCB/pull/1143[#1143])
+- Automatic, minimal THT pad annular rings
+  (https://github.com/LibrePCB/LibrePCB/pull/1097[#1097])
+- Locking placement of board items
+  (https://github.com/LibrePCB/LibrePCB/pull/1144[#1144])
+- Adding text labels & polygons to schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/806[#806],
+  https://github.com/LibrePCB/LibrePCB/pull/810[#810])
+- Movable name/value labels in schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/1085[#1085])
+- Custom placement of symbol pin text label
+  (https://github.com/LibrePCB/LibrePCB/pull/971[#971])
+- Optionally show pin numbers in schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/1149[#1149])
+- IPC D-356A netlist export
+  (https://github.com/LibrePCB/LibrePCB/pull/1081[#1081])
+- Fully configurable colors
+  (https://github.com/LibrePCB/LibrePCB/pull/1086[#1086])
+
+Highlight: 3D Viewer & STEP Export (https://github.com/LibrePCB/LibrePCB/pull/1156[#1156])
+------------------------------------------------------------------------------------------
+
+At least visually the coolest feature is the 3D board viewer!
+{{< icon "fa-solid fa-rocket" >}} Packages can be extended with STEP models
+which will be visualized in the 3D viewer. In addition, the whole board can
+be exported as a STEP model for importing the PCB into a mechanical 3D CAD.
+
+[.imageblock.rounded-window.window-border]
+{{< imglink "3D Viewer" "board-editor-3d.gif" >}}
+
+Planned Features
+----------------
+
+There are still https://github.com/LibrePCB/LibrePCB/milestone/2[many issues]
+planned to be resolved in the next release, including the following major
+features:
+
+- Keepout zones
+- Blind/buried vias
+- MPN management & assembly variants
+- Unified production data files generator
+
+At least that's the plan for now, but as always plans might be adjusted if
+priorities change or unexpected issues occur 😉
+
+Due to the large amount of work still to be done, it's hard to estimate
+when the release will be ready. Probably you shouldn't expect it before
+August this year. I hope you are as much excited about it as I am 😀
+
+Anything Missing?
+-----------------
+
+Do you think there is something very important missing from the list of
+planned features? Please link:{{< relref "/help/help/index.adoc" >}}[let us know]!
+However, note that complex features like hierarchical sheets or schematic buses
+are not planned yet by intention since these would heavily delay the next
+release.
