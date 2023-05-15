@@ -12,17 +12,18 @@ is currently in development.
 Time for 1.0!
 -------------
 
-Actually the plan was that the next release after LibrePCB 0.1.7 will have
+The original plan was that the next release after LibrePCB 0.1.7 will have
 the version number 0.2. But thanks to the
 link:{{< relref "blog/2023-04-13_ngi0_grant/index.adoc" >}}[NGI0 grant] I'm
 now able to spend much more time for LibrePCB, allowing to include more
 features in the next release than initially planned.
 
-While the current lack of important features like slotted pads still represent
-a show-stopper for LibrePCB in various projects, I'm convinced that the
-features now planned for the next release will make LibrePCB usable for
-much more PCB projects out there. I think this big step should be
-represented by the version number so it will be bumped to 1.0.
+While the lack of important features in version 0.1 – like slotted pads or
+thermal reliefs – still represent a show-stopper for LibrePCB in various
+projects, I'm convinced that the features now planned for the next release
+will make LibrePCB usable for much more PCB projects out there. I think this
+big step should be represented by the version number so it will be bumped
+to 1.0.
 
 File Format
 -----------
@@ -76,7 +77,7 @@ and will be contained in the next release for sure:
 Highlight: 3D Viewer & STEP Export (https://github.com/LibrePCB/LibrePCB/pull/1156[#1156])
 ------------------------------------------------------------------------------------------
 
-At least visually the coolest feature is the 3D board viewer!
+At least visually, the coolest new feature is the 3D board viewer!
 {{< icon "fa-solid fa-rocket" >}} Packages can be extended with STEP models
 which will be visualized in the 3D viewer. In addition, the whole board can
 be exported as a STEP model for importing the PCB into a mechanical 3D CAD.
