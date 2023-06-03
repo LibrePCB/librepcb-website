@@ -55,7 +55,7 @@ link:{{< relref "donate/index.adoc" >}}[here] for donation options.
 == icon:database[] Libraries
 
 Generally, adding parts to our official libraries would be a perfect
-way to contribute as well. But we belive it's very important to keep
+way to contribute as well. But we believe it's very important to keep
 the quality, consistency and correctness of the libraries as high as
 possible. Therefore we want to apply strict guidelines and perform
 serious reviews.
