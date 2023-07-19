@@ -33,6 +33,20 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   based meteorological sensors to provide high-accuracy real-time weather
   data and forecasts. They sponsor the LibrePCB project financially.
 
+| icon:users[2x]
+| And many more commercial or individual sponsors contribute financially
+  through https://www.patreon.com/librepcb[Patreon],
+  https://github.com/sponsors/ubruhin[GitHub Sponsors], PayPal or other ways!
+|===
+
+
+== icon:gears[] In-Kind Sponsors
+
+The LibrePCB project thankfully relies on the following sponsored services
+to operate:
+
+[cols="^.^1,.^4"]
+|===
 | image:/img/sponsor-cloudscale.png[link="https://cloudscale.ch"]
 | https://cloudscale.ch[cloudscale.ch] is a highly flexible, easy-to-use
   cloud server provider from Switzerland. They sponsor the virtual servers
@@ -42,19 +56,10 @@ Many thanks to our sponsors for supporting the LibrePCB project:
 | https://www.transifex.com/librepcb/[Transifex] sponsors the translation
   service thanks to their
   https://help.transifex.com/en/articles/6236788-open-source-projects[open-source program].
-
-| image:/img/patreon.png[link="https://www.patreon.com/librepcb"]
-| Individual patrons on https://www.patreon.com/librepcb[Patreon]
-  contribute financially.
-
-| image:/img/github.png[link="https://github.com/sponsors/ubruhin"]
-| Individual sponsors on https://github.com/sponsors/ubruhin[GitHub Sponsors]
-  contribute financially.
-
-| icon:users[2x]
-| And many more commercial or individual sponsors contribute financially
-  through PayPal or other ways!
 |===
+
+// Workaround for too small vertical space.
+{empty}
 
 == icon:hand-point-right[] Your Sponsorship
 
