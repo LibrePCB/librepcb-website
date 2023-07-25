@@ -28,10 +28,17 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   manufacturing company from China which provides advanced PCB technologies.
   They operate our fabrication service and contribute financially.
 
+| image:/img/sponsor-pcbgogo.png[link="https://www.pcbgogo.com/promo/librepcb"]
+| https://www.pcbgogo.com/promo/librepcb[PCBgogo] is a quick-turn prototype
+  PCB manufacturing and assembly service from China.
+  They offer a
+  https://www.pcbgogo.com/promo/librepcb01[$25 PCB for just $1 with free shipping]
+  on your first order. PCBgogo supports the LibrePCB project financially.
+
 | image:/img/sponsor-hdrain.png[link="https://www.hd-rain.com/"]
 | https://www.hd-rain.com/[HD Rain] from France develops satellite
   based meteorological sensors to provide high-accuracy real-time weather
-  data and forecasts. They sponsor the LibrePCB project financially.
+  data and forecasts. They support the LibrePCB project financially.
 
 | icon:users[2x]
 | And many more commercial or individual sponsors contribute financially
