@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     separator = '~~~~'
     output = check_output(
-        ['git', '--no-pager', 'log', '--reverse',
+        ['git', '--no-pager', 'log', '--reverse', '--first-parent',
          '--format=' + separator + '%H%n%an (%ae)%n%B',
          args.from_ref + '..' + args.to_ref],
         cwd=args.repository).decode()
@@ -34,7 +34,8 @@ if __name__ == '__main__':
         match = re.match('.*\\(?#(\\d+)(\\)?).*', body_lines[0])
         number = match.group(1) if match else None
         is_simple = len(match.group(2)) if match else 1
-        title = body_lines[2] if not is_simple else subject
+        title = body_lines[2] if ((len(body_lines) > 2) and not is_simple) \
+                              else subject
         authors[author] = authors.get(author, 0) + 1
         if number:
             text = '#{}'.format(number)
@@ -43,7 +44,7 @@ if __name__ == '__main__':
             text = sha[:8]
             url = 'https://github.com/LibrePCB/LibrePCB/commit/{}'.format(sha)
         print('- ' + title)
-        print('  ([{}]({}))'.format(text, url))
+        print('  ({url}[{text}])'.format(text=text, url=url))
 
     print('\nAuthors:')
     for name, count in authors.items():
