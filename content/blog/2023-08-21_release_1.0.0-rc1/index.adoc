@@ -12,13 +12,13 @@ About This Release Candidate
 
 LibrePCB 1.0 contains a huge amount of changes compared to the previous
 release. Even though we give our best to keep the quality high and do lots
-of testing, such large changes always come with the risk of issues. Thus we
+of testing, such large changes always come with the risk of bugs. Thus, we
 first provide a release candidate prior to the official stable release.
 
-Generally we do not expect that any serious problems occur with your files
-when using this release candidate. But for critical projects it's a good
-idea anyway to make a backup first (e.g. by using a version control
-system) or to simply wait for the final release.
+Note that while we do not expect that any serious problems occur with your projects
+when using this release candidate, it's still a good
+idea to create a backup first (e.g. by using a version control
+system).
 
 If you experience any issues with this release candidate, please
 link:{{< relref "help/help/index.adoc" >}}[let us know]
@@ -61,7 +61,7 @@ Next Steps
 ----------
 
 We expect the final release to be available soon, probably around the
-beginning of september. Meanwhile we will work on migrating our official
+beginning of September. Meanwhile, we will work on migrating our official
 libraries to the new file format, extending our fabrication service to
 support LibrePCB 1.x projects, and updating the documentation accordingly.
 
