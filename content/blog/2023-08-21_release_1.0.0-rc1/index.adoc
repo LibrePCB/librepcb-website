@@ -4,7 +4,7 @@ title: LibrePCB 1.0.0 RC1 Released
 author: U. Bruhin
 ---
 
-I'm very excited to announce that LibrePCB 1.0 has been completed and
+I'm very excited to announce that LibrePCB 1.0 is feature-complete and that
 a first release candidate is available for download!
 
 About This Release Candidate
