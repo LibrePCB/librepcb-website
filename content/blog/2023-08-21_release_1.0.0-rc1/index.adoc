@@ -1,0 +1,76 @@
+---
+date: 2023-08-21
+title: LibrePCB 1.0.0 RC1 Released
+author: U. Bruhin
+---
+
+I'm very excited to announce that LibrePCB 1.0 is feature-complete and that
+a first release candidate is available for download!
+
+About This Release Candidate
+----------------------------
+
+LibrePCB 1.0 contains a huge amount of changes compared to the previous
+release. Even though we give our best to keep the quality high and do lots
+of testing, such large changes always come with the risk of bugs. Thus, we
+first provide a release candidate prior to the official stable release.
+
+Note that while we do not expect that any serious problems occur with your projects
+when using this release candidate, it's still a good
+idea to create a backup first (e.g. by using a version control
+system).
+
+If you experience any issues with this release candidate, please
+link:{{< relref "help/help/index.adoc" >}}[let us know]
+so we can fix them in the final release!
+
+Major Changes
+-------------
+
+A full changelog and some impressions will be provided in the final release
+announcement. But here's a list of the most interesting new features (check
+out the links to the pull requests for more details):
+
+- *Implement 3D viewer & STEP export*
+  (https://github.com/LibrePCB/LibrePCB/pull/1156[#1156])
+- *Implement MPN management & assembly variants*
+  (https://github.com/LibrePCB/LibrePCB/pull/1177[#1177],
+  https://github.com/LibrePCB/LibrePCB/pull/1180[#1180])
+- *Implement unified production data files generator*
+  (https://github.com/LibrePCB/LibrePCB/pull/1194[#1194])
+- Support thermal relief pads in planes
+  (https://github.com/LibrePCB/LibrePCB/pull/1160[#1160])
+- Support blind & buried vias
+  (https://github.com/LibrePCB/LibrePCB/pull/1163[#1163])
+- Support plated and non-plated slots
+  (https://github.com/LibrePCB/LibrePCB/pull/1071[#1071],
+  https://github.com/LibrePCB/LibrePCB/pull/1076[#1076])
+- Support keepout zones
+  (https://github.com/LibrePCB/LibrePCB/pull/1167[#1167])
+- Support rounded and custom footprint pad shapes
+  (https://github.com/LibrePCB/LibrePCB/pull/1102[#1102],
+  https://github.com/LibrePCB/LibrePCB/pull/1103[#1103])
+- Support configurable stop mask and solder paste on pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1137[#1137])
+- Support fiducials and other pad types
+  (https://github.com/LibrePCB/LibrePCB/pull/1142[#1142],
+  https://github.com/LibrePCB/LibrePCB/pull/1143[#1143])
+- And many more!
+
+Next Steps
+----------
+
+We expect the final release to be available soon, probably around the
+beginning of September. Meanwhile, we will work on migrating our official
+libraries to the new file format, extending our fabrication service to
+support LibrePCB 1.x projects, and updating the documentation accordingly.
+
+---
+
+Download
+--------
+
+Since this is not a stable release yet, only portable packages are available
+so far (in the sidebar):
+
+=== link:{{< relref "download/index.adoc" >}}[icon:download[] Get LibrePCB]
