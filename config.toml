@@ -44,4 +44,6 @@ privacyEnhanced = true
   titleSuffix = " | LibrePCB"
   siteDescription = "A free, easy-to-use, multiplatform EDA software to draw schematics and design PCBs"
   latestVersion = "0.1.7"
+  latestPreviewVersion = ""  # Set to empty string if stable.
+  latestPreviewBlogPost = ""  # Set to empty string if stable.
   numberOfTranslations = "16"
