@@ -57,6 +57,20 @@
     And please <a href="{{ relref . "help/help/index.adoc" }}">let us know
     your feedback</a>!
   </p>
+  <hr/>
+  <p class="d-inline-flex gap-1">
+    <a data-bs-toggle="collapse" href="#knownIssues" aria-expanded="false"
+       aria-controls="knownIssues" class="link-dark">
+      <i class="fa-solid fa-caret-down"></i>
+      Known issues
+    </a>
+  </p>
+  <div class="collapse text-dark small" id="knownIssues">
+    <ul>
+      <li>Possible laggy board editor on large designs</li>
+      <li>Compile error on some ARM targets</li>
+    </ul>
+  </div>
 </div>
 {{ end }}
 {{ end }}
