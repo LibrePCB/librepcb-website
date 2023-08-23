@@ -99,6 +99,10 @@
     color: rgb(29, 155, 240);
 }
 
+.navbar .icon-mastodon {
+    color: rgb(192, 187, 223);
+}
+
 /* Side navigation */
 
 .nav-container .list-group-item.list-group-item-action.active {
