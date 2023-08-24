@@ -6,6 +6,7 @@
 {{ $preview_url := printf "https://download.librepcb.org/releases/%s" (.Param "latestPreviewVersion") }}
 {{ $windows_file := printf "librepcb-%s-windows-x86.zip" (.Param "latestPreviewVersion") }}
 {{ $macos_file := printf "librepcb-%s-mac-x86_64.dmg" (.Param "latestPreviewVersion") }}
+{{ $macos_arm64_file := printf "librepcb-%s-mac-arm64.dmg" (.Param "latestPreviewVersion") }}
 {{ $linux_file := printf "librepcb-%s-linux-x86_64.AppImage" (.Param "latestPreviewVersion") }}
 {{ $source_file := printf "librepcb-%s-source.zip" (.Param "latestPreviewVersion") }}
 <div class="mt-3 pb-0 alert alert-success d-block mx-4 mx-md-0">
@@ -31,6 +32,13 @@
       <a href="{{ printf "%s/%s" $preview_url $macos_file }}"
           class="small link-dark">
         {{ $macos_file }}
+      </a>
+    </li>
+    <li class="list-group-item text-truncate">
+      <i class="fa-brands fa-apple"></i>
+      <a href="{{ printf "%s/%s" $preview_url $macos_arm64_file }}"
+          class="small link-dark">
+        {{ $macos_arm64_file }}
       </a>
     </li>
     <li class="list-group-item text-truncate">
