@@ -1,0 +1,430 @@
+---
+date: 2023-09-24
+title: LibrePCB 1.0.0 Released
+author: U. Bruhin
+---
+
+After a few weeks of testing the RC1 and bugfixing, finally the stable
+release of LibrePCB 1.0 is finished and available for download! Check out
+the awesome new features and the migration notes below.
+
+[TIP]
+====
+For the reasoning behind bumping the version number to 1.0, check out the
+blog post
+link:{{< relref "blog/2023-05-15_roadmap_1.0/index.adoc" >}}[LibrePCB 1.0 Roadmap].
+====
+
+Highlights
+----------
+
+Advanced PCB Features
+~~~~~~~~~~~~~~~~~~~~~
+
+One of the goals of this release was to get rid of several limitations which
+made LibrePCB 0.1.x unsuitable for many PCB projects. Therefore the following
+board editor features are now available:
+
+- Thermal relief pads in planes
+  (https://github.com/LibrePCB/LibrePCB/pull/1160[#1160])
+- Blind & buried vias
+  (https://github.com/LibrePCB/LibrePCB/pull/1163[#1163])
+- Plated and non-plated slots
+  (https://github.com/LibrePCB/LibrePCB/pull/1071[#1071],
+  https://github.com/LibrePCB/LibrePCB/pull/1076[#1076])
+- Keepout zones
+  (https://github.com/LibrePCB/LibrePCB/pull/1167[#1167])
+- Rounded and custom footprint pad shapes
+  (https://github.com/LibrePCB/LibrePCB/pull/1102[#1102],
+  https://github.com/LibrePCB/LibrePCB/pull/1103[#1103])
+- Configurable automatic stop mask and solder paste on pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1137[#1137])
+- Fiducials and other pad types
+  (https://github.com/LibrePCB/LibrePCB/pull/1142[#1142],
+  https://github.com/LibrePCB/LibrePCB/pull/1143[#1143])
+
+So there should be no show stopper anymore which prevents you from using
+LibrePCB for more complex PCB designs! 💪
+
+3D Viewer & STEP Export (https://github.com/LibrePCB/LibrePCB/pull/1156[#1156])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Finally it's possible to review the PCB design in a realistic 3D viewer,
+with proper rendering of copper layers, solder resist and silkscreen!
+Even devices are rendered if STEP models have been assigned to their
+packages in the library. In addition, the whole PCB can be exported as a
+STEP model so it can be opened in a mechanical CAD.
+
+For a detailed description, check out the
+https://github.com/LibrePCB/LibrePCB/pull/1156[corresponding pull request] --
+or just watch this nice GIF! 😀
+
+[.imageblock.rounded-window.window-border]
+{{< imglink "3D Viewer" "board-editor-3d.gif" >}}
+
+[WARNING]
+====
+Since your existing projects do not contain any 3D models yet, initially
+only the plain PCB will be rendered without any devices on it. To get the
+devices appearing, you need to add 3D models to the corresponding packages
+in your libraries. Afterwards you need to trigger *Project 〉Update
+Project Library* to update the packages in your project.
+
+Our official libraries already contain some 3D models, but there are
+still many packages without 3D model. Just look for library updates from
+time to time.
+====
+
+MPN Management & Assembly Variants (https://github.com/LibrePCB/LibrePCB/pull/1180[#1180])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is now also possible to specify manufacturer part numbers (MPNs) in
+the library so that you don't need to manually enter them every time you add
+a component to a schematic. These MPNs will then be exported to the BOM
+to get very accurate information about the parts you need to order.
+
+[.imageblock.rounded-window.window-border]
+{{< imglink "Add Parts" "add-parts.png" >}}
+
+But adding just one MPN is sometimes not enough. Probably most hardware
+engineers experienced supply chain issues in the last few years and learned
+how important it is to define second source parts. With LibrePCB you can now
+even explicitly specify alternative parts in the schematic which will get
+exported to the BOM too!
+
+In addition, it is now possible to define multiple assembly variants of a
+project, for example to omit ("do not mount") specific parts in some of the
+product variants. For more details about this feature, please take a look at
+https://github.com/LibrePCB/LibrePCB/pull/1180[its full explanation].
+
+Unified Production Data Files Generator (https://github.com/LibrePCB/LibrePCB/pull/1194[#1194])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+With LibrePCB 1.0 you can now export production data like a pro! icon:rocket[]
+Thanks to so-called _output jobs_, this task has become very easy, fast,
+flexible and reproducible:
+
+[.imageblock.rounded-window.window-border]
+{{< imglink "Output Jobs" "output-jobs.gif" >}}
+
+With the archiving job, there's even no need anymore to manually create
+a ZIP file for sending Gerber files to your PCB manufacturer. Just
+specify the ZIP filename and which job outputs shall be contained, and
+LibrePCB creates the ZIP in a few milliseconds for you.
+
+These jobs can not only be executed from the graphical interface, but also
+from the command-line. So if you like to automate the generation of output
+files (e.g. on a continuous integration system), now you can!
+
+Migration Notes
+---------------
+
+Workspace & Libraries
+~~~~~~~~~~~~~~~~~~~~~
+
+When you open your existing workspace the first time with LibrePCB 1.x, it
+needs to be upgraded to the new file format. A wizard will automatically
+guide you through this (very simple) process. Generally it just recursively
+copies the workspace directory `v0.1` to a new directory named `data`.
+
+*If you're working with external tools (e.g. Git) on libraries, keep in mind
+to access them with the new path instead of the old one.*
+
+[NOTE]
+====
+After the workspace migration it can take several minutes until your
+libraries are accessible because they are migrated to the new file format
+in background.
+====
+
+Projects
+~~~~~~~~
+
+Once you open a LibrePCB 0.1.x project the first time with LibrePCB 1.x,
+it will automatically be upgraded to the new file format. After saving it
+to disk, it won't be possible anymore to open it with LibrePCB 0.1.x.
+
+Note that although the upgrade is generally not critical, there _might_ be
+small differences in your board after the upgrade. LibrePCB will show you a
+list of what has changed during the upgrade.
+
+Installation / Packaging
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+*From this release on, we do no longer provide an installer for Linux and
+MacOS.* If you installed LibrePCB 0.1.x with the installer, we recommend to
+uninstall it and then
+https://librepcb.org/docs/installation/[install it with a different method].
+
+For package maintainers: Note that LibrePCB now depends on Qt Quick,
+OpenCascade, OpenGL and GLU (at build time and runtime). See details
+https://developers.librepcb.org/d5/d96/doc_building.html[here].
+
+---
+
+Changelog
+---------
+
+Library Editor:
+~~~~~~~~~~~~~~~
+
+- Make symbol pin text placement configurable
+  (https://github.com/LibrePCB/LibrePCB/pull/971[#971])
+- Add "assembly type" property to packages
+  (https://github.com/LibrePCB/LibrePCB/pull/1128[#1128])
+- Add "function" property to footprint pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1142[#1142])
+- Support slotted holes
+  (https://github.com/LibrePCB/LibrePCB/pull/1071[#1071])
+- Support slotted footprint pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1076[#1076])
+- Support footprint pads with custom corner radius
+  (https://github.com/LibrePCB/LibrePCB/pull/1103[#1103])
+- Support custom footprint pad shapes
+  (https://github.com/LibrePCB/LibrePCB/pull/1102[#1102])
+- Support custom copper clearance around footprint pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1143[#1143])
+- Allow adding unconnected (pure mechanical) footprint pads
+  (https://github.com/LibrePCB/LibrePCB/pull/807[#807])
+- Support configuring stop mask & solder paste on footprint pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1137[#1137])
+- Add configurable stop mask opening to non-plated holes
+  (https://github.com/LibrePCB/LibrePCB/pull/1111[#1111])
+- Support keepout zones in footprints & boards
+  (https://github.com/LibrePCB/LibrePCB/pull/1167[#1167])
+- Add new layers for top/bottom package outlines
+  (https://github.com/LibrePCB/LibrePCB/pull/1198[#1198])
+- Support adding part numbers to devices
+  (https://github.com/LibrePCB/LibrePCB/pull/1177[#1177])
+- Support dismissing library check messages
+  (https://github.com/LibrePCB/LibrePCB/pull/1107[#1107])
+- Turn overlapping pads warning into an error
+  (https://github.com/LibrePCB/LibrePCB/pull/1108[#1108])
+- Display tables with row numbers instead of UUIDs
+  (https://github.com/LibrePCB/LibrePCB/pull/1138[#1138])
+
+Schematic Editor:
+~~~~~~~~~~~~~~~~~
+
+- Support adding custom texts to schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/806[#806])
+- Support adding polygons to schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/810[#810])
+- Support specifying part numbers & assembly variants
+  (https://github.com/LibrePCB/LibrePCB/pull/1180[#1180])
+- Support mirroring alignment of net labels
+  (https://github.com/LibrePCB/LibrePCB/pull/879[#879])
+- Detach symbol texts to make them movable/editable
+  (https://github.com/LibrePCB/LibrePCB/pull/1085[#1085])
+- Optionally show pin numbers in schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/1149[#1149])
+- Remove transparency of symbol grab areas
+  (https://github.com/LibrePCB/LibrePCB/pull/1083[#1083])
+- Automatically refresh schematic thumbnails
+  (https://github.com/LibrePCB/LibrePCB/pull/1131[#1131])
+- Automatically select first result when searching for components
+  (https://github.com/LibrePCB/LibrePCB/pull/1190[#1190])
+- Add ERC warning for schematic wires with open end
+  (https://github.com/LibrePCB/LibrePCB/pull/1185[#1185])
+- Move board related messages from ERC to DRC
+  (https://github.com/LibrePCB/LibrePCB/pull/1118[#1118])
+
+Board Editor:
+~~~~~~~~~~~~~
+
+- Implement 3D viewer & STEP export
+  (https://github.com/LibrePCB/LibrePCB/pull/1156[#1156])
+- Add support for blind & buried vias
+  (https://github.com/LibrePCB/LibrePCB/pull/1163[#1163])
+- Implement thermal relief pads for planes
+  (https://github.com/LibrePCB/LibrePCB/pull/1160[#1160])
+- Support automatic THT pad annular rings
+  (https://github.com/LibrePCB/LibrePCB/pull/1097[#1097])
+- Make exposure of vias configurable
+  (https://github.com/LibrePCB/LibrePCB/pull/1164[#1164])
+- Always connect vias to planes, regardless of connect style
+  (https://github.com/LibrePCB/LibrePCB/pull/1100[#1100])
+- Use rounded corners for all expanded pad/via shapes
+  (https://github.com/LibrePCB/LibrePCB/pull/1080[#1080])
+- Allow creating unconnected traces/vias/planes
+  (https://github.com/LibrePCB/LibrePCB/pull/854[#854],
+  https://github.com/LibrePCB/LibrePCB/pull/1165[#1165])
+- Support locking placement of items
+  (https://github.com/LibrePCB/LibrePCB/pull/1144[#1144])
+- Extend board setup with more PCB properties
+  (https://github.com/LibrePCB/LibrePCB/pull/1154[#1154])
+- Remove support for non-circular vias
+  (https://github.com/LibrePCB/LibrePCB/pull/1088[#1088])
+- Support changing width of selected objects
+  (https://github.com/LibrePCB/LibrePCB/pull/1189[#1189])
+- Auto-rebuild planes asynchronously
+  (https://github.com/LibrePCB/LibrePCB/pull/1159[#1159])
+- Save and restore board planes visibility
+  (https://github.com/LibrePCB/LibrePCB/pull/809[#809])
+- Render pad & via texts with Fontobene
+  (https://github.com/LibrePCB/LibrePCB/pull/1206[#1206])
+- Rename board device property "mirror" to "flip"
+  (https://github.com/LibrePCB/LibrePCB/pull/1157[#1157])
+- Rename plane "orphans" to "islands"
+  (https://github.com/LibrePCB/LibrePCB/pull/1162[#1162])
+- Cleanup board design rules
+  (https://github.com/LibrePCB/LibrePCB/pull/1090[#1090])
+- Merge all board settings into one dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1113[#1113])
+- Fix context menu of selected devices
+  (https://github.com/LibrePCB/LibrePCB/pull/1193[#1193])
+
+
+DRC:
+~~~~
+
+- Add minimal, fast DRC mode "quick check"
+  (https://github.com/LibrePCB/LibrePCB/pull/1117[#1117])
+- Support approving DRC messages
+  (https://github.com/LibrePCB/LibrePCB/pull/1121[#1121])
+- Store DRC settings in board file
+  (https://github.com/LibrePCB/LibrePCB/pull/1116[#1116])
+- Add checks for board outline validity
+  (https://github.com/LibrePCB/LibrePCB/pull/1123[#1123])
+- Add checks for minimum drill distance
+  (https://github.com/LibrePCB/LibrePCB/pull/1122[#1122])
+- Add checks for silkscreen width/height/clearance
+  (https://github.com/LibrePCB/LibrePCB/pull/1183[#1183])
+
+Import/Export:
+~~~~~~~~~~~~~~
+
+- Implement unified output files generator
+  (https://github.com/LibrePCB/LibrePCB/pull/1194[#1194])
+- Implement IPC-D-356A netlist export for boards
+  (https://github.com/LibrePCB/LibrePCB/pull/1081[#1081])
+- Enable solder paste Gerber export by default
+  (https://github.com/LibrePCB/LibrePCB/pull/1104[#1104])
+- Omit zero-width outlines of filled polygons in Gerber export
+  (https://github.com/LibrePCB/LibrePCB/pull/1182[#1182])
+- Delete obsolete Gerber files left over from previous export
+  (https://github.com/LibrePCB/LibrePCB/pull/1155[#1155])
+- Add assembly type column to pick&place CSV files
+  (https://github.com/LibrePCB/LibrePCB/pull/1126[#1126])
+- Store custom BOM attributes in project files
+  (https://github.com/LibrePCB/LibrePCB/pull/1135[#1135])
+
+CLI:
+~~~~
+
+- Implement new command `open-step`
+  (https://github.com/LibrePCB/LibrePCB/pull/1222[#1222])
+- Support `--check` flag to run library element checks
+  (https://github.com/LibrePCB/LibrePCB/pull/1109[#1109])
+- Support `--drc` flag to run the design rule check
+  (https://github.com/LibrePCB/LibrePCB/pull/1133[#1133])
+- Use `-v` for `--verbose` instead of `--version`.
+  (https://github.com/LibrePCB/LibrePCB/pull/1063[#1063])
+
+Miscellaneous:
+~~~~~~~~~~~~~~
+
+- Change transformation order of mirror and rotate
+  (https://github.com/LibrePCB/LibrePCB/pull/1152[#1152])
+- Allow characters `. & ( )` in identifiers
+  (https://github.com/LibrePCB/LibrePCB/pull/1161[#1161])
+- Render `!` in pin-, pad- and net names as overlines
+  (https://github.com/LibrePCB/LibrePCB/pull/1172[#1172],
+  https://github.com/LibrePCB/LibrePCB/pull/1178[#1178])
+- Rename attributes `MODIFIED_DATE/MODIFIED_TIME` to `DATE/TIME`
+  (https://github.com/LibrePCB/LibrePCB/pull/1151[#1151])
+- Rename "Top/Bottom Placement" layers to "Top/Bottom Legend"
+  (https://github.com/LibrePCB/LibrePCB/pull/1166[#1166])
+- Add a dedicated layer for board cutouts
+  (https://github.com/LibrePCB/LibrePCB/pull/1168[#1168])
+- Support panning with right mouse button in all editors
+  (https://github.com/LibrePCB/LibrePCB/pull/1174[#1174])
+- Support enter/delete shortcuts in table widgets
+  (https://github.com/LibrePCB/LibrePCB/pull/1184[#1184])
+- Support opening `*.lppz` projects with the editor
+  (https://github.com/LibrePCB/LibrePCB/pull/1202[#1202])
+- Merge all project related dialogs into single dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1129[#1129])
+- Auto-check outdated and recommended libraries in library manager
+  (https://github.com/LibrePCB/LibrePCB/pull/1188[#1188])
+- Show deprecated library elements with red color
+  (https://github.com/LibrePCB/LibrePCB/pull/1216[#1216])
+- Make graphics appearance configurable in workspace settings
+  (https://github.com/LibrePCB/LibrePCB/pull/1086[#1086])
+- Rename term "Repository" to "API Endpoint"
+  (https://github.com/LibrePCB/LibrePCB/pull/1158[#1158])
+- Update/extend information shown in about dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1114[#1114],
+  https://github.com/LibrePCB/LibrePCB/pull/1192[#1192])
+- Fix possibly unexpected center of rotate/mirror operations
+  (https://github.com/LibrePCB/LibrePCB/pull/1082[#1082])
+- Fix missing numeric sort at various places
+  (https://github.com/LibrePCB/LibrePCB/pull/1105[#1105])
+- Do not warn on `stderr` about empty directories in libraries
+  (https://github.com/LibrePCB/LibrePCB/pull/1211[#1211])
+- Suppress warning on `stderr` caused by `argv[0]`
+  (https://github.com/LibrePCB/LibrePCB/pull/1212[#1212])
+
+Building/Packaging/Deployment:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Stop providing installers for macOS and Linux
+  (https://github.com/LibrePCB/LibrePCB/pull/1147[#1147])
+- Support older macOS versions (>=10.14)
+  (https://github.com/LibrePCB/LibrePCB/pull/1099[#1099])
+- Register `*.lpp` file extension on macOS
+  (https://github.com/LibrePCB/LibrePCB/pull/1145[#1145])
+- Support registering `*.lpp` file extension on Linux at runtime
+  (https://github.com/LibrePCB/LibrePCB/pull/1146[#1146])
+- Support translating Linux desktop entry comment
+  (https://github.com/LibrePCB/LibrePCB/pull/1148[#1148])
+- Support using (custom) `xdg-open` command to open URLs
+  (https://github.com/LibrePCB/LibrePCB/pull/1207[#1207])
+- Add a QtQuick test window
+  (https://github.com/LibrePCB/LibrePCB/pull/1196[#1196])
+- Remove CLI dependency to QtWidgets library
+  (https://github.com/LibrePCB/LibrePCB/pull/1139[#1139])
+- Compile sources with `-Wpedantic` flag
+  (https://github.com/LibrePCB/LibrePCB/pull/1110[#1110])
+- Improve & rename metainfo XML file
+  (https://github.com/LibrePCB/LibrePCB/pull/1221[#1221])
+
+Internal:
+~~~~~~~~~
+
+- Prepare file format for adding resources to library elements
+  (https://github.com/LibrePCB/LibrePCB/pull/1181[#1181])
+- Add "generated by" property to library elements
+  (https://github.com/LibrePCB/LibrePCB/pull/1195[#1195])
+- Add alternative names to packages file format
+  (https://github.com/LibrePCB/LibrePCB/pull/1199[#1199])
+- Remove obsolete workspace settings after file format upgrade
+  (https://github.com/LibrePCB/LibrePCB/pull/1067[#1067])
+- Upgrade all libraries file format during background scan
+  (https://github.com/LibrePCB/LibrePCB/pull/1187[#1187])
+- Merge some unnecessary classes for simplification
+  (https://github.com/LibrePCB/LibrePCB/pull/1066[#1066])
+- Remove support for legacy SExpression formatting
+  (https://github.com/LibrePCB/LibrePCB/pull/1068[#1068])
+- Refactor loading/serializing & file format upgrade
+  (https://github.com/LibrePCB/LibrePCB/pull/1070[#1070])
+- Refactor ERC by reusing library element check concept
+  (https://github.com/LibrePCB/LibrePCB/pull/1119[#1119])
+- Factor out graphics code from core logic to editor logic
+  (https://github.com/LibrePCB/LibrePCB/pull/1136[#1136])
+
+---
+
+Download
+--------
+
+The release can be downloaded for all major operating systems from our download
+page:
+
+https://librepcb.org/download/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you like LibrePCB, please consider making a small
+link:{{< relref "donate/index.adoc" >}}[donation] to support the
+ongoing development. +
+Thank you! icon:heart[]
