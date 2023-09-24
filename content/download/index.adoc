@@ -10,11 +10,10 @@ weight: 60
 :base-url: {releases-url}{version}
 :windows-installer-url: {base-url}/librepcb-installer-{version}-windows-x86.exe
 :windows-zip-url: {base-url}/librepcb-{version}-windows-x86.zip
-:linux-installer-url: {base-url}/librepcb-installer-{version}-linux-x86_64.run
 :linux-appimage-url: {base-url}/librepcb-{version}-linux-x86_64.AppImage
 :linux-archive-url: {base-url}/librepcb-{version}-linux-x86_64.tar.gz
-:mac-installer-url: {base-url}/librepcb-installer-{version}-mac-x86_64.dmg
 :mac-bundle-url: {base-url}/librepcb-{version}-mac-x86_64.dmg
+:mac-arm64-bundle-url: {base-url}/librepcb-{version}-mac-arm64.dmg
 :source-url: {base-url}/librepcb-{version}-source.zip
 
 [subs="attributes"]
@@ -61,7 +60,7 @@ _Requirements: Windows 7 or later._
 [.download-section.macos]
 == {{< icon "fa-brands fa-apple" >}} MacOS
 
-_Requirements: MacOS 11 Big Sur or later (64-bit)._
+_Requirements: MacOS 10.14 or later (64-bit)._
 
 [subs="attributes"]
 ++++
@@ -69,12 +68,13 @@ _Requirements: MacOS 11 Big Sur or later (64-bit)._
   <a class="btn btn-primary btn-download macos download-link me-2" role="button"
      href="{mac-bundle-url}">
     <i class="fa-solid fa-download"></i>
-    Download Bundle for MacOS
+    Download Bundle for Intel Mac
   </a>
-  <span class="align-self-center">
-    <span class="d-none d-md-inline-block">Alternative:</span>
-    <a href="{mac-installer-url}" class="download-link">Installer</a>
-  </span>
+  <a class="btn btn-primary btn-download macos download-link me-2" role="button"
+     href="{mac-arm64-bundle-url}">
+    <i class="fa-solid fa-download"></i>
+    Download Bundle for Apple Silicon
+  </a>
 </div>
 ++++
 
@@ -92,21 +92,20 @@ installation options below.
 ++++
 <div class="d-flex flex-column flex-lg-row my-3">
   <a class="btn btn-primary btn-download linux download-link me-2" role="button"
-     href="{linux-installer-url}">
+     href="{linux-appimage-url}">
     <i class="fa-solid fa-download"></i>
-    Download Installer for Linux
+    Download AppImage for Linux
   </a>
   <span class="align-self-center">
-    <span class="d-none d-md-inline-block">Portable alternatives:</span>
-    <a href="{linux-appimage-url}" class="download-link">AppImage</a>
-    | <a href="{linux-archive-url}" class="download-link">Archive</a>
+    <span class="d-none d-md-inline-block">Alternative:</span>
+    <a href="{linux-archive-url}" class="download-link">Portable Archive</a>
   </span>
 </div>
 ++++
 
 _Important:
 https://librepcb.org/docs/installation/linux/[Set the executable flag]
-before starting the installer or AppImage!_
+before starting the AppImage!_
 
 App Stores::
   Install the
