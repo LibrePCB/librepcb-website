@@ -11,8 +11,8 @@ aliases: /compare
 [#why-should-i-use-librepcb]
 === Why should I use LibrePCB instead of _XYZ_?
 
-* It's very easy to get started with, no need to spend lots of time for learing.
-* Working with LibrePCB means more fun and less troubles thanks to its
+* It’s very easy to get started with; there's no need to spend lots of time learning.
+* Working with LibrePCB means more fun and less trouble thanks to its
   link:{{< relref "features/library-concept/index.adoc" >}}[advanced library concept].
 * Installing and updating libraries is much simpler and faster thanks to the
   link:{{< relref "features/library-management/index.adoc" >}}[built-in library management].
@@ -26,42 +26,41 @@ aliases: /compare
 [#why-another-eda-tool]
 === Why another EDA tool? Why not contributing to tool _XYZ_?
 
-Each of the existing open-source EDA tools have a different target audience,
-different focus and different opinions about how things should be done.
+Each of the existing open-source EDA tools has a different target audience,
+a different focus, and different opinions about how things should be done.
 It makes no sense for LibrePCB developers to work on another tool (e.g. KiCad)
 just to be able to implement the small subset of our ideas they agree on.
-It's almost impossible (and senseless) to fundamentally change the mindset
+It’s almost impossible (and senseless) to fundamentally change the mindset
 of other EDA tool developers.
 
-In the end it's good for users to have multiple _different_ EDA tools to
+In the end, it's good for users to have multiple _different_ EDA tools to
 choose from. Of course we don't develop multiple _identical_ tools.
 
 [#why-a-new-file-format]
 === Why introducing a new, non-standardized file format?
 
-From time to time people ask why every EDA package invented its own file
+From time to time, people ask why every EDA package invented its own file
 format instead of developing a standardized, open file format to allow
 data exchange between different EDA packages.
 
-Although this sounds like a great idea, in practice it makes no sense
-unfortunately. The data structure of a PCB project obviously requires to
-reflect the feature set and concepts of the tool itself -- for example if
+Although this sounds like a great idea, in practice it makes no sense,
+unfortunately. The data structure of a PCB project obviously has to
+reflect the feature set and concepts of the tool itself; for example, if
 the tool uses UUIDs for referencing objects, the file format has to
-reflect this. If we would introduce a file format to be used by multiple
+reflect this. If we introduced a file format to be used by multiple
 EDA packages, it would mean that the general concepts of these packages
-must be identical as well (otherwise they wouldn't be compatible with the
+must be identical as well (otherwise they wouldn’t be compatible with the
 file format). But it makes no sense to develop multiple _identical_ EDA
-packages. The same applies to LibrePCB -- we want to provide you an EDA
-tool which is _different_ (from our point of view: _better_) than other
-tools, and that's only possible with a different file format.
+packages. The same applies to LibrePCB: we want to provide you with an EDA
+tool that is _different_ (from our point of view: _better_) than other
+tools, and that’s only possible with a different file format.
 
 [#is-it-stable]
 === The version number is very low, is it already usable?
 
 Yes it is! It is working very well and can be used productively to create
-PCBs. However, just don't expect advanced features yet (e.g. blind/buried vias,
-hierarchical sheets, ...). Features like that will be implemented in future
-releases.
+PCBs. However, just don't expect advanced features yet (e.g. hierarchical sheets).
+Features like that will be implemented in future releases.
 
 Check out
 https://librepcb.discourse.group/t/projects-madewithlibrepcb/99[#madewithlibrepcb]
@@ -70,9 +69,9 @@ to see pictures of some PCBs made with LibrePCB.
 [#where-is-library-element]
 === I can't find _XYZ_ in the libraries, where is it?
 
-Providing high quality libraries requires a huge amount of time until they
+Providing high-quality libraries requires a huge amount of time until they
 are somewhat "complete" (that's impossible anyway). If you didn't find what
-you're looking for, probably it doesn't exist yet.
+you're looking for, it probably doesn't exist yet.
 
 But there's good news: With LibrePCB it's very easy to create your own
 library elements! Just
