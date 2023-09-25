@@ -11,7 +11,7 @@ aliases: /compare
 [#why-should-i-use-librepcb]
 === Why should I use LibrePCB instead of _XYZ_?
 
-* It’s very easy to get started with; there's no need to spend lots of time learning.
+* It's very easy to get started with; there's no need to spend lots of time learning.
 * Working with LibrePCB means more fun and less trouble thanks to its
   link:{{< relref "features/library-concept/index.adoc" >}}[advanced library concept].
 * Installing and updating libraries is much simpler and faster thanks to the
@@ -30,7 +30,7 @@ Each of the existing open-source EDA tools has a different target audience,
 a different focus, and different opinions about how things should be done.
 It makes no sense for LibrePCB developers to work on another tool (e.g. KiCad)
 just to be able to implement the small subset of our ideas they agree on.
-It’s almost impossible (and senseless) to fundamentally change the mindset
+It's almost impossible (and senseless) to fundamentally change the mindset
 of other EDA tool developers.
 
 In the end, it's good for users to have multiple _different_ EDA tools to
@@ -49,11 +49,11 @@ reflect the feature set and concepts of the tool itself; for example, if
 the tool uses UUIDs for referencing objects, the file format has to
 reflect this. If we introduced a file format to be used by multiple
 EDA packages, it would mean that the general concepts of these packages
-must be identical as well (otherwise they wouldn’t be compatible with the
+must be identical as well (otherwise they wouldn't be compatible with the
 file format). But it makes no sense to develop multiple _identical_ EDA
 packages. The same applies to LibrePCB: we want to provide you with an EDA
 tool that is _different_ (from our point of view: _better_) than other
-tools, and that’s only possible with a different file format.
+tools, and that's only possible with a different file format.
 
 [#is-it-stable]
 === The version number is very low, is it already usable?
