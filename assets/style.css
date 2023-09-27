@@ -83,24 +83,20 @@
     border-color: var(--bs-dropdown-border-color) !important;
 }
 
-.navbar .icon:hover {
-    color: var(--bs-white);
+.navbar .icon {
+    color: #dfdfdf;
 }
 
-.navbar .icon-github {
-    color: rgb(223, 223, 223);
+.navbar .icon-patreon:hover {
+    color: #ff404c;
 }
 
-.navbar .icon-patreon {
-    color: rgb(255, 66, 77);
+.navbar .icon-twitter:hover {
+    color: #179cf0;
 }
 
-.navbar .icon-twitter {
-    color: rgb(29, 155, 240);
-}
-
-.navbar .icon-mastodon {
-    color: rgb(192, 187, 223);
+.navbar .icon-mastodon:hover {
+    color: #6364ff;
 }
 
 /* Side navigation */
