@@ -251,6 +251,10 @@ div.intro-screenshot-odd {
     background: rgb(88, 88, 88);
 }
 
+.intro-video {
+    max-width: 952px;
+}
+
 .intro-sponsors {
     padding: 20px 0 40px 0;
     background: rgb(88, 88, 88);
