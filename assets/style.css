@@ -159,6 +159,9 @@
     background-size: cover;
     z-index: 99999;
     background-color: black;
+}
+
+.intro-fullscreen {
     min-height: 100vh;
 }
 
@@ -223,6 +226,12 @@
     .intro-description {
         font-size: 1.2em;
     }
+}
+
+.intro-video {
+    width: 90%;
+    max-width: 952px;
+    box-shadow: 0 0 2rem rgb(0, 0, 0) !important;
 }
 
 .intro-features {
