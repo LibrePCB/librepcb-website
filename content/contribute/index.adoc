@@ -68,7 +68,7 @@ consuming). Therefore it's difficult to contribute this way. Feel free to
 open pull requests https://github.com/LibrePCB-Libraries/[on our libraries]
 anyway, but please don't be afraid if it takes a long time to get any feedback.
 
-We are very sorry for this issue any try to find a solution which allows to
+We are very sorry for this issue and try to find a solution which allows to
 ensure high-quality libraries while accepting contributions with low effort
 and low frustration.
 ====
