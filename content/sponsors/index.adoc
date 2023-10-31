@@ -35,6 +35,12 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   https://www.pcbgogo.com/promo/librepcb01[$25 PCB for just $1 with free shipping]
   on your first order. PCBgogo supports the LibrePCB project financially.
 
+| image:/img/sponsor-partstack.svg[link="https://partstack.com/"]
+| https://partstack.com/[Partstack] is an electronic part search engine from
+  California, providing a comprehensive catalog of parts including supplier
+  stock availability, prices, datasheets and more. They support the LibrePCB
+  project financially.
+
 | image:/img/sponsor-hdrain.png[link="https://www.hd-rain.com/"]
 | https://www.hd-rain.com/[HD Rain] from France develops satellite
   based meteorological sensors to provide high-accuracy real-time weather
