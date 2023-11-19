@@ -41,11 +41,6 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   stock availability, prices, datasheets and more. They support the LibrePCB
   project financially.
 
-| image:/img/sponsor-hdrain.png[link="https://www.hd-rain.com/"]
-| https://www.hd-rain.com/[HD Rain] from France develops satellite
-  based meteorological sensors to provide high-accuracy real-time weather
-  data and forecasts. They support the LibrePCB project financially.
-
 | icon:users[2x]
 | And many more commercial or individual sponsors contribute financially
   through https://www.patreon.com/librepcb[Patreon],
