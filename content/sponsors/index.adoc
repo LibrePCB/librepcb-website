@@ -41,6 +41,12 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   stock availability, prices, datasheets and more. They support the LibrePCB
   project financially.
 
+| image:/img/sponsor-winsource.png[link="https://www.win-source.net/"]
+| https://www.win-source.net/[WIN SOURCE] is an electronic components
+  distributor from China. In addition to regular parts, they also have a
+  large catalog of EOL and obsolete parts in stock. WIN SOURCE supports the
+  LibrePCB project financially.
+
 | icon:users[2x]
 | And many more commercial or individual sponsors contribute financially
   through https://www.patreon.com/librepcb[Patreon],
