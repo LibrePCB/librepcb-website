@@ -80,3 +80,119 @@ https://librepcb.org/docs/quickstart/create-library-elements/[add the elements y
 
 In addition, you could ask in https://librepcb.discourse.group/[our forum]
 if other users already created the library elements you need.
+
+[#can-i-order-only-through-librepcb-fab]
+=== Can I order the PCB only through LibrePCB Fab?
+
+No! Of course you can always export traditional production data (i.e. Gerber
+files) and order wherever you want. Although LibrePCB Fab makes life easier,
+we understand that you might not be happy with the provided manufacturers or
+you like to have more control over the ordering process (e.g. reviewing Gerber
+files).
+
+In our opinion, LibrePCB Fab is a win-win-win situation because users profit
+from a simple and quick order process, the LibrePCB project profits from an
+additional income to fund the development, and manufacturers profit from
+gaining more customers and publicity. Thus it is a perfect way to support
+the LibrePCB project.
+
+If you still don't like it for some reason, just don't use it -- we're
+totally fine with that and we're committed to keep the traditional production
+data export intact since we strongly belive in freedom. Choosing a PCB
+manufacturer must always be up to you.
+
+[#who-operates-librepcb]
+=== Who operates LibrePCB? Is there a company behind it?
+
+LibrePCB is an open-source project founded and coordinated by
+https://github.com/ubruhin[@ubruhin]. Although he's the main developer, the
+project receives lots of contributions from the community -- for example
+translations, documentation and code contributions. There is no company
+involved in operating the project (see also
+<<how-is-librepcb-related-to-sponsors>>), and the project is not following
+any commercial interests.
+
+[#how-is-librepcb-related-to-sponsors]
+=== How is LibrePCB related to its sponsors?
+
+LibrePCB has several commercial sponsors which support the project in different
+ways. Some are donating money, some are providing a particular service we need
+to operate the project (e.g. webhosting). In return, we list them on our
+website as a simple and honest form of publicity. We think this is a very fair
+deal since LibrePCB users profit from getting a continuously developed EDA
+suite free of charge(!) without any downsides at all (no advertisement in the
+application etc.).
+
+Note that decision-making is not impacted by sponsors. We only decide about
+features from the user's point of view, not by commercial interests of
+sponsors. Also we take privacy very serious -- even LibrePCB Fab does not
+forward any data to our manufacturing partners unless you explicitly
+choose to forward the project to them.
+
+[#what-is-the-donated-or-sponsored-money-used-for]
+=== What is the donated money used for?
+
+*Short answer:* For full-time development and many other things.
+
+*Long answer:* To operate the LibrePCB project, various things directly cost
+money. For example:
+
+Virtual server::
+  We need a virtual server for hosting the website, library manager API,
+  fabrication service, various automation tools etc. Actually our current
+  server setup would cost us at least 500 USD every year, but thanks to our
+  sponsor luckily we get it for free so the donated money is not used for that.
+
+Domains & mailserver::
+  It's not much money, but we have to pay our Internet domain names. Also
+  the mailserver is rented because hosting it by ourselves on the virtual
+  server is everything else than trivial.
+
+Hardware::
+  From time to time, some hardware might be needed. For example to test
+  LibrePCB on macOS, we bought a Mac Mini on the second-hand market.
+
+Conferences::
+  When presenting LibrePCB at conferences (e.g. FOSDEM), we need to buy
+  flight tickets, hotels etc. to attend.
+
+However, operating a large and complex project like LibrePCB mainly takes a
+lot of time. At first glance you might only see the effort spent for
+development of the application. But in total, there are many different
+tasks which need to be done:
+
+Application development::
+  The most obvious and most time consuming part is to actually develop
+  the application (new features, bugfixes etc.).
+
+Website & webservice development::
+  Developing & maintaining the website, the API webservice, the
+  fabrication service, documentation builder, translations synchronizing
+  script, ...
+
+Server administration::
+  The virtual server is entirely set up and maintained by ourselves so we
+  regularly need to keep it up to date, fix problems, monitor it etc.
+
+Support::
+  Reproducing bug reports, answering user questions, picking up feature
+  requests, responding to emails from people not reading the "there's no free
+  email support" statement, ...
+
+Documentation::
+  Writing good documentation including expressive screenshots and creating
+  helpful video tutorials is not only quite difficult but also very very
+  time consuming.
+
+Sponsorings coordination::
+  Both financial and in-kind sponsorings are a manual task, often requiring
+  lots of communication between the involved parties (many emails, sometimes
+  videocalls).
+
+This list is by far not complete, but hopefully you now have a rough idea
+about the involved effort to operate the LibrePCB project and understand that
+all this cannot be done anymore by a volunteer in free time. Therefore the
+project founder and main developer https://github.com/ubruhin[@ubruhin] started
+to work full time on LibrePCB and thus heavily relies on donations and
+sponsorings to pay the rent, food etc. Any donated money thus goes to him
+and he'll spend it for the mentioned usage.
