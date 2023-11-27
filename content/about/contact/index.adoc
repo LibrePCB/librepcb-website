@@ -5,7 +5,13 @@ weight: 40
 url: /contact
 ---
 
-For a direct conversation with the project lead, write to
-{{< cloakemail "contact" "librepcb.org" >}} -- but please don't ask for
-free support. For free support options, check out the
-link:{{< relref "help/help/index.adoc" >}}[help section].
+[IMPORTANT]
+====
+Please don't ask for free personal support (questions, bug reports, feature
+requests etc.) through the email address mentioned below! For free support
+options, check out the link:{{< relref "help/help/index.adoc" >}}[help section].
+Thank you.
+====
+
+For a direct conversation with the project lead (except for free support!),
+write to {{< cloakemail "contact" "librepcb.org" >}}.
