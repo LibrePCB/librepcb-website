@@ -31,8 +31,6 @@ This includes for example (in arbitrary order):
 * Schematic buses
 * Push&shove router
 * Length-matched traces
-* Advanced PCB features (e.g. blind/buried vias, arbitrary pad shapes, ...)
-* 3D board viewer
 * SPICE simulation
 * ...and many more!
 
