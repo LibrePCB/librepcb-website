@@ -1,0 +1,23 @@
+---
+date: 2023-12-30
+title: LibrePCB Talk at FOSDEM 2024
+author: U. Bruhin
+---
+
+I'm happy to announce that once again there will be a LibrePCB talk at the
+next https://fosdem.org/[FOSDEM], which takes place in February 2024!
+
+{{< imglink "FOSDEM" "fosdem_2024_banner.png" "https://fosdem.org/2024/" >}}
+
+After the Open Hardware devroom did not exist at the last FOSDEM in 2023,
+luckily this devroom will be back at FOSDEM 2024 where I'll give a
+status update about the LibrePCB project. So if you're curious about the
+progress of LibrePCB (also behind the scenes), feel free to join the
+conference -- either in person or via live stream.
+
+* Talk: https://fosdem.org/2024/schedule/event/fosdem-2024-3087-librepcb-status-update/[LibrePCB Status Update]
+* Track: https://fosdem.org/2024/schedule/track/open-hardware-and-cadcam/[Open Hardware and CAD/CAM]
+* Where: Room H.1308 (Rolin), ULB Solbosch Campus, Brussels, Belgium
+* When: 3 & 4 February 2024
+
+I'm looking forward to meet you at FOSDEM 24!
