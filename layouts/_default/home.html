@@ -7,6 +7,10 @@
       {{ .Date.Local | time.Format ":date_long" }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </div>
 {{ end }}
+    <div class="position-absolute end-0 m-3 d-none d-lg-block">
+      <i class="fa-solid fa-poll align-middle"></i>
+      <a class="link-light small align-middle" href="https://show.forms.app/librepcb/feedback">User feedback survey</a>
+    </div>
     <div class="d-flex flex-column justify-content-evenly text-center flex-fill">
       <div class="intro-header d-flex justify-content-center align-items-center my-2">
         <img class="intro-logo" src="./img/librepcb.png" alt=""/>

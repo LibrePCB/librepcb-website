@@ -28,8 +28,11 @@ https://github.com/LibrePCB/librepcb-doc/blob/master/CONTRIBUTING.md[`CONTRIBUTI
 
 == icon:message[] Feedback
 
-Your point of view as a LibrePCB user is very valuable for the developers.
-Did you find a bug? Is something unclear with the user interface or the
+Your point of view as a (potential) LibrePCB user is very valuable for the
+developers. Please share your opinion about LibrePCB with us by attending
+to the https://show.forms.app/librepcb/feedback[user feedback survey].
+
+Or did you find a bug? Is something unclear with the user interface or the
 documentation? Do you have an improvement idea? Either
 https://github.com/LibrePCB/LibrePCB/issues[open an issue] or
 https://librepcb.discourse.group/[start a discussion thread] to let us know!
