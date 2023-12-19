@@ -175,9 +175,10 @@ All current and previous releases are available at {releases-url}.
           for further information.
         </p>
         <div class="alert alert-info">
-          <b>Please consider making a donation</b> to support the
-          development of LibrePCB. This will help us a lot to make
-          LibrePCB even better. Thanks!
+          <b>Please consider
+          <a href="{{< relref "donate/index.adoc" >}}">making a donation</a> and
+          <a href="https://show.forms.app/librepcb/feedback">sharing your feedback</a>
+          with us.</b> This will help us a lot to make LibrePCB even better. Thanks!
         </div>
       </div>
       <div class="modal-footer">
