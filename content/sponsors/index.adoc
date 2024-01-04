@@ -37,8 +37,8 @@ Many thanks to our sponsors for supporting the LibrePCB project:
 
 | image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
 | https://www.nextpcb.com[HQ NextPCB] specializes in reliable multilayer
-  PCB manufacture and assembly. They also provide the free design for
-  manufacturing (DFM) analysis tool
+  PCB manufacture and assembly. They also provide the parts sourcing service
+  https://www.hqonline.com/[HQ Online] and the free DFM analysis tool
   https://www.nextpcb.com/free-online-gerber-viewer.html[HQDFM].
   HQ{nbsp}NextPCB supports the LibrePCB project financially.
 
