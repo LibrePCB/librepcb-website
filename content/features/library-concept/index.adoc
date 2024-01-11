@@ -9,44 +9,44 @@ weight: 70
 **_A sane library concept is the foundation of a sane EDA package._**
 ====
 
-LibrePCB follows this principle from its very first day on. And that's
-the main reason why LibrePCB is different compared to other EDA packages.
+From its very first day, LibrePCB has used a unique library concept.
+This concept is the main feature that sets it apart from other EDA packages.
 
 == icon:link[] Stable Cross-References
 
-In LibrePCB, names signify nothing. Library names, component names, pad names,
-net names -- all irrelevant for the tool, they're just for humans. This allows
-you to rename things at any time without breaking any libraries or projects.
+With LibrePCB, names are just a human-friendly reference. Whether it's a
+library, component, pad, or net, renaming elements of your project is easy
+and hassle-free.
 
 The tool uses stable, unique identifiers for all cross-references to make
-them reliable. References even work across libraries, so feel free to move
+them reliable. References even work across libraries, so you can move
 components from one library into another without any consequences.
 
 == icon:layer-group[] Multi-Footprint Packages
 
 Most EDA tools do not distinguish between _packages_ and _footprints_ -- they
-only know footprints, which doesn't reflect the real world. LibrePCB's library
-system respects that there may exist multiple footprints for the same package.
-Check out this video to see how it works:
+only recognize footprints, which doesn't reflect the real world. LibrePCB's
+library system respects that there may be multiple footprints for the same
+package. Check out this video to see how it works:
 
 {{< youtube id="vu-h5y6tK34?start=508&end=616" title="LibrePCB Package Abstraction" >}}
 
 == icon:section[] Norm-Aware Symbols
 
 A similar problem exists with symbols. American symbols (IEEE norm) and
-European symbols (IEC norm) look different, but represent exactly the same
-component. The same applies to different representations for logic gate
-symbols etc. This video explains how LibrePCB takes this into account:
+European symbols (IEC norm) look different, but often represent the same
+component. This also applies to different representations for logic gate
+symbols, etc. This video explains how LibrePCB takes this into account:
 
 {{< youtube id="vu-h5y6tK34?start=399&end=507" title="LibrePCB Symbol Variants" >}}
 
 == icon:shuffle[] Flexible Pin-to-Pad Assignments
 
 Some EDA packages extract pin-to-pad assignments (_pinouts_) just by matching
-pin- and pad-names (e.g. connecting symbol pin `1` to footprint pad `1`). But
-this doesn't reflect the real world and is thus very error-prone. Often
-there's not even a clean way to create devices with an unusual pinout
-(e.g. a SOT-23 transistor with reversed pinout).
+pin- and pad-names (e.g. connecting symbol pin `1` to footprint pad `1`).
+However, this doesn't reflect the real world and is thus very error-prone.
+Often there's not even a clean way to create devices with an unusual pinout,
+such as a SOT-23 transistor with a reversed pinout.
 
 LibrePCB solves this problem with an abstraction for _component signals_.
 One pinout exists between symbol pins and component signals, and another
@@ -59,12 +59,12 @@ your board, you don't need to worry about pinouts at all.*
 == icon:tags[] Categorization
 
 Finding components by name or contained library is fine when you know exactly
-which component you're looking for. But sometimes that's not the case --
+which component you're looking for. Often, that's not the case --
 sometimes you just want to browse through the components to discover what's
-available. Or maybe you just forgot the term "Zener" but you know you're
+available, or maybe you just forgot the term "Zener" but you know you're
 looking for a diode.
 
-That's easy with LibrePCB since everything is organized into a multilevel
+Such browsing is easy with LibrePCB since everything is organized into a multilevel
 category tree. Just click through the tree to see what components are there.
 
 [.rounded-window.window-border]
