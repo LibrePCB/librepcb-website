@@ -45,8 +45,8 @@ symbols, etc. This video explains how LibrePCB takes this into account:
 Some EDA packages extract pin-to-pad assignments (_pinouts_) just by matching
 pin- and pad-names (e.g. connecting symbol pin `1` to footprint pad `1`).
 However, this doesn't reflect the real world and is thus very error-prone.
-Often there's not even a clean way to create devices with an unusual pinout
-such as a SOT-23 transistor with reversed pinout
+Often there's not even a clean way to create devices with an unusual pinout,
+such as a SOT-23 transistor with a reversed pinout.
 
 LibrePCB solves this problem with an abstraction for _component signals_.
 One pinout exists between symbol pins and component signals, and another
