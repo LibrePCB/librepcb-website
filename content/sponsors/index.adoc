@@ -42,6 +42,12 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   https://www.nextpcb.com/free-online-gerber-viewer.html[HQDFM].
   HQ{nbsp}NextPCB supports the LibrePCB project financially.
 
+| image:/img/sponsor-bittele.png[link="https://www.7pcb.com/"]
+| https://www.7pcb.com/[Bittele Electronics] is a turn-key PCB assembly company
+  from Canada, providing prototype and low-to-mid volume PCB fabrication and
+  assembly services. Bittele Electronics supports the LibrePCB project
+  financially.
+
 | image:/img/sponsor-partstack.svg[link="https://partstack.com/"]
 | https://partstack.com/[Partstack] is an electronic part search engine from
   California, providing a comprehensive catalog of parts including supplier
