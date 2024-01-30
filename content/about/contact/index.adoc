@@ -5,16 +5,16 @@ weight: 40
 url: /contact
 ---
 
-[IMPORTANT]
+[TIP]
 ====
-For **free personal support (questions, bug reports, feature requests etc.)**,
-check out the link:{{< relref "help/help/index.adoc" >}}[help section]. The
-LibrePCB authors do not provide free personal support.
+**For users:** Free support (questions, bug reports and feature requests)
+is not available through e-mail, please check out the
+link:{{< relref "help/help/index.adoc" >}}[help section] instead.
+Commercial support is available on request.
 
-We don't publish **sponsored content / blog posts** on our website,
-so you don't need to ask.
-
-Please don't use the email address provided below for these topics. Thank you.
+**For content creators**: Please don't ask for any kind of content cooperation.
+We only publish our own content related to LibrePCB and we don't spend money
+for marketing purposes.
 ====
 
 For a direct conversation with the project lead,
