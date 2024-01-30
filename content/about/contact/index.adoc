@@ -7,11 +7,15 @@ url: /contact
 
 [IMPORTANT]
 ====
-Please don't ask for free personal support (questions, bug reports, feature
-requests etc.) through the email address mentioned below! For free support
-options, check out the link:{{< relref "help/help/index.adoc" >}}[help section].
-Thank you.
+For **free personal support (questions, bug reports, feature requests etc.)**,
+check out the link:{{< relref "help/help/index.adoc" >}}[help section]. The
+LibrePCB authors do not provide free personal support.
+
+We don't publish **sponsored content / blog posts** on our website,
+so you don't need to ask.
+
+Please don't use the email address provided below for these topics. Thank you.
 ====
 
-For a direct conversation with the project lead (except for free support!),
+For a direct conversation with the project lead,
 write to {{< cloakemail "contact" "librepcb.org" >}}.
