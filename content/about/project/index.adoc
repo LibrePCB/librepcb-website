@@ -37,7 +37,14 @@ https://archive.fosdem.org/2020/schedule/event/librepcb/[here].
 
 == icon:calendar[] FOSDEM 2022
 
-video::https://ftp.osuosl.org/pub/fosdem/2022/D.cad/librepcb.webm[]
+video::https://video.fosdem.org/2022/D.cad/librepcb.webm[]
 
 Slides & details
 https://archive.fosdem.org/2022/schedule/event/librepcb/[here].
+
+== icon:calendar[] FOSDEM 2024
+
+video::https://video.fosdem.org/2024/h1308/fosdem-2024-3087-librepcb-status-update.av1.webm[]
+
+Slides & details
+https://fosdem.org/2024/schedule/event/fosdem-2024-3087-librepcb-status-update/[here].
