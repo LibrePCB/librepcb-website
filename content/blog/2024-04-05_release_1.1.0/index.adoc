@@ -1,0 +1,186 @@
+---
+date: 2024-04-05
+title: LibrePCB 1.1.0 Released
+author: U. Bruhin
+---
+
+I'm happy to announce LibrePCB 1.1.0 which was released today! Check out the
+details below to see what's new.
+
+Highlights
+----------
+
+Live Parts Information
+~~~~~~~~~~~~~~~~~~~~~~
+
+EAGLE Project Import
+~~~~~~~~~~~~~~~~~~~~
+
+Interactive Device Pinout Assignment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Improved Support for Dark Themes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+64-bit Windows Releases & Qt6 Support
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+---
+
+Changelog
+---------
+
+Control Panel:
+~~~~~~~~~~~~~~
+
+- Allow modifying directory & filename when creating a new project
+  (https://github.com/LibrePCB/LibrePCB/pull/1303[#1303])
+- Add more licenses to choose from when creating a new project
+  (https://github.com/LibrePCB/LibrePCB/pull/1247[#1247])
+- Support delete shortcut in projects tree
+  (https://github.com/LibrePCB/LibrePCB/pull/1306[#1306])
+- Fix unreadable list view colors for dark themes
+  (https://github.com/LibrePCB/LibrePCB/pull/1310[#1310])
+
+Library Editor:
+~~~~~~~~~~~~~~~
+
+- Add tools to help defining the pinout of devices
+  (https://github.com/LibrePCB/LibrePCB/pull/1309[#1309])
+- Warn about invalid package pad connections
+  (https://github.com/LibrePCB/LibrePCB/pull/1296[#1296])
+- Refactor "Copy to Other Library" context menu
+  (https://github.com/LibrePCB/LibrePCB/pull/1343[#1343])
+- Reduce minimum window height
+  (https://github.com/LibrePCB/LibrePCB/pull/1290[#1290])
+- Fix "Select All" not selecting items far away from center
+  (https://github.com/LibrePCB/LibrePCB/pull/1243[#1243])
+- Fix max length of symbol pin name input field
+  (https://github.com/LibrePCB/LibrePCB/pull/1298[#1298])
+- Fix suggested signals when duplicating component
+  (https://github.com/LibrePCB/LibrePCB/pull/1311[#1311])
+
+Schematic Editor:
+~~~~~~~~~~~~~~~~~
+
+- Display live parts information (prices etc.)
+  (https://github.com/LibrePCB/LibrePCB/pull/1313[#1313])
+- Add context menu to parts in "Add Component"-dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1333[#1333])
+- Hide redundant pin numbers in schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/1308[#1308])
+- Improve selection of stacked items
+  (https://github.com/LibrePCB/LibrePCB/pull/1342[#1342])
+- Make "Add Component" tool more robust
+  (https://github.com/LibrePCB/LibrePCB/commit/1ef0e0ddc202adb7169c8f57f281e7b58f2b73ff[1ef0e0dd])
+
+Board Editor:
+~~~~~~~~~~~~~
+
+- Improve behavior of zoom/pan/rotate in 3D viewer
+  (https://github.com/LibrePCB/LibrePCB/pull/1301[#1301])
+- Delete labels in "Place Devices" dock to save space
+  (https://github.com/LibrePCB/LibrePCB/commit/ddec456cc35907101e9ae2e332adc36ca94c6f67[ddec456c])
+- Fix missing substitution of part attributes
+  (https://github.com/LibrePCB/LibrePCB/pull/1269[#1269])
+- Fix layer change when starting trace on THT pad
+  (https://github.com/LibrePCB/LibrePCB/pull/1302[#1302])
+- Fix missing inner layers in dropdowns
+  (https://github.com/LibrePCB/LibrePCB/pull/1338[#1338])
+
+DRC:
+~~~~
+
+- Add checks for unused or disabled copper layers
+  (https://github.com/LibrePCB/LibrePCB/pull/1339[#1339])
+
+Import/Export:
+~~~~~~~~~~~~~~
+
+- Implement EAGLE project importer
+  (https://github.com/LibrePCB/LibrePCB/pull/1288[#1288],
+  https://github.com/LibrePCB/LibrePCB/pull/1318[#1318])
+- Heavily improve EAGLE library import
+  (https://github.com/LibrePCB/LibrePCB/pull/1287[#1287])
+- Add support for realistic PCB rendering in graphics output job
+  (https://github.com/LibrePCB/LibrePCB/pull/1304[#1304])
+- Save & restore window size of BOM export dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1282[#1282])
+- Don't scale columns of BOM export dialog with window width
+  (https://github.com/LibrePCB/LibrePCB/pull/1284[#1284])
+- Fix file extension `.gml` in Protel-style Gerber output job
+  (https://github.com/LibrePCB/LibrePCB/pull/1277[#1277])
+
+Miscellaneous:
+~~~~~~~~~~~~~~
+
+- Initialize new workspace with some example projects
+  (https://github.com/LibrePCB/LibrePCB/pull/1307[#1307])
+- Add "Toggle 2D/3D" button to toolbars
+  (https://github.com/LibrePCB/LibrePCB/pull/1334[#1334])
+- Use lighter toolbar icons if dark theme is detected
+  (https://github.com/LibrePCB/LibrePCB/pull/1326[#1326])
+- Globally enable HTTP caching
+  (https://github.com/LibrePCB/LibrePCB/pull/1289[#1289])
+- Improve stacking order of graphics items
+  (https://github.com/LibrePCB/LibrePCB/pull/1291[#1291])
+- Visually separate colors of board layers
+  (https://github.com/LibrePCB/LibrePCB/pull/1248[#1248])
+- Show waiting spinner while opening external applications
+  (https://github.com/LibrePCB/LibrePCB/pull/1283[#1283])
+- Limit search result auto-zoom to a certain margin
+  (https://github.com/LibrePCB/LibrePCB/pull/1312[#1312])
+- Fix possibly empty device/package name in assembly options
+  (https://github.com/LibrePCB/LibrePCB/commit/79323b4e7efb0e9a220f024d382917c7d1e20227[79323b4e])
+- Fix possibly wrong colors of STEP models
+  (https://github.com/LibrePCB/LibrePCB/pull/1335[#1335])
+
+Building/Packaging/Deployment:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Support building with Qt6, selectable by `QT_MAJOR_VERSION`
+  (https://github.com/LibrePCB/LibrePCB/pull/1317[#1317])
+- Add new Windows installer based on Inno Setup
+  (https://github.com/LibrePCB/LibrePCB/pull/1340[#1340])
+- Build macOS releases on macOS 12
+  (https://github.com/LibrePCB/LibrePCB/pull/1259[#1259])
+- Add licensing data for https://reuse.software/
+  (https://github.com/LibrePCB/LibrePCB/pull/1316[#1316])
+- Update AppStream MetaInfo to conform to latest Freedesktop spec
+  (https://github.com/LibrePCB/LibrePCB/pull/1314[#1314])
+- Replace `fontobene-qt5` by `fontobene-qt` & update other dependencies
+  (https://github.com/LibrePCB/LibrePCB/pull/1324[#1324])
+- Fix linking with OCCT 7.8.x
+  (https://github.com/LibrePCB/LibrePCB/pull/1329[#1329])
+
+Internal:
+~~~~~~~~~
+
+- Refactor memory management of `SExpression` children
+  (https://github.com/LibrePCB/LibrePCB/pull/1331[#1331])
+- Improve robustness of some math functions
+  (https://github.com/LibrePCB/LibrePCB/pull/1237[#1237],
+  https://github.com/LibrePCB/LibrePCB/pull/1325[#1325])
+- Factor out OpenGL shader programs into files
+  (https://github.com/LibrePCB/LibrePCB/pull/1274[#1274])
+- Fix unintended behavior of `FileUtils::getFilesInDirectory()`
+  (https://github.com/LibrePCB/LibrePCB/pull/1235[#1235],
+  https://github.com/LibrePCB/LibrePCB/pull/1241[#1241])
+- Fix `stderr` warning due to unhandled switch-case in `BI_FootprintPad`
+  (https://github.com/LibrePCB/LibrePCB/commit/fd75a53bdf397e725c3665915dc3b510cccb8938[fd75a53b])
+
+---
+
+Download
+--------
+
+The release can be downloaded for all major operating systems from our download
+page:
+
+https://librepcb.org/download/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you like LibrePCB, please consider making a small
+link:{{< relref "donate/index.adoc" >}}[donation] to support the
+ongoing development. +
+Thank you! icon:heart[]
