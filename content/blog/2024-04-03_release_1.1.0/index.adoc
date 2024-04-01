@@ -83,14 +83,22 @@ And for any remaining pads, an interactive mode helps you to do the
 assignment pad by pad. A filtering feature and extensive keyboard shortcuts
 make this mode very efficient.
 
+{empty} +
+
+
 Improved Support for Dark Themes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[.imageblock.window-border.left.me-4]
+{{< imglink "Dark Theme" "dark-toolbar.png" >}}
 
 This is actually just a small change, but thanks to
 https://github.com/LibrePCB/LibrePCB/pull/1326[theme-aware toolbar icons]
 and https://github.com/LibrePCB/LibrePCB/pull/1310[improved colors],
 LibrePCB is now much better usable (and looks better) on systems with a
 dark theme.
+
+{empty} +
 
 Qt6, 64-bit Windows Releases, Offline Installer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
