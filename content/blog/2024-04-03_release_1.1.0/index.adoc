@@ -126,7 +126,7 @@ for now, as promoted on the download page. For upcoming releases we plan
 to drop these Qt5 builds so only the Qt6 builds will be available then.
 ====
 
-[IMPORTANT]
+[NOTE]
 ====
 The move to Qt6 enforced us to *drop support for Windows 7 & 8 and any
 32-bit versions* -- upcoming releases will require at least Windows 10 64-bit.
