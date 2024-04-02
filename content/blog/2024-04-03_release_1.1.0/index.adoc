@@ -10,8 +10,8 @@ are some exciting new features, check out the details below.
 Highlights
 ----------
 
-Live Part Information (https://github.com/LibrePCB/LibrePCB/pull/1313[#1313])
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Live Parts Information (https://github.com/LibrePCB/LibrePCB/pull/1313[#1313])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Who didn't already finish a PCB project and then while ordering the parts
 realized that several parts in the schematic are obsolete, not in stock or
@@ -118,17 +118,21 @@ different CPU architecture, the new installer defaults to the location
 `C:\Program Files\LibrePCB` instead of `C:\Program Files (x86)\LibrePCB`.
 During installation it will ask you to uninstall any previous LibrePCB version.
 
-[NOTE]
+[WARNING]
 ====
-Note that the move to Qt6 enforced us to *drop support for Windows 7 & 8 and
-any 32-bit versions* -- new releases will require at least Windows 10 64-bit.
-Since Windows 7 & 8 are already end-of-life for quite some time, it is hightly
-recommended anyway to not use these systems anymore.
+Note that these *Qt6/64-bit builds are currently considered as beta*. For
+productive use we recommend the still available Qt5 (32-bit on Windows) builds
+for now, as promoted on the download page. For upcoming releases we plan
+to drop these Qt5 builds so only the Qt6 builds will be available then.
+====
 
-For this release we still provide builds with Qt5 (32-bit, running on older
-systems) in addition to Qt6 (64-bit, Windows 10+) so you still have plenty
-of time to migrate to an up-to-date system. But from the next release
-on, we need to definitively drop support for Windows 7 & 8 and 32-bit systems.
+[IMPORTANT]
+====
+The move to Qt6 enforced us to *drop support for Windows 7 & 8 and any
+32-bit versions* -- upcoming releases will require at least Windows 10 64-bit.
+Since Windows 7 & 8 are already end-of-life for quite some time, it is hightly
+recommended anyway to not use these systems anymore. But for now you can
+still use the Qt5 builds on them.
 ====
 
 ---
