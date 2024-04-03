@@ -13,7 +13,7 @@ Highlights
 Live Parts Information (https://github.com/LibrePCB/LibrePCB/pull/1313[#1313])
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Who didn't already finish a PCB project and then while ordering the parts
+Who didn't already finish a PCB project and then -- while ordering the parts --
 realized that several parts in the schematic are obsolete, not in stock or
 unexpectedly expensive? This is annoying and wastes time for evaluating new
 parts and adjusting the PCB layout again.
@@ -49,7 +49,7 @@ EAGLE Project Import (https://github.com/LibrePCB/LibrePCB/pull/1288[#1318])
 
 Still using EAGLE and looking for alternatives now since
 https://www.autodesk.com/products/fusion-360/blog/future-of-autodesk-eagle-fusion-360-electronics/[it has been abandoned]?
-Or already using LibrePCB but still having many old EAGLE projects?
+Or already using LibrePCB, but still having many old EAGLE projects?
 
 No problem -- in addition to the already existing EAGLE library import,
 you can now even import whole EAGLE projects, allowing you to smoothly
@@ -63,7 +63,7 @@ it a try.
 
 For more details about its limitations, check out
 https://github.com/LibrePCB/LibrePCB/pull/1288[this pull request].
-If you encouter a problem not mentioned there, please
+If you encounter a problem not mentioned there, please
 https://librepcb.org/help/[let us know]!
 
 Interactive Device Pinout Assignment (https://github.com/LibrePCB/LibrePCB/pull/1309[#1309])
@@ -120,7 +120,7 @@ During installation it will ask you to uninstall any previous LibrePCB version.
 
 [WARNING]
 ====
-Note that these *Qt6/64-bit builds are currently considered as beta*. For
+Note that these *Qt6/64-bit builds are currently considered beta*. For
 productive use we recommend the still available Qt5 (32-bit on Windows) builds
 for now, as promoted on the download page. For upcoming releases we plan
 to drop these Qt5 builds so only the Qt6 builds will be available then.
@@ -128,9 +128,9 @@ to drop these Qt5 builds so only the Qt6 builds will be available then.
 
 [NOTE]
 ====
-The move to Qt6 enforced us to *drop support for Windows 7 & 8 and any
+The move to Qt6 forced us to *drop support for Windows 7, Windows 8 and any
 32-bit versions* -- upcoming releases will require at least Windows 10 64-bit.
-Since Windows 7 & 8 are already end-of-life for quite some time, it is hightly
+Since Windows 7 and 8 are already end-of-life for quite some time, it is highly
 recommended anyway to not use these systems anymore. But for now you can
 still use the Qt5 builds on them.
 ====
