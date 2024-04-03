@@ -74,17 +74,7 @@ function registerDownloadDialog() {
   }
 }
 
-function showKnownIssueIfItalian() {
-  if (navigator.languages.includes("it") || navigator.languages.includes("it-CH")) {
-    var divs = document.getElementsByClassName("known-issue-italian-0.1.7");
-    for (var div of divs) {
-      div.classList.remove("d-none");
-    }
-  }
-}
-
 uncloakMail();
 reorderDownloadSections();
 disableOtherDownloadButtons();
 registerDownloadDialog();
-showKnownIssueIfItalian();

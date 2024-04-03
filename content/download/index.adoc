@@ -27,16 +27,6 @@ For help & more information, check out the
 https://librepcb.org/docs/installation/[*installation instructions*].
 ====
 
-// Important known issue for LibrePCB 0.1.7. Should be removed after the next
-// release (including the JS function showKnownIssueIfItalian()).
-[IMPORTANT.known-issue-italian-{version}.d-none]
-====
-**For Italian Users**:
-LibrePCB 0.1.7 unfortunately contains a bug which could cause a crash if the
-language is set to Italian. For the available workarounds, check out
-https://github.com/LibrePCB/LibrePCB/issues/1101#issuecomment-1429794854[this comment].
-====
-
 [.download-section.windows]
 == {{< icon "fa-brands fa-windows" >}} Windows
 
