@@ -69,7 +69,7 @@ https://librepcb.org/help/[let us know]!
 Interactive Device Pinout Assignment (https://github.com/LibrePCB/LibrePCB/pull/1309[#1309])
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[.imageblock.window-border.right.ms-4]
+[.imageblock.window-border.float-lg-end.ms-4]
 {{< imglink "Interactive Pinout" "interactive-pinout.gif" >}}
 
 The most important step of creating a new device is to define its pinout,
@@ -89,7 +89,7 @@ make this mode very efficient.
 Improved Support for Dark Themes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[.imageblock.window-border.left.me-4]
+[.imageblock.window-border.float-lg-start.me-4]
 {{< imglink "Dark Theme" "dark-toolbar.png" >}}
 
 This is actually just a small change, but thanks to
