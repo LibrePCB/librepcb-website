@@ -62,7 +62,7 @@ _Requirements: Windows 7 or later._
 [.download-section.macos]
 == {{< icon "fa-brands fa-apple" >}} macOS
 
-_Requirements: macOS 11 or later (macOS 10.14 when
+_Requirements: macOS 12 or later (macOS 10.14 when
 https://librepcb.org/docs/installation/build-from-sources/[building from sources])_
 
 [subs="attributes"]
