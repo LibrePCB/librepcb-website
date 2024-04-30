@@ -9,10 +9,22 @@ weight: 30
 The board editor provides the following features:
 
 * Easy-to-use, intuitive interface (including keyboard navigation)
-* Multi-layer PCB (more than you'll need)
+* Multi-layer PCB (more than you'll need; supporting blind- & buried vias)
 * Design rule check (DRC)
-* Import formats: DXF
-* Export formats: PDF, SVG, pixmap, BOM, pick&place, Gerber/Excellon
+* Live 3D viewer
+* Import formats: DXF, EAGLE (project import)
+* Export formats: See
+  link:{{< relref "features/output-jobs/index.adoc" >}}[output jobs]
+
+== icon:cube[] 3D Preview
+
+The integrated 3D viewer shows you an accurate live preview how your PCB
+will look after production, including the assembled parts where 3D models
+are available. Our official libraries already contain 3D models for many
+standard packages, so those just work out of the box without any configuration.
+
+[.rounded-window.window-border]
+image::3d-viewer.gif[3D viewer]
 
 == icon:code-branch[] Board Branching
 
@@ -33,14 +45,3 @@ to switch to a completely different device.
 
 [.rounded-window.window-border]
 image::switch-device.gif[Switch device]
-
-== icon:file-export[] Feature-Rich Export
-
-The highly configurable export with live preview allows to generate
-nice looking assembly plans and other documentation. Beside printing and
-copying to clipboard, there are many output formats supported -- PDF, SVG,
-PNG and more. PDFs will contain selectable/searchable texts (not just
-graphics).
-
-[.rounded-window.window-border]
-image::pdf-export.gif[PDF export]
