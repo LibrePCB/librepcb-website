@@ -10,7 +10,7 @@ The library editor provides the following features:
 
 * Easy-to-use, intuitive interface (including keyboard navigation)
 * Live rule check to warn about common mistakes
-* Import formats: Eagle `*.lbr`, DXF
+* Import formats: DXF, EAGLE
 * Export formats: PDF, SVG, pixmap
 
 == icon:clipboard-check[] Rule Check
