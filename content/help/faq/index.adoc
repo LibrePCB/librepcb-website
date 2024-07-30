@@ -70,8 +70,16 @@ to see pictures of some PCBs made with LibrePCB.
 === I can't find _XYZ_ in the libraries, where is it?
 
 Providing high-quality libraries requires a huge amount of time until they
-are somewhat "complete" (that's impossible anyway). If you didn't find what
-you're looking for, it probably doesn't exist yet.
+are somewhat "complete" (that's impossible anyway). So it can happen that
+you don't find a particular part in the schematic editor, or the board editor
+shows the message _"No device or package for the selected component found in
+the library!"_.
+
+That's not a problem of the software. It only means the part is not provided
+by the installed libraries. So first make sure you have
+https://librepcb.org/docs/quickstart/install-remote-libraries/[installed all libraries]
+which _might_ contain the desired part (if unsure, just install all of them).
+If it is still not available, it probably doesn't exist yet in any library.
 
 But there's good news: With LibrePCB it's very easy to create your own
 library elements! Just
@@ -80,6 +88,11 @@ https://librepcb.org/docs/quickstart/create-library-elements/[add the elements y
 
 In addition, you could ask in https://librepcb.discourse.group/[our forum]
 if other users already created the library elements you need.
+
+[#error-no-dev-or-pkg-found]
+=== I get the error "No device or package found [...]"!
+
+See <<where-is-library-element>>.
 
 [#can-i-order-only-through-librepcb-fab]
 === Can I order the PCB only through LibrePCB Fab?
