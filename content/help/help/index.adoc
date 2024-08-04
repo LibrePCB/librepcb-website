@@ -29,16 +29,16 @@ https://github.com/LibrePCB/LibrePCB/issues[open an issue] in our issue
 tracker. If you don't have a GitHub account, feel free to post your message
 in the https://librepcb.discourse.group/[discussion forum] instead.
 
-== icon:comments[] Chat
+== icon:comments[] Development Chat
 
-We also have a development channel on IRC and a group on Telegram. The two
+We also have a development group on Telegram and a channel on Matrix. The two
 chats are bridged, so you can join any one of them to see all conversations.
 
 * https://telegram.me/LibrePCB_dev[LibrePCB_dev on Telegram]
-* https://web.libera.chat?channels=#librepcb[#librepcb on Libera.Chat]
+* https://matrix.to/#/#librepcb-dev:matrix.coredump.ch[#librepcb-dev:matrix.coredump.ch on Matrix]
 
 Note that this chat is mainly for discussing the _development_ of LibrePCB.
-To get help, the https://librepcb.discourse.group/[forum] is preferred.
+To get help, please use the https://librepcb.discourse.group/[forum] instead.
 
 == icon:money-bill[] Paid Support
 
