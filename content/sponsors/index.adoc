@@ -28,13 +28,6 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   manufacturing company from China which provides advanced PCB technologies.
   They operate our fabrication service and contribute financially.
 
-| image:/img/sponsor-pcbgogo.png[link="https://www.pcbgogo.com/promo/librepcb"]
-| https://www.pcbgogo.com/promo/librepcb[PCBgogo] is a quick-turn prototype
-  PCB manufacturing and assembly service from China.
-  They offer a
-  https://www.pcbgogo.com/promo/librepcb01[$25 PCB for just $1 with free shipping]
-  on your first order. PCBgogo supports the LibrePCB project financially.
-
 | image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
 | https://www.nextpcb.com[HQ NextPCB] specializes in reliable multilayer
   PCB manufacture and assembly. They also provide the parts sourcing service
