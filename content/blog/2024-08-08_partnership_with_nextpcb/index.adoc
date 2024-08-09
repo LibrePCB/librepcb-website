@@ -1,0 +1,41 @@
+---
+date: 2024-08-08
+title: Partnership With NextPCB
+author: U. Bruhin
+---
+
+Today I'm happy to announce our new manufacturing partnership with
+https://www.nextpcb.com[NextPCB], a large PCB manufacturer from China!
+
+About NextPCB
+-------------
+
+https://www.nextpcb.com[NextPCB] provides PCB manufacturing and assembly
+services with a lot of capabilities (e.g. materials, colors, surface finish,
+panelization, ...) for a competitive price. See details at their
+https://www.nextpcb.com/pcb-capabilities[capabilities sheet]. In addition,
+they provide a free
+https://www.nextpcb.com/dfm[Design For Manufacturing (DFM) tool] for
+Windows to analyze your PCB design for various manufacturing issues.
+
+LibrePCB Fab Integration
+------------------------
+
+From now on, NextPCB is available as a manufacturer on our manufacturing
+service https://fab.librepcb.org[LibrePCB Fab]. As usual, the workflow to
+order a PCB is very simple, you now just have one more choice. Note that
+solder resist color and PCB thickness configured in LibrePCB are automatically
+applied when starting the order with NextPCB:
+
+{{< imglink "LibrePCB Fab Workflow" "fab_nextpcb.gif" >}}
+
+Note that currently only PCB orders (without assembly) are supported. It
+is planned to add support for their assembly service too in future.
+
+Sponsorship
+-----------
+
+At this point we also want to thank NextPCB for their
+link:{{< relref "sponsors/index.adoc" >}}[sponsorship] of the
+LibrePCB project. Their donation help us a lot to keep the development
+ongoing -- Thank you! icon:rocket[]
