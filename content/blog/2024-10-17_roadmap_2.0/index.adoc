@@ -23,7 +23,7 @@ https://www.sbfi.admin.ch/sbfi/en/home.html[Swiss State Secretariat for Educatio
 [.text-center]
 {{< imglink "NGI0 Commons" "ngi0-commons.png" "https://nlnet.nl/project/LibrePCB2.0/" >}}
 
-It is the second time we receive funding through NGI0. LibrePCB 1.0 and 1.1
+It's the second time we receive funding through NGI0. LibrePCB 1.0 and 1.1
 were major outcomes of
 link:{{< relref "blog/2023-04-13_ngi0_grant/index.adoc" >}}[our first grant],
 together with our first video tutorials -- important milestones in the
@@ -65,11 +65,11 @@ than keeping the code compatible with new toolchain versions. However, more
 than a decade later, the situation is a bit different:
 
 * Rust 1.0 was released ~2 years after the LibrePCB project was born
-* Today, ~9 years after its 1.0 release, it is a widely used programming
+* Today, ~9 years after its 1.0 release, it's a widely used programming
   language, backed by large companies, and probably will last for a long time
 * Rust provides not only a compiler, but a whole ecosystem including a
   build system and package management to simplify project administration
-* Although Rust is also a low-level, fast programming language, it is much
+* Although Rust is also a low-level, fast programming language, it's much
   safer than {cpp} (memory safety, compile-time checks, ...), leading in
   more reliable applications
 * There exist tons of Rust libraries, which are way easier to profit from
@@ -112,7 +112,7 @@ aren't many options:
 * Stick with QtWidgets, but use custom stylesheets to heavily adjust its look
   (example: https://obsproject.com/[OBS Studio]) -- that even increases the
   effort for UI development and doesn't fix the limitations of QtWidgets.
-* Use https://en.wikipedia.org/wiki/QML[QML] -- nice it is shipped with Qt so
+* Use https://en.wikipedia.org/wiki/QML[QML] -- luckily it's part of Qt so
   it wouldn't be a huge new dependency. Probably it would be usable for
   LibrePCB, but it's error-prone because it's interpreted at runtime, and the licensing situation of QML (or Qt in general) doesn't really go into the
   right direction (getting more and more commercial).
@@ -136,14 +136,14 @@ important use-cases. And even though many features are missing
 manually.
 
 During my experiments, I tried to quickly create a listview like the one
-from the library manager. Compared to the ~580 lines of code for QtWidgets,
-one custom list item in Slint takes only ~200 lines of code, and it is even
+from the library manager. Compared to the ~580 lines of code of QtWidgets,
+a custom list item in Slint takes only ~200 lines of code, and it's even
 more responsive (e.g. hover effects):
 
 [.text-center]
 image:slint-listview.png[]
 
-So now I'm convinced we should give Slint a real chance, and it's now part of
+Now I'm convinced we should give Slint a real chance, thus it's part of
 the LibrePCB 2.0 roadmap.
 
 I hope you are now as excited as I am! 😀
