@@ -292,7 +292,7 @@ Credits
 -------
 
 [.right.ms-3]
-image:/img/nlnet_ngi0.png[link="https://nlnet.nl/project/LibrePCB/",width=130]
+image:nlnet-ngi0.png[link="https://nlnet.nl/project/LibrePCB/",width=130]
 
 This release was part of the
 link:{{< relref "blog/2023-04-13_ngi0_grant/index.adoc" >}}[NGI0 Entrust grant]
