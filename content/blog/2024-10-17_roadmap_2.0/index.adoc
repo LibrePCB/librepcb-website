@@ -117,7 +117,7 @@ aren't many options:
   it wouldn't be a huge new dependency. Probably it would be usable for
   LibrePCB, but it's error-prone because it gets interpreted at runtime, and   the licensing situation of QML (or Qt in general) doesn't really go into
   the right direction (getting more and more commercial).
-* https://slint.dev/[Slint UI]: A pretty young UI framework implemented
+* https://slint.dev/[Slint]: A pretty young UI framework implemented
   in Rust (but providing a {cpp} API), with a declarative UI language
   which gets interpreted at compile-time and a very powerful live preview.
   Unfortunately it still lacks a lot of basic features and I haven't seen
