@@ -11,12 +11,13 @@ Many thanks to our sponsors for supporting the LibrePCB project:
 |===
 | image:/img/nlnet.png[link="https://nlnet.nl/project/LibrePCB/"]
 
-  image:/img/ngi0-entrust.svg[link="https://nlnet.nl/project/LibrePCB/"]
-| This project is funded through the https://nlnet.nl/entrust/[NGI0 Entrust]
-  Fund, a fund established by https://nlnet.nl[NLnet] with financial support
-  from the European Commission's https://ngi.eu[Next Generation Internet]
-  programme, under the aegis of DG Communications Networks, Content and
-  Technology under grant agreement No 101069594.
+  image:/img/ngi0.svg[link="https://nlnet.nl/project/LibrePCB2.0/"]
+| This project is funded through the https://nlnet.nl/commonsfund/[NGI0 Commons]
+  & https://nlnet.nl/entrust/[NGI0 Entrust] funds, established by
+  https://nlnet.nl[NLnet] with financial support from the European
+  Commission's https://ngi.eu[Next Generation Internet] programme, under
+  the aegis of DG Communications Networks, Content and Technology under
+  grant agreement No 101135429 & 101069594.
 
 | image:/img/sponsor-aisler.png[link="https://aisler.net"]
 | https://aisler.net[AISLER] is a PCB manufacturing service from the
