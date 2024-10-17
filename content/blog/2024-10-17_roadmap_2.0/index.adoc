@@ -69,13 +69,13 @@ than a decade later, the situation is a bit different:
   language, backed by large companies, and probably will last for a long time
 * Rust provides not only a compiler, but a whole ecosystem including a
   build system and package management to simplify project administration
-* Although Rust is also a low-level, fast programming language, it's much
-  safer than {cpp} (memory safety, compile-time checks, ...), leading in
-  more reliable applications
-* There exist tons of Rust libraries, which are way easier to profit from
-  than for {cpp} libraries which are very difficult to share
-* The community of Rust is already huge (with lots of smart people) and
-  growing fast (probably at cost of {cpp} market share)
+* Although Rust is also a low-level, fast, non-garbage-collected programming
+  language, it's much safer than {cpp} (memory safety, compile-time
+  checks, ...), leading in more reliable applications
+* There exist tons of Rust libraries, which are way easier to integrate than
+  {cpp} libraries which are difficult to share
+* The Rust community is already huge (with lots of smart people) and still
+  growing fast
 
 Given the advantages of Rust over {cpp}, I think we should really give
 it a try and do a first attempt of integrating Rust into the LibrePCB code
@@ -97,8 +97,9 @@ to design more dynamic, flexible, responsive UIs. Also it consumes a lot
 of time, even simple things in the UI require to write tons of error-prone
 code. In addition, the platform-dependent look of Qt often leads to
 issues like unreadable text colors or layouting errors. All these things
-caused the development of new features to stuck because either I don't know how
-it could be implemented with Qt or I'm afraid of writing so much code for it.
+caused the development of new features to stuck because either something is
+almost impossible to implement with Qt, or I'm afraid of writing so much code
+for it.
 
 As an example, one item in this custom list view requires ~580 lines of code:
 
@@ -114,13 +115,13 @@ aren't many options:
   effort for UI development and doesn't fix the limitations of QtWidgets.
 * Use https://en.wikipedia.org/wiki/QML[QML] -- luckily it's part of Qt so
   it wouldn't be a huge new dependency. Probably it would be usable for
-  LibrePCB, but it's error-prone because it's interpreted at runtime, and the licensing situation of QML (or Qt in general) doesn't really go into the
-  right direction (getting more and more commercial).
+  LibrePCB, but it's error-prone because it gets interpreted at runtime, and   the licensing situation of QML (or Qt in general) doesn't really go into
+  the right direction (getting more and more commercial).
 * https://slint.dev/[Slint UI], a pretty young UI framework implemented
   in Rust (but providing a {cpp} API), with a declarative UI language
   which gets interpreted at compile-time and a very powerful live preview.
   Unfortunately it still lacks a lot of basic features and I haven't seen
-  any large project yet using Slint, so there's not really a proof that it
+  any large project using Slint yet, so there's not really a proof that it
   will work for LibrePCB.
 
 Of course there are many other UI frameworks out there, but nothing really
@@ -136,7 +137,7 @@ important use-cases. And even though many features are missing
 manually.
 
 During my experiments, I tried to quickly create a listview like the one
-from the library manager. Compared to the ~580 lines of code of QtWidgets,
+from the library manager. Compared to the ~580 lines of code for QtWidgets,
 a custom list item in Slint takes only ~200 lines of code, and it's even
 more responsive (e.g. hover effects):
 
