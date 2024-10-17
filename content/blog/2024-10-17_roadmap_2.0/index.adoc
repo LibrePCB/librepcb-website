@@ -113,11 +113,11 @@ aren't many options:
 * Stick with QtWidgets, but use custom stylesheets to heavily adjust its look
   (example: https://obsproject.com/[OBS Studio]) -- that even increases the
   effort for UI development and doesn't fix the limitations of QtWidgets.
-* Use https://en.wikipedia.org/wiki/QML[QML] -- luckily it's part of Qt so
+* https://en.wikipedia.org/wiki/QML[QML]: Luckily it's part of Qt so
   it wouldn't be a huge new dependency. Probably it would be usable for
   LibrePCB, but it's error-prone because it gets interpreted at runtime, and   the licensing situation of QML (or Qt in general) doesn't really go into
   the right direction (getting more and more commercial).
-* https://slint.dev/[Slint UI], a pretty young UI framework implemented
+* https://slint.dev/[Slint UI]: A pretty young UI framework implemented
   in Rust (but providing a {cpp} API), with a declarative UI language
   which gets interpreted at compile-time and a very powerful live preview.
   Unfortunately it still lacks a lot of basic features and I haven't seen
