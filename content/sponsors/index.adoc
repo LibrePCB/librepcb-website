@@ -29,6 +29,12 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   manufacturing company from China which provides advanced PCB technologies.
   They operate our fabrication service and contribute financially.
 
+| image:/img/sponsor-partstack.svg[link="https://partstack.com/"]
+| https://partstack.com/[Partstack] is an electronic part search engine from
+  California, providing a comprehensive catalog of stock information, prices
+  etc. They operate our live parts information service and contribute
+  financially.
+
 | image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
 | https://www.nextpcb.com[HQ NextPCB] specializes in reliable multilayer
   PCB manufacture and assembly. They also provide the parts sourcing service
@@ -41,12 +47,6 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   from Canada, providing prototype and low-to-mid volume PCB fabrication and
   assembly services. Bittele Electronics supports the LibrePCB project
   financially.
-
-| image:/img/sponsor-partstack.svg[link="https://partstack.com/"]
-| https://partstack.com/[Partstack] is an electronic part search engine from
-  California, providing a comprehensive catalog of parts including supplier
-  stock availability, prices, datasheets and more. They support the LibrePCB
-  project financially.
 
 | image:/img/sponsor-winsource.png[link="https://www.win-source.net/"]
 | https://www.win-source.net/[WIN SOURCE] is an electronic components
