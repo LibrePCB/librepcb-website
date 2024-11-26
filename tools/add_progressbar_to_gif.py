@@ -37,7 +37,7 @@ if __name__ == '__main__':
         draw.ellipse(overlay_rect, None, COLOR, 1 * overlay_scale)
         draw.pieslice(overlay_rect, -90, angle - 90, COLOR)
         overlay = overlay.resize((SIZE, SIZE),
-                                 resample=Image.Resampling.LANCZOS)
+                                 resample=Image.Resampling.NEAREST)
         frame.paste(overlay, overlay_position, overlay)
         out_frames.append(frame.convert('RGB'))
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
         (im.size[1] // 2) - (overlay_height // 2),
     ]
     overlay = overlay.resize((overlay_width, overlay_height),
-                             resample=Image.Resampling.LANCZOS)
+                             resample=Image.Resampling.NEAREST)
     last_frame = Image.new('RGBA', im.size, (0, 0, 0, 0))
     last_frame.paste(out_frames[-1])
     brightness = ImageEnhance.Brightness(last_frame)
