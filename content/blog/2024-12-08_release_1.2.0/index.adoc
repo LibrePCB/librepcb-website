@@ -65,8 +65,9 @@ editor for easy access. In addition, parts which have an MPN & manufacturer
 specified also offer a _Search datasheet_ menu item which will look
 for a datasheet in the Internet.
 
-Whenever possible, datasheets will be opened with the local PDF reader and
-are cached locally to keep them available without using Internet access again.
+Whenever possible, datasheets are downloaded and opened with the local PDF
+reader. They are cached to keep them available without accessing the Internet
+again.
 
 Specctra DSN Export / SES Import (https://github.com/LibrePCB/LibrePCB/pull/1457[#1457])
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
