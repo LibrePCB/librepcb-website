@@ -31,7 +31,7 @@ libraries! 😀
 [WARNING]
 ====
 Due to the complexity of such imports, there are some limitations and the
-quality of the output never maches manually created elements. Please check
+quality of the output never matches manually created elements. Please check
 out the details and usage recommendations
 https://github.com/LibrePCB/LibrePCB/pull/1468[here].
 ====
