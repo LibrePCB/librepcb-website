@@ -132,7 +132,7 @@ Windows 7/8/32-bit::
   link:{{< relref "blog/2024-04-03_release_1.1.0/index.adoc" >}}[LibrePCB 1.1.0 release notes]
   for details. Note that when
   https://librepcb.org/docs/installation/build-from-sources/[building LibrePCB from sources],
-  these limitations do not exist.
+  these limitations do not exist (yet).
 
 Windows Installer::
   We migrated to a new Windows installer framework, which now supports
@@ -235,7 +235,7 @@ Miscellaneous:
   (https://github.com/LibrePCB/LibrePCB/pull/1459[#1459])
 - Delete old temporary files at application startup
   (https://github.com/LibrePCB/LibrePCB/pull/1452[#1452])
-- Fix temporarily closing windows when opening 3D viewer (Qt6)
+- Qt6: Fix temporarily closing windows when opening 3D viewer
   (https://github.com/LibrePCB/LibrePCB/pull/1381[#1381])
 - Windows: Fix encoding issues in auto-detected full user name
   (https://github.com/LibrePCB/LibrePCB/pull/1382[#1382])
@@ -249,6 +249,8 @@ Miscellaneous:
   (https://github.com/LibrePCB/LibrePCB/pull/1444[#1444])
 - Fix OpenGL 3D viewers for Qt > 6.6
   (https://github.com/LibrePCB/LibrePCB/pull/1469[#1469])
+- Fix possibly laggy UI when worker threads are running
+  (https://github.com/LibrePCB/LibrePCB/pull/1408[#1408])
 - Replace pick&place icon from Icons8
   (https://github.com/LibrePCB/LibrePCB/pull/1395[#1395])
 
@@ -265,6 +267,8 @@ Building/Packaging/Deployment:
   (https://github.com/LibrePCB/LibrePCB/pull/1377[#1377])
 - Drop support for Qt < 5.12 and CMake < 3.16
   (https://github.com/LibrePCB/LibrePCB/pull/1385[#1385])
+- Snap/Flatpak: Fix opening keyboard shortcuts PDF
+  (https://github.com/LibrePCB/LibrePCB/pull/1383[#1383])
 - Fix compile error in `libs/optional` with Clang 19.x
   (https://github.com/LibrePCB/LibrePCB/pull/1456[#1456])
 - Windows: Fix compile error caused by OpenGL headers
@@ -273,14 +277,6 @@ Building/Packaging/Deployment:
   (https://github.com/LibrePCB/LibrePCB/pull/1384[#1384])
 - Update REUSE copyright metadata
   (https://github.com/LibrePCB/LibrePCB/pull/1404[#1404])
-
-Internal:
-~~~~~~~~~
-
-- Change keyboard shortcuts PDF location to cache directory
-  (https://github.com/LibrePCB/LibrePCB/pull/1383[#1383])
-- Give GUI higher thread priority than background tasks
-  (https://github.com/LibrePCB/LibrePCB/pull/1408[#1408])
 
 ---
 
