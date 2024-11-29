@@ -35,9 +35,3 @@ It's just
 https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/blob/5c5277f8b0571725155ef38a16f73a6b99574d40/.github/workflows/main.yml[a few lines of code]
 to get it running!
 ====
-
-[NOTE]
-====
-Currently the CLI provides only very basic functionality, but we will add more
-features from time to time. Stay tuned!
-====
