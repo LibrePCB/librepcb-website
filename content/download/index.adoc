@@ -8,16 +8,11 @@ weight: 60
 :version: {{< param latestVersion >}}
 :releases-url: https://download.librepcb.org/releases/
 :base-url: {releases-url}{version}
-:windows-installer-url: {base-url}/librepcb-installer-{version}-windows-x86.exe
-:windows-installer-x64-url: {base-url}/librepcb-installer-{version}-windows-x86_64.exe
-:windows-zip-url: {base-url}/librepcb-{version}-windows-x86.zip
-:windows-zip-x64-url: {base-url}/librepcb-{version}-windows-x86_64.zip
+:windows-installer-url: {base-url}/librepcb-installer-{version}-windows-x86_64.exe
+:windows-zip-url: {base-url}/librepcb-{version}-windows-x86_64.zip
 :linux-appimage-url: {base-url}/librepcb-{version}-linux-x86_64.AppImage
-:linux-appimage-qt6-url: {base-url}/librepcb-{version}-linux-x86_64-qt6.AppImage
 :linux-archive-url: {base-url}/librepcb-{version}-linux-x86_64.tar.gz
-:linux-archive-qt6-url: {base-url}/librepcb-{version}-linux-x86_64-qt6.tar.gz
 :mac-bundle-url: {base-url}/librepcb-{version}-mac-x86_64.dmg
-:mac-bundle-qt6-url: {base-url}/librepcb-{version}-mac-x86_64-qt6.dmg
 :mac-arm64-bundle-url: {base-url}/librepcb-{version}-mac-arm64.dmg
 :source-url: {base-url}/librepcb-{version}-source.zip
 
@@ -35,7 +30,8 @@ https://librepcb.org/docs/installation/[*installation instructions*].
 [.download-section.windows]
 == {{< icon "fa-brands fa-windows" >}} Windows
 
-_Requirements: Windows 7 or later._
+_Requirements: 64-bit Windows 10 or later (32-bit Windows 7 when
+https://librepcb.org/docs/installation/build-from-sources/[building from sources])_
 
 [subs="attributes"]
 ++++
@@ -48,13 +44,6 @@ _Requirements: Windows 7 or later._
   <span class="align-self-center text-lg-start text-center">
     <span class="d-none d-md-inline-block">Alternative:</span>
     <a href="{windows-zip-url}" class="download-link">Portable ZIP</a>
-    <br/>
-    <span class="badge text-bg-warning align-self-lg-center">
-      <span>BETA (Windows 10+):</span>
-      <a href="{windows-installer-x64-url}" class="download-link">64-bit Installer</a>
-      <span class="small">|</span>
-      <a href="{windows-zip-x64-url}" class="download-link">64-bit Portable ZIP</a>
-    </span>
   </span>
 </div>
 ++++
@@ -62,7 +51,7 @@ _Requirements: Windows 7 or later._
 [.download-section.macos]
 == {{< icon "fa-brands fa-apple" >}} macOS
 
-_Requirements: macOS 12 or later (macOS 10.14 when
+_Requirements: macOS 13 or later (macOS 10.14 when
 https://librepcb.org/docs/installation/build-from-sources/[building from sources])_
 
 [subs="attributes"]
@@ -78,10 +67,6 @@ https://librepcb.org/docs/installation/build-from-sources/[building from sources
     <i class="fa-solid fa-download"></i>
     Download Bundle for Apple Silicon
   </a>
-  <span class="badge text-bg-warning align-self-lg-center me-2">
-    <span>BETA:</span>
-    <a href="{mac-bundle-qt6-url}" class="download-link">Qt6 (Intel)</a>
-  </span>
 </div>
 ++++
 
@@ -106,13 +91,6 @@ installation options below.
   <span class="align-self-center text-lg-start text-center">
     <span class="d-none d-md-inline-block">Alternative:</span>
     <a href="{linux-archive-url}" class="download-link">Portable Archive</a>
-    <br/>
-    <span class="badge text-bg-warning align-self-lg-center">
-      <span>BETA:</span>
-      <a href="{linux-appimage-qt6-url}" class="download-link">Qt6 AppImage</a>
-      <span class="small">|</span>
-      <a href="{linux-archive-qt6-url}" class="download-link">Qt6 Archive</a>
-    </span>
   </span>
 </div>
 ++++
