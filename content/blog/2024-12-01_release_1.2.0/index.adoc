@@ -292,19 +292,17 @@ link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[NGI0 Commons grant]
 we receive from link:https://nlnet.nl[NLnet], which was a huge help for us
 to get this work done. We are very thankful for their support.
 
-Also a big thank you to the community helping us with translations, pull
-requests, donations and other contributions! icon:tada[]
+Also a big thank you to our link:{{< relref "sponsors/index.adoc" >}}[sponsors]
+and to the community helping us with translations, pull requests, donations
+and other contributions! icon:tada[]
 
 ---
 
 Download
 --------
 
-The release can be downloaded for all major operating systems from our download
-page:
-
-https://librepcb.org/download/
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The release can be downloaded for all major operating systems from our
+link:{{< relref "download/index.adoc" >}}[download page].
 
 If you like LibrePCB, please consider making a small
 link:{{< relref "donate/index.adoc" >}}[donation] to support the
