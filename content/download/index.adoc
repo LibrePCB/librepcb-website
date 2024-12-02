@@ -126,6 +126,15 @@ FreeBSD::
 
 == {{< icon "fa-solid fa-code" >}} Source
 
+[IMPORTANT]
+====
+Unfortunately LibrePCB 1.2.0 contains a serious bug when building with Qt5
+which we detected after the release was published. Therefore you really need
+to migrate to Qt6 now, where the bug doesn't exist. This needs to be done
+anyway as we'll drop support for Qt5 soon. If you have any issues with
+migrating to Qt6, please don't hesitate to contact us.
+====
+
 [subs="attributes"]
 ++++
 <div class="d-flex flex-column flex-lg-row my-3">
