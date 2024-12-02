@@ -65,8 +65,8 @@ for details.
 
 **Netlist synchronization is easier with LibrePCB:**
 
-- Schematics and board work on the same netlist, so they are always in sync -- no
-  manual forward/backward annotation is needed
+- Schematics and boards work on the same netlist, so they are always in sync --
+  no manual forward/backward annotation is needed
 - You never have to worry about the pinout of components -- LibrePCB stores all
   connections between symbol pins and footprint pads in the library
 
@@ -85,7 +85,7 @@ for details.
 - Generating production data and ordering PCBs is much easier and faster
   thanks to link:{{< relref "features/output-jobs/index.adoc" >}}[output jobs]
   and
-  link:{{< relref "features/fabrication-service/index.adoc" >}}[fabriaction service]
+  link:{{< relref "features/fabrication-service/index.adoc" >}}[fabrication service]
 - The link:{{< relref "features/schematic-editor/index.adoc" >}}[schematic editor]
   provides you live part information (livecycle status, availability, price)
   so you don't accidentally use obsolete or expensive parts
