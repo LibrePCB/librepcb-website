@@ -3,9 +3,8 @@ title: "Frequently Asked Questions"
 linkTitle: "FAQ"
 icon: "fa-solid fa-circle-question"
 showToc: true
-weight: 20
+weight: 30
 url: /faq
-aliases: /compare
 ---
 
 [#why-should-i-use-librepcb]
@@ -22,6 +21,9 @@ aliases: /compare
   link:{{< relref "features/file-format/index.adoc" >}}[well-designed file format].
 * ...and many more things. Check out the link:../features/[feature pages]
   for more details.
+
+See also
+link:{{< relref "help/compare/index.adoc" >}}[this comparison with other tools].
 
 [#why-another-eda-tool]
 === Why another EDA tool? Why not contributing to tool _XYZ_?

@@ -1,0 +1,104 @@
+---
+title: "Comparison With Other Tools"
+linkTitle: "Compare"
+icon: "fa-solid fa-greater-than-equal"
+weight: 20
+url: /compare
+---
+
+Of course people compare LibrePCB to other EDA tools, especially Eagle and
+KiCad. To help you deciding which EDA tool is best for your needs, here a short
+overview about the differences between LibrePCB and other EDA tools.
+
+
+== Library Concept
+
+One major advantage of LibrePCB is the powerful library concept. See
+https://www.youtube.com/watch?v=vu-h5y6tK34[this talk at FOSDEM] (slides
+https://archive.fosdem.org/2018/schedule/event/cad_librepcb/attachments/slides/2267/export/events/attachments/cad_librepcb/slides/2267/librepcb_slides.pdf[here])
+for details.
+
+
+== LibrePCB vs. Eagle
+
+- LibrePCB is still actively developed 😉
+- LibrePCB is free of charge -- without limitations, even for commercial usage
+- LibrePCB has an integrated
+  link:{{< relref "features/library-management/index.adoc" >}}[library manager],
+  thus it's much easier to install and update libraries
+- LibrePCB library and project files are
+  link:{{< relref "features/file-format/index.adoc" >}}[better suited for version control]
+- The schematic- and board editors of Eagle are currently more powerful
+  (LibrePCB does not yet support hierarchical sheets, buses and more)
+
+
+== LibrePCB vs. KiCad
+
+**Library management with LibrePCB is much easier:**
+
+- Easy-to-use
+  link:{{< relref "features/library-management/index.adoc" >}}[library manager]
+  to install and update libraries -- no knowledge about Git needed
+- LibrePCB does not bundle (possibly outdated or low-quality) libraries together
+  with the application -- you have the full control over libraries, and get
+  updated libraries immediately
+- No broken references -- you can rename symbols, footprints, pins, pads etc.
+  without breaking other elements or projects
+- LibrePCB organizes parts by
+  link:{{< relref "features/schematic-editor/index.adoc" >}}[hierarchical categories],
+  thus it's easier and more intuitive to find the part you're looking for
+- No broken projects caused by updated or removed libraries -- LibrePCB projects
+  are link:{{< relref "features/file-format/index.adoc" >}}[self-contained] and
+  completely independent of system libraries
+- No configuration (e.g. file paths) needed at all, leading to a consistent
+  organization for all users
+
+**Version control of LibrePCB files is more fun:**
+
+- All files of LibrePCB projects and libraries are
+  link:{{< relref "features/file-format/index.adoc" >}}[highly optimized for version control systems]
+- User-related settings are strictly separated from project-related settings so
+  you don't commit annoying, useless changes (like your zoom level or canvas
+  position)
+- LibrePCB has a canonical file format -- if you save a project without making
+  relevant changes, no files are modified at all
+
+**Netlist synchronization is easier with LibrePCB:**
+
+- Schematics and board work on the same netlist, so they are always in sync -- no
+  manual forward/backward annotation is needed
+- You never have to worry about the pinout of components -- LibrePCB stores all
+  connections between symbol pins and footprint pads in the library
+
+**LibrePCB generates highly accurate production data:**
+
+- Our libraries already contain MPNs, which are automatically exported to the
+  BOM -- no manual, non-standardized MPN specification with properties needed
+- We support highly flexible
+  link:{{< relref "features/schematic-editor/index.adoc" >}}[assembly variants]
+  -- no need to manually copy & edit BOMs
+
+**LibrePCB saves a lot of time:**
+
+- LibrePCB is more intuitive and self-explaining, so you don't waste time
+  with reading documentation or following tutorials
+- Generating production data and ordering PCBs is much easier and faster
+  thanks to link:{{< relref "features/output-jobs/index.adoc" >}}[output jobs]
+  and
+  link:{{< relref "features/fabrication-service/index.adoc" >}}[fabriaction service]
+- The link:{{< relref "features/schematic-editor/index.adoc" >}}[schematic editor]
+  provides you live part information (livecycle status, availability, price)
+  so you don't accidentally use obsolete or expensive parts
+
+**BUT:**
+
+Although LibrePCB has many cool advantages, KiCad is (currently) more powerful.
+It has an amazing amount of features which allow to design very complex PCBs.
+LibrePCB is still a rather young software with very limited financial resources
+and thus lacks many features needed to design complex PCBs.
+
+Also our libraries are not yet as extensive as the KiCad libraries.
+
+So, if you are looking for an intuitive EDA tool to quickly design a PCB,
+you should give LibrePCB a try. But if you want to design very complex PCBs,
+LibrePCB is probably not (yet) the tool you are looking for.
