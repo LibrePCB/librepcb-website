@@ -94,7 +94,10 @@ if other users already created the library elements you need.
 [#error-no-dev-or-pkg-found]
 === I get the error "No device or package found [...]"!
 
-See <<where-is-library-element>>.
+See <<where-is-library-element>>. In this particular case, your libraries do
+contain a particular component, but no corresponding device (or package).
+https://librepcb.org/docs/quickstart/create-local-library/[Create a local library] and
+https://librepcb.org/docs/quickstart/create-library-elements/device/[add a corresponding device] for your component.
 
 [#can-i-order-only-through-librepcb-fab]
 === Can I order the PCB only through LibrePCB Fab?
