@@ -19,21 +19,10 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   the aegis of DG Communications Networks, Content and Technology under
   grant agreement No 101135429 & 101069594.
 
-| image:/img/sponsor-aisler.png[link="https://aisler.net"]
-| https://aisler.net[AISLER] is a PCB manufacturing service from the
-  Netherlands which makes PCB ordering easier than ever before. They operate
-  our fabrication service and contribute financially.
-
 | image:/img/sponsor-pcbway.png[link="https://www.pcbway.com"]
 | https://www.pcbway.com[PCBWay] is a large, worldwide well-known PCB
   manufacturing company from China which provides advanced PCB technologies.
-  They operate our fabrication service and contribute financially.
-
-| image:/img/sponsor-partstack.svg[link="https://partstack.com/"]
-| https://partstack.com/[Partstack] is an electronic part search engine from
-  California, providing a comprehensive catalog of stock information, prices
-  etc. They operate our live parts information service and contribute
-  financially.
+  PCBWay supports the LibrePCB project financially.
 
 | image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
 | https://www.nextpcb.com[HQ NextPCB] specializes in reliable multilayer
@@ -60,7 +49,6 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   https://github.com/sponsors/ubruhin[GitHub Sponsors], PayPal or other ways!
 |===
 
-
 == icon:gears[] In-Kind Sponsors
 
 The LibrePCB project thankfully relies on the following sponsored services
@@ -77,6 +65,28 @@ to operate:
 | https://www.transifex.com/librepcb/[Transifex] sponsors the translation
   service thanks to their
   https://help.transifex.com/en/articles/6236788-open-source-projects[open-source program].
+|===
+
+// Workaround for too small vertical space.
+{empty}
+
+== icon:handshake[] Partnerships
+
+For some of our services, we are thankful for cooperations with partners:
+
+[cols="^.^1,.^4"]
+|===
+| image:/img/sponsor-aisler.png[link="https://aisler.net"]
+| https://aisler.net[AISLER] is our fabrication service partner.
+
+| image:/img/sponsor-pcbway.png[link="https://www.pcbway.com"]
+| https://www.pcbway.com[PCBWay] is our fabrication service partner.
+
+| image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
+| https://www.nextpcb.com[HQ NextPCB] is our fabrication service partner.
+
+| image:/img/sponsor-partstack.svg[link="https://partstack.com/"]
+| https://partstack.com/[Partstack] operates our live parts information service.
 |===
 
 // Workaround for too small vertical space.
