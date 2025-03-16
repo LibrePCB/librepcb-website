@@ -104,7 +104,7 @@ for it.
 As an example, one item in this custom list view requires ~580 lines of code:
 
 [.text-center]
-image:qtwidgets-listview.png[]
+{{< imglink "QtWidgets ListView" "qtwidgets-listview.png" >}}
 
 To pave the way for new features (and in general to future-proof LibrePCB),
 I was therefore looking for alternatives to QtWidgets. Unfortunately there
@@ -142,7 +142,7 @@ a custom list item in Slint takes only ~200 lines of code, and it's even
 more responsive (e.g. hover effects):
 
 [.text-center]
-image:slint-listview.png[]
+{{< imglink "Slint ListView" "slint-listview.png" >}}
 
 Now I'm convinced we should give Slint a real chance, thus it's part of
 the LibrePCB 2.0 roadmap.
