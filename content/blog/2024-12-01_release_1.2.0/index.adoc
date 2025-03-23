@@ -294,7 +294,7 @@ to get this work done. We are very thankful for their support.
 
 Also a big thank you to our link:{{< relref "sponsors/index.adoc" >}}[sponsors]
 and to the community helping us with translations, pull requests, donations
-and other contributions! icon:tada[]
+and other contributions! 🎉
 
 ---
 
