@@ -43,6 +43,12 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   large catalog of EOL and obsolete parts in stock. WIN SOURCE supports the
   LibrePCB project financially.
 
+| image:/img/sponsor-partsbox.svg[link="https://partsbox.com/"]
+| https://partsbox.com/[PartsBox] lets you take control of your electronic
+  parts inventory, parts ordering/⁠purchasing, BOM pricing, manufacturing and
+  tracing. The software is free for hobbyists/⁠makers. PartsBox supports
+  the LibrePCB project financially.
+
 | icon:users[2x]
 | And many more commercial or individual sponsors contribute financially
   through https://www.patreon.com/librepcb[Patreon],
