@@ -22,6 +22,23 @@ conversation!
 </p>
 ++++
 
+== icon:comments[] Chat
+:matrix-space-url: https://matrix.to/#/#librepcb:matrix.org
+:matrix-room-url: https://matrix.to/#/#librepcb-general:matrix.org
+
+For quick conversations or to follow our internal discussions, join our
+Matrix space {matrix-space-url}[#librepcb:matrix.org] (or join the main room
+directly at {matrix-room-url}[#librepcb-general:matrix.org]):
+
+++++
+<p class="text-center">
+  <a class="btn btn-lg btn-dark" role="button"
+     href="https://matrix.to/#/#librepcb:matrix.org">
+    [ LibrePCB Space ]
+  </a>
+</p>
+++++
+
 == icon:bug[] Issue Tracker
 
 To report issues or for concrete feature requests,
@@ -29,22 +46,10 @@ https://github.com/LibrePCB/LibrePCB/issues[open an issue] in our issue
 tracker. If you don't have a GitHub account, feel free to post your message
 in the https://librepcb.discourse.group/[discussion forum] instead.
 
-== icon:comments[] Development Chat
-
-We also have a development group on Telegram and a channel on Matrix. The two
-chats are bridged, so you can join any one of them to see all conversations.
-
-* https://telegram.me/LibrePCB_dev[LibrePCB_dev on Telegram]
-* https://matrix.to/#/#librepcb-dev:matrix.coredump.ch[#librepcb-dev:matrix.coredump.ch on Matrix]
-
-Note that this chat is mainly for discussing the _development_ of LibrePCB.
-To get help, please use the https://librepcb.discourse.group/[forum] instead.
-
 == icon:money-bill[] Paid Support
 
 If you're interested in paid support or feature development service, please
 link:{{< relref "about/contact/index.adoc" >}}[contact us].
-
 
 == icon:envelope[] Contact
 
