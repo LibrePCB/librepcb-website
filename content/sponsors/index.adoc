@@ -7,7 +7,7 @@ weight: 70
 Maintaining LibrePCB wouldn't be possible without sponsorings.
 Many thanks to our sponsors for supporting the LibrePCB project:
 
-[cols="^.^1,.^4"]
+[cols="^.^1,.^4",frame="none",grid="none"]
 |===
 | image:/img/nlnet.png[link="https://nlnet.nl/project/LibrePCB/"]
 
@@ -60,7 +60,7 @@ Many thanks to our sponsors for supporting the LibrePCB project:
 The LibrePCB project thankfully relies on the following sponsored services
 to operate:
 
-[cols="^.^1,.^4"]
+[cols="^.^1,.^4",frame="none",grid="none"]
 |===
 | image:/img/sponsor-cloudscale.png[link="https://cloudscale.ch"]
 | https://cloudscale.ch[cloudscale.ch] is a highly flexible, easy-to-use
@@ -80,7 +80,7 @@ to operate:
 
 For some of our services, we are thankful for cooperations with partners:
 
-[cols="^.^1,.^4"]
+[cols="^.^1,.^4",frame="none",grid="none"]
 |===
 | image:/img/sponsor-aisler.png[link="https://aisler.net"]
 | https://aisler.net[AISLER] is our fabrication service partner.
