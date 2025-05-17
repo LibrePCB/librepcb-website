@@ -1,7 +1,8 @@
 ---
 title: "Sponsors"
 icon: "fa-solid fa-hand-holding-heart"
-weight: 70
+weight: 10
+url: /sponsors
 ---
 
 Maintaining LibrePCB wouldn't be possible without sponsorings.
