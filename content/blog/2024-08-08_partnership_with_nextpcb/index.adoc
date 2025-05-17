@@ -36,6 +36,6 @@ Sponsorship
 -----------
 
 At this point we also want to thank NextPCB for their
-link:{{< relref "sponsors/index.adoc" >}}[sponsorship] of the
+link:{{< relref "sponsors/sponsors/index.adoc" >}}[sponsorship] of the
 LibrePCB project. Their donation help us a lot to keep the development
 ongoing -- Thank you! icon:rocket[]

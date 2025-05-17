@@ -279,6 +279,17 @@ img.intro-screenshot {
     border: 1px solid #a0a0a0;
 }
 
+/* Sponsors */
+
+.sponsor-tier-cell-text {
+    font-size: 0.7em;
+}
+
+.sponsor-tier-details {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
 /* AsciiDoc */
 
 .body-container .underline {
@@ -410,7 +421,7 @@ img.intro-screenshot {
 
 .body-container table.tableblock,
 .body-container table.tableblock>*>tr>* {
-    border: 0 solid var(--table-border-color);
+    border: 0 solid #dee2e6;
 }
 
 .body-container table.grid-all>*>tr>* {
