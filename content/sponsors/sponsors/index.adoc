@@ -1,0 +1,93 @@
+---
+title: "Sponsors"
+icon: "fa-solid fa-hand-holding-heart"
+weight: 10
+url: /sponsors
+---
+
+Maintaining LibrePCB wouldn't be possible without sponsorings.
+Many thanks to our sponsors for supporting the LibrePCB project:
+
+== icon:angles-right[] Platinum Sponsors
+
+[cols="^.^1,.^3",frame="none",grid="none"]
+|===
+| image:/img/nlnet.png[link="https://nlnet.nl/project/LibrePCB/"]
+
+  image:/img/ngi0.svg[link="https://nlnet.nl/project/LibrePCB2.0/"]
+| This project is funded through the https://nlnet.nl/commonsfund/[NGI0 Commons]
+  & https://nlnet.nl/entrust/[NGI0 Entrust] funds, established by
+  https://nlnet.nl[NLnet] with financial support from the European
+  Commission's https://ngi.eu[Next Generation Internet] programme, under
+  the aegis of DG Communications Networks, Content and Technology under
+  grant agreement No 101135429 & 101069594.
+|===
+
+// Workaround for too small vertical space.
+{empty}
+
+== icon:angle-right[] Bronze Sponsors
+
+[cols="^.^1,.^5",frame="none",grid="none"]
+|===
+| image:/img/sponsor-partsbox.svg[link="https://partsbox.com/"]
+| https://partsbox.com/[PartsBox] lets you take control of your electronic
+  parts inventory, parts ordering/⁠purchasing, BOM pricing, manufacturing and
+  tracing. The software is free for hobbyists/⁠makers.
+
+| image:/img/sponsor-winsource.png[link="https://www.win-source.net/"]
+| https://www.win-source.net/[WIN SOURCE] is an electronic components
+  distributor from China. In addition to regular parts, they also have a
+  large catalog of EOL and obsolete parts in stock.
+
+| image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
+| https://www.nextpcb.com[HQ NextPCB] specializes in reliable multilayer
+  PCB manufacture and assembly. They also provide the parts sourcing service
+  https://www.hqonline.com/[HQ Online] and the free DFM analysis tool
+  https://www.nextpcb.com/free-online-gerber-viewer.html[HQDFM].
+
+| image:/img/sponsor-bittele.png[link="https://www.7pcb.com/"]
+| https://www.7pcb.com/[Bittele Electronics] is a turn-key PCB assembly company
+  from Canada, providing prototype and low-to-mid volume PCB fabrication and
+  assembly services.
+
+| image:/img/sponsor-pcbway.png[link="https://www.pcbway.com"]
+| https://www.pcbway.com[PCBWay] is a large, well-known PCB manufacturing
+  company from China which provides advanced PCB technologies and worldwide
+  shipping.
+|===
+
+// Workaround for too small vertical space.
+{empty}
+
+== icon:gears[] In-Kind Sponsors
+
+The LibrePCB project thankfully relies on the following sponsored services
+to operate:
+
+[cols="^.^1,.^5",frame="none",grid="none"]
+|===
+| image:/img/sponsor-cloudscale.png[link="https://cloudscale.ch"]
+| https://cloudscale.ch[cloudscale.ch] is a highly flexible, easy-to-use
+  cloud server provider from Switzerland. They sponsor the virtual servers
+  to run all LibrePCB web services.
+
+| image:/img/transifex.png[link="https://www.transifex.com/librepcb/"]
+| https://www.transifex.com/librepcb/[Transifex] sponsors the translation
+  service thanks to their
+  https://help.transifex.com/en/articles/6236788-open-source-projects[open-source program].
+|===
+
+// Workaround for too small vertical space.
+{empty}
+
+== icon:users[] Other Sponsors
+
+And many more commercial or individual sponsors contribute financially
+through https://www.patreon.com/librepcb[Patreon],
+https://github.com/sponsors/ubruhin[GitHub Sponsors], PayPal or other ways!
+
+== icon:hand-point-right[] Your Sponsorship
+
+Are you interested in a sponsorship?
+link:{{< relref "sponsors/tiers/index.adoc" >}}[Become a LibrePCB Sponsor]!

@@ -1,0 +1,23 @@
+---
+title: "Partners"
+icon: "fa-solid fa-handshake"
+weight: 20
+url: /partners
+---
+
+For some of our services, we are thankful for cooperations with partners:
+
+[cols="^.^1,.^4",frame="none",grid="none"]
+|===
+| image:/img/sponsor-aisler.png[link="https://aisler.net"]
+| https://aisler.net[AISLER] is our fabrication service partner.
+
+| image:/img/sponsor-pcbway.png[link="https://www.pcbway.com"]
+| https://www.pcbway.com[PCBWay] is our fabrication service partner.
+
+| image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
+| https://www.nextpcb.com[HQ NextPCB] is our fabrication service partner.
+
+| image:/img/sponsor-partstack.svg[link="https://partstack.com/"]
+| https://partstack.com/[Partstack] operates our live parts information service.
+|===
