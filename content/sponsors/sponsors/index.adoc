@@ -79,6 +79,5 @@ to operate:
 
 == icon:hand-point-right[] Your Sponsorship
 
-Are you interested in a sponsorship? Check out our
-link:{{< relref "donate/index.adoc" >}}[donation options] and
-link:{{< relref "about/contact/index.adoc" >}}[contact us].
+Are you interested in a sponsorship?
+link:{{< relref "sponsors/tiers/index.adoc" >}}[Become a LibrePCB Sponsor]!

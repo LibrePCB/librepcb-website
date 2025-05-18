@@ -1,0 +1,175 @@
+---
+title: "Become a LibrePCB Sponsor"
+linkTitle: "Become a Sponsor"
+weight: 50
+url: /become-a-sponsor
+---
+
+To be able to provide LibrePCB for free to the electronics community, we rely
+on donations. It is our vision that professional PCB design software must
+be available for everyone, from hobbyists to professionals.
+
+A LibrePCB sponsorship is a special way of donation which allows the sponsor
+to gain visibility and recognition in the electronics community. Let the
+people know you share our vision of a free, open & modern PCB design ecosystem!
+
+Or if LibrePCB helps your business in making profit, please consider investing
+a fraction of your profit into the development and sustainability of the
+LibrePCB project as a fair return.
+
+== Sponsorship Tiers
+
+We offer four predefined levels of sponsorships, with different benefits:
+
+[%header,cols="36,16,16,16,16"]
+|===
+|
+^|{set:cellbgcolor:#CD7F32A0} Bronze
+^|{set:cellbgcolor:#A0A0A0A0} Silver
+^|{set:cellbgcolor:#E0B020a0} Gold
+^|{set:cellbgcolor:#C0C0FFA0} Platinum
+
+|{set:cellbgcolor:-} Annual Donation (USD)
+^| **>= $1,000**
+^| **>= $2,500**
+^| **>= $5,000**
+^| **>= $10,000**
+
+|{set:cellbgcolor:-} Your Logo on Sponsors Page^1^
+^.^|{set:cellbgcolor:#00FF0020} ✓ [.sponsor-tier-cell-text]#(small, row 4)#
+^.^| ✓ [.sponsor-tier-cell-text]#(small, row 3)#
+^.^| ✓ [.sponsor-tier-cell-text]#(medium, row 2)#
+^.^| ✓ [.sponsor-tier-cell-text]#(large, row 1)#
+
+|{set:cellbgcolor:-} Text on Sponsors Page^2^
+^.^|{set:cellbgcolor:#00FF0020} ✓ [.sponsor-tier-cell-text]#(short)#
+^.^| ✓ [.sponsor-tier-cell-text]#(short)#
+^.^| ✓ [.sponsor-tier-cell-text]#(long)#
+^.^| ✓ [.sponsor-tier-cell-text]#(long)#
+
+|{set:cellbgcolor:-} Mention at Conferences^3^
+^.^|{set:cellbgcolor:#00FF0020} ✓
+^.^| ✓
+^.^| ✓
+^.^| ✓
+
+|{set:cellbgcolor:-} Your Logo on Home Page^4^
+^.^|{set:cellbgcolor:#FFFF0020} [.sponsor-tier-cell-text]#(not guaranteed)#
+^.^|{set:cellbgcolor:#00FF0020} ✓
+^.^| ✓
+^.^| ✓
+
+|{set:cellbgcolor:-} Announcement in Social Media^5^
+^.^|
+^.^|{set:cellbgcolor:#00FF0020} ✓
+^.^| ✓
+^.^| ✓
+
+|{set:cellbgcolor:-} Acknowledge in Release Notes^6^
+^.^|
+^.^|
+^.^|{set:cellbgcolor:#00FF0020} ✓
+^.^| ✓
+
+|{set:cellbgcolor:-} Announcement Blog Post^7^
+^.^|
+^.^|
+^.^|
+^.^|{set:cellbgcolor:#00FF0020} ✓
+
+|{set:cellbgcolor:-} Acknowledge in Videos^8^
+^.^|
+^.^|
+^.^|
+^.^|{set:cellbgcolor:#00FF0020} ✓
+
+|{set:cellbgcolor:-} Your Logo in the Application^9^ {{< icon "fa-solid fa-rocket" >}}
+^.^|
+^.^|
+^.^|
+^.^|{set:cellbgcolor:#00FF0020} ✓
+
+|===
+
+[.sponsor-tier-details]
+^1^ Your logo will be listed at
+link:{{< relref "sponsors/sponsors/index.adoc" >}}[{{< ref "sponsors/sponsors/index.adoc" >}}].
+The order of the listing is defined by tier (higher tiers first), donation
+amount (higher donation first within the same tier) and by lifetime donation
+amount (within the same tier & donation amount). +
+^2^ You can provide us your description text, but we reserve the right to
+adjust it to apply consistent wording & rules for all sponsors. The short
+form allows up to ca. 250 characters and the long form around 500 characters.
+The text will contain a hyperlink to your website's home page, but additional
+hyperlinks require our approval. +
+^3^ Whenever LibrePCB is officially presented at a conference (e.g. FOSDEM),
+all sponsors at the time of the presentation will be explicitly mentioned.
+Note that this may not take place every year so we can't guarantee the
+promotion at any conference. +
+^4^ Your logo will be listed at the bottom of
+link:{{< relref "/" >}}[{{< ref "/" >}}]. Note that for Bronze sponsors we
+reserve the right to decide which will be listed or not, due to limited space. +
+^5^ The start of a new sponsorship will be announced in our primary social
+media channel (which is Mastodon at the time of writing). +
+^6^ When publishing a new LibrePCB release, we will explicitly acknowledge the
+active sponsors at that time for supporting that particular release.
+Especially major release announcements often reach a very large audience. +
+^7^ For Platinum sponsors we will publish a **dedicated blog post** at
+the start of the sponsorship. +
+^8^ When publishing a new official tutorial video, active Platinum sponsors
+at the time of video production will be explicitly acknowledged in the video.
+In case no video was published during the time of sponsorship we will include
+the acknowledgement in a video after the sponsorship ended. +
+^9^ Your logo will be listed in the "About" section **within the LibrePCB
+application**. As the release cycle of LibrePCB is independent of sponsorships,
+the logo will be integrated in the first release after the start of the
+sponsorship. When cancelling the sponsorship, the logo will be removed after
+it has been integrated for at least the duration of the sponsorship. +
+
+[.sponsor-tier-details]
+For rare cases we reserve the right to provide slightly more value for money
+than stated in the table above to provide a fair chance of small businesses,
+non-profit organizations etc. compared to sponsors with a high revenue, or for
+sponsors which started the sponsorship before the current tier conditions were
+defined.
+
+== Payment
+
+* Payment is done annually and the sponsorship starts at the date of the
+  first received payment.
+* We accept PayPal (+5% fees), Credit Card through
+  link:https://opencollective.com/librepcb[Open Collective] (+10% fees) or bank
+  transfer to a Swiss bank account (0% fees for SEPA/EUR; for USD please
+  check fees of your bank). The sponsor has to take care of the payment fees.
+  For other options or questions, please contact us.
+* Note that there is no legal entity behind the LibrePCB project (yet). The
+  payment goes to the project lead as a private person and he will use the
+  money solely in the interest of the LibrePCB project as stated
+  link:{{< relref "help/faq/index.adoc#what-is-the-donated-or-sponsored-money-used-for" >}}[here].
+* Since the payment receiver is not a registered foundation, the sponsorship
+  does not count as a cheritiable donation (for tax considerations).
+
+== Publicity
+
+We are aware the sponsorship tiers are not cheap and you deserve a fair return.
+Our community is not a niche anymore -- and we are constantly growing -- so
+your sponsorship will be seen for sure! Here are some statistics about LibrePCB
+(updated May 2025):
+
+* Our link:https://snapcraft.io/librepcb/listing[Snap Package] for Linux is
+  installed on 8,000 weekly active devices
+* Our link:https://flathub.org/apps/org.librepcb.LibrePCB[Flatpak] for Linux is
+  installed ca. 2,000 times per month
+* Our releases from the website are downloaded ca. 4,000 times per month
+* Our website has ca. 20,000 unique visitors per month, up to 60,000 after
+  a release announcement
+* Our API server gets requests from >6,000 unique devices every month
+  (requests are made only by particular actions in the application)
+
+== Interested?
+
+If you're interested or if you have any questions, please contact us at
+{{< cloakemail "sponsorship" "librepcb.org" >}}!
+Let us know your preferred sponsorship tier and payment method and send us
+your logo for the listing (SVG preferred) and optionally your description
+text (please respect the length limit^2^).
