@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }}{{ .Param "titleSuffix" }}</title>
     <meta name=description content="{{ .Param "siteDescription" | safeHTMLAttr }}">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://librepcb.org/img/open-graph-banner.jpg" />
-    <meta name="twitter:title" content="LibrePCB" />
-    <meta name="twitter:description" content="{{ .Param "siteDescription" | safeHTMLAttr }}" />
-    <meta property="twitter:domain" content="librepcb.org">
-    <meta property="og:title" content="LibrePCB" />
-    <meta property="og:description" content="{{ .Param "siteDescription" | safeHTMLAttr }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://librepcb.org/" />
-    <meta property="og:image" content="https://librepcb.org/img/open-graph-banner.jpg" />
+{{ partial "opengraph.html" . }}
     <meta itemprop="name" content="LibrePCB">
     <meta itemprop="description" content="{{ .Param "siteDescription" | safeHTMLAttr }}">
     <script type="application/ld+json">
