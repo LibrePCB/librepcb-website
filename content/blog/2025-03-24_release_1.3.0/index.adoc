@@ -2,6 +2,7 @@
 date: 2025-03-24
 title: LibrePCB 1.3.0 Released
 author: U. Bruhin
+preview: interactive-html-bom.gif
 ---
 
 Today we released LibrePCB 1.3.0 with an interactive HTML BOM export,
