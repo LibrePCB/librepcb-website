@@ -87,16 +87,16 @@
     color: #dfdfdf;
 }
 
+.navbar .icon:hover {
+    color: #ffffff;
+}
+
 .navbar .icon-youtube:hover {
     color: #ff0000;
 }
 
 .navbar .icon-patreon:hover {
     color: #ff404c;
-}
-
-.navbar .icon-twitter:hover {
-    color: white;
 }
 
 .navbar .icon-mastodon:hover {
