@@ -54,7 +54,7 @@ Phoenix::
 * https://github.com/LibrePCB-Libraries/Phoenix.lplib/pull/10[PT1,5 & PT2,5 screw terminal series]
 
 Sensirion::
-* https://github.com/LibrePCB-Libraries/Sensirion.lplib/pull/13[3D models to SHT2x, SHTCx, SGPxx packages]
+* https://github.com/LibrePCB-Libraries/Sensirion.lplib/pull/13[3D models for SHT2x, SHTCx, SGPxx packages]
 
 Texas Instruments::
 * https://github.com/LibrePCB-Libraries/Texas_Instruments.lplib/pull/22[OPA397DBV, LMP7721MA, OPA378AIDBV, LMH6552MA]
