@@ -1,0 +1,110 @@
+---
+date: 2025-05-20
+title: Library Updates Q1 2025
+author: U. Bruhin
+preview: library-updates.png
+---
+
+In the past few months our libraries got some nice contributions and also
+I created more than 70 important library elements and 285 3D models by myself
+to provide you more ready-to-use components and devices: screw terminals,
+push buttons, mounting holes and more!
+
+<!--more-->
+
+[.imageblock]
+{{< imglink "Library Updates" "library-updates.png" >}}
+
+Changes
+-------
+
+The rather incomplete libraries are a major criticism of LibrePCB, which
+also shows our https://show.forms.app/librepcb/feedback[user feedback survey]
+where this is at rank one of things to be improved (but we would also assume it
+without the survey). In the past few months I have worked a lot on creating
+more of the important library elements to improve that situation. Also we got
+some contributions from the community which are now part of our official
+libraries.
+
+Here's an overview of the library elements which were added between
+November 2024 and April 2025:
+
+LibrePCB Base::
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/154[Diodes 1N4001..1N4007, 1N4148W, 1N4148WS, 1N4148WT]
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/156[Generic devices & 3D models for all 11 tantalum capacitors]
+  (thanks to https://github.com/eto-[@eto-]!)
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/157[Mounting holes M2..M8]
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/142[Standard antenna, dipole antenna, loop antenna]
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/153[Buzzer and speaker]
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/144[Switch SPDT 2-Position]
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/146[3D models for all 261 DFN packages]
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/147[3D models for all 21 THT capacitor packages]
+* https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib/pull/155[3D models for SOD123, SOD323 & SOD523 packages]
+
+CK::
+* https://github.com/LibrePCB-Libraries/CK.lplib/pull/9[PTS645 tactile switches, THT & SMT]
+
+GCT::
+* https://github.com/LibrePCB-Libraries/GCT.lplib/pull/2[USB4105 Type-C connector]
+
+Lolin::
+* https://github.com/LibrePCB-Libraries/Lolin.lplib/pull/1[Wemos D1 Mini]
+
+Phoenix::
+* https://github.com/LibrePCB-Libraries/Phoenix.lplib/pull/10[PT1,5 & PT2,5 screw terminal series]
+
+Sensirion::
+* https://github.com/LibrePCB-Libraries/Sensirion.lplib/pull/13[3D models to SHT2x, SHTCx, SGPxx packages]
+
+Texas Instruments::
+* https://github.com/LibrePCB-Libraries/Texas_Instruments.lplib/pull/22[OPA397DBV, LMP7721MA, OPA378AIDBV, LMH6552MA]
+  (thanks to https://github.com/eto-[@eto-]!)
+* https://github.com/LibrePCB-Libraries/Texas_Instruments.lplib/pull/18[MPNs for LP5907 and TL074xN]
+
+Tubes::
+* https://github.com/LibrePCB-Libraries/Tubes.lplib/pull/6[K155ID1 / К155ИД1 BCD-to-decimal decoder]
+  (thanks to https://github.com/dbrgn[@dbrgn]!)
+* https://github.com/LibrePCB-Libraries/Tubes.lplib/pull/7[IN-12B nixie tubes]
+  (thanks to https://github.com/dbrgn[@dbrgn]!)
+
+Behind the Scenes
+-----------------
+
+Many of the new library elements were somehow repetitive (screw terminals,
+capacitors, mounting holes etc.), therefore I extended
+https://github.com/LibrePCB/librepcb-parts-generator[librepcb-parts-generator]
+with new scripts to generate a large percentage of them.
+
+These scripts also use https://cadquery.readthedocs.io/en/latest/[CadQuery]
+to generate STEP models, thus almost all of the new packages come with
+3D models out of the box! In addition, all new devices come with MPNs so you
+will get an accurate BOM for your project without entering MPNs manually.
+
+What's Next?
+------------
+
+After these library additions, I'm now priorizing the development of
+link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[LibrePCB 2.0]
+where I'm making pretty good progress. But I have already planned to make
+more library contributions later with a focus on modules & devkits (like
+Arduino, ESP32 etc.) since those things are used in many projects nowadays.
+
+I'm open to receive suggestions about which modules to be added, please tell
+us in our https://librepcb.discourse.group/[discussion forum] or in our
+https://matrix.to/#/#librepcb:matrix.org[chat]!
+
+And don't forget to update your workspace libraries to get all the new
+library improvements! Some of the libraries are even entirely new so you
+might want to install them too.
+
+---
+
+Credits
+-------
+
+[.right.ms-3]
+image:nlnet-ngi0.png[link="https://nlnet.nl/project/LibrePCB/",width=130]
+
+Most of these updates were part of the
+link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[NGI0 Commons grant]
+we receive from link:https://nlnet.nl[NLnet], thanks a lot for their support!
