@@ -103,7 +103,7 @@ Credits
 -------
 
 [.right.ms-3]
-image:nlnet-ngi0.png[link="https://nlnet.nl/project/LibrePCB/",width=130]
+{{< imglink "NGI0" "nlnet-ngi0.png" "https://nlnet.nl/project/LibrePCB2.0/" 130 >}}
 
 Most of these updates were part of the
 link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[NGI0 Commons grant]

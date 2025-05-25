@@ -54,7 +54,7 @@ Open Datasheets From Schematic (https://github.com/LibrePCB/LibrePCB/pull/1460[#
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [.right.ms-3]
-image:datasheet-context-menu.png[width=330]
+{{< imglink "Datasheet Context Menu" "datasheet-context-menu.png" "" 330 >}}
 
 Circuit design means reading datasheets a lot. For most parts more complex than
 a resistor or capacitor, you need to read its datasheet or other documentation.
@@ -285,7 +285,7 @@ Credits
 -------
 
 [.right.ms-3]
-image:nlnet-ngi0.png[link="https://nlnet.nl/project/LibrePCB/",width=130]
+{{< imglink "NGI0" "nlnet-ngi0.png" "https://nlnet.nl/project/LibrePCB/" 130 >}}
 
 This release was part of the
 link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[NGI0 Commons grant]

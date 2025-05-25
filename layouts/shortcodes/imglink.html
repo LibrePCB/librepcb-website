@@ -10,9 +10,11 @@
 {{ end }}
 {{ end }}
 
+{{ $width := .Get 3 }}
+
 <p>
   <a href="{{ $link | safeHTMLAttr }}">
     <img src="{{ $img.RelPermalink | safeHTMLAttr }}"
-         alt="{{ .Get 0 | safeHTMLAttr }}" />
+         alt="{{ .Get 0 | safeHTMLAttr }}" {{ if $width }} width="{{ $width }}"{{ end }} />
   </a>
 </p>

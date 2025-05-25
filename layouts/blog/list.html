@@ -46,6 +46,7 @@
   <a href="{{ .RelPermalink }}">Read more...</a>
 {{ end }}
 </div>
+<div style="clear:both;"></div><!-- Avoid overlap of floating images into the next blog post -->
 <hr/>
 {{ else }}
 <p class="text-muted">{{ .Date.Local | time.Format ":date_long" }}</p>
