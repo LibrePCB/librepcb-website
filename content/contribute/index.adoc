@@ -78,9 +78,11 @@ and low frustration.
 
 == icon:code[] Code
 
-Contributing rather small fixes to our code base is possible as well, check out
+Contributing to our code base is possible as well, check out
 https://github.com/LibrePCB/LibrePCB/blob/master/CONTRIBUTING.md[`CONTRIBUTING.md`]
-in the repository for details.
+in the repository for details. Especially check out issues labeled with
+https://github.com/LibrePCB/LibrePCB/labels/help%20wanted[_help wanted_] since
+those are most valuable to us.
 
 However, for any larger change please first talk to the lead developer.
 Working on such a large code base is difficult since many different aspects
