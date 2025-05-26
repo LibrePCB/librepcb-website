@@ -8,7 +8,7 @@ url: /sponsors
 Maintaining LibrePCB wouldn't be possible without sponsorings.
 Many thanks to our sponsors for supporting the LibrePCB project:
 
-== icon:angles-right[] Platinum Sponsors
+== icon:award[] Platinum Sponsors
 
 [cols="^.^1,.^3",frame="none",grid="none"]
 |===
@@ -21,6 +21,20 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   Commission's https://ngi.eu[Next Generation Internet] programme, under
   the aegis of DG Communications Networks, Content and Technology under
   grant agreement No 101135429 & 101069594.
+|===
+
+// Workaround for too small vertical space.
+{empty}
+
+== icon:angles-right[] Silver Sponsors
+
+[cols="^.^1,.^5",frame="none",grid="none"]
+|===
+| image:/img/sponsor-aisler.png[link="https://aisler.net"]
+| https://aisler.net[AISLER] is a PCB manufacturing and assembly service from
+  the Netherlands which makes PCB ordering easier than ever before thanks to
+  their guided and fully automated order procedure -- even for assembly.
+  PCBs are made in Germany and shipped worldwide.
 |===
 
 // Workaround for too small vertical space.
