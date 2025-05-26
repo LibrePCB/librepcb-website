@@ -135,19 +135,25 @@ defined.
 
 == Payment
 
-* Payment is done annually and the sponsorship starts at the date of the
-  first received payment.
+* Sponsorships are running annually and start at the date of the received
+  payment. Sponsorships shorter than 12 months are not possible.
 * We accept PayPal (+5% fees), Credit Card through
-  link:https://opencollective.com/librepcb[Open Collective] (+10% fees) or bank
+  link:https://opencollective.com/librepcb[Open Collective] (+13% fees) or bank
   transfer to a Swiss bank account (0% fees for SEPA/EUR; for USD please
   check fees of your bank). The sponsor has to take care of the payment fees.
   For other options or questions, please contact us.
-* Note that there is no legal entity behind the LibrePCB project (yet). The
-  payment goes to the project lead as a private person and he will use the
-  money solely in the interest of the LibrePCB project as stated
-  link:{{< relref "help/faq/index.adoc#what-is-the-donated-or-sponsored-money-used-for" >}}[here].
+* Note that there is no legal entity behind the LibrePCB project (yet).
+  Payments through PayPal or bank transfer go to the project lead as a private
+  person and are not subject to VAT. Payments through Open Collective are
+  different since they act as a corporate "middleman" and take care of tax
+  declaration etc. Due to this service the fees are higher (10% platform fees
+  plus ca. 3% payment fees).
 * Since the payment receiver is not a registered foundation, the sponsorship
   does not count as a cheritiable donation (for tax considerations).
+* The project lead is responsible for all financial aspects of the project and
+  he will use any received money solely in the interest of the LibrePCB
+  project as stated
+  link:{{< relref "help/faq/index.adoc#what-is-the-donated-or-sponsored-money-used-for" >}}[here].
 
 == Publicity
 
