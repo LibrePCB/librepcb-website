@@ -14,12 +14,15 @@ wide-page: 1
                     <div class="card-body">
                         <ul>
                             <li>Price</li>
-                            <li>Cloud Storage</li>
-                            <li>Project Limits</li>
-                            <li>Collaboration</li>
-                            <li>Advanced Tools</li>
-                            <li>Priority Support</li>
-                            <li>Custom Branding</li>
+                            <li>Use Without Account</li>
+                            <li>Personal Use</li>
+                            <li>Commercial Use</li>
+                            <li>All Offline Features</li>
+                            <li>Live Parts Information</li>
+                            <li>Datasheet Analizer</li>
+                            <li>Feature Request Priority</li>
+                            <li>E-Mail Support</li>
+                            <li>Migration Support</li>
                             <li></li>
                         </ul>
                     </div>
@@ -31,30 +34,36 @@ wide-page: 1
                     <div class="card-body">
                         <ul>
                             <li>$0 / month</li>
-                            <li>1 GB</li>
-                            <li>5 Projects</li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
                             <li class="cross-icon"></li>
                             <li class="cross-icon"></li>
                             <li class="cross-icon"></li>
                             <li class="cross-icon"></li>
-                            <li><a href="#" class="btn btn-signup">Sign Up</a></li>
+                            <li class="cross-icon"></li>
+                            <li><a href="#" class="btn btn-signup">Download</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="pricing-col">
                 <div class="pricing-card card-standard">
-                    <div class="card-header">Standard</div>
+                    <div class="card-header">Maker</div>
                     <div class="card-body">
                         <ul>
-                            <li>$9.99 / month</li>
-                            <li>10 GB</li>
-                            <li>50 Projects</li>
+                            <li>$4 / month</li>
+                            <li>Required for Payment</li>
                             <li class="check-icon"></li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
+                            <li>Rate Limited</li>
+                            <li>Rate Limited</li>
                             <li class="cross-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li><a href="#" class="btn btn-signup">Sign Up</a></li>
+                            <li>Community</li>
+                            <li>Community</li>
+                            <li><a href="#" class="btn btn-signup">Subscribe</a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,14 +73,17 @@ wide-page: 1
                     <div class="card-header">Professional</div>
                     <div class="card-body">
                         <ul>
-                            <li>$19.99 / month</li>
-                            <li>50 GB</li>
-                            <li>Unlimited</li>
+                            <li>$10 / month</li>
+                            <li>Required for Payment</li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
                             <li class="check-icon"></li>
                             <li class="check-icon"></li>
                             <li class="check-icon"></li>
                             <li class="cross-icon"></li>
-                            <li><a href="#" class="btn btn-signup">Sign Up</a></li>
+                            <li>Community</li>
+                            <li>Community</li>
+                            <li><a href="#" class="btn btn-signup">Subscribe</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,14 +93,17 @@ wide-page: 1
                     <div class="card-header">Enterprise</div>
                     <div class="card-body">
                         <ul>
-                            <li>Contact Sales</li>
-                            <li>Unlimited</li>
-                            <li>Unlimited</li>
+                            <li>$59 / month</li>
+                            <li>Required for Payment</li>
                             <li class="check-icon"></li>
                             <li class="check-icon"></li>
                             <li class="check-icon"></li>
                             <li class="check-icon"></li>
-                            <li><a href="#" class="btn btn-signup">Contact</a></li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
+                            <li class="check-icon"></li>
+                            <li><a href="#" class="btn btn-signup">Subscribe</a></li>
                         </ul>
                     </div>
                 </div>
