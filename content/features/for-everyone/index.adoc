@@ -36,7 +36,7 @@ https://www.transifex.com/librepcb/librepcb-application/languages/[{{< param "nu
 [NOTE]
 ====
 The completeness of the translations differ between the languages.
-See link:{{< relref "contribute/index.adoc" >}}[here] how you can help
+See link:{{< relref "contribute/contribute/index.adoc" >}}[here] how you can help
 improving the translations.
 ====
 

@@ -314,6 +314,6 @@ https://librepcb.org/download/
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you like LibrePCB, please consider making a small
-link:{{< relref "donate/index.adoc" >}}[donation] to support the
+link:{{< relref "contribute/donate/index.adoc" >}}[donation] to support the
 ongoing development. +
 Thank you! icon:heart[]

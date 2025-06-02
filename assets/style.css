@@ -146,8 +146,113 @@
     max-width: 850px;
 }
 
+.main-container-wide {
+    max-width: 1250px;
+}
+
 .donate-banner {
     font-size: 0.95em;
+}
+
+/* Pricing Page */
+
+.pricing-table {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.pricing-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.pricing-col {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.pricing-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    background-color: #ffffff;
+}
+.card-header {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: none;
+}
+.card-body {
+    padding: 0;
+}
+.card-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.card-body ul li {
+    padding: 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card-body ul li:last-child {
+    border-bottom: none;
+}
+.feature-col ul li {
+    text-align: left;
+    font-weight: bold;
+}
+.check-icon::before {
+    content: "✔";
+    color: #28a745;
+    font-weight: bold;
+}
+.cross-icon::before {
+    content: "✖";
+    color: #dc3545;
+}
+.btn-signup {
+    background-color: #007bff;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-signup:hover {
+    background-color: #0056b3;
+    color: white;
+}
+/* Card-specific background colors */
+.card-free .card-header {
+    background-color: #e9ecef;
+}
+.card-standard .card-header {
+    background-color: #d1e7ff;
+}
+.card-professional .card-header {
+    background-color: #e6f3ff;
+}
+.card-enterprise .card-header {
+    background-color: #d4edda;
+}
+.feature-col .card-header {
+    background-color: #ffffff;
+}
+@media (max-width: 768px) {
+    .pricing-col {
+        flex: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Intro (home page) */

@@ -10,7 +10,7 @@ url: /license
 The LibrePCB application can freely be used for any purpose, even for
 commercial projects. But especially for commercial projects, please consider
 supporting the development with a
-link:{{< relref "donate/index.adoc" >}}[donation] or
+link:{{< relref "contribute/donate/index.adoc" >}}[donation] or
 link:{{< relref "sponsors/sponsors/index.adoc" >}}[sponsorship].
 
 Note that there is no free support available from the project developers

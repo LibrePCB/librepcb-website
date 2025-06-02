@@ -2,7 +2,7 @@
 title: "Download"
 type: download
 icon: "fa-solid fa-download"
-weight: 60
+weight: 35
 ---
 
 :version: {{< param latestVersion >}}
@@ -167,14 +167,14 @@ All current and previous releases are available at {releases-url}.
         </p>
         <div class="alert alert-info">
           <b>Please consider
-          <a href="{{< relref "donate/index.adoc" >}}">making a donation</a> and
+          <a href="{{< relref "contribute/donate/index.adoc" >}}">making a donation</a> and
           <a href="https://show.forms.app/librepcb/feedback">sharing your feedback</a>
           with us.</b> This will help us a lot to make LibrePCB even better. Thanks!
         </div>
       </div>
       <div class="modal-footer">
         <a class="btn btn-danger" role="button"
-           href="{{< relref "donate/index.adoc" >}}">
+           href="{{< relref "contribute/donate/index.adoc" >}}">
           <i class="fa-solid fa-heart"></i>
           Donate
         </a>
