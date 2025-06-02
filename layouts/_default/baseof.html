@@ -147,7 +147,7 @@
         </div>
         <div class="text-nowrap mt-2 mt-sm-0 {{ if eq .RelPermalink "/donate/" }} d-none d-md-block{{ end }}">
           <a class="btn btn-danger btn-sm stretched-link{{ if eq .RelPermalink "/donate/" }} invisible{{ end }}"
-             href="{{ relref . "donate/index.adoc" }}" role="button">
+             href="{{ relref . "contribute/donate/index.adoc" }}" role="button">
             <i class="fa-solid fa-heart"></i>
             Donate
           </a>
@@ -156,6 +156,7 @@
 {{ end }}
       <div class="container-fluid mb-3">
         <div class="row">
+{{ if not (.Param "wide-page") }}
           <div class="nav-container col-12 col-md-4 col-lg-3">
 {{ block "nav" . }}
 {{ if (and .Parent (or .Parent.Parent (eq .Kind "section")) (not (.Param "noNav"))) }}
@@ -170,8 +171,9 @@
 {{ end }}
 {{ end }}
           </div>
-          <main class="col-12 col-md-8 col-lg-9 mt-3">
-            <article class="main-container container mx-0 px-4">
+{{ end }}
+          <main class="{{ if .Param "wide-page" }}{{ else }}col-12 col-md-8 col-lg-9{{ end }} mt-3">
+            <article class="main-container{{ if .Param "wide-page" }}-wide mx-auto{{ else }} mx-0{{ end }} container px-4 ">
 {{ block "main" . }}
               <h1 class="mb-3">
                 {{ if .Param "icon" }}<i class="{{ .Param "icon" }}"></i>{{ end }}

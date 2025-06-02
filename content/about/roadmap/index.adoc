@@ -39,7 +39,7 @@ In addition, we have some innovative ideas we don't want to disclose yet ;-)
 [TIP]
 ====
 Help us to speed up the development of these features with a
-link:{{< relref "donate/index.adoc" >}}[donation]!
+link:{{< relref "contribute/donate/index.adoc" >}}[donation]!
 ====
 
 == icon:ban[] Non-Goals

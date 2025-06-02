@@ -2,6 +2,7 @@
 title: "Contribute"
 icon: "fa-solid fa-users"
 weight: 90
+url: "/contribute"
 ---
 
 LibrePCB is a community project and relies on contributions. See below for
@@ -53,7 +54,7 @@ Just spread the word about LibrePCB!
 
 A financial contribution is a very simple yet effective way to support LibrePCB
 since it allows the developers to spend more time on it. Please see
-link:{{< relref "donate/index.adoc" >}}[here] for donation options.
+link:{{< relref "contribute/donate/index.adoc" >}}[here] for donation options.
 
 == icon:database[] Libraries
 
@@ -95,7 +96,7 @@ developer first about his opinion and recommendations.
 [TIP]
 ====
 Please consider making a
-link:{{< relref "donate/index.adoc" >}}[financial contribution] instead.
+link:{{< relref "contribute/donate/index.adoc" >}}[financial contribution] instead.
 In our experience this is much more effective since it allows a few
 developers to work a long time (and thus more efficiently) on the project
 rather than many developers working a short time on it (which is very

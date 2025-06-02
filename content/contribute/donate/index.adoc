@@ -2,6 +2,7 @@
 title: "Donate"
 icon: "fa-solid fa-heart"
 weight: 80
+url: "/donate"
 ---
 
 If you like LibrePCB, please consider supporting the ongoing development
