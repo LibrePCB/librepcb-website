@@ -26,14 +26,14 @@ a subscription plan.
             <li>Personal &amp; Commercial Use</li>
             <li>No Limitations in Offline Features</li>
             <li>Use Without Account</li>
-            <li>Get Our Official Libraries (Online)</li>
-            <li>Get Proprietary 3D Models (Online)</li>
-            <li>Live Parts Information (Online)</li>
-            <li>Import From Datasheets (Online)</li>
-            <li>Community Support (Forum/Chat)</li>
-            <li>Personal Support (E-Mail/Chat/Phone)</li>
-            <li>Migration Support (Libraries/Projects)</li>
-            <li>Feature Request &amp; Bugfix Priority</li>
+            <li>Get Our Official Libraries (Online)<sup>1</sup></li>
+            <li>Get Proprietary 3D Models (Online)<sup>1,2</sup></li>
+            <li>Live Parts Information (Online)<sup>1,2</sup></li>
+            <li>Import From Datasheets (Online)<sup>1,2</sup></li>
+            <li>Community Support (Forum/Chat)<sup>3</sup></li>
+            <li>Personal Support (E-Mail/Chat/Phone)<sup>4</sup></li>
+            <li>Migration Support (Libraries/Projects)<sup>4</sup></li>
+            <li>Feature Request &amp; Bugfix Priority<sup>5</sup></li>
             <li>Support The Development</li>
             <li></li>
           </ul>
@@ -53,13 +53,13 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li class="check-icon"></li>
-            <li><span class="check-icon"></span><sup>1</sup></li>
+            <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
-            <li><span class="check-icon"></span><sup>4</sup></li>
+            <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
-            <li>Community<sup>4</sup></li>
+            <li>Community</li>
             <li class="cross-icon"></li>
             <li>Please Spread the Word :-)</li>
             <li><a href="{{< relref "download/index.adoc" >}}" class="btn btn-primary btn-pricing" role="button">Download</a></li>
@@ -80,13 +80,13 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li>Required for Payment</li>
-            <li><span class="check-icon"></span><sup>1</sup></li>
-            <li><span class="warn-icon"></span> Rate Limited<sup>1,2</sup></li>
-            <li><span class="warn-icon"></span> Rate Limited<sup>1,2</sup></li>
-            <li><span class="warn-icon"></span> Rate Limited<sup>1,2</sup></li>
-            <li><span class="check-icon"></span><sup>4</sup></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="warn-icon"></span> Rate Limited</li>
+            <li><span class="warn-icon"></span> Rate Limited</li>
+            <li><span class="warn-icon"></span> Rate Limited</li>
+            <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
-            <li>Community<sup>4</sup></li>
+            <li>Community</li>
             <li class="cross-icon"></li>
             <li><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
@@ -107,14 +107,14 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li>Required for Payment</li>
-            <li><span class="check-icon"></span><sup>1</sup></li>
-            <li><span class="check-icon"></span><sup>1,3</sup></li>
-            <li><span class="check-icon"></span><sup>1,3</sup></li>
-            <li><span class="check-icon"></span><sup>1,3</sup></li>
-            <li><span class="check-icon"></span><sup>4</sup></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
-            <li>Community<sup>4</sup></li>
-            <li><span class="check-icon"></span> On GitHub Issues<sup>6</sup></li>
+            <li>Community</li>
+            <li><span class="check-icon"></span> Via Forum/Chat/GitHub</li>
             <li><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
@@ -134,14 +134,14 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li>Required for Payment</li>
-            <li><span class="check-icon"></span><sup>1</sup></li>
-            <li><span class="check-icon"></span><sup>1,3</sup></li>
-            <li><span class="check-icon"></span><sup>1,3</sup></li>
-            <li><span class="check-icon"></span><sup>1,3</sup></li>
-            <li><span class="check-icon"></span><sup>4</sup></li>
-            <li><span class="check-icon"></span> From Project Lead (EN/DE)<sup>5</sup></li>
-            <li><span class="check-icon"></span> From Project Lead (EN/DE)<sup>5</sup></li>
-            <li><span class="check-icon"></span> Talk To Project Lead<sup>6</sup></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
+            <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
+            <li><span class="check-icon"></span> Talk To Project Lead</li>
             <li><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
@@ -153,42 +153,60 @@ a subscription plan.
 ++++
 
 [.sponsor-tier-details]
-^1^ Those features rely on online services and partially also on third-party
-services. We do our best to keep an uptime close to 100% but there is
-*absolutely no guarantee* for those to operate properly. In rare cases there
-might be short downtimes or in worst case even a long downtime in case of
-problems not under our control. There is no refund in case of downtime. +
-^2^ Those features are available, but with a usage limit sufficient only for
-simple, small projects. After too many usages within a certain time period,
-those features will be temporarily disabled for a short recovery phase. +
-^3^ Those features still have a usage limit, but high enough that they are
-not triggered during normal, professional work. Only after excessive usage
-those will be temporarily disabled for a short recovery phase. +
-^4^ See link:{{< relref "help/help/index.adoc" >}}[here] for free support
-options. There is *no guarantee* that any questions will be answered from
-the community. +
-^5^ Usually a response is given within 24 hours but in rare cases it may take
-up to 3 days. The personal support is given on a *fair use* basis. For real
-problems and serious questions the project lead will help with best effort
-and high motivation. But in case of excessive consultation for trivial
+^1^ Those features rely on online services and/or external partners. We do our
+best to keep an uptime close to 100% but there is *absolutely no guarantee*
+for those to operate properly. In rare cases there might be short downtimes
+or in worst case even a long downtime in case of problems not under our
+control. There is no refund in case of downtime. +
+^2^ Those features come with a certain usage limit. The Maker subscription is
+sufficient for occasional, simple, small projects. The higher subscriptions
+are suitable for professional daily business work on more complex projects.
+After excessive usage within a certain time period, those features will be
+temporarily disabled. +
+^3^ See link:{{< relref "help/help/index.adoc" >}}[here] for free support
+options. There is *no guarantee* that questions will be answered by the
+community. +
+^4^ Usually a response is provided within 24 hours but in rare cases it may
+take up to 3 days. The personal support is given on a *fair use* basis. For
+real problems and serious questions the project lead will help with best
+effort and high motivation. But in case of excessive consultation for trivial
 questions, the project lead reserves the right to ask for a dedicated
 payment before spending more time on personal support. For companies with
-multiple LibrePCB users we expect you collect any support requests and
-contact us through a single representative rather than every user
+multiple LibrePCB users we kindly ask you to collect any support requests
+and contact us through a single representative rather than every user
 individually. +
-^6^ Please note that there is *no guarantee* for any reported issues or
-feature requests to be resolved. We guarantee to seriously consider any
+^5^ Please note that there is *no guarantee* for any reported issues or
+feature requests to be resolved. We guarantee to seriously consider every
 requests so we will hear your voice for sure. If reasonable, we may even
 provide nightly builds resolving those requests. But in the end we always
 act with our long-term vision and goals in mind, so not every feature
 request may be implemented.
 
 
-== Discount for Open-Hardware Projects
+== Discount for OSHW Projects
 
 You are using LibrePCB mainly for Open-Hardware Projects with a reasonable
 spread in the community? Place the "Made With LibrePCB" logo on all your
 PCBs and link:{{< relref "about/contact/index.adoc" >}}[contact us]!
+
+== Volume Discount
+
+For up to 10 users there is no volume discount. For more users, please
+link:{{< relref "about/contact/index.adoc" >}}[contact us].
+
+== Multiple Users
+
+It's not possible yet to buy a subscription for multiple users, this is on
+the roadmap. Currently you have to buy a separate subscription for each user,
+which is possible with a single account (i.e. use the same e-mail address
+for each purchase).
+
+== Multiple Devices
+
+A license is bound to a user. If a user has installed LibrePCB on multiple
+devices, only one subscription is required. For an organization where
+multiple users work with LibrePCB, you need a separate subscription for
+each user.
 
 == Feature Development
 
