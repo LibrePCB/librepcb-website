@@ -2,7 +2,8 @@
 title: "Plans & Pricing"
 linkTitle: "Pricing"
 weight: 25
-wide-page: 1
+wide-page: true
+noDonateBanner: true
 ---
 
 *LibrePCB is free & open-source software and we commit to keep it that way*. +
@@ -52,13 +53,13 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li class="check-icon"></li>
-            <li class="check-icon"></li>
+            <li><span class="check-icon"></span><sup>1</sup></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
-            <li class="check-icon"></li>
+            <li><span class="check-icon"></span><sup>4</sup></li>
             <li class="cross-icon"></li>
-            <li>Community</li>
+            <li>Community<sup>4</sup></li>
             <li class="cross-icon"></li>
             <li>Please Spread the Word :-)</li>
             <li><a href="{{< relref "download/index.adoc" >}}" class="btn btn-primary btn-pricing" role="button">Download</a></li>
@@ -79,15 +80,15 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li>Required for Payment</li>
-            <li class="check-icon"></li>
-            <li><span class="warn-icon"></span> Rate Limited</li>
-            <li><span class="warn-icon"></span> Rate Limited</li>
-            <li><span class="warn-icon"></span> Rate Limited</li>
-            <li class="check-icon"></li>
+            <li><span class="check-icon"></span><sup>1</sup></li>
+            <li><span class="warn-icon"></span> Rate Limited<sup>1,2</sup></li>
+            <li><span class="warn-icon"></span> Rate Limited<sup>1,2</sup></li>
+            <li><span class="warn-icon"></span> Rate Limited<sup>1,2</sup></li>
+            <li><span class="check-icon"></span><sup>4</sup></li>
             <li class="cross-icon"></li>
-            <li>Community</li>
+            <li>Community<sup>4</sup></li>
             <li class="cross-icon"></li>
-            <li class="check-icon"></li>
+            <li><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
@@ -106,15 +107,15 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li>Required for Payment</li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
+            <li><span class="check-icon"></span><sup>1</sup></li>
+            <li><span class="check-icon"></span><sup>1,3</sup></li>
+            <li><span class="check-icon"></span><sup>1,3</sup></li>
+            <li><span class="check-icon"></span><sup>1,3</sup></li>
+            <li><span class="check-icon"></span><sup>4</sup></li>
             <li class="cross-icon"></li>
-            <li><span class="check-icon"></span> For OSHW Projects</li>
-            <li><span class="check-icon"></span> On GitHub Issues</li>
-            <li><span class="check-icon"></span><span class="check-icon"></span></li>
+            <li>Community<sup>4</sup></li>
+            <li><span class="check-icon"></span> On GitHub Issues<sup>6</sup></li>
+            <li><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
@@ -133,15 +134,15 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li>Required for Payment</li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
-            <li class="check-icon"></li>
-            <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
-            <li><span class="check-icon"></span> For Proprietary Projects</li>
-            <li><span class="check-icon"></span> Talk To Project Lead</li>
-            <li><span class="check-icon"></span><span class="check-icon"></span><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span><sup>1</sup></li>
+            <li><span class="check-icon"></span><sup>1,3</sup></li>
+            <li><span class="check-icon"></span><sup>1,3</sup></li>
+            <li><span class="check-icon"></span><sup>1,3</sup></li>
+            <li><span class="check-icon"></span><sup>4</sup></li>
+            <li><span class="check-icon"></span> From Project Lead (EN/DE)<sup>5</sup></li>
+            <li><span class="check-icon"></span> From Project Lead (EN/DE)<sup>5</sup></li>
+            <li><span class="check-icon"></span> Talk To Project Lead<sup>6</sup></li>
+            <li><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
@@ -150,3 +151,50 @@ a subscription plan.
   </div>
 </div>
 ++++
+
+[.sponsor-tier-details]
+^1^ Those features rely on online services and partially also on third-party
+services. We do our best to keep an uptime close to 100% but there is
+*absolutely no guarantee* for those to operate properly. In rare cases there
+might be short downtimes or in worst case even a long downtime in case of
+problems not under our control. There is no refund in case of downtime. +
+^2^ Those features are available, but with a usage limit sufficient only for
+simple, small projects. After too many usages within a certain time period,
+those features will be temporarily disabled for a short recovery phase. +
+^3^ Those features still have a usage limit, but high enough that they are
+not triggered during normal, professional work. Only after excessive usage
+those will be temporarily disabled for a short recovery phase. +
+^4^ See link:{{< relref "help/help/index.adoc" >}}[here] for free support
+options. There is *no guarantee* that any questions will be answered from
+the community. +
+^5^ Usually a response is given within 24 hours but in rare cases it may take
+up to 3 days. The personal support is given on a *fair use* basis. For real
+problems and serious questions the project lead will help with best effort
+and high motivation. But in case of excessive consultation for trivial
+questions, the project lead reserves the right to ask for a dedicated
+payment before spending more time on personal support. For companies with
+multiple LibrePCB users we expect you collect any support requests and
+contact us through a single representative rather than every user
+individually. +
+^6^ Please note that there is *no guarantee* for any reported issues or
+feature requests to be resolved. We guarantee to seriously consider any
+requests so we will hear your voice for sure. If reasonable, we may even
+provide nightly builds resolving those requests. But in the end we always
+act with our long-term vision and goals in mind, so not every feature
+request may be implemented.
+
+
+== Discount for Open-Hardware Projects
+
+You are using LibrePCB mainly for Open-Hardware Projects with a reasonable
+spread in the community? Place the "Made With LibrePCB" logo on all your
+PCBs and link:{{< relref "about/contact/index.adoc" >}}[contact us]!
+
+== Feature Development
+
+Waiting for a particular feature or bugfix which are considered low-priority
+on our roadmap? Or requiring custom integration into your IT landscape
+(e.g. ERP system)? Or simply needing a particular library element you don't
+want to create by yourself?
+link:{{< relref "about/contact/index.adoc" >}}[Contact us]
+and we will consider implementing it for you, coming back with an offer.
