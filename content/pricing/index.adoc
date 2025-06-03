@@ -1,301 +1,152 @@
 ---
-title: "Pricing"
-icon: "fa-solid fa-users"
+title: "Plans & Pricing"
+linkTitle: "Pricing"
 weight: 25
 wide-page: 1
 ---
 
+*LibrePCB is free & open-source software and we commit to keep it that way*. +
+Optionally you can support the project and unlock *additional benefits* with
+a subscription plan.
+
 ++++
-<div class="pricing-table container">
-        <div class="pricing-row">
-            <div class="pricing-col feature-col">
-                <div class="pricing-card">
-                    <div class="card-header">Features</div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Price</li>
-                            <li>Use Without Account</li>
-                            <li>Personal Use</li>
-                            <li>Commercial Use</li>
-                            <li>All Offline Features</li>
-                            <li>Live Parts Information</li>
-                            <li>Datasheet Analizer</li>
-                            <li>Feature Request Priority</li>
-                            <li>E-Mail Support</li>
-                            <li>Migration Support</li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-col">
-                <div class="pricing-card card-free">
-                    <div class="card-header">Free</div>
-                    <div class="card-body">
-                        <ul>
-                            <li>$0 / month</li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li><a href="#" class="btn btn-signup">Download</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-col">
-                <div class="pricing-card card-standard">
-                    <div class="card-header">Maker</div>
-                    <div class="card-body">
-                        <ul>
-                            <li>$4 / month</li>
-                            <li>Required for Payment</li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li>Rate Limited</li>
-                            <li>Rate Limited</li>
-                            <li class="cross-icon"></li>
-                            <li>Community</li>
-                            <li>Community</li>
-                            <li><a href="#" class="btn btn-signup">Subscribe</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-col">
-                <div class="pricing-card card-professional">
-                    <div class="card-header">Professional</div>
-                    <div class="card-body">
-                        <ul>
-                            <li>$10 / month</li>
-                            <li>Required for Payment</li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="cross-icon"></li>
-                            <li>Community</li>
-                            <li>Community</li>
-                            <li><a href="#" class="btn btn-signup">Subscribe</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-col">
-                <div class="pricing-card card-enterprise">
-                    <div class="card-header">Enterprise</div>
-                    <div class="card-body">
-                        <ul>
-                            <li>$59 / month</li>
-                            <li>Required for Payment</li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li class="check-icon"></li>
-                            <li><a href="#" class="btn btn-signup">Subscribe</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="pricing-table">
+  <div class="pricing-row">
+    <div class="pricing-col feature-col">
+      <div class="feature-card">
+        <div class="card-header">
+          <div>&nbsp;</div>
+          <div class="fs-6 text-muted">&nbsp;</div>
+          <div class="text-muted fw-lighter card-price-annual">&nbsp;</div>
         </div>
-    </div>
-++++
-
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-
-++++
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-  <!-- Free Plan -->
-  <div class="col">
-    <div class="card h-100 text-center">
-      <div class="card-header bg-light">
-        <h3 class="card-title mb-0">Free</h3>
-      </div>
-      <div class="card-body">
-        <h4 class="card-title">Yes it's free!</h4>
-        <span class="text-muted fs-6">(forever)</span>
-        <ul class="list-unstyled mt-3">
-          <li>All Offline Features</li>
-          <li>Personal &amp; Commercial Use</li>
-          <li>Limited Online Features</li>
-          <li>No Account Required</li>
-        </ul>
-      </div>
-      <div class="card-footer bg-light">
-        <a href="#" class="btn btn-success w-100">Download</a>
+        <div class="card-body">
+          <ul>
+            <li>Fully Open-Source Application</li>
+            <li>Personal &amp; Commercial Use</li>
+            <li>No Limitations in Offline Features</li>
+            <li>Use Without Account</li>
+            <li>Get Our Official Libraries (Online)</li>
+            <li>Get Proprietary 3D Models (Online)</li>
+            <li>Live Parts Information (Online)</li>
+            <li>Import From Datasheets (Online)</li>
+            <li>Community Support (Forum/Chat)</li>
+            <li>Personal Support (E-Mail/Chat/Phone)</li>
+            <li>Migration Support (Libraries/Projects)</li>
+            <li>Feature Request &amp; Bugfix Priority</li>
+            <li>Support The Development</li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Starter Plan -->
-  <div class="col">
-    <div class="card h-100 text-center">
-      <div class="card-header bg-light">
-        <h3 class="card-title mb-0">Maker</h3>
-      </div>
-      <div class="card-body">
-        <h4 class="card-title">$4/month</h4>
-        <span class="text-muted fs-6">$40/year</span>
-        <ul class="list-unstyled mt-3">
-          <li>All Free Features</li>
-          <li>Live Parts Information</li>
-          <li>Rate Limited</li>
-        </ul>
-      </div>
-      <div class="card-footer bg-light">
-        <a href="#" class="btn btn-primary w-100">Choose Plan</a>
-      </div>
-    </div>
-  </div>
-  <!-- Pro Plan -->
-  <div class="col">
-    <div class="card h-100 text-center">
-      <div class="card-header bg-light">
-        <h3 class="card-title mb-0">Professional</h3>
-      </div>
-      <div class="card-body">
-        <h4 class="card-title">$10/month</h4>
-        <span class="text-muted fs-6">$100/year</span>
-        <ul class="list-unstyled mt-3">
-          <li>All Starter Features</li>
-          <li>All Online Features</li>
-          <li>High Rate Limits</li>
-        </ul>
-      </div>
-      <div class="card-footer bg-light">
-        <a href="https://sandbox-api.polar.sh/v1/checkout-links/polar_cl_x9by5XzQ5n6jioo3OH8m4uTLXtPZfHB1SJMYk0bKvI4/redirect" class="btn btn-primary w-100">Choose Plan</a>
+    <div class="pricing-col">
+      <div class="pricing-card card-free">
+        <div class="card-header">
+          <div>FREE</div>
+          <div class="fs-6 text-muted">$0 / month</div>
+          <div class="text-muted fw-lighter card-price-annual">no strings attached</div>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="cross-icon"></li>
+            <li class="cross-icon"></li>
+            <li class="cross-icon"></li>
+            <li class="check-icon"></li>
+            <li class="cross-icon"></li>
+            <li>Community</li>
+            <li class="cross-icon"></li>
+            <li>Please Spread the Word :-)</li>
+            <li><a href="{{< relref "download/index.adoc" >}}" class="btn btn-primary btn-pricing" role="button">Download</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Enterprise Plan -->
-  <div class="col">
-    <div class="card h-100 text-center">
-      <div class="card-header bg-light">
-        <h3 class="card-title mb-0">Enterprise</h3>
+    <div class="pricing-col">
+      <div class="pricing-card card-standard">
+        <div class="card-header">
+          <div>Maker</div>
+          <div class="fs-6 text-muted">$4 / month</div>
+          <div class="text-muted fw-lighter card-price-annual">or $40 / year</div>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li>Required for Payment</li>
+            <li class="check-icon"></li>
+            <li><span class="warn-icon"></span> Rate Limited</li>
+            <li><span class="warn-icon"></span> Rate Limited</li>
+            <li><span class="warn-icon"></span> Rate Limited</li>
+            <li class="check-icon"></li>
+            <li class="cross-icon"></li>
+            <li>Community</li>
+            <li class="cross-icon"></li>
+            <li class="check-icon"></li>
+            <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="card-body">
-        <h4 class="card-title">$59/month</h4>
-        <span class="text-muted fs-6">$590/year</span>
-        <ul class="list-unstyled mt-3">
-          <li>All Pro Features</li>
-          <li>Email Support</li>
-          <li>Migration Support</li>
-          <li>Feature Request Priority</li>
-        </ul>
+    </div>
+    <div class="pricing-col">
+      <div class="pricing-card card-professional">
+        <div class="card-header">
+          <div>Professional</div>
+          <div class="fs-6 text-muted">$10 / month</div>
+          <div class="text-muted fw-lighter card-price-annual">or $100 / year</div>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li>Required for Payment</li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="cross-icon"></li>
+            <li><span class="check-icon"></span> For OSHW Projects</li>
+            <li><span class="check-icon"></span> On GitHub Issues</li>
+            <li><span class="check-icon"></span><span class="check-icon"></span></li>
+            <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="card-footer bg-light">
-        <a href="#" class="btn btn-primary w-100">Choose Plan</a>
+    </div>
+    <div class="pricing-col">
+      <div class="pricing-card card-enterprise">
+        <div class="card-header">
+          <div>Enterprise</div>
+          <div class="fs-6 text-muted">$59 / month / user</div>
+          <div class="text-muted fw-lighter card-price-annual">or $590 / year / user</div>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li>Required for Payment</li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li class="check-icon"></li>
+            <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
+            <li><span class="check-icon"></span> For Proprietary Projects</li>
+            <li><span class="check-icon"></span> Talk To Project Lead</li>
+            <li><span class="check-icon"></span><span class="check-icon"></span><span class="check-icon"></span></li>
+            <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 ++++
-
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-{empty} +
-
-[%header,cols="36,16,16,16,16"]
-|===
-|
-^| Free
-^| Starter
-^| Pro
-^| Enterprise
-
-.^|{set:cellbgcolor:-} Price
-^.^| **Yes, it's free!**
-^| **$4/month** +
-[.small.text-muted]#$40/year#
-^| **$10/month** +
-[.small.text-muted]#$100/year#
-^| **$59/month** +
-[.small.text-muted]#$590/year#
-
-|{set:cellbgcolor:-} Use Without Account
-^.^| {set:cellbgcolor:#00FF0020} ✓
-3+^.^| {set:cellbgcolor:#FFFF0020} [.sponsor-tier-cell-text]#(email + name required for payment)#
-
-|{set:cellbgcolor:-} Personal Use
-^.^| {set:cellbgcolor:#00FF0020} ✓
-^.^| ✓
-^.^| ✓
-^.^| ✓
-
-|{set:cellbgcolor:-} Commercial Use
-^.^| {set:cellbgcolor:#00FF0020} ✓
-^.^| ✓
-^.^| ✓
-^.^| ✓
-
-|{set:cellbgcolor:-} Unrestricted Offline Features
-^.^| {set:cellbgcolor:#00FF0020} ✓
-^.^| ✓
-^.^| ✓
-^.^| ✓
-
-|{set:cellbgcolor:-} Live Parts Information
-^.^| {set:cellbgcolor:#FF000020} -
-^.^| {set:cellbgcolor:#FFFF0020} [.sponsor-tier-cell-text]#100/month#
-^.^| {set:cellbgcolor:#00FF0020} [.sponsor-tier-cell-text]#1000/month#
-^.^| [.sponsor-tier-cell-text]#1000/month#
-
-|{set:cellbgcolor:-} Datasheet Analizer
-^.^| {set:cellbgcolor:#FF000020} -
-^.^| {set:cellbgcolor:#FFFF0020} [.sponsor-tier-cell-text]#3/month#
-^.^| {set:cellbgcolor:#00FF0020} [.sponsor-tier-cell-text]#100/month#
-^.^| [.sponsor-tier-cell-text]#100/month#
-
-.^|{set:cellbgcolor:-} Feature Request Priority
-^.^| {set:cellbgcolor:#FF000020} -
-^.^| -
-^.^| -
-^.^| {set:cellbgcolor:#00FF0020} ✓
-
-.^|{set:cellbgcolor:-} Support
-^.^| {set:cellbgcolor:#FFFF0020} [.sponsor-tier-cell-text]#Community#
-^.^| [.sponsor-tier-cell-text]#Community#
-^.^| [.sponsor-tier-cell-text]#Community#
-^.^| {set:cellbgcolor:#00FF0020} [.sponsor-tier-cell-text]#✓ Personal (E-Mail) +
-✓ Migration Help#
-
-|{set:cellbgcolor:-}
-^.^| +++<a href="#" class="btn btn-success w-100">Download</a>+++
-^.^| +++<a href="#" class="btn btn-primary w-100">Subscribe</a>+++
-^.^| +++<a href="#" class="btn btn-primary w-100">Subscribe</a>+++
-^.^| +++<a href="#" class="btn btn-primary w-100">Subscribe</a>+++
-|===
