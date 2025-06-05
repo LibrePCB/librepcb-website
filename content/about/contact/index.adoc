@@ -18,4 +18,7 @@ for marketing purposes.
 ====
 
 For a direct conversation with the project lead,
-write to {{< cloakemail "contact" "librepcb.org" >}}.
+write to {{< cloakemail "contact" "librepcb.org" >}}. In case you don't receive
+a response within 2 days, *please check your spam folder*.
+You could also start a chat on Matrix (`@ubruhin:matrix.org`) or Telegram
+(`@ubruh1n`, note the "1").
