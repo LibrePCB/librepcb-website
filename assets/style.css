@@ -182,6 +182,11 @@
     flex: 1;
     background-color: #fafafa;
 }
+.pricing-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    left: 90% !important;
+}
 .card-header {
     text-align: center;
     font-size: 1.2rem;
@@ -758,6 +763,14 @@ img.intro-screenshot {
 .body-container .videoblock iframe {
     max-width: 100%;
     vertical-align: middle;
+}
+
+details .content {
+    margin-left: 20px;
+    padding: 6px;
+    background: #e9e9e9;
+    border-radius: 5px;
+    font-size: 0.9em;
 }
 
 /* Open Collective logo from https://css.gg/open-collective (license: MIT) */
