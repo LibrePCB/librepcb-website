@@ -43,7 +43,7 @@ a subscription plan.
     </div>
     <div class="pricing-col">
       <div class="pricing-card card-free">
-        <div class="card-header">
+        <div class="card-header position-relative">
           <div>FREE</div>
           <div class="fs-6 text-muted">$0 / month</div>
           <div class="text-muted fw-lighter card-price-annual">no strings attached</div>
@@ -71,10 +71,13 @@ a subscription plan.
     </div>
     <div class="pricing-col">
       <div class="pricing-card card-standard">
-        <div class="card-header">
+        <div class="card-header position-relative">
           <div>Maker</div>
           <div class="fs-6 text-muted">$4 / month</div>
           <div class="text-muted fw-lighter card-price-annual">or $40 / year</div>
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger pricing-badge">
+            includes<br/>$4/month<br/>credit!<sup>6</sup>
+          </span>
         </div>
         <div class="card-body">
           <ul>
@@ -99,10 +102,13 @@ a subscription plan.
     </div>
     <div class="pricing-col">
       <div class="pricing-card card-professional">
-        <div class="card-header">
+        <div class="card-header position-relative">
           <div>Professional</div>
           <div class="fs-6 text-muted">$10 / month</div>
           <div class="text-muted fw-lighter card-price-annual">or $100 / year</div>
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger pricing-badge">
+            includes<br/>$10/month<br/>credit!<sup>6</sup>
+          </span>
         </div>
         <div class="card-body">
           <ul>
@@ -157,20 +163,29 @@ a subscription plan.
 </div>
 ++++
 
+.Notes & Terms (please read before subscribing)
+[%collapsible]
+====
 [.sponsor-tier-details]
 ^1^ Those features rely on online services and/or external partners. We do our
 best to keep an uptime close to 100% but there is *absolutely no guarantee*
 for those to operate properly. In rare cases there might be short downtimes
 or in worst case even a long downtime in case of problems not under our
-control. There is no refund in case of downtime. +
+control. There is no refund in case of downtime.
+
+[.sponsor-tier-details]
 ^2^ Those features come with a certain usage limit. The Maker subscription is
 sufficient for occasional, simple, small projects. The higher subscriptions
 are suitable for professional daily business work on more complex projects.
 After excessive usage within a certain time period, those features will be
-temporarily disabled. +
+temporarily disabled.
+
+[.sponsor-tier-details]
 ^3^ See link:{{< relref "help/help/index.adoc" >}}[here] for free support
 options. There is *no guarantee* that questions will be answered by the
-community. +
+community.
+
+[.sponsor-tier-details]
 ^4^ Usually a response is provided within 24 hours but in rare cases it may
 take up to 3 days. The personal support is given on a *fair use* basis. For
 real problems and serious questions the project lead will help with best
@@ -179,7 +194,9 @@ questions, the project lead reserves the right to ask for a dedicated
 payment before spending more time on personal support. For companies with
 multiple LibrePCB users we kindly ask you to collect any support requests
 and contact us through a single representative rather than every user
-individually. +
+individually.
+
+[.sponsor-tier-details]
 ^5^ Please note that there is *no guarantee* for any reported issues or
 feature requests to be resolved. We guarantee to seriously consider every
 requests so we will hear your voice for sure. If reasonable, we may even
@@ -187,37 +204,117 @@ provide nightly builds resolving those requests. But in the end we always
 act with our long-term vision and goals in mind, so not every feature
 request may be implemented.
 
+[.sponsor-tier-details]
+^6^ With these subscriptions you will get a monthly credit at our manufacturing
+partner https://aisler.net[AISLER] for PCB orders made through
+https://fab.librepcb.org[LibrePCB Fab], with the same amount as the LibrePCB
+subscription costs -- if you order PCBs every month for at least this amount,
+the complete LibrePCB subscription is for free! Note that unused credits do
+not sum up to the next month, i.e. credits expire after a month.
+====
 
-== Discount for OSHW Projects
+---
 
-You are using LibrePCB mainly for Open-Hardware Projects with a reasonable
-spread in the community? Place the "Made With LibrePCB" logo on all your
-PCBs and link:{{< relref "about/contact/index.adoc" >}}[contact us]!
+== icon:circle-question[] Frequently Asked Questions
 
-== Volume Discount
+.What payment methods are supported?
+[%collapsible]
+====
+Currently we support credit cards. More options will be provided in future.
+====
 
+.Is there any volume discount?
+[%collapsible]
+====
 For up to 10 users there is no volume discount. For more users, please
 link:{{< relref "about/contact/index.adoc" >}}[contact us].
+====
 
-== Multiple Users
+.How many users can use a subscription?
+[%collapsible]
+====
+A subscription is valid for a single user. For example if 5 users will work
+with LibrePCB, you need to buy 5 subscriptions.
+====
 
+.Can we buy a subscription for multiple users?
+[%collapsible]
+====
 It's not possible yet to buy a subscription for multiple users, this is on
 the roadmap. Currently you have to buy a separate subscription for each user,
 which is possible with a single account (i.e. use the same e-mail address
 for each purchase).
+====
 
-== Multiple Devices
+.Can I install LibrePCB on multiple devices?
+[%collapsible]
+====
+Yes. A subscription is bound to a user. If a user has installed LibrePCB on
+multiple devices, only one subscription is required. But if multiple users
+work with LibrePCB, you need a separate subscription for each user.
+====
 
-A license is bound to a user. If a user has installed LibrePCB on multiple
-devices, only one subscription is required. For an organization where
-multiple users work with LibrePCB, you need a separate subscription for
-each user.
+.Do you offer a discount for non-profits, schools, OSHW projects etc.?
+[%collapsible]
+====
+In some cases we may provide a discount, please
+link:{{< relref "about/contact/index.adoc" >}}[contact us] and we will consider
+every case individually. But a discount may only be offered if the following
+requirements are met:
 
-== Feature Development
+* You are using LibrePCB mainly for educational, non-commercial or open-source
+  hardware projects
+* You have a reasonable publicity, for example students in your school will use
+  LibrePCB, or you are building hardware which have a big public visibility
+* You put the "Made With LibrePCB" logo on all your schematics & PCBs
+====
 
-Waiting for a particular feature or bugfix which are considered low-priority
-on our roadmap? Or requiring custom integration into your IT landscape
-(e.g. ERP system)? Or simply needing a particular library element you don't
-want to create by yourself?
-link:{{< relref "about/contact/index.adoc" >}}[Contact us]
-and we will consider implementing it for you, coming back with an offer.
+.With a subscription, will you implement the features & bugfixes which I need?
+[%collapsible]
+====
+The higher level subscriptions allow you to vote for features or other tasks
+to give them a higher priority. However, there is no guarantee we will work
+on these tasks soon as we always have to make decisions based on the whole
+community instead of a few individual users.
+
+If you really need a particular feature, bugfix, custom integration into your
+IT landscape, missing library elements etc, please
+link:{{< relref "about/contact/index.adoc" >}}[contact us]. We will check if
+it is a doable task in which case we would make you an offer to fund that
+particular task.
+====
+
+.I have privacy concerns/questions!
+[%collapsible]
+====
+Then you are in good company :-) We take privacy very seriously and want to
+be transparent about it. Here some details:
+
+* Without a subscription, you can use LibrePCB for free and completely without
+  any account. We don't ask for your email address, name, credit card or
+  whatever. Basically we don't even know that you are using LibrePCB except
+  from the server logs produced when LibrePCB accesses our API server. If
+  you even don't like LibrePCB to access the internet, you can remove the
+  configured API server in the workspace settings.
+* With a subscription, unfortunately there is no anonymous payment method yet.
+  However, we ask you only the absolutely minimum of information which is
+  necessary -- that is an email address, credit card details, and the country
+  you live in (required to calculate VAT).
+* We use https://polar.sh[Polar] as our Merchant of Record, that means they
+  are responsible for payment & billing. We searched hard to find a payment
+  provider which does not require us to sell our souls -- and luckily found
+  Polar, which is not even developer-friendly & privacy-respecting, but even
+  open-source software! Please check out their website for details about
+  their privacy policy etc.
+* We neither process nor store your credit card details. Everything is handled
+  by Polar, which in turn uses Stripe to process and store credit card details.
+  Those sensitive information is never going through our servers so we won't
+  even see them. We only store your email, name & country as this is required
+  for account management.
+* For our account management we follow the best practices to keep privacy and
+  security at a maximum. For example, we delete any data from the server as
+  soon as it is not needed anymore.
+
+If you still have any concerns or questions, please don't hesitate to
+link:{{< relref "about/contact/index.adoc" >}}[contact us].
+====
