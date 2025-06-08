@@ -28,8 +28,9 @@ a subscription plan.
             <li>Use Without Account</li>
             <li>Get Our Official Libraries (Online)<sup>1</sup></li>
             <li>Get Proprietary 3D Models (Online)<sup>1,2</sup></li>
-            <li>Live Parts Information (Online)<sup>1,2</sup></li>
+            <li>Import Parts On-Demand (Online)<sup>1,2</sup></li>
             <li>Import From Datasheets (Online)<sup>1,2</sup></li>
+            <li>Live Parts Information (Online)<sup>1,2</sup></li>
             <li>Autorouter (Online)<sup>1,2</sup></li>
             <li>Community Support (Forum/Chat)<sup>3</sup></li>
             <li>Personal Support (E-Mail/Chat/Phone)<sup>4</sup></li>
@@ -55,6 +56,7 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li><span class="check-icon"></span></li>
+            <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
@@ -86,6 +88,7 @@ a subscription plan.
             <li class="check-icon"></li>
             <li>Required for Payment</li>
             <li><span class="check-icon"></span></li>
+            <li><span class="warn-icon"></span> Rate Limited</li>
             <li><span class="warn-icon"></span> Rate Limited</li>
             <li><span class="warn-icon"></span> Rate Limited</li>
             <li><span class="warn-icon"></span> Rate Limited</li>
@@ -122,6 +125,7 @@ a subscription plan.
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
             <li>Community</li>
             <li><span class="check-icon"></span> Via Forum/Chat/GitHub</li>
@@ -144,6 +148,7 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li>Required for Payment</li>
+            <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
