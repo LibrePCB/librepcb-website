@@ -77,7 +77,7 @@ a subscription plan.
           <div>Maker</div>
           <div class="fs-6 text-muted">$4 / month</div>
           <div class="text-muted fw-lighter card-price-annual">or $40 / year</div>
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger pricing-badge">
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
             includes<br/>$4/month<br/>credit!<sup>6</sup>
           </span>
         </div>
@@ -109,7 +109,7 @@ a subscription plan.
           <div>Professional</div>
           <div class="fs-6 text-muted">$10 / month</div>
           <div class="text-muted fw-lighter card-price-annual">or $100 / year</div>
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger pricing-badge">
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
             includes<br/>$10/month<br/>credit!<sup>6</sup>
           </span>
         </div>
@@ -173,10 +173,11 @@ a subscription plan.
 ====
 [.sponsor-tier-details]
 ^1^ Those features rely on online services and/or external partners. We do our
-best to keep an uptime close to 100% but there is *absolutely no guarantee*
-for those to operate properly. In rare cases there might be short downtimes
-or in worst case even a long downtime in case of problems not under our
-control. There is no refund in case of downtime.
+best to keep the uptime close to 100% but there is *no guarantee* for those
+to operate properly. In rare cases there might be short downtimes or in
+worst case even long downtimes or permanent service shutdown if the problem
+is not under our control. There is no entitlement to a refund in case of
+downtime.
 
 [.sponsor-tier-details]
 ^2^ Those features come with a certain usage limit. The Maker subscription is
@@ -204,7 +205,7 @@ individually.
 [.sponsor-tier-details]
 ^5^ Please note that there is *no guarantee* for any reported issues or
 feature requests to be resolved. We guarantee to seriously consider every
-requests so we will hear your voice for sure. If reasonable, we may even
+request so we will hear your voice for sure. If reasonable, we may even
 provide nightly builds resolving those requests. But in the end we always
 act with our long-term vision and goals in mind, so not every feature
 request may be implemented.
