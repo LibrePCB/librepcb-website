@@ -223,17 +223,12 @@ not sum up to the next month, i.e. credits expire after a month.
 
 == icon:circle-question[] Frequently Asked Questions
 
+{empty}
+
 .What payment methods are supported?
 [%collapsible]
 ====
 Currently we support credit cards. More options will be provided in future.
-====
-
-.Is there any volume discount?
-[%collapsible]
-====
-For up to 10 users there is no volume discount. For more users, please
-link:{{< relref "about/contact/index.adoc" >}}[contact us].
 ====
 
 .How many users can use a subscription?
@@ -258,6 +253,25 @@ for each purchase).
 Yes. A subscription is bound to a user. If a user has installed LibrePCB on
 multiple devices, only one subscription is required. But if multiple users
 work with LibrePCB, you need a separate subscription for each user.
+====
+
+.I'm rarely using LibrePCB / I don't like subscriptions, can I make a one-time purchase?
+[%collapsible]
+====
+Since the major benefits of our subscriptions are server-side services and
+support services, we can't offer those for a one-time payment. If you just
+want to use LibrePCB for a few days to get a project done, feel free to
+start a monthly subscription and immediately cancel it afterwards. This
+way you are charged only one monthly rate and the subscription stays valid
+until the end of the subscription period.
+====
+
+.Is there any volume discount?
+[%collapsible]
+====
+For up to 10 users there is no volume discount. For Enterprise subscriptions
+with more than 10 users, please
+link:{{< relref "about/contact/index.adoc" >}}[contact us].
 ====
 
 .Do you offer a discount for non-profits, schools, OSHW projects etc.?
@@ -293,33 +307,26 @@ particular task.
 .I have privacy concerns/questions!
 [%collapsible]
 ====
-Then you are in good company :-) We take privacy very seriously and want to
+Then you are in good company :-) We really care about privacy and want to
 be transparent about it. Here some details:
 
 * Without a subscription, you can use LibrePCB for free and completely without
-  any account. We don't ask for your email address, name, credit card or
-  whatever. Basically we don't even know that you are using LibrePCB except
-  from the server logs produced when LibrePCB accesses our API server. If
-  you even don't like LibrePCB to access the internet, you can remove the
-  configured API server in the workspace settings.
-* With a subscription, unfortunately there is no anonymous payment method yet.
-  However, we ask you only the absolutely minimum of information which is
-  necessary -- that is an email address, credit card details, and the country
-  you live in (required to calculate VAT).
+  any account. We won't ask you for an email address, name, credit card or
+  whatever. Just download the application and run it, period.
+* With a subscription, there is no anonymous payment method yet but we ask
+  only for the absolutely necessary information -- that is an email address,
+  credit card details, and the country/state you live in (required to
+  determine VAT).
 * We use https://polar.sh[Polar] as our Merchant of Record, that means they
-  are responsible for payment & billing. We searched hard to find a payment
-  provider which does not require us to sell our souls -- and luckily found
-  Polar, which is not even developer-friendly & privacy-respecting, but even
-  open-source software! Please check out their website for details about
-  their privacy policy etc.
+  are responsible for payment & billing so they show up as merchant on the
+  credit card bill. We searched hard to find a payment provider which does
+  not require us to sell our souls -- and luckily found Polar, which is not
+  even developer-friendly & privacy-respecting, but even open-source software!
+  Please check out their website for details about their privacy policy etc.
 * We neither process nor store your credit card details. Everything is handled
   by Polar, which in turn uses Stripe to process and store credit card details.
   Those sensitive information is never going through our servers so we won't
-  even see them. We only store your email, name & country as this is required
-  for account management.
-* For our account management we follow the best practices to keep privacy and
-  security at a maximum. For example, we delete any data from the server as
-  soon as it is not needed anymore.
+  even see them.
 
 If you still have any concerns or questions, please don't hesitate to
 link:{{< relref "about/contact/index.adoc" >}}[contact us].
