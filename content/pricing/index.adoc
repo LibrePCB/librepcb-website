@@ -46,7 +46,7 @@ a subscription plan.
       <div class="pricing-card card-free">
         <div class="card-header position-relative">
           <div>FREE</div>
-          <div class="fs-6 text-muted">$0 / month</div>
+          <div class="fs-6 text-muted">0€ / month</div>
           <div class="text-muted fw-lighter card-price-annual">no strings attached</div>
         </div>
         <div class="card-body">
@@ -75,10 +75,10 @@ a subscription plan.
       <div class="pricing-card card-standard">
         <div class="card-header position-relative">
           <div>Maker</div>
-          <div class="fs-6 text-muted">$4 / month</div>
-          <div class="text-muted fw-lighter card-price-annual">or $40 / year</div>
+          <div class="fs-6 text-muted">4€ / month</div>
+          <div class="text-muted fw-lighter card-price-annual">or 40€ / year</div>
           <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
-            includes<br/>$4/month<br/>credit!<sup>6</sup>
+            includes<br/>4€/month<br/>credit!<sup>6</sup>
           </span>
         </div>
         <div class="card-body">
@@ -107,10 +107,10 @@ a subscription plan.
       <div class="pricing-card card-professional">
         <div class="card-header position-relative">
           <div>Professional</div>
-          <div class="fs-6 text-muted">$10 / month</div>
-          <div class="text-muted fw-lighter card-price-annual">or $100 / year</div>
+          <div class="fs-6 text-muted">10€ / month</div>
+          <div class="text-muted fw-lighter card-price-annual">or 100€ / year</div>
           <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
-            includes<br/>$10/month<br/>credit!<sup>6</sup>
+            includes<br/>10€/month<br/>credit!<sup>6</sup>
           </span>
         </div>
         <div class="card-body">
