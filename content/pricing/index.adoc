@@ -23,9 +23,8 @@ a subscription plan.
         <div class="card-body">
           <ul>
             <li>Fully Open-Source Application</li>
-            <li>Personal &amp; Commercial Use</li>
+            <li>For Personal &amp; Commercial Use</li>
             <li>No Limitations in Offline Features</li>
-            <li>Use Without Account</li>
             <li>Get Our Official Libraries (Online)<sup>1</sup></li>
             <li>Get Proprietary 3D Models (Online)<sup>1,2</sup></li>
             <li>Import Parts On-Demand (Online)<sup>1,2</sup></li>
@@ -34,9 +33,7 @@ a subscription plan.
             <li>Autorouter (Online)<sup>1,2</sup></li>
             <li>Community Support (Forum/Chat)<sup>3</sup></li>
             <li>Personal Support (E-Mail/Chat/Phone)<sup>4</sup></li>
-            <li>Migration Support (Libraries/Projects)<sup>4</sup></li>
             <li>Feature Request &amp; Bugfix Priority<sup>5</sup></li>
-            <li>Support The Development</li>
             <li></li>
           </ul>
         </div>
@@ -55,7 +52,6 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li class="check-icon"></li>
-            <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
@@ -63,9 +59,7 @@ a subscription plan.
             <li class="cross-icon"></li>
             <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
-            <li>Community</li>
             <li class="cross-icon"></li>
-            <li>Please Spread the Word :-)</li>
             <li><a href="{{< relref "download/index.adoc" >}}" class="btn btn-primary btn-pricing" role="button">Download</a></li>
           </ul>
         </div>
@@ -86,7 +80,6 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li class="check-icon"></li>
-            <li>Required for Payment</li>
             <li><span class="check-icon"></span></li>
             <li><span class="warn-icon"></span> Rate Limited</li>
             <li><span class="warn-icon"></span> Rate Limited</li>
@@ -95,9 +88,7 @@ a subscription plan.
             <li class="cross-icon"></li>
             <li><span class="check-icon"></span></li>
             <li class="cross-icon"></li>
-            <li>Community</li>
             <li class="cross-icon"></li>
-            <li><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
@@ -118,7 +109,6 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li class="check-icon"></li>
-            <li>Required for Payment</li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
@@ -126,10 +116,8 @@ a subscription plan.
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
-            <li class="cross-icon"></li>
-            <li>Community</li>
+            <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
             <li><span class="check-icon"></span> Via Forum/Chat/GitHub</li>
-            <li><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
@@ -147,7 +135,6 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li class="check-icon"></li>
-            <li>Required for Payment</li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
@@ -155,10 +142,8 @@ a subscription plan.
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
             <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
             <li><span class="check-icon"></span> Talk To Project Lead</li>
-            <li><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i><i class="fa-solid fa-rocket"></i></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
