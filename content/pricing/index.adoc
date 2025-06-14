@@ -25,15 +25,16 @@ a subscription plan.
             <li>Fully Open-Source Application</li>
             <li>For Personal &amp; Commercial Use</li>
             <li>No Limitations in Offline Features</li>
-            <li>Get Our Official Libraries (Online)<sup>1</sup></li>
-            <li>Get Proprietary 3D Models (Online)<sup>1,2</sup></li>
-            <li>Import Parts On-Demand (Online)<sup>1,2</sup></li>
-            <li>Import From Datasheets (Online)<sup>1,2</sup></li>
-            <li>Live Parts Information (Online)<sup>1,2</sup></li>
-            <li>Autorouter (Online)<sup>1,2</sup></li>
-            <li>Community Support (Forum/Chat)<sup>3</sup></li>
-            <li>Personal Support (E-Mail/Chat/Phone)<sup>4</sup></li>
+            <li>Get Our Official Libraries (Online)<sup>2</sup></li>
+            <li>Join Private Chats (Support/Dev)<sup>3</sup></li>
+            <li>Get Proprietary 3D Models (Online)<sup>2,4</sup></li>
+            <li>Import Parts On-Demand (Online)<sup>2,4</sup></li>
+            <li>Import From Datasheets (Online)<sup>2,4</sup></li>
+            <li>Live Parts Information (Online)<sup>2,4</sup></li>
+            <li>Autorouter (Online)<sup>2,4</sup></li>
             <li>Feature Request &amp; Bugfix Priority<sup>5</sup></li>
+            <li>Personal Support (Chat/E-Mail/Phone)<sup>6</sup></li>
+            <li>Multi-User License Management<sup>7</sup></li>
             <li></li>
           </ul>
         </div>
@@ -57,7 +58,8 @@ a subscription plan.
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
-            <li><span class="check-icon"></span></li>
+            <li class="cross-icon"></li>
+            <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li><a href="{{< relref "download/index.adoc" >}}" class="btn btn-primary btn-pricing" role="button">Download</a></li>
@@ -69,10 +71,10 @@ a subscription plan.
       <div class="pricing-card card-standard">
         <div class="card-header position-relative">
           <div>Maker</div>
-          <div class="fs-6 text-muted">4€ / month</div>
-          <div class="text-muted fw-lighter card-price-annual">or 40€ / year</div>
+          <div class="fs-6 text-muted">4€ / month<sup>*</sup></div>
+          <div class="text-muted fw-lighter card-price-annual">or 40€ / year<sup>*</sup></div>
           <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
-            includes<br/>4€/month<br/>credit!<sup>6</sup>
+            includes<br/>4€/month<br/>credit!<sup>1</sup>
           </span>
         </div>
         <div class="card-body">
@@ -81,12 +83,13 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li><span class="check-icon"></span></li>
-            <li><span class="warn-icon"></span> Rate Limited</li>
-            <li><span class="warn-icon"></span> Rate Limited</li>
-            <li><span class="warn-icon"></span> Rate Limited</li>
-            <li><span class="warn-icon"></span> Rate Limited</li>
-            <li class="cross-icon"></li>
             <li><span class="check-icon"></span></li>
+            <li><span class="warn-icon"></span> 20 / month</li>
+            <li><span class="warn-icon"></span> 20 / month</li>
+            <li><span class="warn-icon"></span> 20 / month</li>
+            <li><span class="warn-icon"></span> 50 / day</li>
+            <li class="cross-icon"></li>
+            <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
@@ -98,10 +101,10 @@ a subscription plan.
       <div class="pricing-card card-professional">
         <div class="card-header position-relative">
           <div>Professional</div>
-          <div class="fs-6 text-muted">10€ / month</div>
-          <div class="text-muted fw-lighter card-price-annual">or 100€ / year</div>
+          <div class="fs-6 text-muted">10€ / month<sup>*</sup></div>
+          <div class="text-muted fw-lighter card-price-annual">or 100€ / year<sup>*</sup></div>
           <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
-            includes<br/>10€/month<br/>credit!<sup>6</sup>
+            includes<br/>10€/month<br/>credit!<sup>1</sup>
           </span>
         </div>
         <div class="card-body">
@@ -111,13 +114,14 @@ a subscription plan.
             <li class="check-icon"></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span> 200 / month</li>
+            <li><span class="check-icon"></span> 200 / month</li>
+            <li><span class="check-icon"></span> 200 / month</li>
+            <li><span class="check-icon"></span> 300 / day</li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
-            <li><span class="check-icon"></span> Via Forum/Chat/GitHub</li>
+            <li class="cross-icon"></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
@@ -127,8 +131,8 @@ a subscription plan.
       <div class="pricing-card card-enterprise">
         <div class="card-header">
           <div>Enterprise</div>
-          <div class="fs-6 text-muted">$59 / month / user</div>
-          <div class="text-muted fw-lighter card-price-annual">or $590 / year / user</div>
+          <div class="fs-6 text-muted">59€ / month / user<sup>*</sup></div>
+          <div class="text-muted fw-lighter card-price-annual">or 590€ / year / user<sup>*</sup></div>
         </div>
         <div class="card-body">
           <ul>
@@ -137,19 +141,21 @@ a subscription plan.
             <li class="check-icon"></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
+            <li><span class="check-icon"></span> 200 / month / user</li>
+            <li><span class="check-icon"></span> 200 / month / user</li>
+            <li><span class="check-icon"></span> 200 / month / user</li>
+            <li><span class="check-icon"></span> 300 / day / user</li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
-            <li><span class="check-icon"></span> Talk To Project Lead</li>
-            <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
+            <li><span class="check-icon"></span></li>
+            <li><a href="#" class="btn btn-warning btn-pricing disabled" role="button">Coming Soon</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+  <p class="mt-2 text-end small text-muted"><sup>*</sup>All prices excl. VAT</p>
 </div>
 ++++
 
@@ -157,38 +163,48 @@ a subscription plan.
 [%collapsible]
 ====
 [.sponsor-tier-details]
-^1^ Those features rely on online services and/or external partners. We do our
+^1^ With these subscriptions you will get a monthly credit at our manufacturing
+partner https://aisler.net[AISLER] for PCB orders made through
+https://fab.librepcb.org[LibrePCB Fab], with the same amount as the LibrePCB
+subscription costs -- so if you order PCBs every month for at least this amount,
+the complete LibrePCB subscription is for free! Note that unused credits do
+not sum up to the next month, i.e. credits expire after a month.
+
+[.sponsor-tier-details]
+^2^ Those features rely on online services and/or external partners. We do our
 best to keep the uptime close to 100% but there is *no guarantee* for those
 to operate properly. In rare cases there might be short downtimes or in
 worst case even long downtimes or permanent service shutdown if the problem
-is not under our control. There is no entitlement to a refund in case of
-downtime.
+is not under our control. There is no right for a refund in case of downtime.
 
 [.sponsor-tier-details]
-^2^ Those features come with a certain usage limit. The Maker subscription is
-sufficient for occasional, simple, small projects. The higher subscriptions
-are suitable for professional daily business work on more complex projects.
-After excessive usage within a certain time period, those features will be
-temporarily disabled.
+^3^ You get access to private chats which allow to put questions with a high
+probability that a project member will answer. Please respect a *fair use* of
+these chats (do not spam with lots of trivial questions). There is no right
+to get answers (real personal support is only included in the higher tiers).
+To get access to these chats, you need a Matrix account. We have chosen this
+open-source solution for transparency & privacy reasons.
 
 [.sponsor-tier-details]
-^3^ See link:{{< relref "help/help/index.adoc" >}}[here] for free support
-options. There is *no guarantee* that questions will be answered by the
-community.
+^4^ Those features come with a certain usage limit. The Maker subscription is
+intended for occasional, simple, small projects. The higher subscriptions
+are intended for professional work on more complex projects as a daily
+business. Each feature has its own rate limit. Once exceeded, the particalar
+feature is disabled for the rest of the period (day or month). Unused
+contingents do not sum up to the following period, i.e. they expire.
 
 [.sponsor-tier-details]
-^4^ Usually a response is provided within 24 hours but in rare cases it may
-take up to 3 days. The personal support is given on a *fair use* basis. For
-real problems and serious questions the project lead will help with best
-effort and high motivation. But in case of excessive consultation for trivial
-questions, the project lead reserves the right to ask for a dedicated
-payment before spending more time on personal support. For companies with
-multiple LibrePCB users we kindly ask you to collect any support requests
-and contact us through a single representative rather than every user
-individually.
+^5^ Usually a response is provided within 24 hours but in rare cases it may
+take up to 3 business days. The personal support is given on a *fair use*
+basis. For real problems and serious questions the project lead will help
+with best effort and high motivation. But in case of excessive consultation
+for trivial questions, the project lead reserves the right to ask for a
+dedicated payment before spending more time on personal support. For Enterprise
+subscribers we kindly ask you to collect any support requests and contact us
+through a single representative rather than every user individually.
 
 [.sponsor-tier-details]
-^5^ Please note that there is *no guarantee* for any reported issues or
+^6^ Please note that there is *no guarantee* for any reported issues or
 feature requests to be resolved. We guarantee to seriously consider every
 request so we will hear your voice for sure. If reasonable, we may even
 provide nightly builds resolving those requests. But in the end we always
@@ -196,12 +212,12 @@ act with our long-term vision and goals in mind, so not every feature
 request may be implemented.
 
 [.sponsor-tier-details]
-^6^ With these subscriptions you will get a monthly credit at our manufacturing
-partner https://aisler.net[AISLER] for PCB orders made through
-https://fab.librepcb.org[LibrePCB Fab], with the same amount as the LibrePCB
-subscription costs -- if you order PCBs every month for at least this amount,
-the complete LibrePCB subscription is for free! Note that unused credits do
-not sum up to the next month, i.e. credits expire after a month.
+^7^ The Enterprise tier is purchased and managed by a single person, i.e. only
+one email address & credit card is required. You then get access to a user
+management interface which allows you to grant or revoke access to your
+LibrePCB license for every user individually. The indicated price of this
+tier is automatically multiplied with the number of active users so only
+one payment is done for all active users together.
 ====
 
 ---
@@ -219,8 +235,10 @@ Currently we support credit cards. More options will be provided in future.
 .How many users can use a subscription?
 [%collapsible]
 ====
-A subscription is valid for a single user. For example if 5 users will work
-with LibrePCB, you need to buy 5 subscriptions.
+The Maker & Professional subscriptions are valid only for a single user.
+For example if 5 users will work with LibrePCB, you need to buy 5 individual
+subscriptions. Only the Enterprise subscription is valid for any number of
+users and comes with a user management interface.
 ====
 
 .Can we buy a subscription for multiple users?
