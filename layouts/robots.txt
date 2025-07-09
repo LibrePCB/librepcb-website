@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /_branches/
+{{ range .Pages -}}
+{{ if eq (.Param "noRobots") true -}}
+Disallow: {{ .RelPermalink }}
+{{ end -}}
+{{ end -}}
