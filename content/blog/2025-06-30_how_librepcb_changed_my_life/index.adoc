@@ -1,0 +1,40 @@
+---
+date: 2025-06-30
+title: How LibrePCB Changed My Life
+author: U. Bruhin
+#preview: TODO
+noRobots: true
+---
+
+The past 3 years were very exciting for me and the LibrePCB project, completely
+different to the previous ca. 10 years of the project's existence. With this
+post I'd like to give you some insights about my "new" everyday life.
+
+<!--more-->
+
+---
+
+Actually I don't like to expose my life in the internet. Maybe you aleady
+noticed it if you ever tried to find me on social media platforms. I just
+don't feel myself comfortable to share my life with the public (and with
+all the profit-oriented companies grabbing that data). But since it's also
+related to LibrePCB -- which I **do** want to share with the public -- let's
+make an exception for this blog post.
+
+Until mid 2022, my life was kind of "normal". Employed as an electrical
+engineer, I was going to work 5 days (42 hours) per week, and worked on
+LibrePCB in my free time evenings, on weekends and during holidays (I don't
+know what else holidays are intended for). But after doing this routine for
+many years, some things have changed over time, and the industry is only
+interested in profit rather than developing useful, reliable products, I
+felt like this is not the way to spend the rest of my life. So I quit my
+safe job with no idea
+how I will generate the income needed to pay the rent, food,
+insurances etc. The only thing I knew was that I wanted to work harder on
+LibrePCB as I was (and still am) convinced the world needs a proper
+open-source EDA tool.
+
+Honestly it was a tough decision and I hoped I won't regret it. Anyway, first
+of all I enjoyed the new flexibility to travel a bit -- something I never did
+on my own in my life. Well, "travel" means I take the laptop and go to nice
+destinations where I can work from.
