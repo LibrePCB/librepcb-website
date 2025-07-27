@@ -6,7 +6,7 @@
 /public/
 /resources/_gen/
 /hugo
-*.lock
+/*.lock
 
 # Others
 .DS_Store

@@ -10,6 +10,13 @@ relativeURLs = true
 # So far we don't use tags and categories, so let's disable it for now.
 [taxonomies]
 
+# Configure modules manually to ignore Python files.
+[module]
+  [[module.mounts]]
+    excludeFiles = ['**.py', '**.py.lock']
+    source = 'content'
+    target = 'content'
+
 # Disable RSS output globally (will be enabled only for the blog).
 [outputs]
 home = ['HTML']
