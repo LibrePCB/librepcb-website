@@ -7,15 +7,15 @@ noRobots: true
 ---
 
 The past 3 years were very exciting for me and the LibrePCB project, completely
-different to the previous ca. 10 years of the project's existence. With this
+different to the previous 10 years of the project's existence. With this
 blog post I'd like to give you some insights about my "new" everyday life.
 
 <!--more-->
 ---
 
-Actually I don't like to expose my life in the internet -- maybe you aleady
-noticed this if you ever tried to find me on social media platforms. Though
-there's nothing to hide, I just don't feel myself comfortable to share my
+Usually I don't like to expose my life in the internet -- maybe you aleady
+noticed this, if you ever tried to find me on social media platforms. Though
+there's nothing to hide, I just don't feel comfortable to share my
 life with the public (and with all the profit-oriented companies grabbing
 that data). But since it's also related to LibrePCB -- which I obviously
 _do_ want to share with the public -- let's make an exception for this blog
@@ -27,30 +27,30 @@ electrical engineer, I was going to work 5 days (42 hours) per week, and
 worked on LibrePCB in my free time evenings, on weekends and during holidays
 (I don't know what else holidays are intended for...). But after doing this
 routine for many years, some things have changed over time, and I realized
-the today's industry is only interested in profit rather than developing
+today's industry is only interested in profit rather than developing
 useful and reliable products in a meaningful way. I felt like this is not the
-way to spend the rest of my life so I quit my safe job with no idea how I
+way I want to spend the rest of my life, so I quit my safe job with no idea how I
 will generate the income needed to pay the rent, food, insurances etc. The
-only thing I knew was that I wanted to work harder on LibrePCB as I was (and
+only thing I knew, was that I wanted to work harder on LibrePCB, as I was (and
 still am) convinced the world needs a proper open-source EDA tool. This was
 the moment my life got interesting...
 
-Honestly it was a tough decision and I hoped I won't regret it. Anyway, first
-of all I enjoyed the new flexibility to travel a bit -- something I never did
+At the time, it was a tough decision and I hoped I wouldn't regret it. But I
+enjoyed the new flexibility to travel a bit -- something I never did
 on my own in my life before. Well, "travel" means I took the laptop and went to
 destinations where the weather was better than at my home in Switzerland and
 where I could continue working on LibrePCB. 🤓
 
 [.imageblock.rounded]
-{{< imglink "illustration" "image.jpg" "" 220 "How it does NOT look in real life because there is no power socket at the beach (and the AI refused to draw a table)">}}
+{{< imglink "illustration" "image.jpg" "" 220 "How it did NOT look in real life, because there is no power socket at the beach (and the AI refused to draw a table)">}}
 
-Not yet thinking about my future income, a friend & contributor of LibrePCB
+While I was not yet thinking about my future income, a friend & contributor of LibrePCB
 (https://github.com/rnestler[@rnestler]) asked if I ever considered to apply
-for a grant, e.g. from https://nlnet.nl/[NLnet]. I've never heard of it and was
+for a grant like https://nlnet.nl/[NLnet]. I've never heard of NLnet, and was
 not very optimistic that "next generation internet" is interested in supporting
-a hardware-related project from a non-EU country, nevertheless I submitted
-LibrePCB as there was nothing to loose. Their evaluation took quite long,
-during which time I just used the savings I made from my previous job to
+a hardware-related project from a non-EU country, but nevertheless I submitted
+LibrePCB as there was nothing to lose. Their evaluation took quite long,
+and during that time I just used the savings from my previous job to
 continue working full-time on LibrePCB. This felt quite good, and even
 better when from time to time an email from NLnet mentioned that LibrePCB
 made it into the next evaluation round. Yay!
@@ -59,9 +59,9 @@ made it into the next evaluation round. Yay!
 {{< imglink "Solar Power Plant" "solar-plant.jpg" "" 300 >}}
 
 While there was no decision about the grant yet, I had the opportunity to
-generate some side-income by planning and building a 19 kWp solar plant and
-later another 17 kWp plant followed. These were interesting projects where
-I could learn a lot (electrical installations are actually _not_ my business),
+generate some side-income by planning and building a 19 kWp solar plant.
+A bit later another 17 kWp plant followed. These were interesting projects where
+I could learn a lot (electrical installations are actually _not_ my usual business),
 but I am mainly mentioning it because it is part of the income diagram at the
 bottom of this blog post ;-)
 
@@ -69,7 +69,7 @@ In the end, the NLnet evaluation took more than 4 months and it was
 http://localhost:1313/blog/2023-04-13_ngi0_grant/[April 2023] -- already more
 than 6 months without being employed -- when
 the final decision was made that LibrePCB will be supported. It was a huge
-surprise and a game-changer for me since it finally gave me the confidence
+surprise and a game-changer for me, since it finally gave me the confidence
 that I can work a full year on LibrePCB without worrying about income -- no
 need to look for another job, just focus on the development of LibrePCB all
 day (and night)!
@@ -80,8 +80,8 @@ and http://localhost:1313/blog/2024-04-03_release_1.1.0/[LibrePCB 1.1] with
 tons of new features and improvements. It was a great time since I was
 flexible in the way how I get the work done (e.g. it didn't matter if I worked
 from 8AM to 5PM or from 11AM to midnight, or if I worked from cold home or from
-a better climate zone). But the time was running, and in April 2024 the
-grant ended with the release of LibrePCB 1.1 -- and so also the income
+a better climate zone). But time flew by, and in April 2024 the
+grant ended with the release of LibrePCB 1.1 -- and with that also the income
 suddenly stopped (except the donations and sponsorings).
 
 Then, luckily a friend asked me if I could do some freelance hardware & firmware
@@ -91,18 +91,18 @@ with freelance projects, it is much easier to keep enough free time for
 LibrePCB compared to having a full-time job.
 
 Unfortunately for legal reasons it was necessary to create a legal entity
-(GmbH / LLC) to do the freelance work. I was hot very happy about it, but
-thought it could actually be a chance to build up a long-term side-income
+(GmbH / LLC) to do the freelance work. I was not very happy about it, but
+figured it could actually be a chance to build up a long-term side-income
 (if more freelance projects follow) so I can continue working on LibrePCB
 with a high flexibility. Long story short, I am now also a company owner
 (with myself as its only employee) and need to do accounting, tax declaration
 and things like that 😭 Not what I like to do (don't tell the Swiss
 authorities I have no idea about it!) but luckily with only a little freelance
 activity it's not that much paperwork...
+As of today, I've already finished three freelance projects and a fourth is in progress.
+In two of them I even designed PCBs with LibrePCB, how cool is that! 😃
 
-Now I've already finished three freelance projects and a fourth is in progress.
-In two of them I even designed PCBs with LibrePCB, how cool is that! 😃 Anyway,
-thanks to the
+Anyway, thanks to the
 http://localhost:1313/blog/2024-10-17_roadmap_2.0/[second NLnet grant] which
 started in October 2024, I could focus back on LibrePCB, meaning >90%
 working on LibrePCB and <10% on the freelance project. Though interestingly
@@ -113,12 +113,13 @@ the freelance work generates a substantial percentage of the income ;-)
 
 To summarize my life since I quit the job: Way less income & more work,
 but also more flexibility and more happiness. This working mode will stay
-until ca. October 2025 when the second NLnet grant is running out and
+until roughly October 2025, when the second NLnet grant is running out and
 LibrePCB 2.0 should be finished (possibly with some delay). Afterwards it will
 get interesting again how things continue, since the financial support from
 NLnet is currently my main income. I plan to publish a separate blog post
 soon about the detailed finances of the LibrePCB project and about future plans.
-Anyway, just to make it clear, I commit to push the LibrePCB project forward
+
+In any case, just to make it clear, I commit to push the LibrePCB project forward
 into a sustainable future -- the freelance work should just help to pay the
 bills until the LibrePCB project is financially stable. And of course, any
 link:{{< relref "donate/index.adoc" >}}[donations] really help me to spend
