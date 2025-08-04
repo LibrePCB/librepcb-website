@@ -1,6 +1,6 @@
 ---
-date: 2025-07-26
-title: How LibrePCB Changed My Life
+date: 2025-08-05
+title: "Building Income Through LibrePCB: A Personal Story"
 author: U. Bruhin
 preview: income-distribution.png
 noRobots: true
