@@ -105,6 +105,10 @@
 
 /* Side navigation */
 
+.nav-container .list-group-item {
+    letter-spacing: -0.5px;
+}
+
 .nav-container .list-group-item.list-group-item-action.active {
     color: #000000;
     background-color: #29d682;
