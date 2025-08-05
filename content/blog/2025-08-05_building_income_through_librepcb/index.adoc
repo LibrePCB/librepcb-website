@@ -111,7 +111,7 @@ working on LibrePCB and <10% on the freelance project. Though interestingly
 the freelance work generates a substantial percentage of the income ;-)
 
 [.imageblock]
-{{< imglink "income" "income-distribution.png" "" "709" "Distribution of total income until 2024 (disclaimer: underlying numbers may not be perfectly accurate)">}}
+{{< imglink "income" "income-distribution.png" "" "709" "Distribution of my total income until 2024">}}
 
 To summarize my life since I quit the job: Way less income & more work,
 but also more flexibility and more happiness. This working mode will stay
