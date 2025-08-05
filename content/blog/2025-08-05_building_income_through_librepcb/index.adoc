@@ -38,7 +38,10 @@ At the time, it was a tough decision and I hoped I wouldn't regret it. But first
 of all, I enjoyed the new flexibility to travel a bit -- something I never did
 on my own in my life before. Well, "travel" means I took the laptop and went to
 destinations where the weather was better than at my home in Switzerland and
-where I could continue working on LibrePCB. 🤓
+where I could continue working on LibrePCB. 🤓 To get the work done, I tried
+coworking spaces for the first time and discovered their focused "work
+atmosphere" and absence of distractions allow me to work very efficiently.
+Now, I occasionally even work from a coworking space near my home.
 
 [.imageblock.rounded]
 {{< imglink "illustration" "image.jpg" "" 220 "How it did NOT look in real life, because there is no power socket at the beach (and the AI refused to draw a table)">}}
@@ -115,8 +118,11 @@ but also more flexibility and more happiness. This working mode will stay
 until roughly October 2025, when the second NLnet grant is running out and
 LibrePCB 2.0 should be finished (possibly with some delay). Afterwards it will
 get interesting again how things continue, since the financial support from
-NLnet is currently my main income. I plan to publish a separate blog post
-soon about the detailed finances of the LibrePCB project and about future plans.
+NLnet is currently my main income. Generally I'm striving for a funding
+model that doesn't rely on further grants from NLnet since many other
+open-source projects out there also deserve a fair chance to get such grants.
+I plan to publish a separate blog post soon about the detailed finances of
+the LibrePCB project and about future plans.
 
 In any case, just to make it clear, I commit to push the LibrePCB project
 forward into a sustainable future -- the freelance work should just help to pay
