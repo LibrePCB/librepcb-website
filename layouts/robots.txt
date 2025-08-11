@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /_branches/
 Disallow: /about/portrait.jpg
+Disallow: /img/me.jpg
 {{ range .Pages -}}
 {{ if eq (.Param "noRobots") true -}}
 Disallow: {{ .RelPermalink }}
