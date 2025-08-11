@@ -19,7 +19,7 @@ LibrePCB development by working full-time on it.
 From time to time the LibrePCB project is presented at
 https://fosdem.org[FOSDEM], see the video recordings below.
 
-The application is written in C++11/Qt and built with CMake.
+The application is written in C++20/Rust/Qt and built with CMake.
 
 == icon:calendar[] FOSDEM 2018
 
