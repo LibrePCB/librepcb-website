@@ -658,6 +658,10 @@ img.intro-screenshot {
     vertical-align: middle;
 }
 
+.body-container .highlight pre {
+    padding: 0.5rem;
+}
+
 /* Open Collective logo from https://css.gg/open-collective (license: MIT) */
 
 .gg-open-collective,
