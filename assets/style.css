@@ -336,7 +336,8 @@ img.intro-screenshot {
 .body-container .partintro,
 .body-container details,
 .body-container hr {
-    margin-bottom: 1rem;
+    /* was 1rem, but it looks ugly to have that space after images */
+    margin-bottom: 0rem;
 }
 
 .body-container .dlist .dlist,
@@ -656,6 +657,10 @@ img.intro-screenshot {
 .body-container .videoblock iframe {
     max-width: 100%;
     vertical-align: middle;
+}
+
+.body-container .highlight pre {
+    padding: 0.5rem;
 }
 
 /* Open Collective logo from https://css.gg/open-collective (license: MIT) */
