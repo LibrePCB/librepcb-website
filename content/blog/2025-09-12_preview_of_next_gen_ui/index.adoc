@@ -1,13 +1,13 @@
 ---
 date: 2025-09-12
-title: Preview of LibrePCB 2.0 UI
+title: Preview of LibrePCB 2.0's Next-Gen UI
 author: U. Bruhin
 preview: new-window.png
 ---
 
-I've made a lot of progress with the new user interface for LibrePCB 2.0 and
-am very excited to share some insights how it will look, and how it makes
-LibrePCB better in many ways.
+I've made a lot of progress with the completely new user interface for
+LibrePCB 2.0 and am very excited to share some insights how it will look,
+and how it makes LibrePCB better in many ways.
 
 The Original Problem
 --------------------
@@ -20,8 +20,8 @@ library editor etc.):
 [.imageblock]
 {{< imglink "old windows" "old-windows.png" >}}
 
-But with more features added over time, the UI got more and more crowded. Also
-the paradigm of separate windows is often cumbersome to work with -- e.g.
+But with more features added over time, the UI got more and more cluttered.
+Also the paradigm of separate windows is often cumbersome to work with -- e.g.
 having just one library and one project opened required to constantly switch
 between four(!) windows. Even a dual-monitor setup was not enough to work
 efficiently with LibrePCB. So it was clear we need a completely new
@@ -38,52 +38,53 @@ In the blog post
 link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[NGI0 Grant for LibrePCB 2.0]
 I listed a few possible solutions how to build a more modern user interface. The
 most promising option was https://slint.dev/[Slint], a relatively new UI
-toolkit (written in Rust) which uses a custom, declarative language to describe
-the UI. Declarative means that relations and behavior can be described in the
-language:
+toolkit (open-source & written in Rust) which uses a custom, declarative
+language to describe the UI. With the declarative approach, relations and
+behavior can be easily specified right in the UI description:
 
 {{< highlight qml >}}
 Window {
     Button {
-        x: parent.width - self.width - 5px;
-        y: 5px;
+        x: parent.width - self.width - 5px;  // place 5px from the right border
+        y: 5px;                              // place 5px from the top border
         text: @tr("Open Project");
     }
 }
 {{< /highlight >}}
 
-It may sound trivial to place a button in the top right edge of its parent,
+It may sound trivial to place a button at the top right corner of its parent,
 but with the procedural approach of Qt this is not trivially doable. In many
 cases, it requires to implement event handlers in C++ which update the
 widgets position whenever the parent object's size or the widgets's own size
 has changed. Writing such code is time-consuming and error-prone, while the
-declarative approach of Slint is very quick, easy and safe. Now consider this
-advantage for a large project like LibrePCB, that contains hundrets or even
-thousands of UI elements -- here the declarative approach is really a
-game-changer!
+declarative approach of Slint is quick, easy and safe -- not just for
+this trivial example, but also in more complex cases. For a large project like
+LibrePCB, which consists of hundrets of UI elements, the declarative approach
+is really a game-changer for us developers!
 
 An Incremental Migration
 ------------------------
 
 Unfortunately, even with several months of full-time work, LibrePCB is too
-big to be migrated to Slint by 100% at once -- to avoid delaying the next
+large to be migrated to Slint by 100% at once -- to avoid delaying the next
 release too much, we need to do the migration in steps. All the main windows &
 editors first, and the remaining dialogs and wizards in later releases. Also
 our whole business logic depends on Qt (it is much more than just a UI
-framework) so the dependency on Qt will remain for a long time.
+framework), thus our dependency on Qt will remain for a long time.
 
 So the question is, can we mix Qt with Slint? In the end, LibrePCB only works
 if the main thread is running Qt's event loop. But Slint only works when the
-main thread is running their event loop. So at first glance it seems we
+main thread is running _their_ event loop. So at first glance it seems we
 have a very bad conflict here :-/
 
 In fact, Slint supports
 https://docs.slint.dev/latest/docs/slint/guide/backends-and-renderers/backends_and_renderers/[different backends]
 for interaction with the underlying system, e.g. for input events handling
-and window drawing. These are Qt, https://docs.rs/winit/latest/winit/[winit]
-and LinuxKMS. Winit comes with the ability of GPU-accelerated rendering,
-which would be interesting for performance reasons. But unfortunately we
-can't use winit because of the event loop conflict.
+and window drawing. These are (interestingly) Qt,
+https://docs.rs/winit/latest/winit/[winit] and LinuxKMS. Winit comes with the
+ability of GPU-accelerated rendering, which would be interesting for
+performance reasons. But unfortunately right now we can't use winit because
+of the event loop conflict.
 
 Luckily Slint's Qt backend avoids that problem since Slint will run Qt's
 event loop for us. So the event loop will process the events for both, the
@@ -96,7 +97,7 @@ One Window For Everything
 -------------------------
 
 Enough background information for now, let's have a look at the new UI of
-LibrePCB 2.0. The most important thing is that all the separate windows
+LibrePCB 2.0. The most important thing is that all the individual windows
 mentioned above have been replaced by a single, multifunctional window.
 Within that window, any kind of "document" (e.g. a footprint, a schematic or
 a board) is opened as a tab. The toolbars of the new window now depend on
@@ -115,15 +116,15 @@ individual tabs.
 Sidebar & Panel
 ~~~~~~~~~~~~~~~
 
-A lot of functionality is accessible through the sidebar. Depending on context,
-there are different kinds of panels available. For example if you're working
-on a schematic, there is a panel which displays ERC messages. But if you're
-working on a board, that panel will display DRC messages.
+A lot of functionality is accessible through the new sidebar. Depending on
+context, there are different kinds of panels available. For example if you're
+working on a schematic, there is a panel which displays ERC messages. But if
+you're working on a board, that panel will display DRC messages.
 
 [.imageblock]
 {{< imglink "side panels" "side-panels.png" >}}
 
-The sidebar shows you status information about various parts of the
+The sidebar also shows you status information about various parts of the
 application. For example you see if there are ERC warnings or outdated
 workspace libraries without even opening the corresponding panel:
 
@@ -134,7 +135,7 @@ Working Area
 ~~~~~~~~~~~~
 
 The most important part of our UI is of course the working area where you
-draw schematics, layout traces etc. This area has been improved in many ways.
+draw schematics or layout traces etc. This area has been improved in many ways.
 Not only that _everything_ is now a tab (remember that schematics were not
 tabs in the old UI), you can now even split the window into multiple sections
 and open tabs side-by-side. For example if you're working on a single-monitor
@@ -148,17 +149,18 @@ In addition, the working area has been maximized and decluttered to have as
 much of the screen size available for the graphics view as possible. For
 example, tool buttons are now overlays inside the editors rather than
 traditional toolbars spanning the whole window height or width even if
-only a third of them is filled with buttons.
+only a third of them is filled with buttons. There is no such wasted space
+anymore in the new UI.
 
 Statusbar & Notifications
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We already had a status bar in the old UI, but it was purely visual and not
 interactive. Instead of just _displaying_ the grid interval, the new UI
-allows you to modify the grid interval and the grid style right in the status
+allows you to _modify_ the grid interval and the grid style right in the status
 bar -- no dedicated dialog window is required anymore. Also the state of
-placement locks is not only visible, but can be toggled right in the status
-bar. Last but not least, there is a completely new notification system which
+placement locks is displayed and can be toggled right in the status bar.
+Last but not least, there is a completely new notification system which
 displays messages and ongoing operations in an expandable/collapsible popup
 in the bottom right corner:
 
@@ -183,7 +185,7 @@ Simplified Library Management
 The old library manager was not that bad, but it was more complicated than
 necessary due to its "operation-based" workflow of manually triggering the
 installation or uninstallation of libraries, with those operations even
-spread across multiple list views and tabs.
+spread across multiple list views and pages.
 
 The new library manager is much simpler (but as functional as before)
 by following a "state-based" paradigm now. Instead of triggering the
@@ -212,7 +214,7 @@ This is now possible by changing the transparency of those objects:
 Built-In Hints, Tips & Guides
 -----------------------------
 
-In our opinion, an EDA tool should support engineers/makers as good as
+In my vision, an EDA tool should support engineers/makers as good as
 possible (in a non-disruptive way) to help them creating PCB designs without
 errors as quick as possible. The new UI has therefore various new tips & hints
 implemented which show up in certain situations. Many of them are especially
@@ -223,8 +225,8 @@ As an example, the built-in PCB ordering feature now displays the state of
 the electrical- & design-rule checks as a friendly reminder to review & fix
 any issues before ordering a (possibly faulty) PCB. The order panel contains
 direct hyperlinks to the ERC & DRC panels, and even allows to run the DRC
-right from the order panel. In addition, as a psychological effect the order
-button is only highlighted if there are no issues, though it is always
+right from the order panel. And as an additional psychological effect, the
+order button is only highlighted if there are no issues, though it is always
 clickable. 🤓
 
 [.imageblock.rounded-window.window-border]
@@ -250,7 +252,7 @@ release. Just a few examples:
 
 And of course a lot of new non-UI features are beeing developed for LibrePCB
 2.0 and beyond, this blog post just focused on the UI things due to its huge
-impact.
+relevance in this moment.
 
 Give it a Try!
 ~~~~~~~~~~~~~~
@@ -258,11 +260,12 @@ Give it a Try!
 If you like to try out the new UI already, we have nightly builds available
 *https://download.librepcb.org/nightly_builds/new-ui-with-file-format-1_0/[here]*.
 In contrast to the current `master` branch, these builds still use the stable
-file format 1.0 so no changes will be made to your library and project files.
+file format 1.0 so no changes will be made to your library- and project files.
 But of course there might still be some bugs -- if you experience any issues
 or annoyances, or have any other feedback, please
 link:{{< relref "help/help/index.adoc" >}}[let us know]!
 
-Regarding timeline for LibrePCB 2.0: There are still some new features to be
-implemented and it is hard to say when they are finished. But roughly I'd
-estimate it should be ready in around 2-3 months.
+Btw, if you are curious about the timeline of the LibrePCB 2.0 release:
+There are still some new features to be implemented (mostly non-UI things now)
+and it is hard to say when they are finished. But roughly I'd estimate it
+should be ready in around 2-3 months.
