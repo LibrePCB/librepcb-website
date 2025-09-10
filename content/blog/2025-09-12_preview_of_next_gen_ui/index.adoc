@@ -250,9 +250,12 @@ release. Just a few examples:
 * Theme improvements / cleanup / polishing, maybe some day support
   customizable themes
 
-And of course a lot of new non-UI features are beeing developed for LibrePCB
-2.0 and beyond, this blog post just focused on the UI things due to its huge
-relevance in this moment.
+All the completed tasks and the planned tasks, together with more details
+and previews of the new UI, are summarized in
+https://github.com/LibrePCB/LibrePCB/issues/1494[this issue]. Of course there
+are also a lot of new non-UI features beeing developed for LibrePCB 2.0 and
+beyond, those are tracked in separate issues. This blog post just focused on
+the UI things due to its huge relevance in this moment.
 
 Give it a Try!
 ~~~~~~~~~~~~~~
