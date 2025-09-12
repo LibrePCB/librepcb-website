@@ -326,7 +326,6 @@ img.intro-screenshot {
 .body-container .olist,
 .body-container .ulist,
 .body-container .exampleblock,
-.body-container .imageblock,
 .body-container .listingblock,
 .body-container .literalblock,
 .body-container .sidebarblock,
@@ -337,6 +336,11 @@ img.intro-screenshot {
 .body-container details,
 .body-container hr {
     margin-bottom: 1rem;
+}
+
+.body-container .imageblock {
+    /* was 1rem, but it looks ugly to have that space after images */
+    margin-bottom: 0rem;
 }
 
 .body-container .dlist .dlist,
@@ -656,6 +660,10 @@ img.intro-screenshot {
 .body-container .videoblock iframe {
     max-width: 100%;
     vertical-align: middle;
+}
+
+.body-container .highlight pre {
+    padding: 0.5rem;
 }
 
 /* Open Collective logo from https://css.gg/open-collective (license: MIT) */
