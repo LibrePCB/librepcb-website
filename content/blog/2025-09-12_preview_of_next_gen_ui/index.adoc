@@ -60,7 +60,8 @@ has changed. Writing such code is time-consuming and error-prone, while the
 declarative approach of Slint is quick, easy and safe -- not just for
 this trivial example, but also in more complex cases. For a large project like
 LibrePCB, which consists of hundrets of UI elements, the declarative approach
-is really a game-changer for us developers!
+is really a game-changer for us developers! _(Side note: As of today, LibrePCB
+contains 23.746 lines of Slint code!)_
 
 An Incremental Migration
 ------------------------
@@ -173,7 +174,7 @@ Multi-Monitor Ready
 If you are working on a multi-monitor setup and now worry that a single window
 is worse than the multiple windows we had before -- of course this use-case
 is covered as well. Although the new window replaces all the old windows,
-we have implemented the ability to open _multiple instances_ of that window
+I have implemented the ability to open _multiple instances_ of that window
 at the same time. So you decide whether to display schematic and board
 side-by-side by splitting a single window, or by opening schematic and
 board in entirely separate windows -- everything is possible with the new
@@ -268,7 +269,40 @@ But of course there might still be some bugs -- if you experience any issues
 or annoyances, or have any other feedback, please
 link:{{< relref "help/help/index.adoc" >}}[let us know]!
 
+++++
+<div class="text-center my-3">
+  <a class="btn btn-primary mx-1 my-1" role="button" href="https://download.librepcb.org/nightly_builds/new-ui-with-file-format-1_0" >
+    <i class="fa-solid fa-download"></i>
+    Get Nightly Builds
+  </a>
+  <a class="btn btn-warning mx-1 my-1" role="button" href="{{< relref "help/help/index.adoc" >}}" >
+    <i class="fa-solid fa-message"></i>
+    Give Feedback
+  </a>
+  <a class="btn btn-danger mx-1 my-1" role="button" href="{{< relref "donate/index.adoc" >}}" >
+    <i class="fa-solid fa-heart"></i>
+    Support My Work
+  </a>
+</div>
+++++
+
 Btw, if you are curious about the timeline of the LibrePCB 2.0 release:
 There are still some new features to be implemented (mostly non-UI things now)
 and it is hard to say when they are finished. But roughly I'd estimate it
-should be ready in around 2-3 months.
+should be ready in around 2-3 months. If you like to support my work on
+the LibrePCB project, any link:{{< relref "donate/index.adoc" >}}[donations]
+are highly appreciated and help me to keep the development ongoing. icon:heart[]
+
+---
+
+Credits
+-------
+
+[.right.ms-3]
+{{< imglink "NGI0" "nlnet-ngi0.png" "https://nlnet.nl/project/LibrePCB2.0/" 130 >}}
+
+A majority of these updates were part of the
+link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[NGI0 Commons grant]
+we receive from link:https://nlnet.nl[NLnet], thanks a lot for their support!
+Also a special thanks to the Slint developers who helped me with support,
+feature development and bugfixes during this migration.
