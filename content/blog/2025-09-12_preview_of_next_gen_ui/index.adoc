@@ -53,8 +53,8 @@ Window {
 {{< /highlight >}}
 
 It may sound trivial to place a button at the top right corner of its parent,
-but with the procedural approach of Qt this is not trivially doable. In many
-cases, it requires to implement event handlers in C++ which update the
+but with the procedural approach of Qt this is often not trivially doable. In
+many cases, it requires to implement event handlers in C++ which update the
 widgets position whenever the parent object's size or the widgets's own size
 has changed. Writing such code is time-consuming and error-prone, while the
 declarative approach of Slint is quick, easy and safe -- not just for
