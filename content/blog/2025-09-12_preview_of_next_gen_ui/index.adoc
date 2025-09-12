@@ -174,7 +174,7 @@ If you are working on a multi-monitor setup and now worry that a single window
 is worse than the multiple windows we had before -- of course this use-case
 is covered as well. Although the new window replaces all the old windows,
 we have implemented the ability to open _multiple instances_ of that window
-at the same time. So you decide wheter to display schematic and board
+at the same time. So you decide whether to display schematic and board
 side-by-side by splitting a single window, or by opening schematic and
 board in entirely separate windows -- everything is possible with the new
 concept!
@@ -214,7 +214,7 @@ This is now possible by changing the transparency of those objects:
 Built-In Hints, Tips & Guides
 -----------------------------
 
-In my vision, an EDA tool should support engineers/makers as good as
+In my vision, an EDA tool should support engineers/makers as well as
 possible (in a non-disruptive way) to help them creating PCB designs without
 errors as quick as possible. The new UI has therefore various new tips & hints
 implemented which show up in certain situations. Many of them are especially
