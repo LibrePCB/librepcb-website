@@ -146,6 +146,9 @@ in sight:
 [.imageblock.rounded-window.window-border]
 {{< imglink "split section" "split-section.png" >}}
 
+Tabs and sections can be easily arranged by drag&drop -- *see it in action
+in link:/blog/2025-09-12_preview_of_next_gen_ui/drag-n-drop.gif[this video]*.
+
 In addition, the working area has been maximized and decluttered to have as
 much of the screen size available for the graphics view as possible. For
 example, tool buttons are now overlays inside the editors rather than
