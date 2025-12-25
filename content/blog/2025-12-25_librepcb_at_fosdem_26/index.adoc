@@ -1,0 +1,24 @@
+---
+date: 2025-12-25
+title: LibrePCB Talk at FOSDEM 2026
+author: U. Bruhin
+---
+
+I'm happy to announce that we will have a talk to present LibrePCB 2.0 at the
+next https://fosdem.org/[FOSDEM] in Brussels!
+
+{{< imglink "FOSDEM" "fosdem_2026_banner.png" "https://fosdem.org/2026/" >}}
+
+As the LibrePCB 2.0 release will be ready soon, it will be the main topic
+of my presentation. But I'll also give a short update about the project
+itself (e.g. funding) and some insights into the development. And as usual,
+we will have a few minutes for a Q&A session. So if you're curious about the
+progress of LibrePCB, feel free to join the conference -- either in person or
+via live stream.
+
+* Talk: https://fosdem.org/2026/schedule/event/DFBYLP-librepcb-2_0/[LibrePCB 2.0 – More Than Just a New Look]
+* Track: https://fosdem.org/2026/schedule/track/open-hardware-and-cadcam/[Open Hardware and CAD/CAM]
+* Where: H.1309 (Van Rijn), ULB Solbosch Campus, Brussels, Belgium
+* When: February 1st 2026, 12:00 CET (UTC+1)
+
+I'm looking forward to meet you at FOSDEM 26!
