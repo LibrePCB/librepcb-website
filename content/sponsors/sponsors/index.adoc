@@ -49,6 +49,11 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   parts inventory, parts ordering/⁠purchasing, BOM pricing, manufacturing and
   tracing. The software is free for hobbyists/⁠makers.
 
+| image:/img/sponsor-winsource.png[link="https://www.win-source.net/"]
+| https://www.win-source.net/[WIN SOURCE] is an electronic components
+  distributor from China. In addition to regular parts, they also have a
+  large catalog of EOL and obsolete parts in stock.
+
 | image:/img/sponsor-nextpcb.png[link="https://www.nextpcb.com"]
 | https://www.nextpcb.com[HQ NextPCB] specializes in reliable multilayer
   PCB manufacture and assembly. They also provide the parts sourcing service
