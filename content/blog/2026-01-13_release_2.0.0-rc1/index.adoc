@@ -101,10 +101,8 @@ and other contributions! 🎉
 Download
 --------
 
-Since this is not a stable release yet, use the download links from the sidebar
-on the download page:
-
-=== link:{{< relref "download/index.adoc" >}}[icon:download[] Get LibrePCB]
+Since this is not a stable release yet, use the download links *from the
+sidebar* on our link:{{< relref "download/index.adoc" >}}[download page].
 
 If you like LibrePCB, please consider making a small
 link:{{< relref "donate/index.adoc" >}}[donation] to support the
