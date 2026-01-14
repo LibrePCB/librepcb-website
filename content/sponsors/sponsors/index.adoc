@@ -86,6 +86,11 @@ to operate:
   cloud server provider from Switzerland. They sponsor the virtual servers
   to run all LibrePCB web services.
 
+| image:/img/sponsor-ossign.png[link="https://ossign.org/"]
+| https://ossign.org/[OSSign] provides free code-signing for open-source
+  projects. Our official Windows releases are digitally signed thanks to their
+  service.
+
 | image:/img/transifex.png[link="https://www.transifex.com/librepcb/"]
 | https://www.transifex.com/librepcb/[Transifex] sponsors the translation
   service thanks to their
