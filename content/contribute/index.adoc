@@ -12,7 +12,7 @@ don't hesitate to link:{{< relref "help/help/index.adoc" >}}[contact us].
 
 An easy but still very valuable way to contribute is to help translating
 LibrePCB from English into other languages. Just join
-https://www.transifex.com/librepcb/librepcb-application/[our project on Transifex]
+https://app.transifex.com/librepcb/librepcb-application/[our project on Transifex]
 and start translating fully autonomous. Your translations will then
 automatically be part of the next LibrePCB release.
 
