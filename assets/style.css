@@ -326,6 +326,7 @@ img.intro-screenshot {
 .body-container .olist,
 .body-container .ulist,
 .body-container .exampleblock,
+.body-container .imageblock,
 .body-container .listingblock,
 .body-container .literalblock,
 .body-container .sidebarblock,
@@ -338,8 +339,8 @@ img.intro-screenshot {
     margin-bottom: 1rem;
 }
 
-.body-container .imageblock {
-    /* was 1rem, but it looks ugly to have that space after images */
+.body-container .imageblock p {
+    /* was 1rem, but it looks ugly to have that space after blog images */
     margin-bottom: 0rem;
 }
 
