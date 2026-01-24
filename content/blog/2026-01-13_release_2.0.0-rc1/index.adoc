@@ -3,6 +3,7 @@ date: 2026-01-13
 title: LibrePCB 2.0.0 RC1 Released
 author: U. Bruhin
 preview: new-window.png
+aliases: [/release-notes/2.0.0-rc1/]  # intended for metainfo XML and crawlers
 ---
 
 I'm very excited to announce that LibrePCB 2.0 is feature-complete and that
