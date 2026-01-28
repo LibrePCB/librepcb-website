@@ -1,0 +1,503 @@
+---
+date: 2026-01-28
+title: LibrePCB 2.0.0 Released
+author: U. Bruhin
+preview: new-window.png
+aliases: [/release-notes/2.0.0/]  # used in org.librepcb.LibrePCB.metainfo.xml
+---
+
+I am very proud to announce the release of LibrePCB 2.0.0 today, after 10
+months of hard work! The implementation of a completely new UI with modern
+technologies marks the beginning of a new era in the history of LibrePCB.
+But there are also many other improvements and new features, check out the
+details below.
+
+<!--more-->
+
+Highlights
+----------
+
+This section showcases only a few of the huge amount of improvements. For a
+complete list, refer to the <<Changelog,full changelog>> below, which also
+contains links to the corresponding pull requests on GitHub where additional
+details and screenshots are provided.
+
+New User Interface (https://github.com/LibrePCB/LibrePCB/issues/1494[#1494])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The most obvious change in this release is the new user interface which was
+built from scratch with the https://slint.dev[Slint] UI framework. It looks
+very different to the old UI, but the main reason for this change is to
+improve the user experience and productivity in several ways:
+
+- Less windows, no more wasting time to switch between multiple windows
+- Less modal dialogs & message boxes which interrupted the workflow
+- Split windows and tabs for organizing the editors according to your needs
+- Efficient use of screen space to maximize schematic/board working areas
+- Clean & simple UI for the simple tasks, but also provide advanced controls
+  when desired
+- Provide hints and guides to make the UI self-explaining
+
+Basically we have replaced 5 separate, single-purpose windows by a single
+multi-purpose window. In that window you can have as many projects and
+libraries open as you like, and in every tab you can work on a different task.
+You can display the board next to its schematic, the 3D board viewer next to
+the 2D board editor, or compare the schematics of two different projects
+side-by-side. And on a multi-monitor setup, you can open multiple of those
+windows which are all equivalent in functionality.
+
+[.imageblock.rounded-window.window-border]
+{{< imglink "new window" "new-window.gif" >}}
+
+[.clearfix]
+==== Library Manager
+
+[.imageblock.float-lg-end.ms-3]
+{{< imglink "library manager" "library-manager.gif" >}}
+
+The library manager and the library editor are now also integrated into
+this new window. The library manager has been rewritten from scratch to
+heavily streamline the user experience.
+
+The sidebar now even automatically notifies you about outdated libraries,
+so you don't miss library updates anymore.
+
+[.clearfix]
+==== PCB Ordering
+
+[.imageblock.float-lg-start.me-3]
+{{< imglink "order pcb" "order-pcb.gif" >}}
+
+The PCB ordering feature has been rewritten from scratch too and is now
+integrated seamlessly into the main window.
+
+It now automatically checks the ERC and DRC and warns about outdated DRC
+messages before you place the order. The days are gone when we ordered
+faulty PCBs because we forgot to run the DRC!
+
+==== Enhanced 3D Viewer
+
+[.clearfix]
+****
+[.imageblock.float-lg-end.ms-3]
+{{< imglink "3d viewer" "3d-viewer.gif" >}}
+
+The 3D viewer allows now to hide objects and layers individually to inspect
+the PCB in every detail. Either just switch those layers on/off with a single
+click, or use the four sliders to smoothly change their transparency.
+****
+
+[NOTE]
+====
+Please note that the new UI represents a huge step forward, and we're excited
+to continue refining and extending it in upcoming releases. We have a clear
+vision for making the UI even more intuitive and productive, and we're
+actively working toward it.
+
+We keep track of
+https://github.com/LibrePCB/LibrePCB/issues/1655[known limitations & issues]
+of the new UI, and also about the
+https://github.com/LibrePCB/LibrePCB/issues/1494[planned short-term tasks].
+Your feedback is invaluable to us -- if you experience any issues or have
+suggestions not mentioned there, please
+link:{{< relref "help/help.adoc" >}}[let us know].
+====
+
+[.clearfix]
+Schematic Buses (https://github.com/LibrePCB/LibrePCB/pull/1646[#1646])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[.imageblock.float-lg-start.me-3]
+{{< imglink "schematic buses" "schematic-bus.png" "" 350 >}}
+
+On our https://show.forms.app/librepcb/feedback/report[user feedback survey],
+schematic buses are on rank 3 of the most requested features. Now we can
+remove that feature from the wish list since it has been implemented. All
+the basic functionlity is there, and more advanced functionality might be
+provided in upcoming releases. With buses it is possible to group multiple
+wires in one thick line, called _bus_, to keep the schematics clean and
+readable.
+
+[.clearfix]
+Images in Symbols & Schematics (https://github.com/LibrePCB/LibrePCB/pull/1578[#1578])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[.imageblock.float-lg-end.ms-3]
+{{< imglink "image in schematics" "schematic-images.png" "" 400 >}}
+
+Ever wanted to add a diagram, formula, table or simply a company logo to a
+schematic? This is now possible -- just paste any image from the clipboard into
+the schematic (or load it from a file) and scale/rotate it as desired. Almost
+every image format is supported, including SVG, PNG and JPEG.
+
+[.clearfix]
+Individual Pads in Boards (https://github.com/LibrePCB/LibrePCB/pull/1596[#1596])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[.imageblock.float-lg-start.me-3]
+{{< imglink "pads in boards" "board-pads.png" "" 310 >}}
+
+It has always been strange that pads (whether THT or SMT) or plated slots
+could only be added to a board indirectly as part of footprints, i.e. through
+the library system -- interestingly not only in LibrePCB, but also in other
+EDA packages.
+
+But sometimes we need individual, specialized pads or slots in boards e.g.
+for mechanical purposes, where footprints make no sense. In LibrePCB 2.0 this
+is now possible. Just add pads or slots to the board the same way as in the
+footprint editor.
+
+[.clearfix]
+Advanced Design Rules (https://github.com/LibrePCB/LibrePCB/pull/1610[#1610], https://github.com/LibrePCB/LibrePCB/pull/1611[#1611], https://github.com/LibrePCB/LibrePCB/pull/1606[#1606], https://github.com/LibrePCB/LibrePCB/pull/1608[#1608])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[.imageblock.float-lg-end.ms-3]
+{{< imglink "via properties" "via-properties.png" "" 400 >}}
+
+Also noteworthy are some improvements regarding design rules. It is now
+possible to define the default trace width and via drill diameter in
+the board settings, so you don't need to specify those properties anymore
+when adding traces and vias to the board. And thanks to the automatic via
+annular ring calculation, you never have to worry about outer via sizes anymore!
+
+In addition, planes allow now to specify separate clearances to copper,
+board outlines and holes.
+
+[.clearfix]
+Predefined Design Rules & Output Jobs (https://github.com/LibrePCB/LibrePCB/pull/1631[#1631])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[.imageblock.float-lg-start.me-3]
+{{< imglink "load drc settings" "load-drc-settings.png" "" 420 >}}
+
+Have you ever entered all design rules according to the capabilities of a
+particular PCB manufacturer? Probably not, as it is very cumbersome...
+
+With LibrePCB 2.0 it is now possible to store design rules in a library
+(within so-called _organizations_), which are then available to be
+applied to boards. So you can store the design rules of your PCB manufacturer
+in your local library, and load them into your boards later.
+
+But the real advantage of this approach is that we can now deploy design rules
+through our library manager! Just install the LibrePCB Base library and you
+will benefit from the design rules we will add in future.
+
+And this features goes even one step further. In addition to board design
+rules, it is also possible to share _output jobs_ through this system. So
+instead of fiddling around with Gerber/Excellon file names in every new
+project, just load the predefined Gerber/Excellon settings for your PCB
+manufacturer in a second!
+
+Preferred Footprint Style (https://github.com/LibrePCB/LibrePCB/pull/1653[#1653])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[.clearfix]
+****
+[.imageblock.float-lg-end.ms-3]
+{{< imglink "preferred footprints" "preferred-footprints.png" >}}
+
+Our library concept already allows a package to provide multiple footprints,
+for example one for hand soldering and another for reflow soldering. With
+LibrePCB 2.0, this feature gets especially powerful since you can now specify
+your preferred soldering technique in the board, so LibrePCB will choose the
+corresponding footprints automatically.
+
+In addition to the soldering technique, it is also possible to specify the
+desired IPC density level, which impacts the size of the pads.
+
+_Note that this feature relies on so-called 'tags' which need to be added to
+the footprints in the libraries. Not all our official footprints have those
+tags yet, so it might take some time until this feature is fully operational._
+****
+
+---
+
+Upgrading from LibrePCB 1.x
+---------------------------
+
+If you're currently using LibrePCB 1.x, please note that the manual
+fabrication output dialogs for Gerber/Excellon export and BOM export have
+been removed in favor of the more powerful output jobs. Use output jobs now
+to generate any production data. If you used the fabrication output dialog
+before, you can simply import those settings as a new Gerber/Excellon
+output job.
+
+[WARNING]
+====
+When you open a LibrePCB 1.x project the first time with LibrePCB 2.x, it
+will be automatically migrated to a new file format. After saving it, you
+can no longer open it with LibrePCB 1.x, so please review the project
+before saving.
+====
+
+[TIP]
+====
+When you open a LibrePCB 1.x workspace the first time with LibrePCB 2.x, all
+libraries will be migrated to the new file format in the background library
+scan. Therefore it is expected that the first scan takes much longer than
+usual.
+====
+
+---
+
+Changelog
+---------
+
+New User Interface:
+~~~~~~~~~~~~~~~~~~~
+- Replace control panel by a new, multi-purpose window
+  (https://github.com/LibrePCB/LibrePCB/pull/1504[#1504])
+- Integrate library manager into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1507[#1507])
+- Integrate library editor into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1553[#1553])
+- Integrate category editors into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1556[#1556])
+- Integrate symbol editor into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1558[#1558])
+- Integrate package editor into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1560[#1560])
+- Integrate component editor into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1562[#1562])
+- Integrate device editor into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1564[#1564])
+- Integrate schematic- & board editor into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1520[#1520])
+- Integrate Order PCB dialog into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1521[#1521])
+- Integrate About Dialog into new main window
+  (https://github.com/LibrePCB/LibrePCB/pull/1505[#1505])
+
+Library Editor:
+~~~~~~~~~~~~~~~
+- Save & restore grid interval in symbols & packages
+  (https://github.com/LibrePCB/LibrePCB/pull/1571[#1571])
+- Watch for file changes and reload symbols & packages
+  (https://github.com/LibrePCB/LibrePCB/pull/1624[#1624])
+- Symbol editor: Support locking texts, making them read-only
+  (https://github.com/LibrePCB/LibrePCB/pull/1587[#1587])
+- Package editor: Support specifying per-package copper clearance
+  (https://github.com/LibrePCB/LibrePCB/pull/1616[#1616])
+- Package editor: Fix inconsistent solder paste offset calculation
+  (https://github.com/LibrePCB/LibrePCB/pull/1670[#1670])
+- Component check: Warn about suspicious forced nets
+  (https://github.com/LibrePCB/LibrePCB/pull/1509[#1509])
+- Fix some properties not copied when duplicating library elements
+  (https://github.com/LibrePCB/LibrePCB/commit/62d7e33ff887e50410b79947acce6c1a5454df48[62d7e33f])
+
+Schematic Editor:
+~~~~~~~~~~~~~~~~~
+- Add support for schematic buses
+  (https://github.com/LibrePCB/LibrePCB/pull/1646[#1646])
+- Support adding images to schematics & symbols
+  (https://github.com/LibrePCB/LibrePCB/pull/1578[#1578])
+- Support pasting data from symbol editor
+  (https://github.com/LibrePCB/LibrePCB/pull/1577[#1577])
+- Support snapping objects to grid
+  (https://github.com/LibrePCB/LibrePCB/pull/1518[#1518])
+- Auto-place schematic frames at coordinate `(0,0)`
+  (https://github.com/LibrePCB/LibrePCB/pull/1519[#1519])
+- Show location of selected ERC message
+  (https://github.com/LibrePCB/LibrePCB/pull/1582[#1582])
+- Automatically simplify net segments
+  (https://github.com/LibrePCB/LibrePCB/pull/1592[#1592])
+- Hide symbol pins not connected in the component
+  (https://github.com/LibrePCB/LibrePCB/pull/1628[#1628])
+- Fix polygons not being editable by dragging
+  (https://github.com/LibrePCB/LibrePCB/pull/1516[#1516])
+
+Board Editor:
+~~~~~~~~~~~~~
+- Support adding individual pads directly to boards
+  (https://github.com/LibrePCB/LibrePCB/pull/1596[#1596])
+- Support automatic via drill from design rules or net class
+  (https://github.com/LibrePCB/LibrePCB/pull/1611[#1611])
+- Support automatic via annular ring from design rules
+  (https://github.com/LibrePCB/LibrePCB/pull/1606[#1606])
+- Support configuring plane clearance to board outline & holes
+  (https://github.com/LibrePCB/LibrePCB/pull/1608[#1608])
+- Specify default trace width in design rules & net class
+  (https://github.com/LibrePCB/LibrePCB/pull/1610[#1610])
+- Support configuring preferred footprints in boards
+  (https://github.com/LibrePCB/LibrePCB/pull/1653[#1653])
+- Select whole device instead of individual pads
+  (https://github.com/LibrePCB/LibrePCB/pull/1533[#1533])
+- Support displaying a background image
+  (https://github.com/LibrePCB/LibrePCB/pull/1574[#1574])
+- Automatically simplify net segments
+  (https://github.com/LibrePCB/LibrePCB/pull/1591[#1591])
+- Support auto-fixing DRC message about empty net segment
+  (https://github.com/LibrePCB/LibrePCB/pull/1622[#1622])
+- Fix crash after trying to add invalid device to board
+  (https://github.com/LibrePCB/LibrePCB/commit/5acb0ce7350bf057ba13b9551993a19b3a96f02f[5acb0ce7])
+
+DRC:
+~~~~
+- Warn about component signals without footprint pad
+  (https://github.com/LibrePCB/LibrePCB/pull/1648[#1648])
+- Warn about (no) copper along (non-)plated cutouts
+  (https://github.com/LibrePCB/LibrePCB/pull/1625[#1625])
+- Increase default minimum NPTH drill to `0.5mm`
+  (https://github.com/LibrePCB/LibrePCB/commit/87d02078394da5096bc6fb1f74b846aae05e1f4c[87d02078])
+
+Import/Export:
+~~~~~~~~~~~~~~
+- Rebuild planes before exporting data which contains copper layers
+  (https://github.com/LibrePCB/LibrePCB/pull/1540[#1540])
+- Gerber/Excellon: Include plated cutouts in outlines layer
+  (https://github.com/LibrePCB/LibrePCB/pull/1625[#1625])
+- Gerber/Excellon: Support importing old fabrication settings
+  (https://github.com/LibrePCB/LibrePCB/pull/1583[#1583])
+- Extend Gerber X3 output job to export glue mask layers
+  (https://github.com/LibrePCB/LibrePCB/pull/1585[#1585])
+- PDF/image export: Support realistic board renderings
+  (https://github.com/LibrePCB/LibrePCB/pull/1570[#1570])
+- Reject writing files outside of output directory
+  (https://github.com/LibrePCB/LibrePCB/pull/1576[#1576])
+- Turn BOM generator dialog into a BOM review dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1579[#1579])
+- Remove fabrication output dialog in favor of output jobs
+  (https://github.com/LibrePCB/LibrePCB/pull/1539[#1539])
+- Eagle import: Add support for lines with flat cap style
+  (https://github.com/LibrePCB/LibrePCB/pull/1630[#1630])
+- KiCad import: Fix documented compatible KiCad version
+  (https://github.com/LibrePCB/LibrePCB/commit/45132fe17dc504f852c61024f169a331cd4c1d44[45132fe1])
+
+CLI:
+~~~~
+- Implement `open-package` and `open-symbol` commands
+  (https://github.com/LibrePCB/LibrePCB/pull/1543[#1543])
+- Make `open-library` skipping checks of deprecated elements
+  (https://github.com/LibrePCB/LibrePCB/pull/1669[#1669])
+- Deprecate legacy production data output commands
+  (https://github.com/LibrePCB/LibrePCB/pull/1584[#1584])
+
+Miscellaneous:
+~~~~~~~~~~~~~~
+- Support sharing DRC settings & output jobs via libraries
+  (https://github.com/LibrePCB/LibrePCB/pull/1631[#1631])
+- Automatically switch to 10x grid when zooming out
+  (https://github.com/LibrePCB/LibrePCB/pull/1647[#1647])
+- Add 3D view sliders to change transparency of objects & layers
+  (https://github.com/LibrePCB/LibrePCB/pull/1522[#1522])
+- Support configuring background color of 3D views
+  (https://github.com/LibrePCB/LibrePCB/pull/1572[#1572])
+- Support configuring API endpoint features
+  (https://github.com/LibrePCB/LibrePCB/pull/1601[#1601])
+- Always accept decimal point as separator in input fields
+  (https://github.com/LibrePCB/LibrePCB/pull/1523[#1523])
+- Save file format migration log as `*.html` in project directory
+  (https://github.com/LibrePCB/LibrePCB/pull/1627[#1627])
+- Add button to manually refresh list of remote libraries
+  (https://github.com/LibrePCB/LibrePCB/pull/1618[#1618])
+- Cancel library scan before (un)installing libraries
+  (https://github.com/LibrePCB/LibrePCB/pull/1657[#1657])
+- Provide "clear cache" option after failed libraries rescan
+  (https://github.com/LibrePCB/LibrePCB/pull/1651[#1651])
+- Maximize window the very first time
+  (https://github.com/LibrePCB/LibrePCB/pull/1525[#1525])
+- Fix possibly slow 3D scene rebuild
+  (https://github.com/LibrePCB/LibrePCB/pull/1623[#1623])
+- Fix conflicting keyboard shortcuts on some keyboard layouts
+  (https://github.com/LibrePCB/LibrePCB/pull/1642[#1642])
+- Fix non-canonical file format of trace & netline anchors
+  (https://github.com/LibrePCB/LibrePCB/pull/1590[#1590])
+- Fix detection of cohesive net segments
+  (https://github.com/LibrePCB/LibrePCB/pull/1589[#1589])
+- Fix crash when modifying keyboard shortcuts
+  (https://github.com/LibrePCB/LibrePCB/pull/1645[#1645])
+
+Building/Packaging/Deployment:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Set up code signing of Windows executables & installer
+  (https://github.com/LibrePCB/LibrePCB/pull/1549[#1549],
+  https://github.com/LibrePCB/LibrePCB/pull/1557[#1557])
+- Set up automated, signed Apple Silicon builds/releases
+  (https://github.com/LibrePCB/LibrePCB/pull/1528[#1528],
+  https://github.com/LibrePCB/LibrePCB/pull/1675[#1675])
+- Make macOS Intel releases compatible down to 10.14
+  (https://github.com/LibrePCB/LibrePCB/pull/1604[#1604])
+- Build AppImage with `linuxdeploy` instead of `linuxdeployqt`
+  (https://github.com/LibrePCB/LibrePCB/pull/1502[#1502])
+- Replace non-reproducible build date by Git commit date
+  (https://github.com/LibrePCB/LibrePCB/pull/1550[#1550])
+- Generate `*.qm` translation files into source dir
+  (https://github.com/LibrePCB/LibrePCB/commit/345d85e9c161299657e6a46c7439cb957bf97868[345d85e9])
+- Show in-app notification if runtime resources are missing
+  (https://github.com/LibrePCB/LibrePCB/pull/1635[#1635])
+- Remove QtQuick test window & dependency
+  (https://github.com/LibrePCB/LibrePCB/pull/1499[#1499])
+- Remove Qt5 compat module from requirements
+  (https://github.com/LibrePCB/LibrePCB/commit/d98d461fd2a64d1dbe420d23aa4de081a118da4d[d98d461f])
+
+Internal:
+~~~~~~~~~
+- Prepare file format for overriding minimum DRC settings in net classes
+  (https://github.com/LibrePCB/LibrePCB/pull/1613[#1613])
+- Prepare file format for disabling glue mask of individual devices
+  (https://github.com/LibrePCB/LibrePCB/pull/1588[#1588])
+- Prepare file format for locked footprint texts
+  (https://github.com/LibrePCB/LibrePCB/pull/1632[#1632])
+- Prepare file format for optional device pad connections
+  (https://github.com/LibrePCB/LibrePCB/pull/1656[#1656])
+- Introduce `settings.user.lp` for projects & schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/1617[#1617])
+- Rename DRC approval keys `useless_via` and `antennae_via`
+  (https://github.com/LibrePCB/LibrePCB/pull/1586[#1586])
+- Ignore stale schematics/boards during file format upgrade
+  (https://github.com/LibrePCB/LibrePCB/pull/1612[#1612])
+- Reject file access outside of transactional file system
+  (https://github.com/LibrePCB/LibrePCB/pull/1575[#1575])
+- Use `uv` and Ruff for Python modules
+  (https://github.com/LibrePCB/LibrePCB/pull/1542[#1542],
+  https://github.com/LibrePCB/LibrePCB/pull/1546[#1546])
+- Update dependencies `muparser`, `type_safe`, `googletest` & `corrosion`
+  (https://github.com/LibrePCB/LibrePCB/pull/1506[#1506],
+  https://github.com/LibrePCB/LibrePCB/commit/516a5c7a89add54e2e3adf6693b62c2b13296975[516a5c7a],
+  https://github.com/LibrePCB/LibrePCB/commit/5f139a0777528c764af5982a6f4832e639f50ed0[5f139a07])
+- Update bundled fonts
+  (https://github.com/LibrePCB/LibrePCB/commit/180a41c046f4314b74adaf12ed810bf12e9d035d[180a41c0])
+- Fix wrong usages of `qBound()`
+  (https://github.com/LibrePCB/LibrePCB/commit/78922cfcf0b430c5ad70213c934c4337e64f9b51[78922cfc])
+- Fix copy constructors of `packageckeckmessages.h`
+  (https://github.com/LibrePCB/LibrePCB/commit/3dddf2889ae28a5236a0bd885e2289c48647592f[3dddf288])
+- Fix interactive HTML BOM export panic in debug builds
+  (https://github.com/LibrePCB/LibrePCB/commit/9e1053f6266bf40bdf93743e8119744a9caba55e[9e1053f6])
+
+---
+
+Credits
+-------
+
+[.float-lg-end.ms-3]
+{{< imglink "NGI0" "nlnet-ngi0.png" "https://nlnet.nl/project/LibrePCB2.0/" 130 >}}
+
+This release was part of the
+link:{{< relref "blog/2024-10-17_roadmap_2.0/index.adoc" >}}[NGI0 Commons grant]
+we receive from link:https://nlnet.nl[NLnet], which was a huge help for us
+to get this work done. We are very thankful for their support.
+
+Starting with this release, our executables for Windows and MacOS (ARM64) are
+signed by https://ossign.org/[OSSign], thanks a lot for their sponsored
+code-signing.
+
+Also a big thank you to our link:{{< relref "sponsors/sponsors/index.adoc" >}}[sponsors]
+and to the community helping us with translations, pull requests, donations
+and other contributions! 🎉
+
+External code contributors of this release:
+https://github.com/z3ugma[@z3ugma],
+https://github.com/web-coder-of-rpi[@web-coder-of-rpi]
+
+---
+
+Download
+--------
+
+The release can be downloaded for all major operating systems from our
+link:{{< relref "download/index.adoc" >}}[download page].
+
+If you like LibrePCB, please consider making a small
+link:{{< relref "donate/index.adoc" >}}[donation] to support the
+ongoing development. +
+Thank you! icon:heart[]
