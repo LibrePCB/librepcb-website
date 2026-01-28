@@ -88,8 +88,8 @@ to operate:
 
 | image:/img/sponsor-ossign.png[link="https://ossign.org/"]
 | https://ossign.org/[OSSign] provides free code-signing for open-source
-  projects. Our official Windows releases are digitally signed thanks to their
-  service.
+  projects. Our official Windows- & MacOS ARM releases are digitally signed
+  thanks to their service.
 
 | image:/img/transifex.png[link="https://www.transifex.com/librepcb/"]
 | https://www.transifex.com/librepcb/[Transifex] sponsors the translation

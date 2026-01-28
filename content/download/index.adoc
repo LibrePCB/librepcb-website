@@ -51,8 +51,7 @@ https://librepcb.org/docs/installation/build-from-sources/[building from sources
 [.download-section.macos]
 == {{< icon "fa-brands fa-apple" >}} macOS
 
-_Requirements: macOS 13 or later (macOS 10.14 when
-https://librepcb.org/docs/installation/build-from-sources/[building from sources])_
+_Requirements: macOS 10.14 or later_
 
 [subs="attributes"]
 ++++
