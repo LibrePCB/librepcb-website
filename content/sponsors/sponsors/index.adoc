@@ -65,6 +65,11 @@ Many thanks to our sponsors for supporting the LibrePCB project:
   from Canada, providing prototype and low-to-mid volume PCB fabrication and
   assembly services.
 
+| image:/img/sponsor-pcbgogo.png[link="https://www.pcbgogo.com/promo/LibrePCB1"]
+| https://www.pcbgogo.com/promo/LibrePCB1[PCBgogo] is a global PCB manufacturing
+  and assembly service provider, offering fast, reliable PCB fabrication and
+  PCBA solutions from prototype to mass production.
+
 | image:/img/sponsor-pcbway.png[link="https://www.pcbway.com"]
 | https://www.pcbway.com[PCBWay] is a large, well-known PCB manufacturing
   company from China which provides advanced PCB technologies and worldwide
