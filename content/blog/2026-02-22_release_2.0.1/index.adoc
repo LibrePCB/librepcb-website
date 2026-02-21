@@ -1,0 +1,92 @@
+---
+date: 2026-02-22
+title: LibrePCB 2.0.1 Released
+author: U. Bruhin
+preview: new-window.png
+aliases: [/release-notes/2.0.1/]  # used in org.librepcb.LibrePCB.metainfo.xml
+---
+
+Today we released LibrePCB 2.0.1, which brings a few small improvements
+(e.g. better HiDPI screen support) and various bugfixes. See the full changelog
+below.
+
+<!--more-->
+
+---
+
+Changelog
+---------
+
+Library Editor:
+~~~~~~~~~~~~~~~
+- Fix error when creating new library with long name
+  (https://github.com/LibrePCB/LibrePCB/pull/1685[#1685])
+
+Schematic Editor:
+~~~~~~~~~~~~~~~~~
+- Increase default text size from 1.5mm to 2.5mm
+  (https://github.com/LibrePCB/LibrePCB/pull/1690[#1690])
+- Improve "Add Component"-toolbar behavior for complex values
+  (https://github.com/LibrePCB/LibrePCB/commit/87944c21fe2cd24d31216ba01c970af89932ef67[87944c21])
+
+Board Editor:
+~~~~~~~~~~~~~
+- Enforce planes thermal spoke width >= minimum width
+  (https://github.com/LibrePCB/LibrePCB/pull/1686[#1686])
+- Fix creating planes with invalid properties
+  (https://github.com/LibrePCB/LibrePCB/pull/1688[#1688])
+
+Miscellaneous:
+~~~~~~~~~~~~~~
+- Auto-open board when opening a project
+  (https://github.com/LibrePCB/LibrePCB/pull/1683[#1683])
+- Display properties of selected schematic- & board objects
+  (https://github.com/LibrePCB/LibrePCB/pull/1698[#1698])
+- Show grid interval keyboard shortcut in tooltip
+  (https://github.com/LibrePCB/LibrePCB/commit/c88603f46fbfa8ef24a347b392bc7e7657528856[c88603f4])
+- Slightly improve color contrast of Qt checkboxes
+  (https://github.com/LibrePCB/LibrePCB/commit/7abcbc282fe5860d201dc32854562eac8e78f83e[7abcbc28])
+- Fix dropdowns opening outside of screen
+  (https://github.com/LibrePCB/LibrePCB/pull/1694[#1694])
+- Fix blurry icons & graphics for HiDPI scale factor > 100%
+  (https://github.com/LibrePCB/LibrePCB/pull/1691[#1691])
+- Fix keyboard modifiers not working in graphics views
+  (https://github.com/LibrePCB/LibrePCB/pull/1692[#1692])
+- Fix sensitive detection of touchpad scroll direction
+  (https://github.com/LibrePCB/LibrePCB/pull/1695[#1695])
+- Fix flaky global cursor position transform in editors
+  (https://github.com/LibrePCB/LibrePCB/pull/1689[#1689])
+- Fix mouse cursor flickering
+  (https://github.com/LibrePCB/LibrePCB/commit/6dff7cfafa302117f40a5470aff7e9eda81a8872[6dff7cfa])
+- MacOS: Fix loosing focus after adding component to schematic
+  (https://github.com/LibrePCB/LibrePCB/pull/1687[#1687])
+
+Building/Packaging/Deployment:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Move Slint UI into separate static library to fix spurious compile error
+  (https://github.com/LibrePCB/LibrePCB/pull/1684[#1684])
+- Reduce number of Slint compilation units to 8
+  (https://github.com/LibrePCB/LibrePCB/commit/027b971ad3ac6ece1e395cd509c65d96b259049c[027b971a])
+- Disable unused Slint features
+  (https://github.com/LibrePCB/LibrePCB/commit/488bb6f047b88085ad9f82c3c29407c38987551a[488bb6f0])
+
+---
+
+Credits
+-------
+
+External code contributors of this release:
+https://github.com/megabyte6[@megabyte6]
+
+---
+
+Download
+--------
+
+The release can be downloaded for all major operating systems from our
+link:{{< relref "download/index.adoc" >}}[download page].
+
+If you like LibrePCB, please consider making a small
+link:{{< relref "donate/index.adoc" >}}[donation] to support the
+ongoing development. +
+Thank you! icon:heart[]
