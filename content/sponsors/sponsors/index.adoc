@@ -8,24 +8,6 @@ url: /sponsors
 Maintaining LibrePCB wouldn't be possible without sponsorings.
 Many thanks to our sponsors for supporting the LibrePCB project:
 
-== icon:award[] Platinum Sponsors
-
-[cols="^.^1,.^3",frame="none",grid="none"]
-|===
-| image:/img/nlnet.png[link="https://nlnet.nl/project/LibrePCB/"]
-
-  image:/img/ngi0.svg[link="https://nlnet.nl/project/LibrePCB2.0/"]
-| This project is funded through the https://nlnet.nl/commonsfund/[NGI0 Commons]
-  & https://nlnet.nl/entrust/[NGI0 Entrust] funds, established by
-  https://nlnet.nl[NLnet] with financial support from the European
-  Commission's https://ngi.eu[Next Generation Internet] programme, under
-  the aegis of DG Communications Networks, Content and Technology under
-  grant agreement No 101135429 & 101069594.
-|===
-
-// Workaround for too small vertical space.
-{empty}
-
 == icon:angles-right[] Silver Sponsors
 
 [cols="^.^1,.^5",frame="none",grid="none"]
@@ -100,6 +82,25 @@ to operate:
 | https://www.transifex.com/librepcb/[Transifex] sponsors the translation
   service thanks to their
   https://help.transifex.com/en/articles/6236788-open-source-projects[open-source program].
+|===
+
+// Workaround for too small vertical space.
+{empty}
+
+== icon:clock-rotate-left[] Historic Funding
+
+[cols="^.^1,.^5",frame="none",grid="none"]
+|===
+| image:/img/nlnet.png[link="https://nlnet.nl/project/LibrePCB/"]
+
+  image:/img/ngi0.svg[link="https://nlnet.nl/project/LibrePCB2.0/"]
+| Between 2023 and 2026, this project has been funded through the
+  https://nlnet.nl/commonsfund/[NGI0 Commons]
+  & https://nlnet.nl/entrust/[NGI0 Entrust] funds, established by
+  https://nlnet.nl[NLnet] with financial support from the European
+  Commission's https://ngi.eu[Next Generation Internet] programme, under
+  the aegis of DG Communications Networks, Content and Technology under
+  grant agreement No 101135429 & 101069594.
 |===
 
 // Workaround for too small vertical space.
