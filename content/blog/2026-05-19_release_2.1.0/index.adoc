@@ -1,0 +1,344 @@
+---
+date: 2026-05-19
+title: LibrePCB 2.1.0 Released
+author: U. Bruhin
+preview: cross-probing.png
+aliases: [/release-notes/2.1.0/]  # used in org.librepcb.LibrePCB.metainfo.xml
+---
+
+Today we released LibrePCB 2.1.0, bringing cross-probing, UI themes,
+3D shading, a new project library manager, automatic library updates, and many
+more improvements! Check out the highlights and the full changelog below.
+
+<!--more-->
+
+== Highlights
+
+=== Cross-Probing & Net Highlighting (https://github.com/LibrePCB/LibrePCB/issues/1748[#1748], https://github.com/LibrePCB/LibrePCB/pull/1790[#1790])
+
+LibrePCB now supports automatic, bidirectional cross-probing between schematics
+and boards. Whenever you select components, nets, pins or pads in one editor,
+the corresponding objects are highlighted in the other one, while unrelated
+objects are dimmed out. In addition, it is now possible to search for nets in
+schematics and boards -- using the same dimming for unrelated objects -- making
+it even easier to inspect and navigate complex designs! icon:rocket[]
+
+video::cross-probing.webm[]
+
+=== Themes & Color Schemes (https://github.com/LibrePCB/LibrePCB/pull/1731[#1731], https://github.com/LibrePCB/LibrePCB/pull/1760[#1760])
+
+As LibrePCB 2.0 was the first release with our new UI framework Slint, we
+had to focus on implementing all the basic functionality and thus keeping the UI
+simple. Therefore we made the decision to initially provide only a dark theme
+(which was not even a very nice one). Now we finally invested more time into
+the UI theming, resulting in an improved dark theme and a new light theme.
+The theme is automatically chosen according to your system theme, but of course
+you can manually override it in the workspace settings.
+
+[.imageblock.rounded-window.window-border]
+{{< imglink "ui themes" "ui-themes.png" >}}
+
+The colors of 2D canvases (i.e. schematics, boards etc.) remain independent
+of the UI theme to allow configuring them individually. However, the
+configuration of those colors has been reworked as well and now comes with
+several built-in color schemes. For example the dark theme experience can now
+be improved by simply choosing a dark schematic color scheme. In addition,
+it is now much easier to create custom color schemes since any color
+modifications are instantly applied to the opened editors. icon:bolt[]
+
+video::color-schemes.webm[]
+
+[.clearfix]
+=== 2D Board Flip & 3D Shading (https://github.com/LibrePCB/LibrePCB/pull/1709[#1709], https://github.com/LibrePCB/LibrePCB/pull/1764[#1764])
+
+[.imageblock.float-lg-end.ms-3.mb-5]
+{{< imglink "flip view" "flip-view.png" "" 360>}}
+
+The board editor now allows flipping the 2D canvas upside-down to view the
+board from the bottom instead of "looking through" the board from the top. This
+simplifies routing the bottom board side and avoids accidentally grabbing
+objects on the top layer since not only the rendering is inverted, but also
+the "hit test" on a click{nbsp}—{nbsp}when viewing the board from the bottom,
+objects on the bottom layer are stacked _above_ objects on the top layer.
+
+[.imageblock.float-lg-start.me-3]
+{{< imglink "3d shading" "3d-shading.png" "" 380>}}
+
+Another enhancement regarding visualization is the 3D viewer, which now applies
+shading to the surface of the PCB and the 3D models. A small change, but still
+very useful since it finally makes edges and holes of 3D models visible
+and generally leads to a much more realistic rendering.
+
+[.clearfix]
+=== Project Library Manager (https://github.com/LibrePCB/LibrePCB/pull/1788[#1788])
+
+[.imageblock.float-lg-end.ms-3]
+{{< imglink "project library manager" "project-library-manager.png" "" 420>}}
+
+This release introduces a new _Project Library Manager_ to give you a clearer
+overview of the library elements bundled in a project. It lists all bundled
+elements, shows which workspace library they come from, and compares their
+bundled and latest versions.
+
+If library elements are not found in any workspace library, you can now save
+them from the project directly into a workspace library. This is especially
+useful for projects you received from someone else or migrated from EAGLE.
+
+The old _Project Library Updater_ is still used to update the project library
+elements, but the goal is to also integrate this functionality into the new
+library manager in a future release.
+
+=== Device Editor Improvements (https://github.com/LibrePCB/LibrePCB/pull/1780[#1780], https://github.com/LibrePCB/LibrePCB/pull/1768[#1768], https://github.com/LibrePCB/LibrePCB/pull/1769[#1769], https://github.com/LibrePCB/LibrePCB/pull/1772[#1772])
+
+The device editor gained some new features to increase productivity:
+
+* The dependent package and component can be clicked to open them in a new tab
+* The pinout is now visualized in the component preview, simplifying its review
+* The previews can be zoomed & panned to inspect them in detail
+* A measure tool allows you to verify whether the selected package really has
+  the desired dimensions
+
+[.imageblock.window-border]
+{{< imglink "device editor" "device-editor.png" >}}
+
+=== Add Planes at Lightning Speed (https://github.com/LibrePCB/LibrePCB/pull/1745[#1745])
+
+Another small but useful productivity improvement has been implemented for the
+board editor. Adding copper planes is a very common task, while usually they
+span just the whole board, thus it seems unnecessary to draw their outline
+manually. For this typical case, planes can therefore now be added with a
+single click -- which also automatically selects the next lower layer, so you
+can just continue clicking for each layer. After reaching the bottom layer,
+the tool exits automatically.
+
+video::auto-add-planes.webm[]
+
+=== Automatic Library Updates (https://github.com/LibrePCB/LibrePCB/pull/1776[#1776])
+
+[.clearfix]
+****
+[.imageblock.float-lg-end.ms-3]
+{{< imglink "library updates" "library-updates.png" >}}
+
+So far, the libraries installed through the library manager had to be kept
+up to date by installing the updates manually. However, this was unnecessarily
+cumbersome -- since those libraries are installed read-only, there is no harm
+in letting LibrePCB update those libraries automatically, so LibrePCB 2.1 will
+do this now for you. It checks for updates once per day (like LibrePCB 2.0
+already did), and installs the updates automatically if there are any.
+
+_Note that in some special cases -- when the update requires uninstalling
+any libraries or installing additional libraries -- a manual confirmation
+will still be required to avoid any surprises._
+****
+
+[TIP]
+====
+This feature can be configured in the workspace settings. You can choose any
+of _Disable Completely_, _Check Only (LibrePCB 2.0 behavior)_,
+_Check & Notify (Popup)_, and _Check & Install_.
+====
+
+---
+
+== Changelog
+
+=== Schematic & Board Editor:
+- Implement automatic cross-probing between schematic & board
+  (https://github.com/LibrePCB/LibrePCB/pull/1748[#1748])
+- Implement project library manager
+  (https://github.com/LibrePCB/LibrePCB/pull/1788[#1788])
+- Support searching for nets in schematics & boards
+  (https://github.com/LibrePCB/LibrePCB/pull/1790[#1790])
+- Support flipping 2D board view to bottom side
+  (https://github.com/LibrePCB/LibrePCB/pull/1709[#1709])
+- Show properties of selected components, devices, pads etc.
+  (https://github.com/LibrePCB/LibrePCB/pull/1743[#1743])
+- Support drawing arcs in board polygon/zone tools
+  (https://github.com/LibrePCB/LibrePCB/pull/1770[#1770])
+- Support auto-adding planes to boards
+  (https://github.com/LibrePCB/LibrePCB/pull/1745[#1745])
+- Support placing remaining component gates
+  (https://github.com/LibrePCB/LibrePCB/pull/1791[#1791])
+- Indicate forced net name mismatches in schematics
+  (https://github.com/LibrePCB/LibrePCB/pull/1754[#1754])
+- Add DRC check for board outline intersections
+  (https://github.com/LibrePCB/LibrePCB/pull/1811[#1811])
+- Support 'F' shortcut to flip layer while drawing trace
+  (https://github.com/LibrePCB/LibrePCB/pull/1808[#1808])
+- Hide unnecessary information in component properties dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1753[#1753])
+- Draw symbol crosses only when selected
+  (https://github.com/LibrePCB/LibrePCB/pull/1736[#1736])
+- Fix missing "save?" message box in project library updater
+  (https://github.com/LibrePCB/LibrePCB/pull/1724[#1724])
+- Fix outdated ERC messages count in sidebar
+  (https://github.com/LibrePCB/LibrePCB/pull/1734[#1734])
+- Fix missing Ctrl+Shift+L shortcut in schematic editor
+  (https://github.com/LibrePCB/LibrePCB/commit/72650b086af2e6ac69bfe15deb1c8631abe84f07[72650b08])
+
+=== Library Editor:
+- Require explicit unlock to make breaking changes in library elements
+  (https://github.com/LibrePCB/LibrePCB/pull/1777[#1777])
+- Device editor: Support measure tool in package preview
+  (https://github.com/LibrePCB/LibrePCB/pull/1780[#1780])
+- Device editor: Visualize pinout in the component/package previews
+  (https://github.com/LibrePCB/LibrePCB/pull/1769[#1769])
+- Device editor: Support opening dependent component & package
+  (https://github.com/LibrePCB/LibrePCB/pull/1772[#1772])
+- Device editor: Support zoom & pan in component/package previews
+  (https://github.com/LibrePCB/LibrePCB/pull/1768[#1768])
+- Symbol/package editors: Snap cursor to existing vertices
+  (https://github.com/LibrePCB/LibrePCB/pull/1752[#1752])
+- Package editor: Explicitly make newly added 3D models visible
+  (https://github.com/LibrePCB/LibrePCB/pull/1730[#1730])
+- Category check: Warn about invalid parent category
+  (https://github.com/LibrePCB/LibrePCB/pull/1738[#1738])
+- Fix unreliable keyboard shortcuts in library editor tabs
+  (https://github.com/LibrePCB/LibrePCB/pull/1766[#1766])
+- Fix approvals not updated after symbol/package reload
+  (https://github.com/LibrePCB/LibrePCB/pull/1706[#1706])
+- Fix crash in library tab due to categories with endless recursion
+  (https://github.com/LibrePCB/LibrePCB/pull/1737[#1737])
+
+=== Import/Export:
+- EAGLE project import: Add support for schematic buses
+  (https://github.com/LibrePCB/LibrePCB/pull/1762[#1762])
+- EAGLE library import: Auto-add "EAGLE Import" category
+  (https://github.com/LibrePCB/LibrePCB/pull/1779[#1779])
+- KiCad library import: Auto-add "KiCad Import" category
+  (https://github.com/LibrePCB/LibrePCB/pull/1781[#1781])
+
+=== User Interface:
+- Rework/improve dark theme & add light theme
+  (https://github.com/LibrePCB/LibrePCB/pull/1731[#1731])
+- Add dark color schemes for schematic editor & 3D views
+  (https://github.com/LibrePCB/LibrePCB/pull/1760[#1760])
+- Implement shading in 3D views
+  (https://github.com/LibrePCB/LibrePCB/pull/1764[#1764])
+- Support moving tabs to other windows through context menu
+  (https://github.com/LibrePCB/LibrePCB/pull/1746[#1746])
+- When closing/moving tabs, switch back to previous tab
+  (https://github.com/LibrePCB/LibrePCB/pull/1747[#1747])
+- When closing a library tab, ask for saving modifications
+  (https://github.com/LibrePCB/LibrePCB/pull/1774[#1774])
+- Automatically close library when closing its last tab
+  (https://github.com/LibrePCB/LibrePCB/pull/1775[#1775])
+- Memorize & restore side panel page on tab switch
+  (https://github.com/LibrePCB/LibrePCB/pull/1810[#1810])
+- Support resizing side panel
+  (https://github.com/LibrePCB/LibrePCB/pull/1783[#1783])
+- Accept user input "mil" as unit "mils"
+  (https://github.com/LibrePCB/LibrePCB/pull/1716[#1716])
+- Keep auto-fit in 2D views active until manual zoom/pan
+  (https://github.com/LibrePCB/LibrePCB/pull/1773[#1773])
+- Limit zoom in 2D canvas to a reasonable range
+  (https://github.com/LibrePCB/LibrePCB/pull/1704[#1704])
+- Support rotating 3D views with keyboard shortcuts
+  (https://github.com/LibrePCB/LibrePCB/commit/51020bb0ff76a8d096817d750506593122ec6ffc[51020bb0])
+- Swap buttons for new symbol / new package in library tab
+  (https://github.com/LibrePCB/LibrePCB/commit/1bdd24436d357b0102e054f4042fd2d0d97a70ae[1bdd2443])
+- Do not auto-correct invalid pad/via drill/size properties
+  (https://github.com/LibrePCB/LibrePCB/pull/1717[#1717])
+- Fix schematic/board tab titles not matching documents panel items
+  (https://github.com/LibrePCB/LibrePCB/commit/60067cc1c8efc348c2cd913d8e226f876509c815[60067cc1])
+- Fix unintentionally focusing search field
+  (https://github.com/LibrePCB/LibrePCB/commit/f8e3d31918eaf60b1fe3c695fb1e3f2d3d3acea2[f8e3d319])
+- Fix focus issue after closing a modal dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1800[#1800])
+
+=== Miscellaneous:
+- Automatically update remote libraries (4 configurable modes)
+  (https://github.com/LibrePCB/LibrePCB/pull/1776[#1776])
+- Support loading semi-transparent STEP models
+  (https://github.com/LibrePCB/LibrePCB/pull/1755[#1755])
+- Support changing opacity of 2D background image
+  (https://github.com/LibrePCB/LibrePCB/pull/1708[#1708])
+- Trim whitespace around empty attribute substitutions
+  (https://github.com/LibrePCB/LibrePCB/pull/1807[#1807])
+- Make default grid style configuration independent of themes
+  (https://github.com/LibrePCB/LibrePCB/pull/1757[#1757])
+- Split themes configuration into 3 separate color schemes
+  (https://github.com/LibrePCB/LibrePCB/pull/1758[#1758])
+- Apply color scheme modifications immediately (live preview)
+  (https://github.com/LibrePCB/LibrePCB/pull/1749[#1749])
+- Support switching application language at runtime
+  (https://github.com/LibrePCB/LibrePCB/pull/1721[#1721])
+- Do not change locale settings when switching language
+  (https://github.com/LibrePCB/LibrePCB/pull/1723[#1723])
+- List system locale in "About LibrePCB" details
+  (https://github.com/LibrePCB/LibrePCB/pull/1733[#1733])
+- FreeBSD: Use `sysctl()` to determine process name for file locks
+  (https://github.com/LibrePCB/LibrePCB/pull/1806[#1806])
+- Add workaround for problems with libfreetype 2.14
+  (https://github.com/LibrePCB/LibrePCB/pull/1799[#1799])
+- Fix custom keyboard shortcuts not working
+  (https://github.com/LibrePCB/LibrePCB/commit/95758687e51c25e45d27822ef9b2291d24ee1cc0[95758687])
+- Fix offset when pasting objects from other tabs
+  (https://github.com/LibrePCB/LibrePCB/pull/1735[#1735])
+
+=== Building/Packaging/Deployment:
+- Update `parseagle` to get rid of `QtXML` dependency
+  (https://github.com/LibrePCB/LibrePCB/pull/1763[#1763])
+- Linux: Support disabling desktop integration by environment variable
+  (https://github.com/LibrePCB/LibrePCB/commit/8a92ff80bae31b9dcc05cb63ae99b1b3f969306c[8a92ff80])
+- AppImage: Update releases to Qt 6.11.1
+  (https://github.com/LibrePCB/LibrePCB/pull/1792[#1792])
+- AppImage: Fix system theme detection & native file dialogs
+  (https://github.com/LibrePCB/LibrePCB/pull/1778[#1778])
+- MacOS: Update x86_64 releases to Qt 6.5.8
+  (https://github.com/LibrePCB/LibrePCB/pull/1787[#1787])
+- MacOS: Set up code signing for x86_64 releases
+  (https://github.com/OSSign/LibrePCB\--LibrePCB/pull/6[OSSign/#6])
+- OpenBSD: Fix linking error of `librepcb` and `librepcb-cli`
+  (https://github.com/LibrePCB/LibrePCB/pull/1702[#1702])
+- Fix build error with OCCT 8.0.0
+  (https://github.com/LibrePCB/LibrePCB/pull/1804[#1804])
+- Fix outdated requirements & installation instructions
+  (https://github.com/LibrePCB/LibrePCB/commit/830054f4e50269cb40bc83df1bc0a4d7d37bb3a0[830054f4])
+
+=== Internal:
+- Implement low-level math functions in Rust with `libm`
+  (https://github.com/LibrePCB/LibrePCB/pull/1739[#1739])
+- Implement `Length`, `Angle`, `Point`, `Vertex` and `VertexVec` in Rust
+  (https://github.com/LibrePCB/LibrePCB/commit/ff168c01a44ed0245e844b7267c905d844f727d6[ff168c01],
+  https://github.com/LibrePCB/LibrePCB/commit/e9d1a5e2f84f4ef5cf96396b2edff49497b85055[e9d1a5e2])
+- Add Rust unit tests to reach 100% coverage & enforce it on CI
+  (https://github.com/LibrePCB/LibrePCB/pull/1771[#1771])
+- Set up and enforce static C++ code analysis with `clang-tidy` on CI
+  (https://github.com/LibrePCB/LibrePCB/pull/1785[#1785])
+- Enforce strict coding style & spell check on CI
+  (https://github.com/LibrePCB/LibrePCB/pull/1719[#1719],
+  https://github.com/LibrePCB/LibrePCB/pull/1784[#1784])
+- Support using rust-core without FFI in external projects
+  (https://github.com/LibrePCB/LibrePCB/pull/1713[#1713])
+- Refactor schematic text rendering without using `QStaticText`
+  (https://github.com/LibrePCB/LibrePCB/pull/1765[#1765])
+- Migrate all remaining CI jobs from Azure Pipelines to GitHub Actions
+  (https://github.com/LibrePCB/LibrePCB/pull/1786[#1786])
+
+---
+
+== Credits
+
+Also a big thank you to our link:{{< relref "sponsors/sponsors/index.adoc" >}}[sponsors]
+and to the community helping us with translations, pull requests, donations
+and other contributions! 🎉
+
+External code contributors of this release:
+https://github.com/Girish4489[@Girish4489],
+https://github.com/stoeckmann[@stoeckmann],
+https://github.com/benoit-canet[@benoit-canet],
+https://github.com/melak[@melak]
+
+---
+
+== Download
+
+The release can be downloaded for all major operating systems from our
+link:{{< relref "download/index.adoc" >}}[download page].
+
+If you like LibrePCB, please consider making a small
+link:{{< relref "donate/index.adoc" >}}[donation] to support the
+ongoing development. +
+Thank you! icon:heart[]
