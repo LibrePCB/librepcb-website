@@ -35,7 +35,7 @@ https://librepcb.org/docs/installation/build-from-sources/[building from sources
 
 [subs="attributes"]
 ++++
-<div class="d-flex flex-column flex-lg-row my-3">
+<div class="d-flex flex-column flex-lg-row my-1">
   <a class="btn btn-primary btn-download windows download-link align-self-lg-center me-2"
      role="button" href="{windows-installer-url}" >
     <i class="fa-solid fa-download"></i>
@@ -48,6 +48,9 @@ https://librepcb.org/docs/installation/build-from-sources/[building from sources
 </div>
 ++++
 
+[.small.text-muted]
+_Digitally signed by Scheibling Consulting AB (sponsored by https://ossign.org/[OSSign])._
+
 [.download-section.macos]
 == {{< icon "fa-brands fa-apple" >}} macOS
 
@@ -55,7 +58,7 @@ _Requirements: macOS 10.14 or later_
 
 [subs="attributes"]
 ++++
-<div class="d-flex flex-column flex-lg-row my-3">
+<div class="d-flex flex-column flex-lg-row my-1">
   <a class="btn btn-primary btn-download macos download-link me-2" role="button"
      href="{mac-bundle-url}">
     <i class="fa-solid fa-download"></i>
@@ -68,6 +71,9 @@ _Requirements: macOS 10.14 or later_
   </a>
 </div>
 ++++
+
+[.small.text-muted]
+_Digitally signed by Scheibling Consulting AB (sponsored by https://ossign.org/[OSSign])._
 
 [.download-section.linux]
 == {{< icon "fa-brands fa-linux" >}} Linux
@@ -94,9 +100,9 @@ installation options below.
 </div>
 ++++
 
-_Important:
-https://librepcb.org/docs/installation/linux/[Set the executable flag]
-before starting the AppImage!_
+_Important: *Set the executable flag* before starting the AppImage!
+For details, or if it doesn't start,
+https://librepcb.org/docs/installation/linux/[read this]._
 
 App Stores::
   Install the
