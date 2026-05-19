@@ -23,7 +23,8 @@ objects are dimmed out. In addition, it is now possible to search for nets in
 schematics and boards -- using the same dimming for unrelated objects -- making
 it even easier to inspect and navigate complex designs! icon:rocket[]
 
-video::cross-probing.webm[]
+[.imageblock]
+{{< video "cross-probing.webm" >}}
 
 === Themes & Color Schemes (https://github.com/LibrePCB/LibrePCB/pull/1731[#1731], https://github.com/LibrePCB/LibrePCB/pull/1760[#1760])
 
@@ -46,7 +47,8 @@ be improved by simply choosing a dark schematic color scheme. In addition,
 it is now much easier to create custom color schemes since any color
 modifications are instantly applied to the opened editors. icon:bolt[]
 
-video::color-schemes.webm[]
+[.imageblock]
+{{< video "color-schemes.webm" >}}
 
 [.clearfix]
 === 2D Board Flip & 3D Shading (https://github.com/LibrePCB/LibrePCB/pull/1709[#1709], https://github.com/LibrePCB/LibrePCB/pull/1764[#1764])
@@ -111,7 +113,8 @@ single click -- which also automatically selects the next lower layer, so you
 can just continue clicking for each layer. After reaching the bottom layer,
 the tool exits automatically.
 
-video::auto-add-planes.webm[]
+[.imageblock]
+{{< video "auto-add-planes.webm" >}}
 
 === Automatic Library Updates (https://github.com/LibrePCB/LibrePCB/pull/1776[#1776])
 

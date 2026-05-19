@@ -1,0 +1,7 @@
+{{ $img := $.Page.Resources.GetMatch (.Get 0) }}
+{{ $link := $img.RelPermalink }}
+<p>
+  <video src="{{ $link | safeHTMLAttr }}" controls="">
+    Your browser does not support the video tag.
+  </video>
+</p>
