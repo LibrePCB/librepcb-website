@@ -6,9 +6,10 @@ weight: 20
 url: /compare
 ---
 
-It is understandable that people compare LibrePCB to other EDA tools, especially Eagle and
-KiCad. To help you deciding which EDA tool is best for your needs, here a short
-overview about the differences between LibrePCB and other EDA tools.
+It is understandable that people compare LibrePCB to other EDA tools,
+especially EAGLE and KiCad. To help you deciding which EDA tool is best for
+your needs, here a short overview about the differences between LibrePCB and
+other EDA tools.
 
 
 == Library Concept
@@ -19,7 +20,7 @@ https://archive.fosdem.org/2018/schedule/event/cad_librepcb/attachments/slides/2
 for details.
 
 
-== LibrePCB vs. Eagle
+== LibrePCB vs. EAGLE
 
 - LibrePCB is still actively developed 😉
 - LibrePCB is free of charge -- without limitations, even for commercial usage
@@ -28,8 +29,8 @@ for details.
   thus it's much easier to install and update libraries
 - LibrePCB library and project files are
   link:{{< relref "features/file-format/index.adoc" >}}[better suited for version control]
-- The schematic- and board editors of Eagle are currently more powerful
-  (LibrePCB does not yet support hierarchical sheets, buses and more)
+- The schematic- and board editors of EAGLE are currently more powerful
+  (for example, LibrePCB does not yet support hierarchical sheets)
 
 
 == LibrePCB vs. KiCad
@@ -48,7 +49,8 @@ for details.
   link:{{< relref "features/schematic-editor/index.adoc" >}}[hierarchical categories],
   thus it's easier and more intuitive to find the part you're looking for
 - No broken projects caused by updated or removed libraries -- LibrePCB projects
-  are link:{{< relref "features/file-format/index.adoc" >}}[self-contained] and
+  are always
+  link:{{< relref "features/file-format/index.adoc" >}}[self-contained] and
   completely independent of system libraries
 - No configuration (e.g. file paths) needed at all, leading to a consistent
   organization for all users
@@ -95,10 +97,11 @@ for details.
 Although LibrePCB has many cool advantages, KiCad is (currently) more powerful.
 It has an amazing amount of features which allow to design very complex PCBs.
 LibrePCB is still a rather young software with very limited financial resources
-and thus lacks many features needed to design complex PCBs.
+and thus lacks many features which would be useful to design complex PCBs.
 
 Also our libraries are not yet as extensive as the KiCad libraries.
 
 So, if you are looking for an intuitive EDA tool to quickly design a PCB,
-you should give LibrePCB a try. But if you want to design very complex PCBs,
-LibrePCB is probably not (yet) the tool you are looking for.
+you should definitively give LibrePCB a try. But if you want to design very
+complex PCBs, with differential pairs, hierarchical sheets, or other advanced
+features, LibrePCB may not (yet) be the tool you are looking for.
