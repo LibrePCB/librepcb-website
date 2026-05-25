@@ -160,17 +160,17 @@ defined.
 We are aware the sponsorship tiers are not cheap and you deserve a fair return.
 Our community is not a niche anymore -- and we are constantly growing -- so
 your sponsorship will be seen for sure! Here are some statistics about LibrePCB
-(updated May 2025):
+(updated May 2026):
 
 * Our link:https://snapcraft.io/librepcb/listing[Snap Package] for Linux is
-  installed on 8,000 weekly active devices
+  installed on 8,900 weekly active devices
 * Our link:https://flathub.org/apps/org.librepcb.LibrePCB[Flatpak] for Linux is
-  installed ca. 2,000 times per month
-* Our releases from the website are downloaded ca. 4,000 times per month
-* Our website has ca. 20,000 unique visitors per month, up to 60,000 after
+  installed ca. 2,300 times per month
+* Our releases from the website are downloaded ca. 4,000 times per month,
+  up to 7,000 after a new version
+* Our website has ca. 30,000 unique visitors per month, up to 60,000 after
   a release announcement
-* Our API server gets requests from >6,000 unique devices every month
-  (requests are made only by particular actions in the application)
+* Our API server gets requests from >7,000 unique devices every month
 
 == Interested?
 
