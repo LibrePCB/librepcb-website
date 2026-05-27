@@ -127,12 +127,12 @@ the LibrePCB project and about future plans.
 In any case, just to make it clear, I commit to push the LibrePCB project
 forward into a sustainable future -- the freelance work should just help to pay
 the bills until the LibrePCB project is financially stable. And of course, any
-link:{{< relref "donate/index.adoc" >}}[donations] really help me to spend
+link:{{< relref "contribute/donate/index.adoc" >}}[donations] really help me to spend
 my time on LibrePCB rather than on freelance projects!
 
 ++++
 <div class="text-center my-3">
-  <a class="btn btn-warning" role="button" href="{{< relref "donate/index.adoc" >}}" >
+  <a class="btn btn-warning" role="button" href="{{< relref "contribute/donate/index.adoc" >}}" >
     <i class="fa-solid fa-heart"></i>
     Help me to pay the bills
   </a>

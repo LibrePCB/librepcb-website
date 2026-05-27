@@ -282,7 +282,7 @@ link:{{< relref "help/help/index.adoc" >}}[let us know]!
     <i class="fa-solid fa-message"></i>
     Give Feedback
   </a>
-  <a class="btn btn-danger mx-1 my-1" role="button" href="{{< relref "donate/index.adoc" >}}" >
+  <a class="btn btn-danger mx-1 my-1" role="button" href="{{< relref "contribute/donate/index.adoc" >}}" >
     <i class="fa-solid fa-heart"></i>
     Support My Work
   </a>
@@ -293,7 +293,7 @@ Btw, if you are curious about the timeline of the LibrePCB 2.0 release:
 There are still some new features to be implemented (mostly non-UI things now)
 and it is hard to say when they are finished. But roughly I'd estimate it
 should be ready in around 2-3 months. If you like to support my work on
-the LibrePCB project, any link:{{< relref "donate/index.adoc" >}}[donations]
+the LibrePCB project, any link:{{< relref "contribute/donate/index.adoc" >}}[donations]
 are highly appreciated and help me to keep the development ongoing. icon:heart[]
 
 ---

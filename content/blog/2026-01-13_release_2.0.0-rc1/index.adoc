@@ -106,6 +106,6 @@ Since this is not a stable release yet, use the download links *from the
 sidebar* on our link:{{< relref "download/index.adoc" >}}[download page].
 
 If you like LibrePCB, please consider making a small
-link:{{< relref "donate/index.adoc" >}}[donation] to support the
+link:{{< relref "contribute/donate/index.adoc" >}}[donation] to support the
 ongoing development. +
 Thank you! icon:heart[]

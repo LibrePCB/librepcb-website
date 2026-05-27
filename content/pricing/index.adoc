@@ -26,7 +26,6 @@ a subscription plan.
             <li>For Personal &amp; Commercial Use</li>
             <li>No Limitations in Offline Features</li>
             <li>Get Our Official Libraries (Online)<sup>2</sup></li>
-            <li>Join Private Chats (Support/Dev)<sup>3</sup></li>
             <li>Get Proprietary 3D Models (Online)<sup>2,4</sup></li>
             <li>Import Parts On-Demand (Online)<sup>2,4</sup></li>
             <li>Import From Datasheets (Online)<sup>2,4</sup></li>
@@ -35,6 +34,7 @@ a subscription plan.
             <li>Feature Request &amp; Bugfix Priority<sup>5</sup></li>
             <li>Personal Support (Chat/E-Mail/Phone)<sup>6</sup></li>
             <li>Multi-User License Management<sup>7</sup></li>
+            <li>Deploy Custom Libraries<sup>2</sup></li>
             <li></li>
           </ul>
         </div>
@@ -44,7 +44,7 @@ a subscription plan.
       <div class="pricing-card card-free">
         <div class="card-header position-relative">
           <div>FREE</div>
-          <div class="fs-6 text-muted">0€ / month</div>
+          <div class="fs-6 text-muted">no account required</div>
           <div class="text-muted fw-lighter card-price-annual">no strings attached</div>
         </div>
         <div class="card-body">
@@ -71,10 +71,10 @@ a subscription plan.
       <div class="pricing-card card-standard">
         <div class="card-header position-relative">
           <div>Maker</div>
-          <div class="fs-6 text-muted">4€ / month<sup>*</sup></div>
-          <div class="text-muted fw-lighter card-price-annual">or 40€ / year<sup>*</sup></div>
+          <div class="fs-6 text-muted">5€ / month<sup>*</sup></div>
+          <div class="text-muted fw-lighter card-price-annual">or 50€ / year<sup>*</sup></div>
           <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
-            includes<br/>4€/month<br/>credit!<sup>1</sup>
+            includes<br/>5€/month<br/>credit!<sup>1</sup>
           </span>
         </div>
         <div class="card-body">
@@ -83,11 +83,11 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
-            <li><span class="warn-icon"></span> 20 / month</li>
-            <li><span class="warn-icon"></span> 20 / month</li>
-            <li><span class="warn-icon"></span> 20 / month</li>
+            <li><span class="warn-icon"></span> 10 / month</li>
+            <li><span class="warn-icon"></span> 10 / month</li>
+            <li><span class="warn-icon"></span> 10 / month</li>
             <li><span class="warn-icon"></span> 50 / day</li>
+            <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li class="cross-icon"></li>
@@ -101,10 +101,10 @@ a subscription plan.
       <div class="pricing-card card-professional">
         <div class="card-header position-relative">
           <div>Professional</div>
-          <div class="fs-6 text-muted">10€ / month<sup>*</sup></div>
-          <div class="text-muted fw-lighter card-price-annual">or 100€ / year<sup>*</sup></div>
+          <div class="fs-6 text-muted">15€ / month<sup>*</sup></div>
+          <div class="text-muted fw-lighter card-price-annual">or 150€ / year<sup>*</sup></div>
           <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning pricing-badge">
-            includes<br/>10€/month<br/>credit!<sup>1</sup>
+            includes<br/>5€/month<br/>credit!<sup>1</sup>
           </span>
         </div>
         <div class="card-body">
@@ -113,14 +113,14 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span> 200 / month</li>
-            <li><span class="check-icon"></span> 200 / month</li>
-            <li><span class="check-icon"></span> 200 / month</li>
-            <li><span class="check-icon"></span> 300 / day</li>
+            <li><span class="check-icon"></span> 50 / month</li>
+            <li><span class="check-icon"></span> 50 / month</li>
+            <li><span class="check-icon"></span> 50 / month</li>
+            <li><span class="check-icon"></span> 150 / day</li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
+            <li class="cross-icon"></li>
             <li class="cross-icon"></li>
             <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
@@ -131,8 +131,8 @@ a subscription plan.
       <div class="pricing-card card-enterprise">
         <div class="card-header">
           <div>Enterprise</div>
-          <div class="fs-6 text-muted">59€ / month / user<sup>*</sup></div>
-          <div class="text-muted fw-lighter card-price-annual">or 590€ / year / user<sup>*</sup></div>
+          <div class="fs-6 text-muted">49€ / month / user<sup>*</sup></div>
+          <div class="text-muted fw-lighter card-price-annual">billed annually</div>
         </div>
         <div class="card-body">
           <ul>
@@ -140,16 +140,16 @@ a subscription plan.
             <li class="check-icon"></li>
             <li class="check-icon"></li>
             <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span></li>
-            <li><span class="check-icon"></span> 200 / month / user</li>
-            <li><span class="check-icon"></span> 200 / month / user</li>
-            <li><span class="check-icon"></span> 200 / month / user</li>
+            <li><span class="check-icon"></span> 100 / month / user</li>
+            <li><span class="check-icon"></span> 100 / month / user</li>
+            <li><span class="check-icon"></span> 100 / month / user</li>
             <li><span class="check-icon"></span> 300 / day / user</li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span></li>
             <li><span class="check-icon"></span> From Project Lead (EN/DE)</li>
             <li><span class="check-icon"></span></li>
-            <li><a href="#" class="btn btn-warning btn-pricing disabled" role="button">Coming Soon</a></li>
+            <li class="check-icon"></li>
+            <li><a href="#" class="btn btn-warning btn-pricing" role="button">Subscribe</a></li>
           </ul>
         </div>
       </div>
