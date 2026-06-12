@@ -324,7 +324,7 @@ _Check & Notify (Popup)_, and _Check & Install_.
 
 == Credits
 
-Also a big thank you to our link:{{< relref "sponsors/sponsors/index.adoc" >}}[sponsors]
+A big thank you to our link:{{< relref "sponsors/sponsors/index.adoc" >}}[sponsors]
 and to the community helping us with translations, pull requests, donations
 and other contributions! 🎉
 
