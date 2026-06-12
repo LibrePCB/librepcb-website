@@ -1,0 +1,69 @@
+---
+date: 2026-06-12
+title: LibrePCB 2.1.1 Released
+author: U. Bruhin
+preview: preview.jpg
+aliases: [/release-notes/2.1.1/]  # used in org.librepcb.LibrePCB.metainfo.xml
+---
+
+Today we released LibrePCB 2.1.1, which includes some improvements related to
+FreeRouting compatibility and keyboard shortcuts on macOS, and also various
+small bugfixes. Check out the changelog below.
+
+<!--more-->
+
+---
+
+== Changelog
+
+=== Schematic & Board Editor:
+- Fix accidentally selecting objects on hidden layers
+  (https://github.com/LibrePCB/LibrePCB/pull/1836[#1836])
+- Fix rejecting deletion of duplicate assembly options
+  (https://github.com/LibrePCB/LibrePCB/pull/1831[#1831])
+
+=== Import/Export:
+- DSN Export: Always include a pad stack for the default via preset
+  (https://github.com/LibrePCB/LibrePCB/pull/1844[#1844])
+- SES Import: Fix incompatibility with recent FreeRouting versions
+  (https://github.com/LibrePCB/LibrePCB/pull/1842[#1842])
+
+=== User Interface:
+- Show native modifier key text on macOS
+  (https://github.com/LibrePCB/LibrePCB/pull/1846[#1846],
+  https://github.com/LibrePCB/LibrePCB/pull/1848[#1848])
+- Accept locale-dependent decimal point in attribute values
+  (https://github.com/LibrePCB/LibrePCB/pull/1839[#1839])
+- Fix error message after aborting opening a library
+  (https://github.com/LibrePCB/LibrePCB/commit/78e2670024c9314213a18e53b0270390b36075af[78e26700])
+- Fix outdated instructions in background image dialog
+  (https://github.com/LibrePCB/LibrePCB/pull/1845[#1845])
+- Fix missing top border in about panel
+  (https://github.com/LibrePCB/LibrePCB/commit/627cea086380d588c04f9d703176ee4f945963c8[627cea08])
+
+=== Miscellaneous:
+- Render attribute values in schematics & boards independent of locale
+  (https://github.com/LibrePCB/LibrePCB/pull/1838[#1838])
+- Fix project migration log not opening in Snap/Flatpak
+  (https://github.com/LibrePCB/LibrePCB/pull/1815[#1815])
+- Fix crash when canceling attributes overlay in device editor
+  (https://github.com/LibrePCB/LibrePCB/pull/1840[#1840])
+
+---
+
+== Credits
+
+External code contributors of this release:
+https://github.com/SiboVG[@SiboVG]
+
+---
+
+== Download
+
+The release can be downloaded for all major operating systems from our
+link:{{< relref "download/index.adoc" >}}[download page].
+
+If you like LibrePCB, please consider making a small
+link:{{< relref "donate/index.adoc" >}}[donation] to support the
+ongoing development. +
+Thank you! icon:heart[]
